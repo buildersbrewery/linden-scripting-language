@@ -324,7 +324,6 @@
         { "trigger": "JSON_TRUE\tstr (\"&#xFDD6;\")", "contents": "JSON_TRUE" },
         { "trigger": "KFM_CMD_PAUSE\tint (2)", "contents": "KFM_CMD_PAUSE" },
         { "trigger": "KFM_CMD_PLAY\tint (0)", "contents": "KFM_CMD_PLAY" },
-        { "trigger": "KFM_CMD_SET_MODE\tint (3)", "contents": "KFM_CMD_SET_MODE" },
         { "trigger": "KFM_CMD_STOP\tint (1)", "contents": "KFM_CMD_STOP" },
         { "trigger": "KFM_COMMAND\tint (0)", "contents": "KFM_COMMAND" },
         { "trigger": "KFM_DATA\tint (2)", "contents": "KFM_DATA" },
