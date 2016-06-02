@@ -141,10 +141,55 @@
             "body": "ATTACH_CHIN",
             "description": "int (12)"
         },
+        "ATTACH_FACE_JAW": {
+            "prefix": "ATTACH_FACE_JAW",
+            "body": "ATTACH_FACE_JAW",
+            "description": "int(47)"
+        },
+        "ATTACH_FACE_LEAR": {
+            "prefix": "ATTACH_FACE_LEAR",
+            "body": "ATTACH_FACE_LEAR",
+            "description": "int(48)"
+        },
+        "ATTACH_FACE_LEYE": {
+            "prefix": "ATTACH_FACE_LEYE",
+            "body": "ATTACH_FACE_LEYE",
+            "description": "int(50)"
+        },
+        "ATTACH_FACE_REAR": {
+            "prefix": "ATTACH_FACE_REAR",
+            "body": "ATTACH_FACE_REAR",
+            "description": "int(49)"
+        },
+        "ATTACH_FACE_REYE": {
+            "prefix": "ATTACH_FACE_REYE",
+            "body": "ATTACH_FACE_REYE",
+            "description": "int(51)"
+        },
+        "ATTACH_FACE_TOUNGE": {
+            "prefix": "ATTACH_FACE_TOUNGE",
+            "body": "ATTACH_FACE_TOUNGE",
+            "description": "int(52)"
+        },
+        "ATTACH_GROIN": {
+            "prefix": "ATTACH_GROIN",
+            "body": "ATTACH_GROIN",
+            "description": "int(53)"
+        },
         "ATTACH_HEAD": {
             "prefix": "ATTACH_HEAD",
             "body": "ATTACH_HEAD",
             "description": "int (2)"
+        },
+        "ATTACH_HIND_LFOOT": {
+            "prefix": "ATTACH_HIND_LFOOT",
+            "body": "ATTACH_HIND_LFOOT",
+            "description": "int(54)"
+        },
+        "ATTACH_HIND_RFOOT": {
+            "prefix": "ATTACH_HIND_RFOOT",
+            "body": "ATTACH_HIND_RFOOT",
+            "description": "int(55)"
         },
         "ATTACH_HUD_BOTTOM": {
             "prefix": "ATTACH_HUD_BOTTOM",
@@ -211,6 +256,11 @@
             "body": "ATTACH_LHAND",
             "description": "int (5)"
         },
+        "ATTACH_LHAND_RING1": {
+            "prefix": "ATTACH_LHAND_RING1",
+            "body": "ATTACH_LHAND_RING1",
+            "description": "int(41)"
+        },
         "ATTACH_LHIP": {
             "prefix": "ATTACH_LHIP",
             "body": "ATTACH_LHIP",
@@ -240,6 +290,11 @@
             "prefix": "ATTACH_LULEG",
             "body": "ATTACH_LULEG",
             "description": "int (26)"
+        },
+        "ATTACH_LWING": {
+            "prefix": "ATTACH_LWING",
+            "body": "ATTACH_LWING",
+            "description": "int(45)"
         },
         "ATTACH_MOUTH": {
             "prefix": "ATTACH_MOUTH",
@@ -281,6 +336,11 @@
             "body": "ATTACH_RHAND",
             "description": "int (6)"
         },
+        "ATTACH_RHAND_RING1": {
+            "prefix": "ATTACH_RHAND_RING1",
+            "body": "ATTACH_RHAND_RING1",
+            "description": "int(42)"
+        },
         "ATTACH_RHIP": {
             "prefix": "ATTACH_RHIP",
             "body": "ATTACH_RHIP",
@@ -315,6 +375,21 @@
             "prefix": "ATTACH_RULEG",
             "body": "ATTACH_RULEG",
             "description": "int (23)"
+        },
+        "ATTACH_RWING": {
+            "prefix": "ATTACH_RWING",
+            "body": "ATTACH_RWING",
+            "description": "int(46)"
+        },
+        "ATTACH_TAIL_BASE": {
+            "prefix": "ATTACH_TAIL_BASE",
+            "body": "ATTACH_TAIL_BASE",
+            "description": "int(43)"
+        },
+        "ATTACH_TAIL_TIP": {
+            "prefix": "ATTACH_TAIL_TIP",
+            "body": "ATTACH_TAIL_TIP",
+            "description": "int(44)"
         },
         "AVOID_CHARACTERS": {
             "prefix": "AVOID_CHARACTERS",
@@ -1005,11 +1080,6 @@
             "prefix": "KFM_CMD_PLAY",
             "body": "KFM_CMD_PLAY",
             "description": "int (0)"
-        },
-        "KFM_CMD_SET_MODE": {
-            "prefix": "KFM_CMD_SET_MODE",
-            "body": "KFM_CMD_SET_MODE",
-            "description": "int (3)"
         },
         "KFM_CMD_STOP": {
             "prefix": "KFM_CMD_STOP",
