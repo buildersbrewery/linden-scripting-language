@@ -49,6 +49,7 @@
                 <string>CHARACTER_MAX_ANGULAR_ACCEL</string>
                 <string>CHARACTER_MAX_ANGULAR_SPEED</string>
                 <string>CHARACTER_TURN_SPEED_MULTIPLIER</string>
+                <string>KFM_CMD_SET_MODE</string>
                 <string>PERMISSION_CHANGE_JOINTS</string>
                 <string>PERMISSION_CHANGE_PERMISSIONS</string>
                 <string>PERMISSION_EXPERIENCE</string>
@@ -745,7 +746,6 @@
                 <string>JSON_TRUE</string>
                 <string>KFM_CMD_PAUSE</string>
                 <string>KFM_CMD_PLAY</string>
-                <string>KFM_CMD_SET_MODE</string>
                 <string>KFM_CMD_STOP</string>
                 <string>KFM_COMMAND</string>
                 <string>KFM_DATA</string>
