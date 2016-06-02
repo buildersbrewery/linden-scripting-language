@@ -30,7 +30,16 @@
         <KeyWord name="ATTACH_BELLY" func="no" />
         <KeyWord name="ATTACH_CHEST" func="no" />
         <KeyWord name="ATTACH_CHIN" func="no" />
+        <KeyWord name="ATTACH_FACE_JAW" func="no" />
+        <KeyWord name="ATTACH_FACE_LEAR" func="no" />
+        <KeyWord name="ATTACH_FACE_LEYE" func="no" />
+        <KeyWord name="ATTACH_FACE_REAR" func="no" />
+        <KeyWord name="ATTACH_FACE_REYE" func="no" />
+        <KeyWord name="ATTACH_FACE_TOUNGE" func="no" />
+        <KeyWord name="ATTACH_GROIN" func="no" />
         <KeyWord name="ATTACH_HEAD" func="no" />
+        <KeyWord name="ATTACH_HIND_LFOOT" func="no" />
+        <KeyWord name="ATTACH_HIND_RFOOT" func="no" />
         <KeyWord name="ATTACH_HUD_BOTTOM" func="no" />
         <KeyWord name="ATTACH_HUD_BOTTOM_LEFT" func="no" />
         <KeyWord name="ATTACH_HUD_BOTTOM_RIGHT" func="no" />
@@ -44,12 +53,14 @@
         <KeyWord name="ATTACH_LEYE" func="no" />
         <KeyWord name="ATTACH_LFOOT" func="no" />
         <KeyWord name="ATTACH_LHAND" func="no" />
+        <KeyWord name="ATTACH_LHAND_RING1" func="no" />
         <KeyWord name="ATTACH_LHIP" func="no" />
         <KeyWord name="ATTACH_LLARM" func="no" />
         <KeyWord name="ATTACH_LLLEG" func="no" />
         <KeyWord name="ATTACH_LSHOULDER" func="no" />
         <KeyWord name="ATTACH_LUARM" func="no" />
         <KeyWord name="ATTACH_LULEG" func="no" />
+        <KeyWord name="ATTACH_LWING" func="no" />
         <KeyWord name="ATTACH_MOUTH" func="no" />
         <KeyWord name="ATTACH_NECK" func="no" />
         <KeyWord name="ATTACH_NOSE" func="no" />
@@ -58,6 +69,7 @@
         <KeyWord name="ATTACH_REYE" func="no" />
         <KeyWord name="ATTACH_RFOOT" func="no" />
         <KeyWord name="ATTACH_RHAND" func="no" />
+        <KeyWord name="ATTACH_RHAND_RING1" func="no" />
         <KeyWord name="ATTACH_RHIP" func="no" />
         <KeyWord name="ATTACH_RIGHT_PEC" func="no" />
         <KeyWord name="ATTACH_RLARM" func="no" />
@@ -65,6 +77,9 @@
         <KeyWord name="ATTACH_RSHOULDER" func="no" />
         <KeyWord name="ATTACH_RUARM" func="no" />
         <KeyWord name="ATTACH_RULEG" func="no" />
+        <KeyWord name="ATTACH_RWING" func="no" />
+        <KeyWord name="ATTACH_TAIL_BASE" func="no" />
+        <KeyWord name="ATTACH_TAIL_TIP" func="no" />
         <KeyWord name="AVOID_CHARACTERS" func="no" />
         <KeyWord name="AVOID_DYNAMIC_OBSTACLES" func="no" />
         <KeyWord name="AVOID_NONE" func="no" />
