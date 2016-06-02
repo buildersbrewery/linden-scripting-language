@@ -2,7 +2,7 @@
 <!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 	<dict>
-		<key>name</key><string>general</string>
+		<key>name</key><string>Indent Style - Allman</string>
 		<key>scope</key><string>source.lsl</string>
 		<key>settings</key>
 		<dict>
@@ -15,6 +15,5 @@
 				</dict>
 			</array>
 		</dict>
-		<key>uuid</key><string>be895906-d1d6-44d2-9337-ebab5605f29b</string>
 	</dict>
 </plist>
