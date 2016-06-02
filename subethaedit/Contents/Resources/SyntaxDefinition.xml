@@ -573,7 +573,16 @@
                 <string>ATTACH_BELLY</string>
                 <string>ATTACH_CHEST</string>
                 <string>ATTACH_CHIN</string>
+                <string>ATTACH_FACE_JAW</string>
+                <string>ATTACH_FACE_LEAR</string>
+                <string>ATTACH_FACE_LEYE</string>
+                <string>ATTACH_FACE_REAR</string>
+                <string>ATTACH_FACE_REYE</string>
+                <string>ATTACH_FACE_TOUNGE</string>
+                <string>ATTACH_GROIN</string>
                 <string>ATTACH_HEAD</string>
+                <string>ATTACH_HIND_LFOOT</string>
+                <string>ATTACH_HIND_RFOOT</string>
                 <string>ATTACH_HUD_BOTTOM</string>
                 <string>ATTACH_HUD_BOTTOM_LEFT</string>
                 <string>ATTACH_HUD_BOTTOM_RIGHT</string>
@@ -587,12 +596,14 @@
                 <string>ATTACH_LEYE</string>
                 <string>ATTACH_LFOOT</string>
                 <string>ATTACH_LHAND</string>
+                <string>ATTACH_LHAND_RING1</string>
                 <string>ATTACH_LHIP</string>
                 <string>ATTACH_LLARM</string>
                 <string>ATTACH_LLLEG</string>
                 <string>ATTACH_LSHOULDER</string>
                 <string>ATTACH_LUARM</string>
                 <string>ATTACH_LULEG</string>
+                <string>ATTACH_LWING</string>
                 <string>ATTACH_MOUTH</string>
                 <string>ATTACH_NECK</string>
                 <string>ATTACH_NOSE</string>
@@ -601,6 +612,7 @@
                 <string>ATTACH_REYE</string>
                 <string>ATTACH_RFOOT</string>
                 <string>ATTACH_RHAND</string>
+                <string>ATTACH_RHAND_RING1</string>
                 <string>ATTACH_RHIP</string>
                 <string>ATTACH_RIGHT_PEC</string>
                 <string>ATTACH_RLARM</string>
@@ -608,6 +620,9 @@
                 <string>ATTACH_RSHOULDER</string>
                 <string>ATTACH_RUARM</string>
                 <string>ATTACH_RULEG</string>
+                <string>ATTACH_RWING</string>
+                <string>ATTACH_TAIL_BASE</string>
+                <string>ATTACH_TAIL_TIP</string>
                 <string>AVOID_CHARACTERS</string>
                 <string>AVOID_DYNAMIC_OBSTACLES</string>
                 <string>AVOID_NONE</string>
