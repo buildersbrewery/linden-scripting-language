@@ -39,11 +39,11 @@ class OpenLslDefaultSettingsCommand(sublime_plugin.WindowCommand):
 
     def run(self):
         self.view = sublime.active_window().run_command('open_file', {'file': '${packages}/LSL/settings/LSL.sublime-settings'})
-        sublime.set_timeout(self.set_view_readonly, 1)
+        sublime.set_timeout(lambda:self.set_view_readonly, 1)
 
     def set_view_readonly(self):
         if self.view is None or self.view.is_loading():
-            sublime.set_timeout(self.set_view_readonly, 1)
+            sublime.set_timeout(lambda:self.set_view_readonly, 1)
             return
 
         self.view.set_read_only(True)
