@@ -16,10 +16,56 @@
 					<key>value</key><string>// </string>
 				</dict>
 				<dict>
+					<key>name</key><string>TM_COMMENT_START_2</string>
+					<key>value</key><string>/*</string>
+				</dict>
+				<dict>
+					<key>name</key><string>TM_COMMENT_END_2</string>
+					<key>value</key><string>*/</string>
+				</dict>
+				<dict>
 					<key>name</key><string>TM_LINE_TERMINATOR</string>
 					<key>value</key><string>\{</string>
 				</dict>
 			</array>
+		</dict>
+	</dict>
+	<dict>
+		<key>name</key><string>spellcheck</string>
+		<key>scope</key><string>punctuation.definition.comment.lsl, string.quoted.double.lsl</string>
+		<key>settings</key>
+		<dict>
+			<key>spellChecking</key><integer>1</integer>
+		</dict>
+	</dict>
+	<dict>
+		<key>name</key><string>symbols</string>
+		<key>scope</key><string>support.function.event.lsl</string>
+		<key>settings</key>
+		<dict>
+			<key>showInSymbolList</key><integer>1</integer>
+			<key>showInIndexedSymbolList</key><integer>1</integer>
+			<key>symbolTransformation</key><string>s/\s*(.+)/         • $1/</string>
+		</dict>
+	</dict>
+	<dict>
+		<key>name</key><string>symbols</string>
+		<key>scope</key><string>meta.function.user-defined.declaration.lsl</string>
+		<key>settings</key>
+		<dict>
+			<key>showInSymbolList</key><integer>1</integer>
+			<key>showInIndexedSymbolList</key><integer>1</integer>
+			<key>symbolTransformation</key><string>s/(.|\s)+/$0/</string>
+		</dict>
+	</dict>
+	<dict>
+		<key>name</key><string>symbols</string>
+		<key>scope</key><string>entity.name.class.state.lsl</string>
+		<key>settings</key>
+		<dict>
+			<key>showInSymbolList</key><integer>1</integer>
+			<key>showInIndexedSymbolList</key><integer>1</integer>
+			<key>symbolTransformation</key><string>s/\s*(.+)/[state] $1/</string>
 		</dict>
 	</dict>
 </plist>
