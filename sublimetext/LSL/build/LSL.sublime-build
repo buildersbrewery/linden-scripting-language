@@ -3,14 +3,14 @@
 	"selector": "source.lsl",
 	"windows":
 	{
-		"cmd": ["$packages\\LSL\\bin\\windows\\lslint.exe", "-p", "$file"]
+		"cmd": ["${packages}\\LSL\\bin\\windows\\lslint.exe", "-p", "${file}"]
 	},
 	"osx":
 	{
-		"cmd": ["$packages/LSL/bin/osx/lslint", "-p", "$file"]
+		"cmd": ["${packages}/LSL/bin/osx/lslint", "-p", "${file}"]
 	},
 	"linux":
 	{
-		"cmd": ["$packages/LSL/bin/linux/lslint", "-p", "$file"]
+		"cmd": ["${packages}/LSL/bin/linux/lslint", "-p", "${file}"]
 	}
 }
