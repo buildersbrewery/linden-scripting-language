@@ -160,30 +160,30 @@ contexts:
     - match: '\b({{lsl_constant_float}})\b'
       comment: 'https://wiki.secondlife.com/wiki/Category:LSL_Float'
       captures:
-        1: constant.language.built-in.float.lsl
+        1: constant.language.builtin.float.lsl
     - match: '\b({{lsl_constant_integer}})\b'
       comment: 'https://wiki.secondlife.com/wiki/Category:LSL_Integer'
       captures:
-        1: constant.language.built-in.integer.lsl
+        1: constant.language.builtin.integer.lsl
     - match: '\b({{lsl_constant_integer_boolean}})\b'
       captures:
-        1: constant.language.built-in.integer.boolean.lsl
+        1: constant.language.builtin.integer.boolean.lsl
     - match: '\b({{lsl_constant_rotation}})\b'
       comment: 'https://wiki.secondlife.com/wiki/Category:LSL_Rotation'
       captures:
-        1: constant.language.built-in.rotation.lsl
+        1: constant.language.builtin.rotation.lsl
     - match: '\b({{lsl_constant_string}})\b'
       comment: 'https://wiki.secondlife.com/wiki/Category:LSL_String'
       captures:
-        1: constant.language.built-in.string.lsl
+        1: constant.language.builtin.string.lsl
     - match: '\b({{lsl_constant_vector}})\b'
       comment: 'https://wiki.secondlife.com/wiki/Category:LSL_Vector'
       captures:
-        1: constant.language.built-in.vector.lsl
+        1: constant.language.builtin.vector.lsl
   lsl_functions:
     - match: '\b({{lsl_function}})\b'
       comment: 'https://wiki.secondlife.com/wiki/Category:LSL_Functions'
-      scope: support.function.built-in.lsl
+      scope: support.function.builtin.lsl
   numbers:
     - match: \b(?i:(\d+\.\d*(e[\-\+]?\d+)?))(?=[^A-Za-z_])
       scope: constant.numeric.float.lsl
