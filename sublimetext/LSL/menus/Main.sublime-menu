@@ -27,12 +27,12 @@
                             { "caption": "-" },
                             {
                                 "command": "change_editor_scheme",
-                                "caption": "Use LindenLab Viewer color scheme",
+                                "caption": "Use 'LindenLab Viewer' color scheme.",
                                 "checkbox": false
                             },
                             {
                                 "command": "change_style",
-                                "caption": "Use K&R Indent Style instead of Allman Style",
+                                "caption": "Use 'K & R' instead of 'Allman' indent style.",
                                 "checkbox": false
                             }
                         ]
