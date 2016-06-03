@@ -76,35 +76,35 @@
             </dict>
         </dict>
         <dict>
-            <key>scope</key><string>support.function.built-in</string>
+            <key>scope</key><string>support.function.builtin</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key><string>#820124</string>
             </dict>
         </dict>
         <dict>
-            <key>scope</key><string>constant.language.built-in.float</string>
+            <key>scope</key><string>constant.language.builtin.float</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key><string>#4c1a80</string>
             </dict>
         </dict>
         <dict>
-            <key>scope</key><string>constant.language.integer, constant.language.built-in.integer, constant.language.built-in.integer.boolean</string>
+            <key>scope</key><string>constant.language.integer, constant.language.builtin.integer, constant.language.builtin.integer.boolean</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key><string>#242687</string>
             </dict>
         </dict>
         <dict>
-            <key>scope</key><string>constant.language.string, constant.language.built-in.string</string>
+            <key>scope</key><string>constant.language.string, constant.language.builtin.string</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key><string>#336699</string>
             </dict>
         </dict>
         <dict>
-            <key>scope</key><string>constant.language.built-in.rotation, constant.language.built-in.vector</string>
+            <key>scope</key><string>constant.language.builtin.rotation, constant.language.builtin.vector</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key><string>#774477</string>
