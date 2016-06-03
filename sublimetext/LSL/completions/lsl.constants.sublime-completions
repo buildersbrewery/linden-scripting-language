@@ -2,7 +2,6 @@
     "scope": "source.lsl - meta.class.state.body, meta.function.user-defined.body.lsl, meta.event.body.lsl",
     "completions":
     [
-       
         { "trigger": "ACTIVE\tint (0x2 = 2)", "contents": "ACTIVE" },
         { "trigger": "AGENT\tint (0x1 = 1 = AGENT_BY_LEGACY_NAME)", "contents": "AGENT" },
         { "trigger": "AGENT_ALWAYS_RUN\tint (0x1000 = 4096)", "contents": "AGENT_ALWAYS_RUN" },
