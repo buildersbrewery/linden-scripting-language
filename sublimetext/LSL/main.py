@@ -165,9 +165,9 @@ class LslCommand(sublime_plugin.EventListener):
                         if result.tag != 'param':
                             tooltipRows = []
                             if result.tag == 'function' or result.tag == 'constant':
-                                tooltipRows.append('## (%s) <a href="https://wiki.secondlife.com/w/index.php?title=Special:Search&go=Go&search=%s">%s</a>' % (result.get('type', 'void'), result.get('name'), result.get('name')))
+                                tooltipRows.append('### (%s) <a href="https://wiki.secondlife.com/w/index.php?title=Special:Search&go=Go&search=%s">%s</a>' % (result.get('type', 'void'), result.get('name'), result.get('name')))
                             else:
-                                tooltipRows.append('## <a href="https://wiki.secondlife.com/w/index.php?title=Special:Search&go=Go&search=%s">%s</a>' % (result.get('name'), result.get('name')))
+                                tooltipRows.append('### <a href="https://wiki.secondlife.com/w/index.php?title=Special:Search&go=Go&search=%s">%s</a>' % (result.get('name'), result.get('name')))
                             if result.tag == 'constant':
                                 tooltipRows.append(' ')
                                 tooltipRows.append('**Value**: %s' % str(result.get('value')))
@@ -183,12 +183,12 @@ class LslCommand(sublime_plugin.EventListener):
                             if result.tag == 'function' or result.tag == 'event':
                                 if result.findall('./param') != []:
                                     tooltipRows.append(' ')
-                                    tooltipRows.append('### Parameters')
+                                    tooltipRows.append('#### Parameters')
                                     for param in result.iter('param'):
                                         tooltipRows.append('* (%s) **%s**' % (param.get('type'), param.get('name')))
                             if result.find('description').text is not None:
                                 tooltipRows.append(' ')
-                                tooltipRows.append('### Description')
+                                tooltipRows.append('#### Description')
                                 tooltipRows.append(' ')
                                 tooltipRows.append('%s' % result.find('description').text.strip())
 #                           add version info
