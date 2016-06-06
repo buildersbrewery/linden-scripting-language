@@ -10,8 +10,6 @@ from time import time
 import webbrowser
 import xml.etree.ElementTree as etree
 
-import mdpopups
-
 Pref = None
 settings = {}
 kwdb = None
@@ -22,6 +20,9 @@ INDENT_STYLE_K_AND_R = None
 
 if sublime.version().startswith('2'):
     plugin_loaded()
+
+if 3070 <= int(sublime.version()):
+    import mdpopups
 
 def plugin_loaded():
     global Pref
