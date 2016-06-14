@@ -16,8 +16,7 @@
                         [
                             {
                                 "caption": "Settings – Default",
-                                "command": "open_file",
-                                "args": {"file": "${packages}/LSL/settings/LSL.sublime-settings"}
+                                "command": "open_lsl_default_settings"
                             },
                             {
                                 "caption": "Settings – User",
