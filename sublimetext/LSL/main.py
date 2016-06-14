@@ -121,6 +121,17 @@ class ChangeStyleCommand(sublime_plugin.WindowCommand):
 
         return self._is_checked
 
+class OpenLslDefaultSettingsCommand(sublime_plugin.WindowCommand):
+
+    def run(self):
+        settings_read_only = sublime.load_resource('Packages/LSL/settings/LSL.sublime-settings')
+        v = sublime.active_window().new_file()
+        v.run_command('append', {'characters': settings_read_only})
+        v.set_name('LSL Settings - Default (read-only)')
+        v.set_syntax_file('Packages/JavaScript/JSON.sublime-syntax')
+        v.set_scratch(True)
+        v.set_read_only(True)
+
 class LslCommand(sublime_plugin.EventListener):
 
     def on_activated(self, view):
