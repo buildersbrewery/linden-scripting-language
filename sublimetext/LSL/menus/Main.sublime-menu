@@ -1,5 +1,7 @@
 [
     {
+        "caption": "Preferences",
+        "mnemonic": "n",
         "id": "preferences",
         "children":
         [
@@ -11,17 +13,17 @@
                 [
                     {
                         "caption": "LSL",
-                        "mnemonic": "L",
                         "children":
                         [
                             {
-                                "caption": "Settings – Default",
-                                "command": "open_lsl_default_settings"
+                                "command": "open_file",
+                                "args": { "file": "${packages}/LSL/settings/LSL.sublime-settings" },
+                                "caption": "Settings – Default"
                             },
                             {
-                                "caption": "Settings – User",
                                 "command": "open_file",
-                                "args": {"file": "${packages}/User/LSL.sublime-settings"}
+                                "args": { "file": "${packages}/User/LSL.sublime-settings" },
+                                "caption": "Settings – User"
                             },
                             { "caption": "-" },
                             {
