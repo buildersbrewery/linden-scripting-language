@@ -17,7 +17,7 @@ INDENT_STYLE_K_AND_R = None
 if sublime.version().startswith('2'):
     plugin_loaded()
 
-if 3070 <= int(sublime.version()):
+if 3080 <= int(sublime.version()):
     import mdpopups
 
 def plugin_loaded():
@@ -107,17 +107,17 @@ class LslCommand(sublime_plugin.EventListener):
 
     def on_activated(self, view):
 
-        if 3070 <= int(sublime.version()):
+        if 3080 <= int(sublime.version()):
             self.run(view)
 
     def on_modified(self, view):
 
-        if 3070 <= int(sublime.version()):
+        if 3080 <= int(sublime.version()):
             self.run(view)
 
     def on_selection_modified(self, view):
 
-        if 3070 <= int(sublime.version()):
+        if 3080 <= int(sublime.version()):
             self.run(view)
 
     def run(self, view):
