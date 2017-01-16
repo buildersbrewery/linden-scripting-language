@@ -1,7 +1,7 @@
 {
     "name": "language-lsl",
     "main": "./lib/lsl-snippets",
-    "version": "1.0",
+    "version": "1.0.0",
     "description": "Linden Scripting Language (LSL) syntax grammar, syntax highlighting and snippet files.",
     "repository": {
         "type": "git",
