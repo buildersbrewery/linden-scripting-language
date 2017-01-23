@@ -31,6 +31,9 @@
     <Template Name="HTTP_PRAGMA_NO_CACHE"           Comments="1" Strings="1">HTTP_PRAGMA_NO_CACHE, [+integer send_header+], ^</Template>
     <Template Name="HTTP_VERBOSE_THROTTLE"          Comments="1" Strings="1">HTTP_VERBOSE_THROTTLE, [+integer noisy+], ^</Template>
     <Template Name="HTTP_VERIFY_CERT"               Comments="1" Strings="1">HTTP_VERIFY_CERT, [+integer verify+], ^</Template>
+    <Template Name="PRIM_ALLOW_UNSIT"               Comments="1" Strings="1">PRIM_ALLOW_UNSIT, [+integer flag+], ^</Template>
+    <Template Name="PRIM_SCRIPTED_SIT_ONLY"         Comments="1" Strings="1">PRIM_SCRIPTED_SIT_ONLY, [+integer flag+], ^</Template>
+    <Template Name="PRIM_SIT_TARGET"                Comments="1" Strings="1">PRIM_SIT_TARGET, [+integer active+], [+vector offset+], [+rotation rot+], ^</Template>
     <Template Name="RC_DATA_FLAGS"                  Comments="1" Strings="1">RC_DATA_FLAGS, [+integer flags+], ^</Template>
     <Template Name="RC_DETECT_PHANTOM"              Comments="1" Strings="1">RC_DETECT_PHANTOM, [+integer dectedPhantom+], ^</Template>
     <Template Name="RC_MAX_HITS"                    Comments="1" Strings="1">RC_MAX_HITS, [+integer maxHits+], ^</Template>
@@ -647,6 +650,7 @@ while ([+condition+]);</Template>
     <Template Name="llShout"                        Comments="1" Strings="1">llShout([+integer channel+], [+string msg+]);
 ^</Template>
     <Template Name="llSin"                          Comments="1" Strings="1">llSin([+float theta+])</Template>
+    <Template Name="llSitOnLink"                    Comments="1" Strings="1">llSitOnLink([+key agent_id+], [+integer link+])</Template>
     <Template Name="llSitTarget"                    Comments="1" Strings="1">llSitTarget([+vector offset+], [+rotation rot+]);
 ^</Template>
     <Template Name="llSleep"                        Comments="1" Strings="1">llSleep([+float sec+]);
