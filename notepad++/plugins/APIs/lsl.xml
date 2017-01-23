@@ -258,12 +258,14 @@
         <KeyWord name="MASK_OWNER" func="no" />
         <KeyWord name="NULL_KEY" func="no" />
         <KeyWord name="OBJECT_ATTACHED_POINT" func="no" />
+        <KeyWord name="OBJECT_ATTACHED_SLOTS_AVAILABLE" func="no" />
         <KeyWord name="OBJECT_BODY_SHAPE_TYPE" func="no" />
         <KeyWord name="OBJECT_CHARACTER_TIME" func="no" />
         <KeyWord name="OBJECT_CLICK_ACTION" func="no" />
         <KeyWord name="OBJECT_CREATOR" func="no" />
         <KeyWord name="OBJECT_DESC" func="no" />
         <KeyWord name="OBJECT_GROUP" func="no" />
+        <KeyWord name="OBJECT_GROUP_TAG" func="no" />
         <KeyWord name="OBJECT_HOVER_HEIGHT" func="no" />
         <KeyWord name="OBJECT_LAST_OWNER_ID" func="no" />
         <KeyWord name="OBJECT_NAME" func="no" />
@@ -288,6 +290,7 @@
         <KeyWord name="OBJECT_SCRIPT_TIME" func="no" />
         <KeyWord name="OBJECT_SERVER_COST" func="no" />
         <KeyWord name="OBJECT_STREAMING_COST" func="no" />
+        <KeyWord name="OBJECT_TEMP_ATTACHED" func="no" />
         <KeyWord name="OBJECT_TEMP_ON_REZ" func="no" />
         <KeyWord name="OBJECT_TOTAL_INVENTORY_COUNT" func="no" />
         <KeyWord name="OBJECT_TOTAL_SCRIPT_COUNT" func="no" />
@@ -344,10 +347,10 @@
         <KeyWord name="PARCEL_MEDIA_COMMAND_TYPE" func="no" />
         <KeyWord name="PARCEL_MEDIA_COMMAND_UNLOAD" func="no" />
         <KeyWord name="PARCEL_MEDIA_COMMAND_URL" func="no" />
+        <KeyWord name="PASSIVE" func="no" />
         <KeyWord name="PASS_ALWAYS" func="no" />
         <KeyWord name="PASS_IF_NOT_HANDLED" func="no" />
         <KeyWord name="PASS_NEVER" func="no" />
-        <KeyWord name="PASSIVE" func="no" />
         <KeyWord name="PATROL_PAUSE_AT_WAYPOINTS" func="no" />
         <KeyWord name="PAYMENT_INFO_ON_FILE" func="no" />
         <KeyWord name="PAYMENT_INFO_USED" func="no" />
@@ -372,6 +375,7 @@
         <KeyWord name="PI" func="no" />
         <KeyWord name="PING_PONG" func="no" />
         <KeyWord name="PI_BY_TWO" func="no" />
+        <KeyWord name="PRIM_ALLOW_UNSIT" func="no" />
         <KeyWord name="PRIM_ALPHA_MODE" func="no" />
         <KeyWord name="PRIM_ALPHA_MODE_BLEND" func="no" />
         <KeyWord name="PRIM_ALPHA_MODE_EMISSIVE" func="no" />
@@ -455,6 +459,7 @@
         <KeyWord name="PRIM_POS_LOCAL" func="no" />
         <KeyWord name="PRIM_ROTATION" func="no" />
         <KeyWord name="PRIM_ROT_LOCAL" func="no" />
+        <KeyWord name="PRIM_SCRIPTED_SIT_ONLY" func="no" />
         <KeyWord name="PRIM_SCULPT_FLAG_INVERT" func="no" />
         <KeyWord name="PRIM_SCULPT_FLAG_MIRROR" func="no" />
         <KeyWord name="PRIM_SCULPT_TYPE_CYLINDER" func="no" />
@@ -466,6 +471,7 @@
         <KeyWord name="PRIM_SHINY_LOW" func="no" />
         <KeyWord name="PRIM_SHINY_MEDIUM" func="no" />
         <KeyWord name="PRIM_SHINY_NONE" func="no" />
+        <KeyWord name="PRIM_SIT_TARGET" func="no" />
         <KeyWord name="PRIM_SIZE" func="no" />
         <KeyWord name="PRIM_SLICE" func="no" />
         <KeyWord name="PRIM_SPECULAR" func="no" />
@@ -586,6 +592,13 @@
         <KeyWord name="SCALE" func="no" />
         <KeyWord name="SCRIPTED" func="no" />
         <KeyWord name="SIM_STAT_PCT_CHARS_STEPPED" func="no" />
+        <KeyWord name="SIT_INVALID_AGENT" func="no" />
+        <KeyWord name="SIT_INVALID_LINK" func="no" />
+        <KeyWord name="SIT_INVALID_OBJECT" func="no" />
+        <KeyWord name="SIT_NOT_EXPERIENCE" func="no" />
+        <KeyWord name="SIT_NO_ACCESS" func="no" />
+        <KeyWord name="SIT_NO_EXPERIENCE_PERMISSION" func="no" />
+        <KeyWord name="SIT_NO_SIT_TARGET" func="no" />
         <KeyWord name="SMOOTH" func="no" />
         <KeyWord name="SQRT2" func="no" />
         <KeyWord name="STATUS_BLOCK_GRAB" func="no" />
@@ -3831,6 +3844,26 @@ continuous push.">
         <KeyWord name="llSin" func="yes">
             <Overload retVal="float" descr="Returns a float that is the sine of theta.">
                 <Param name="float theta" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="llSitOnLink" func="yes">
+            <Overload retVal="integer" descr="The avatar specified by agent_id is forced to sit on the sit target of the prim indicated by the link parameter. If the specified link is already occupied, the simulator searches down the chain of prims in the link set looking for an available sit target.
+
+If successful, this method returns 1.
+
+If the function fails, it returns a negative number constant.
+
+Link constants that indicate a single prim may be used for the link parameter. These are LINK_ROOT and LINK_THIS. Other constants such as LINK_SET, LINK_CHILDREN, LINK_ALL_OTHERS will return an INVALID_LINK error.
+
+This method must be called from an experience enabled script running on land that has enabled the experience key. If these conditions are not met this method returns a NOT_EXPERIENCE error.
+
+The targeted avatar must also have accepted the experience. If the user is not participating in the experience this method returns NO_EXPERIENCE_PERMISSION. If the avatar id can not be found or is not over land that has enabled the experience this method returns INVALID_AGENT.
+
+If there are no valid sit targets remaining in the linkset this method returns NO_SIT_TARGET and no action is taken with the avatar.
+
+If the avatar does not have access to the parcel containing the prim running this script, this call fails.">
+                <Param name="key agent_id" />
+                <Param name="integer link" />
             </Overload>
         </KeyWord>
         <KeyWord name="llSitTarget" func="yes">
