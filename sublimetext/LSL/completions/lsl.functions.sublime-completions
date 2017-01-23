@@ -372,6 +372,7 @@
         { "trigger": "llSetVelocity\t(void) func", "contents": "llSetVelocity(${1:vector velocity}, ${2:integer local});" },
         { "trigger": "llShout\t(void) func", "contents": "llShout(${1:integer channel}, ${2:string msg});" },
         { "trigger": "llSin\t(float) func", "contents": "llSin(${1:float theta})" },
+        { "trigger": "llSitOnLink\t(int) func", "contents": "llSitOnLink(${1:key agent_id}, ${2:integer link})" },
         { "trigger": "llSitTarget\t(void) func", "contents": "llSitTarget(${1:vector offset}, ${2:rotation rot});" },
         { "trigger": "llSleep\t(void) func", "contents": "llSleep(${1:float sec});" },
         { "trigger": "llSqrt\t(float) func", "contents": "llSqrt(${1:float val})" },
