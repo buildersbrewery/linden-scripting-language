@@ -3,10 +3,10 @@
         <description>
             <MMString:loadString id="LSL_codehints_2" />
         </description>
-        <menu pattern='@' additionaldismisschars="ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&amp;*-+={}|[]\:;'<>?,./`~()" DOCTYPES="LSL" allowwhitespaceprefix="true" displayrestriction="lsl">
+        <menu pattern='@' additionaldismisschars="ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&amp;*-+={}|[]\:;'&lt;&gt;?,./`~()" DOCTYPES="LSL" allowwhitespaceprefix="true" displayrestriction="lsl">
             <menuitem label="@include" value="include " icon="shared/mm/images/hintMisc.gif" />
         </menu>
-        <menu pattern='@include ' additionaldismisschars="ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&amp;*-+={}|[]\:;'<>?,./`~()" DOCTYPES="LSL" allowwhitespaceprefix="true" displayrestriction="lsl">
+        <menu pattern='@include ' additionaldismisschars="ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&amp;*-+={}|[]\:;'&lt;&gt;?,./`~()" DOCTYPES="LSL" allowwhitespaceprefix="true" displayrestriction="lsl">
             <menuitem label="something()" value="something(" icon="shared/mm/images/hintMisc.gif" />
         </menu>
         <menu pattern='' additionaldismisschars="" DOCTYPES="LSL" allowwhitespaceprefix="true" displayrestriction="lsl">
@@ -374,6 +374,7 @@
         <function pattern="llSHA1String(string src)" object="LSL" doctypes="LSL" caseSensitive="true" />
         <function pattern="llShout(integer channel, string msg)" object="LSL" doctypes="LSL" caseSensitive="true" />
         <function pattern="llSin(float theta)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llSitOnLink(key agent_id, integer link)" object="LSL" doctypes="LSL" caseSensitive="true" />
         <function pattern="llSitTarget(vector offset, rotation rot)" object="LSL" doctypes="LSL" caseSensitive="true" />
         <function pattern="llSleep(float sec)" object="LSL" doctypes="LSL" caseSensitive="true" />
         <function pattern="llSqrt(float val)" object="LSL" doctypes="LSL" caseSensitive="true" />
@@ -449,7 +450,25 @@
         <string id="ATTACH_BELLY" value="" doctypes="LSL" caseSensitive="true" />
         <string id="ATTACH_CHEST" value="" doctypes="LSL" caseSensitive="true" />
         <string id="ATTACH_CHIN" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_FACE_JAW" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_FACE_JAW" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_FACE_LEAR" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_FACE_LEAR" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_FACE_LEYE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_FACE_LEYE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_FACE_REAR" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_FACE_REAR" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_FACE_REYE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_FACE_REYE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_FACE_TOUNGE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_FACE_TOUNGE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_GROIN" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_GROIN" value="" doctypes="LSL" caseSensitive="true" />
         <string id="ATTACH_HEAD" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_HIND_LFOOT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_HIND_LFOOT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_HIND_RFOOT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_HIND_RFOOT" value="" doctypes="LSL" caseSensitive="true" />
         <string id="ATTACH_HUD_BOTTOM" value="" doctypes="LSL" caseSensitive="true" />
         <string id="ATTACH_HUD_BOTTOM_LEFT" value="" doctypes="LSL" caseSensitive="true" />
         <string id="ATTACH_HUD_BOTTOM_RIGHT" value="" doctypes="LSL" caseSensitive="true" />
@@ -463,12 +482,16 @@
         <string id="ATTACH_LEYE" value="" doctypes="LSL" caseSensitive="true" />
         <string id="ATTACH_LFOOT" value="" doctypes="LSL" caseSensitive="true" />
         <string id="ATTACH_LHAND" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_LHAND_RING1" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_LHAND_RING1" value="" doctypes="LSL" caseSensitive="true" />
         <string id="ATTACH_LHIP" value="" doctypes="LSL" caseSensitive="true" />
         <string id="ATTACH_LLARM" value="" doctypes="LSL" caseSensitive="true" />
         <string id="ATTACH_LLLEG" value="" doctypes="LSL" caseSensitive="true" />
         <string id="ATTACH_LSHOULDER" value="" doctypes="LSL" caseSensitive="true" />
         <string id="ATTACH_LUARM" value="" doctypes="LSL" caseSensitive="true" />
         <string id="ATTACH_LULEG" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_LWING" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_LWING" value="" doctypes="LSL" caseSensitive="true" />
         <string id="ATTACH_MOUTH" value="" doctypes="LSL" caseSensitive="true" />
         <string id="ATTACH_NECK" value="" doctypes="LSL" caseSensitive="true" />
         <string id="ATTACH_NOSE" value="" doctypes="LSL" caseSensitive="true" />
@@ -477,6 +500,8 @@
         <string id="ATTACH_REYE" value="" doctypes="LSL" caseSensitive="true" />
         <string id="ATTACH_RFOOT" value="" doctypes="LSL" caseSensitive="true" />
         <string id="ATTACH_RHAND" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_RHAND_RING1" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_RHAND_RING1" value="" doctypes="LSL" caseSensitive="true" />
         <string id="ATTACH_RHIP" value="" doctypes="LSL" caseSensitive="true" />
         <string id="ATTACH_RIGHT_PEC" value="" doctypes="LSL" caseSensitive="true" />
         <string id="ATTACH_RLARM" value="" doctypes="LSL" caseSensitive="true" />
@@ -484,6 +509,12 @@
         <string id="ATTACH_RSHOULDER" value="" doctypes="LSL" caseSensitive="true" />
         <string id="ATTACH_RUARM" value="" doctypes="LSL" caseSensitive="true" />
         <string id="ATTACH_RULEG" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_RWING" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_RWING" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_TAIL_BASE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_TAIL_BASE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_TAIL_TIP" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_TAIL_TIP" value="" doctypes="LSL" caseSensitive="true" />
         <string id="AVOID_CHARACTERS" value="" doctypes="LSL" caseSensitive="true" />
         <string id="AVOID_DYNAMIC_OBSTACLES" value="" doctypes="LSL" caseSensitive="true" />
         <string id="AVOID_NONE" value="" doctypes="LSL" caseSensitive="true" />
@@ -649,12 +680,14 @@
         <string id="MASK_NEXT" value="" doctypes="LSL" caseSensitive="true" />
         <string id="MASK_OWNER" value="" doctypes="LSL" caseSensitive="true" />
         <string id="OBJECT_ATTACHED_POINT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="OBJECT_ATTACHED_SLOTS_AVAILABLE" value="" doctypes="LSL" caseSensitive="true" />
         <string id="OBJECT_BODY_SHAPE_TYPE" value="" doctypes="LSL" caseSensitive="true" />
         <string id="OBJECT_CHARACTER_TIME" value="" doctypes="LSL" caseSensitive="true" />
         <string id="OBJECT_CLICK_ACTION" value="" doctypes="LSL" caseSensitive="true" />
         <string id="OBJECT_CREATOR" value="" doctypes="LSL" caseSensitive="true" />
         <string id="OBJECT_DESC" value="" doctypes="LSL" caseSensitive="true" />
         <string id="OBJECT_GROUP" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="OBJECT_GROUP_TAG" value="" doctypes="LSL" caseSensitive="true" />
         <string id="OBJECT_HOVER_HEIGHT" value="" doctypes="LSL" caseSensitive="true" />
         <string id="OBJECT_LAST_OWNER_ID" value="" doctypes="LSL" caseSensitive="true" />
         <string id="OBJECT_NAME" value="" doctypes="LSL" caseSensitive="true" />
@@ -679,6 +712,7 @@
         <string id="OBJECT_SCRIPT_TIME" value="" doctypes="LSL" caseSensitive="true" />
         <string id="OBJECT_SERVER_COST" value="" doctypes="LSL" caseSensitive="true" />
         <string id="OBJECT_STREAMING_COST" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="OBJECT_TEMP_ATTACHED" value="" doctypes="LSL" caseSensitive="true" />
         <string id="OBJECT_TEMP_ON_REZ" value="" doctypes="LSL" caseSensitive="true" />
         <string id="OBJECT_TOTAL_INVENTORY_COUNT" value="" doctypes="LSL" caseSensitive="true" />
         <string id="OBJECT_TOTAL_SCRIPT_COUNT" value="" doctypes="LSL" caseSensitive="true" />
@@ -761,6 +795,7 @@
         <string id="PERMISSION_TRACK_CAMERA" value="" doctypes="LSL" caseSensitive="true" />
         <string id="PERMISSION_TRIGGER_ANIMATION" value="" doctypes="LSL" caseSensitive="true" />
         <string id="PING_PONG" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_ALLOW_UNSIT" value="" doctypes="LSL" caseSensitive="true" />
         <string id="PRIM_ALPHA_MODE" value="" doctypes="LSL" caseSensitive="true" />
         <string id="PRIM_ALPHA_MODE_BLEND" value="" doctypes="LSL" caseSensitive="true" />
         <string id="PRIM_ALPHA_MODE_EMISSIVE" value="" doctypes="LSL" caseSensitive="true" />
@@ -844,6 +879,7 @@
         <string id="PRIM_POSITION" value="" doctypes="LSL" caseSensitive="true" />
         <string id="PRIM_ROT_LOCAL" value="" doctypes="LSL" caseSensitive="true" />
         <string id="PRIM_ROTATION" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_SCRIPTED_SIT_ONLY" value="" doctypes="LSL" caseSensitive="true" />
         <string id="PRIM_SCULPT_FLAG_INVERT" value="" doctypes="LSL" caseSensitive="true" />
         <string id="PRIM_SCULPT_FLAG_MIRROR" value="" doctypes="LSL" caseSensitive="true" />
         <string id="PRIM_SCULPT_TYPE_CYLINDER" value="" doctypes="LSL" caseSensitive="true" />
@@ -855,6 +891,7 @@
         <string id="PRIM_SHINY_LOW" value="" doctypes="LSL" caseSensitive="true" />
         <string id="PRIM_SHINY_MEDIUM" value="" doctypes="LSL" caseSensitive="true" />
         <string id="PRIM_SHINY_NONE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_SIT_TARGET" value="" doctypes="LSL" caseSensitive="true" />
         <string id="PRIM_SIZE" value="" doctypes="LSL" caseSensitive="true" />
         <string id="PRIM_SLICE" value="" doctypes="LSL" caseSensitive="true" />
         <string id="PRIM_SPECULAR" value="" doctypes="LSL" caseSensitive="true" />
@@ -974,6 +1011,13 @@
         <string id="SCALE" value="" doctypes="LSL" caseSensitive="true" />
         <string id="SCRIPTED" value="" doctypes="LSL" caseSensitive="true" />
         <string id="SIM_STAT_PCT_CHARS_STEPPED" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="SIT_INVALID_AGENT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="SIT_INVALID_LINK" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="SIT_INVALID_OBJECT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="SIT_NOT_EXPERIENCE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="SIT_NO_ACCESS" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="SIT_NO_EXPERIENCE_PERMISSION" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="SIT_NO_SIT_TARGET" value="" doctypes="LSL" caseSensitive="true" />
         <string id="SMOOTH" value="" doctypes="LSL" caseSensitive="true" />
         <string id="STATUS_BLOCK_GRAB" value="" doctypes="LSL" caseSensitive="true" />
         <string id="STATUS_BLOCK_GRAB_OBJECT" value="" doctypes="LSL" caseSensitive="true" />
