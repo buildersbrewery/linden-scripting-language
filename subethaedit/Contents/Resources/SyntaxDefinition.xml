@@ -503,6 +503,7 @@
                 <string>llSetVelocity</string>
                 <string>llShout</string>
                 <string>llSin</string>
+                <string>llSitOnLink</string>
                 <string>llSitTarget</string>
                 <string>llSleep</string>
                 <string>llSqrt</string>
@@ -800,12 +801,14 @@
                 <string>MASK_OWNER</string>
                 <string>NULL_KEY</string>
                 <string>OBJECT_ATTACHED_POINT</string>
+                <string>OBJECT_ATTACHED_SLOTS_AVAILABLE</string>
                 <string>OBJECT_BODY_SHAPE_TYPE</string>
                 <string>OBJECT_CHARACTER_TIME</string>
                 <string>OBJECT_CLICK_ACTION</string>
                 <string>OBJECT_CREATOR</string>
                 <string>OBJECT_DESC</string>
                 <string>OBJECT_GROUP</string>
+                <string>OBJECT_GROUP_TAG</string>
                 <string>OBJECT_HOVER_HEIGHT</string>
                 <string>OBJECT_LAST_OWNER_ID</string>
                 <string>OBJECT_NAME</string>
@@ -830,6 +833,7 @@
                 <string>OBJECT_SCRIPT_TIME</string>
                 <string>OBJECT_SERVER_COST</string>
                 <string>OBJECT_STREAMING_COST</string>
+                <string>OBJECT_TEMP_ATTACHED</string>
                 <string>OBJECT_TEMP_ON_REZ</string>
                 <string>OBJECT_TOTAL_INVENTORY_COUNT</string>
                 <string>OBJECT_TOTAL_SCRIPT_COUNT</string>
@@ -886,10 +890,10 @@
                 <string>PARCEL_MEDIA_COMMAND_TYPE</string>
                 <string>PARCEL_MEDIA_COMMAND_UNLOAD</string>
                 <string>PARCEL_MEDIA_COMMAND_URL</string>
+                <string>PASSIVE</string>
                 <string>PASS_ALWAYS</string>
                 <string>PASS_IF_NOT_HANDLED</string>
                 <string>PASS_NEVER</string>
-                <string>PASSIVE</string>
                 <string>PATROL_PAUSE_AT_WAYPOINTS</string>
                 <string>PAYMENT_INFO_ON_FILE</string>
                 <string>PAYMENT_INFO_USED</string>
@@ -914,6 +918,7 @@
                 <string>PI</string>
                 <string>PING_PONG</string>
                 <string>PI_BY_TWO</string>
+                <string>PRIM_ALLOW_UNSIT</string>
                 <string>PRIM_ALPHA_MODE</string>
                 <string>PRIM_ALPHA_MODE_BLEND</string>
                 <string>PRIM_ALPHA_MODE_EMISSIVE</string>
@@ -997,6 +1002,7 @@
                 <string>PRIM_POS_LOCAL</string>
                 <string>PRIM_ROTATION</string>
                 <string>PRIM_ROT_LOCAL</string>
+                <string>PRIM_SCRIPTED_SIT_ONLY</string>
                 <string>PRIM_SCULPT_FLAG_INVERT</string>
                 <string>PRIM_SCULPT_FLAG_MIRROR</string>
                 <string>PRIM_SCULPT_TYPE_CYLINDER</string>
@@ -1008,6 +1014,7 @@
                 <string>PRIM_SHINY_LOW</string>
                 <string>PRIM_SHINY_MEDIUM</string>
                 <string>PRIM_SHINY_NONE</string>
+                <string>PRIM_SIT_TARGET</string>
                 <string>PRIM_SIZE</string>
                 <string>PRIM_SLICE</string>
                 <string>PRIM_SPECULAR</string>
@@ -1128,6 +1135,13 @@
                 <string>SCALE</string>
                 <string>SCRIPTED</string>
                 <string>SIM_STAT_PCT_CHARS_STEPPED</string>
+                <string>SIT_INVALID_AGENT</string>
+                <string>SIT_INVALID_LINK</string>
+                <string>SIT_INVALID_OBJECT</string>
+                <string>SIT_NOT_EXPERIENCE</string>
+                <string>SIT_NO_ACCESS</string>
+                <string>SIT_NO_EXPERIENCE_PERMISSION</string>
+                <string>SIT_NO_SIT_TARGET</string>
                 <string>SMOOTH</string>
                 <string>SQRT2</string>
                 <string>STATUS_BLOCK_GRAB</string>
