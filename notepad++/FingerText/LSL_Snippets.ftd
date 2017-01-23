@@ -85,6 +85,15 @@ HTTP_VERBOSE_THROTTLE, $[![(lis)FALSE|TRUE|integer boolean]!], $[0[]0][>END<]!$[
 HTTP_VERIFY_CERT
 Ext:lsl
 HTTP_VERIFY_CERT, $[![(lis)FALSE|TRUE|integer boolean]!], $[0[]0][>END<]!$[FingerTextData FingerTextData]@#
+PRIM_ALLOW_UNSIT
+Ext:lsl
+PRIM_ALLOW_UNSIT, $[![integer flags]!], $[0[]0][>END<]!$[FingerTextData FingerTextData]@#
+PRIM_SCRIPTED_SIT_ONLY
+Ext:lsl
+PRIM_SCRIPTED_SIT_ONLY, $[![integer flags]!], $[0[]0][>END<]!$[FingerTextData FingerTextData]@#
+PRIM_SIT_TARGET
+Ext:lsl
+PRIM_SIT_TARGET, $[![integer active]!], $[![vector offset]!], $[![rotation rot]!], $[0[]0][>END<]!$[FingerTextData FingerTextData]@#
 RC_DATA_FLAGS
 Ext:lsl
 RC_DATA_FLAGS, $[![integer flags]!], $[0[]0][>END<]!$[FingerTextData FingerTextData]@#
@@ -1356,6 +1365,9 @@ llShout($[![(lis)PUBLIC_CHANNEL|DEBUG_CHANNEL|integer channel]!], $[![string msg
 llSin
 Ext:lsl
 llSin($[![float theta]!])[>END<]!$[FingerTextData FingerTextData]@#
+llSitOnLink
+Ext:lsl
+llSitOnLink($[![key agent_id]!], $[![integer link]!])[>END<]!$[FingerTextData FingerTextData]@#
 llSitTarget
 Ext:lsl
 llSitTarget($[![vector offset]!], $[![rotation rot]!]);[>END<]!$[FingerTextData FingerTextData]@#
