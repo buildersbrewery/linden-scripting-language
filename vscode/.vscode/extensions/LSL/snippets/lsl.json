@@ -1276,6 +1276,11 @@
             "body": "OBJECT_ATTACHED_POINT",
             "description": "int (19)"
         },
+        "OBJECT_ATTACHED_SLOTS_AVAILABLE": {
+            "prefix": "OBJECT_ATTACHED_SLOTS_AVAILABLE",
+            "body": "OBJECT_ATTACHED_SLOTS_AVAILABLE",
+            "description": "int (35)"
+        },
         "OBJECT_BODY_SHAPE_TYPE": {
             "prefix": "OBJECT_BODY_SHAPE_TYPE",
             "body": "OBJECT_BODY_SHAPE_TYPE",
@@ -1305,6 +1310,11 @@
             "prefix": "OBJECT_GROUP",
             "body": "OBJECT_GROUP",
             "description": "int (25)"
+        },
+        "OBJECT_GROUP_TAG": {
+            "prefix": "OBJECT_GROUP_TAG",
+            "body": "OBJECT_GROUP_TAG",
+            "description": "int (33)"
         },
         "OBJECT_HOVER_HEIGHT": {
             "prefix": "OBJECT_HOVER_HEIGHT",
@@ -1425,6 +1435,11 @@
             "prefix": "OBJECT_STREAMING_COST",
             "body": "OBJECT_STREAMING_COST",
             "description": "int (15)"
+        },
+        "OBJECT_TEMP_ATTACHED": {
+            "prefix": "OBJECT_TEMP_ATTACHED",
+            "body": "OBJECT_TEMP_ATTACHED",
+            "description": "int (34)"
         },
         "OBJECT_TEMP_ON_REZ": {
             "prefix": "OBJECT_TEMP_ON_REZ",
@@ -1846,6 +1861,11 @@
             "body": "PI_BY_TWO",
             "description": "float (1.570796)"
         },
+        "PRIM_ALLOW_UNSIT": {
+            "prefix": "PRIM_ALLOW_UNSIT",
+            "body": "PRIM_ALLOW_UNSIT, ${integer flag}, $0",
+            "description": "int (39)"
+        },
         "PRIM_ALPHA_MODE": {
             "prefix": "PRIM_ALPHA_MODE",
             "body": "PRIM_ALPHA_MODE",
@@ -2261,6 +2281,11 @@
             "body": "PRIM_ROT_LOCAL",
             "description": "int (29)"
         },
+        "PRIM_SCRIPTED_SIT_ONLY": {
+            "prefix": "PRIM_SCRIPTED_SIT_ONLY",
+            "body": "PRIM_SCRIPTED_SIT_ONLY, ${integer flag}, $0",
+            "description": "int (40)"
+        },
         "PRIM_SCULPT_FLAG_INVERT": {
             "prefix": "PRIM_SCULPT_FLAG_INVERT",
             "body": "PRIM_SCULPT_FLAG_INVERT",
@@ -2315,6 +2340,11 @@
             "prefix": "PRIM_SHINY_NONE",
             "body": "PRIM_SHINY_NONE",
             "description": "int (0)"
+        },
+        "PRIM_SIT_TARGET": {
+            "prefix": "PRIM_SIT_TARGET",
+            "body": "PRIM_SIT_TARGET, ${integer active}, ${vector offset}, ${rotation rot}, $0",
+            "description": "int (41)"
         },
         "PRIM_SIZE": {
             "prefix": "PRIM_SIZE",
@@ -2915,6 +2945,41 @@
             "prefix": "SIM_STAT_PCT_CHARS_STEPPED",
             "body": "SIM_STAT_PCT_CHARS_STEPPED",
             "description": "int (0)"
+        },
+        "SIT_INVALID_AGENT": {
+            "prefix": "SIT_INVALID_AGENT",
+            "body": "SIT_INVALID_AGENT",
+            "description": "int (-4)"
+        },
+        "SIT_INVALID_LINK": {
+            "prefix": "SIT_INVALID_LINK",
+            "body": "SIT_INVALID_LINK",
+            "description": "int (-5)"
+        },
+        "SIT_INVALID_OBJECT": {
+            "prefix": "SIT_INVALID_OBJECT",
+            "body": "SIT_INVALID_OBJECT",
+            "description": "int (-7)"
+        },
+        "SIT_NOT_EXPERIENCE": {
+            "prefix": "SIT_NOT_EXPERIENCE",
+            "body": "SIT_NOT_EXPERIENCE",
+            "description": "int (-1)"
+        },
+        "SIT_NO_ACCESS": {
+            "prefix": "SIT_NO_ACCESS",
+            "body": "SIT_NO_ACCESS",
+            "description": "int (-6)"
+        },
+        "SIT_NO_EXPERIENCE_PERMISSION": {
+            "prefix": "SIT_NO_EXPERIENCE_PERMISSION",
+            "body": "SIT_NO_EXPERIENCE_PERMISSION",
+            "description": "int (-2)"
+        },
+        "SIT_NO_SIT_TARGET": {
+            "prefix": "SIT_NO_SIT_TARGET",
+            "body": "SIT_NO_SIT_TARGET",
+            "description": "int (-3)"
         },
         "SMOOTH": {
             "prefix": "SMOOTH",
@@ -5306,6 +5371,11 @@
             "prefix": "llSin",
             "body": "llSin(${float theta})",
             "description": "(float) func"
+        },
+        "llSitOnLink": {
+            "prefix": "llSitOnLink",
+            "body": "llSitOnLink(${key agent_id}, ${integer link})",
+            "description": "(int) func"
         },
         "llSitTarget": {
             "prefix": "llSitTarget",
