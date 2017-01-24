@@ -340,6 +340,39 @@
             <key>useCount</key><integer>0</integer>
         </dict>
         <dict>
+            <key>abbreviation</key><string>PRIM_ALLOW_UNSIT</string>
+            <key>abbreviationMode</key><integer>0</integer>
+            <key>creationDate</key><date>2017-01-24T00:00:00Z</date>
+            <key>flags</key><integer>0</integer>
+            <key>label</key><string>PRIM_ALLOW_UNSIT</string>
+            <key>modificationDate</key><date>2017-01-24T00:00:00Z</date>
+            <key>plainText</key><string>PRIM_ALLOW_UNSIT, %filltext:name=integer flag%, %|</string>
+            <key>snippetType</key><integer>0</integer>
+            <key>useCount</key><integer>0</integer>
+        </dict>
+        <dict>
+            <key>abbreviation</key><string>PRIM_SCRIPTED_SIT_ONLY</string>
+            <key>abbreviationMode</key><integer>0</integer>
+            <key>creationDate</key><date>2017-01-24T00:00:00Z</date>
+            <key>flags</key><integer>0</integer>
+            <key>label</key><string>PRIM_SCRIPTED_SIT_ONLY</string>
+            <key>modificationDate</key><date>2017-01-24T00:00:00Z</date>
+            <key>plainText</key><string>PRIM_SCRIPTED_SIT_ONLY, %filltext:name=integer flag%, %|</string>
+            <key>snippetType</key><integer>0</integer>
+            <key>useCount</key><integer>0</integer>
+        </dict>
+        <dict>
+            <key>abbreviation</key><string>PRIM_SIT_TARGET</string>
+            <key>abbreviationMode</key><integer>0</integer>
+            <key>creationDate</key><date>2017-01-24T00:00:00Z</date>
+            <key>flags</key><integer>0</integer>
+            <key>label</key><string>PRIM_SIT_TARGET</string>
+            <key>modificationDate</key><date>2017-01-24T00:00:00Z</date>
+            <key>plainText</key><string>PRIM_SIT_TARGET, %filltext:name=integer active%, %filltext:name=vector offsete%, %filltext:name=rotation rot%, %|</string>
+            <key>snippetType</key><integer>0</integer>
+            <key>useCount</key><integer>0</integer>
+        </dict>
+        <dict>
             <key>abbreviation</key><string>RC_DATA_FLAGS</string>
             <key>abbreviationMode</key><integer>0</integer>
             <key>creationDate</key><date>2015-09-18T00:00:00Z</date>
@@ -4860,6 +4893,17 @@
             <key>label</key><string>llSin</string>
             <key>modificationDate</key><date>2015-09-18T00:00:00Z</date>
             <key>plainText</key><string>llSin(%filltext:name=float theta%)</string>
+            <key>snippetType</key><integer>0</integer>
+            <key>useCount</key><integer>0</integer>
+        </dict>
+        <dict>
+            <key>abbreviation</key><string>llSitOnLink</string>
+            <key>abbreviationMode</key><integer>0</integer>
+            <key>creationDate</key><date>2017-01-24T00:00:00Z</date>
+            <key>flags</key><integer>0</integer>
+            <key>label</key><string>llSitOnLink</string>
+            <key>modificationDate</key><date>2017-01-24T00:00:00Z</date>
+            <key>plainText</key><string>llSitOnLink(%filltext:name=key agent_id%, %filltext:name=integer link%)</string>
             <key>snippetType</key><integer>0</integer>
             <key>useCount</key><integer>0</integer>
         </dict>
