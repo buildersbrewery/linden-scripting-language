@@ -35,7 +35,7 @@
         <KeyWord name="ATTACH_FACE_LEYE" func="no" />
         <KeyWord name="ATTACH_FACE_REAR" func="no" />
         <KeyWord name="ATTACH_FACE_REYE" func="no" />
-        <KeyWord name="ATTACH_FACE_TOUNGE" func="no" />
+        <KeyWord name="ATTACH_FACE_TONGUE" func="no" />
         <KeyWord name="ATTACH_GROIN" func="no" />
         <KeyWord name="ATTACH_HEAD" func="no" />
         <KeyWord name="ATTACH_HIND_LFOOT" func="no" />
