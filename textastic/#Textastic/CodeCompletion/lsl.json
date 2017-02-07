@@ -1,7 +1,7 @@
 {
     "name": "LSL",
     "description": "Textastic CodeCompletion for LSL (the Linden Scripting Language).",
-    "last_modified": "2017-01-24 00:00:00",
+    "last_modified": "2017-02-07 00:00:00",
     "completionSets":
     [
         {
@@ -53,7 +53,7 @@
                 { "trigger": "ATTACH_FACE_LEYE\tint(50)", "contents": "ATTACH_FACE_LEYE" },
                 { "trigger": "ATTACH_FACE_REAR\tint(49)", "contents": "ATTACH_FACE_REAR" },
                 { "trigger": "ATTACH_FACE_REYE\tint(51)", "contents": "ATTACH_FACE_REYE" },
-                { "trigger": "ATTACH_FACE_TOUNGE\tint(52)", "contents": "ATTACH_FACE_TOUNGE" },
+                { "trigger": "ATTACH_FACE_TONGUE\tint(52)", "contents": "ATTACH_FACE_TONGUE" },
                 { "trigger": "ATTACH_GROIN\tint(53)", "contents": "ATTACH_GROIN" },
                 { "trigger": "ATTACH_HEAD\tint (2)", "contents": "ATTACH_HEAD" },
                 { "trigger": "ATTACH_HIND_LFOOT\tint(54)", "contents": "ATTACH_HIND_LFOOT" },
