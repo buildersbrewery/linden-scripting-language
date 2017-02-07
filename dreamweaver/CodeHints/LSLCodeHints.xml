@@ -451,23 +451,14 @@
         <string id="ATTACH_CHEST" value="" doctypes="LSL" caseSensitive="true" />
         <string id="ATTACH_CHIN" value="" doctypes="LSL" caseSensitive="true" />
         <string id="ATTACH_FACE_JAW" value="" doctypes="LSL" caseSensitive="true" />
-        <string id="ATTACH_FACE_JAW" value="" doctypes="LSL" caseSensitive="true" />
-        <string id="ATTACH_FACE_LEAR" value="" doctypes="LSL" caseSensitive="true" />
         <string id="ATTACH_FACE_LEAR" value="" doctypes="LSL" caseSensitive="true" />
         <string id="ATTACH_FACE_LEYE" value="" doctypes="LSL" caseSensitive="true" />
-        <string id="ATTACH_FACE_LEYE" value="" doctypes="LSL" caseSensitive="true" />
-        <string id="ATTACH_FACE_REAR" value="" doctypes="LSL" caseSensitive="true" />
         <string id="ATTACH_FACE_REAR" value="" doctypes="LSL" caseSensitive="true" />
         <string id="ATTACH_FACE_REYE" value="" doctypes="LSL" caseSensitive="true" />
-        <string id="ATTACH_FACE_REYE" value="" doctypes="LSL" caseSensitive="true" />
-        <string id="ATTACH_FACE_TOUNGE" value="" doctypes="LSL" caseSensitive="true" />
-        <string id="ATTACH_FACE_TOUNGE" value="" doctypes="LSL" caseSensitive="true" />
-        <string id="ATTACH_GROIN" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_FACE_TONGUE" value="" doctypes="LSL" caseSensitive="true" />
         <string id="ATTACH_GROIN" value="" doctypes="LSL" caseSensitive="true" />
         <string id="ATTACH_HEAD" value="" doctypes="LSL" caseSensitive="true" />
         <string id="ATTACH_HIND_LFOOT" value="" doctypes="LSL" caseSensitive="true" />
-        <string id="ATTACH_HIND_LFOOT" value="" doctypes="LSL" caseSensitive="true" />
-        <string id="ATTACH_HIND_RFOOT" value="" doctypes="LSL" caseSensitive="true" />
         <string id="ATTACH_HIND_RFOOT" value="" doctypes="LSL" caseSensitive="true" />
         <string id="ATTACH_HUD_BOTTOM" value="" doctypes="LSL" caseSensitive="true" />
         <string id="ATTACH_HUD_BOTTOM_LEFT" value="" doctypes="LSL" caseSensitive="true" />
@@ -483,14 +474,12 @@
         <string id="ATTACH_LFOOT" value="" doctypes="LSL" caseSensitive="true" />
         <string id="ATTACH_LHAND" value="" doctypes="LSL" caseSensitive="true" />
         <string id="ATTACH_LHAND_RING1" value="" doctypes="LSL" caseSensitive="true" />
-        <string id="ATTACH_LHAND_RING1" value="" doctypes="LSL" caseSensitive="true" />
         <string id="ATTACH_LHIP" value="" doctypes="LSL" caseSensitive="true" />
         <string id="ATTACH_LLARM" value="" doctypes="LSL" caseSensitive="true" />
         <string id="ATTACH_LLLEG" value="" doctypes="LSL" caseSensitive="true" />
         <string id="ATTACH_LSHOULDER" value="" doctypes="LSL" caseSensitive="true" />
         <string id="ATTACH_LUARM" value="" doctypes="LSL" caseSensitive="true" />
         <string id="ATTACH_LULEG" value="" doctypes="LSL" caseSensitive="true" />
-        <string id="ATTACH_LWING" value="" doctypes="LSL" caseSensitive="true" />
         <string id="ATTACH_LWING" value="" doctypes="LSL" caseSensitive="true" />
         <string id="ATTACH_MOUTH" value="" doctypes="LSL" caseSensitive="true" />
         <string id="ATTACH_NECK" value="" doctypes="LSL" caseSensitive="true" />
@@ -501,7 +490,6 @@
         <string id="ATTACH_RFOOT" value="" doctypes="LSL" caseSensitive="true" />
         <string id="ATTACH_RHAND" value="" doctypes="LSL" caseSensitive="true" />
         <string id="ATTACH_RHAND_RING1" value="" doctypes="LSL" caseSensitive="true" />
-        <string id="ATTACH_RHAND_RING1" value="" doctypes="LSL" caseSensitive="true" />
         <string id="ATTACH_RHIP" value="" doctypes="LSL" caseSensitive="true" />
         <string id="ATTACH_RIGHT_PEC" value="" doctypes="LSL" caseSensitive="true" />
         <string id="ATTACH_RLARM" value="" doctypes="LSL" caseSensitive="true" />
@@ -510,10 +498,7 @@
         <string id="ATTACH_RUARM" value="" doctypes="LSL" caseSensitive="true" />
         <string id="ATTACH_RULEG" value="" doctypes="LSL" caseSensitive="true" />
         <string id="ATTACH_RWING" value="" doctypes="LSL" caseSensitive="true" />
-        <string id="ATTACH_RWING" value="" doctypes="LSL" caseSensitive="true" />
         <string id="ATTACH_TAIL_BASE" value="" doctypes="LSL" caseSensitive="true" />
-        <string id="ATTACH_TAIL_BASE" value="" doctypes="LSL" caseSensitive="true" />
-        <string id="ATTACH_TAIL_TIP" value="" doctypes="LSL" caseSensitive="true" />
         <string id="ATTACH_TAIL_TIP" value="" doctypes="LSL" caseSensitive="true" />
         <string id="AVOID_CHARACTERS" value="" doctypes="LSL" caseSensitive="true" />
         <string id="AVOID_DYNAMIC_OBSTACLES" value="" doctypes="LSL" caseSensitive="true" />
