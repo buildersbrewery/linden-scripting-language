@@ -1472,7 +1472,7 @@ Passed to llAttachToAvatar to attach task to left eye (extended)
 Passed to llAttachToAvatar to attach task to right eye (extended)
     </description>
   </constant>
-  <constant name="ATTACH_FACE_TOUNGE" type="integer" value="52" version="sl:16.05.24.315768">
+  <constant name="ATTACH_FACE_TONGUE" type="integer" value="52" version="sl:16.05.24.315768">
     <description lang="en">
 Passed to llAttachToAvatar to attach task to tongue
     </description>
