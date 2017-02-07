@@ -71,7 +71,7 @@ default
 //          ^^^^^^^^^^^^^^^^ constant.language.integer.lsl
             ATTACH_FACE_REYE,
 //          ^^^^^^^^^^^^^^^^ constant.language.integer.lsl
-            ATTACH_FACE_TOUNGE,
+            ATTACH_FACE_TONGUE,
 //          ^^^^^^^^^^^^^^^^^^ constant.language.integer.lsl
             ATTACH_GROIN,
 //          ^^^^^^^^^^^^ constant.language.integer.lsl
