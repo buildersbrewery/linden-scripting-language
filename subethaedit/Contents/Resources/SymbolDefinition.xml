@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE syntax SYSTEM "symbol.dtd">
+<symbols>
+    <blocks>
+        <beginregex>{</beginregex><endregex>}</endregex>
+    </blocks>
+    <symbol id="Globals" image="SymbolC" indentation="0" ignoreblocks="no">
+        <regex>(?&lt;=[\n\r]|^)(?:\w+\s+)\w+(?=\s*[=;])</regex>
+        <postprocess>
+            <find>\([^\)]*\)</find><replace>()</replace>
+            <find>[\n\r]</find><replace> </replace>
+            <find>[ \t]+</find><replace> </replace>
+            <find>^\w+\s+</find><replace />
+        </postprocess>
+    </symbol>
+    <symbol id="Functions" image="SymbolF()" indentation="0" ignoreblocks="no">
+        <regex>(?&lt;=[\n\r]|^)(?:\w+\s+)?\w+\s*\((?:\w+\s+\w+\s*,?\s*)*\)(?=\s*\{)</regex>
+        <postprocess>
+            <find>\([^\)]*\)</find><replace>()</replace>
+            <find>[\n\r]</find><replace> </replace>
+            <find>[ \t]+</find><replace> </replace>
+            <find>^\w+\s+(\w+)</find><replace>\1</replace>
+        </postprocess>
+    </symbol>
+    <symbol id="States" image="LSLstate.png" indentation="0" ignoreblocks="no">
+        <regex>(?&lt;=[\n\r]|^)[ \t]*(default|state\s+\w+)(?=\s*\{)</regex>
+        <postprocess>
+            <find>\([^\)]*\)</find><replace>()</replace>
+            <find>[\n\r]</find><replace></replace>
+            <find>[ \t]+</find><replace> </replace>
+        </postprocess>
+    </symbol>
+    <symbol id="Events" image="SymbolE" indentation="1" ignoreblocks="yes">
+        <regex>(?&lt;=[\n\r]|^)[ \t]+\w+\s*\((?:\w+\s+\w+\s*,?\s*)*\)(?=\s*\{)</regex>
+        <postprocess>
+            <find>\([^\)]*\)</find><replace>()</replace>
+            <find>[\n\r]</find><replace></replace>
+            <find>[ \t]+</find><replace> </replace>
+        </postprocess>
+    </symbol>
+</symbols>

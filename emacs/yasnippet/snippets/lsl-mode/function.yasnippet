@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: function
+# key: function
+# contributor: Builder's Brewery (http://www.buildersbrewery.com/)
+# group: functions.user-defined functions
+# --
+${1:$$(yas-choose-value '("float" "integer" "key" "list" "quaternion" "rotation" "string" "vector"))} ${2:string functionName}(${3:list params})
+{
+    `yas-selected-text`$0;
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: llGetParcelPrimOwners
+# key: llGetParcelPrimOwners
+# contributor: Builder's Brewery (http://www.buildersbrewery.com/)
+# group: functions.builtin functions
+# --
+llGetParcelPrimOwners(${1:vector pos})

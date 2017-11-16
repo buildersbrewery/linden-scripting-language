@@ -1,0 +1,43 @@
+{
+    "version": "0.0.0",
+    "command": "npm",
+    "isShellCommand": true,
+    "showOutput": "silent",
+    "args": [
+        "run",
+        "compile",
+        "--loglevel",
+        "silent"
+    ],
+    "tasks": [
+        {
+            "taskName": "build",
+//          TODO: fix lslint path based upon current OS
+            "command": "lslint",
+            "args": ["-p", "${file}"],
+            "isBuildCommand": true,
+            "isWatching": true,
+            "problemMatcher": "$msCompile"
+        }
+    ],
+    "problemMatcher": {
+        "owner": "lsl",
+        "fileLocation": [
+            "relative",
+            "${workspaceRoot}"
+        ],
+        "pattern": {
+            "regexp": "^(.*):(\\d+):(\\d+):\\s+(error|warning|info):\\s+(.*)$",
+            "file": 1,
+            "line": 2,
+            "column": 3,
+            "severity": 4,
+            "message": 5,
+//          location
+//          endLine
+//          endColumn
+//          code
+            "loop": true
+        }
+    }
+}

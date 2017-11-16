@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plist version="1.0">
+	<dict>
+		<key>scope</key><string>string.quoted.double.lsl, comment.line.double-slash.lsl, comment.block.lsl</string>
+		<key>settings</key>
+		<dict>
+			<key>spellChecking</key><integer>1</integer>
+		</dict>
+	</dict>
+</plist>

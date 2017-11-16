@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>name</key><string>settings_symbols_state.tmPreferences</string>
+        <key>description</key><string>TextMate bundle for LSL (the Linden Scripting Language).</string>
+        <key>last modified</key><string>2013-07-09 13:00:00</string>
+        <key>scope</key><string>entity.name.class.state.begin.lsl</string>
+        <key>settings</key>
+        <dict>
+            <key>showInSymbolList</key><true />
+            <key>symbolTransformation</key><string>s/(.+)/[state] $1/</string>
+        </dict>
+        <key>uuid</key><string>d6324a33-e996-42e5-9b50-db71527839d5</string>
+    </dict>
+</plist>

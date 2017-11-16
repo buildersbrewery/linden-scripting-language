@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>name</key><string>LindenLab Viewer theme</string>
+    <key>settings</key>
+    <array>
+        <dict>
+            <key>settings</key>
+            <dict>
+                <key>background</key><string>#f2f0ec</string>
+                <key>caret</key><string>#2d2d2d</string>
+                <key>foreground</key><string>#2d2d2d</string>
+                <key>invisibles</key><string>#d3d0c8</string>
+                <key>lineHighlight</key><string>#d3d0c8</string>
+                <key>selection</key><string>#d3d0c8</string>
+                <key>selectionBorder</key><string>#bcb8ac</string>
+                <key>inactiveSelection</key><string>#d3d0c8</string>
+                <key>findHighlight</key><string>#cd4d26</string>
+                <key>findHighlightForeground</key><string>#2d2d2d</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key><string>sections</string>
+            <key>scope</key><string>entity.name.class.state.begin, constant.language.state</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key><string>#801a4d</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key><string>data types</string>
+            <key>scope</key><string>storage.type</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key><string>#006600</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key><string>events</string>
+            <key>scope</key><string>support.function.event</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key><string>#004d80</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key><string>comment</string>
+            <key>scope</key><string>comment.block, comment.line.double-slash</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key><string>#cd4d26</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key><string>escape characters</string>
+            <key>scope</key><string>constant.character.escape</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key><string>#cd4d26</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key><string>string literals</string>
+            <key>scope</key><string>string.quoted.double</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key><string>#006600</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key><string>functions</string>
+            <key>scope</key><string>support.function.ll</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key><string>#820124</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key><string>integer constants</string>
+            <key>scope</key><string>constant.language.integer, constant.language.ll.integer</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key><string>#242687</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key><string>string constants</string>
+            <key>scope</key><string>constant.language.string, constant.language.ll.string</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key><string>#336699</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key><string>float constants</string>
+            <key>scope</key><string>constant.language.ll.float</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key><string>#4c1a80</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key><string>compound constants</string>
+            <key>scope</key><string>constant.language.ll.compound</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key><string>#774477</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key><string>flow control keywords</string>
+            <key>scope</key><string>keyword.control.flow</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key><string>#0000cd</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key><string>invalid</string>
+            <key>scope</key><string>invalid</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key><string>#f2f0ec</string>
+                <key>background</key><string>#820124</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key><string>reserved</string>
+            <key>scope</key><string>reserved</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key><string>#f2f0ec</string>
+                <key>background</key><string>#cd4d26</string>
+            </dict>
+        </dict>
+    </array>
+</dict>
+</plist>

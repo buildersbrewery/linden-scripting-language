@@ -1,0 +1,41 @@
+{
+    "name": "language-lsl",
+    "main": "./lib/lsl-snippets",
+    "version": "1.0.0",
+    "description": "Linden Scripting Language (LSL) syntax grammar, syntax highlighting and snippet files.",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/buildersbrewery/linden-scripting-language.git"
+    },
+    "bugs": {
+        "url": "https://github.com/buildersbrewery/linden-scripting-language/issues"
+    },
+    "license": false,
+    "engines": {
+        "atom": "*",
+        "node": "*"
+    },
+    "dependencies": {},
+    "devDependencies": {},
+    "keywords": [
+        "LSL",
+        "linden-scripting-language",
+        "SL",
+        "second-life",
+        "language-lsl"
+    ],
+    "providedServices": {
+        "autocomplete.provider": {
+            "versions": {
+                "2.0.0": "provide"
+            }
+        }
+    },
+    "consumedServices": {
+        "snippets": {
+            "versions": {
+                "0.1.0": "consumeSnippets"
+            }
+        }
+    }
+}

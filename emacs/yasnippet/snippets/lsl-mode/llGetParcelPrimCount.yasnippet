@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: llGetParcelPrimCount
+# key: llGetParcelPrimCount
+# contributor: Builder's Brewery (http://www.buildersbrewery.com/)
+# group: functions.builtin functions
+# --
+llGetParcelPrimCount(${1:vector pos}, ${2:$$(yas-choose-value '("PARCEL_COUNT_TOTAL" "PARCEL_COUNT_OWNER" "PARCEL_COUNT_GROUP" "PARCEL_COUNT_OTHER" "PARCEL_COUNT_SELECTED" "PARCEL_COUNT_TEMP"))}, ${3:$$(yas-choose-value '("FALSE" "TRUE"))});
+$0

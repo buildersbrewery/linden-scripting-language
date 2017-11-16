@@ -1,0 +1,189 @@
+[
+    {
+        "description":
+        {
+            "en_US": "To convert from degrees to radians"
+        },
+        "name": "DEG_TO_RAD",
+        "type": "float",
+        "value": "0.017453",
+        "related":
+        {
+            "constants":
+            [
+                "PI",
+                "PI_BY_TWO",
+                "PRIM_ROT_LOCAL",
+                "RAD_TO_DEG",
+                "TWO_PI"
+            ],
+            "functions":
+            [
+                "llAxisAngle2Rot",
+                "llEuler2Rot",
+                "llGetLocalRot",
+                "llGetRootRotation",
+                "llGetRot",
+                "llRezAtRoot",
+                "llRot2Euler",
+                "llRotTarget",
+                "llSetCameraEyeOffset",
+                "llSetKeyframedMotion",
+                "llSetRot",
+                "llTargetOmega"
+            ]
+        }
+    },
+    {
+        "description":
+        {
+            "en_US": "3.141593"
+        },
+        "name": "PI",
+        "type": "float",
+        "value": "3.141593",
+        "related":
+        {
+            "constants":
+            [
+                "DEG_TO_RAD",
+                "PI_BY_TWO",
+                "RAD_TO_DEG",
+                "TWO_PI"
+            ],
+            "functions":
+            [
+                "llAcos",
+                "llAsin",
+                "llAtan2",
+                "llCos",
+                "llDetectedRot",
+                "llRotateTexture",
+                "llSensor",
+                "llSensorRepeat",
+                "llSetLinkTextureAnim",
+                "llSetTextureAnim",
+                "llSin",
+                "llTan"
+            ]
+        }
+    },
+    {
+        "description":
+        {
+            "en_US": "1.570796"
+        },
+        "name": "PI_BY_TWO",
+        "type": "float",
+        "value": "1.570796",
+        "related":
+        {
+            "constants":
+            [
+                "DEG_TO_RAD",
+                "PI",
+                "RAD_TO_DEG",
+                "TWO_PI"
+            ],
+            "functions":
+            [
+                "llAcos",
+                "llAsin",
+                "llAtan2",
+                "llCos",
+                "llDetectedRot",
+                "llRotateTexture",
+                "llSensor",
+                "llSensorRepeat",
+                "llSetLinkTextureAnim",
+                "llSetTextureAnim",
+                "llSin",
+                "llTan"
+            ]
+        }
+    },
+    {
+        "description":
+        {
+            "en_US": "To convert from radians to degrees"
+        },
+        "name": "RAD_TO_DEG",
+        "type": "float",
+        "value": "57.295779",
+        "related":
+        {
+            "constants":
+            [
+                "DEG_TO_RAD",
+                "PI",
+                "PI_BY_TWO",
+                "TWO_PI"
+            ],
+            "functions":
+            [
+                "llAxisAngle2Rot",
+                "llEuler2Rot",
+                "llGetLocalRot",
+                "llGetRootRotation",
+                "llGetRot",
+                "llRezAtRoot",
+                "llRot2Euler",
+                "llRotTarget",
+                "llSetCameraEyeOffset",
+                "llSetKeyframedMotion",
+                "llSetRot",
+                "llTargetOmega"
+            ]
+        }
+    },
+    {
+        "description":
+        {
+            "en_US": "6.283185"
+        },
+        "name": "TWO_PI",
+        "type": "float",
+        "value": "6.283185",
+        "related":
+        {
+            "constants":
+            [
+                "DEG_TO_RAD",
+                "PI",
+                "PI_BY_TWO",
+                "RAD_TO_DEG"
+            ],
+            "functions":
+            [
+                "llAcos",
+                "llAsin",
+                "llAtan2",
+                "llCos",
+                "llDetectedRot",
+                "llRotateTexture",
+                "llSensor",
+                "llSensorRepeat",
+                "llSetLinkTextureAnim",
+                "llSetTextureAnim",
+                "llSin",
+                "llTan"
+            ]
+        }
+    },
+    {
+        "description":
+        {
+            "en_US": "1.414214"
+        },
+        "name": "SQRT2",
+        "type": "float",
+        "value": "1.414214",
+        "related":
+        {
+            "functions":
+            [
+                "llSqrt"
+            ]
+        }
+    }
+]

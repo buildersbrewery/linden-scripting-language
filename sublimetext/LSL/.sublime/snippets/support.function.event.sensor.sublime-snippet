@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[sensor(integer ${1:num_detected})${LSL_WHITESPACE_BEFORE}{${LSL_WHITESPACE_INSIDE_FIRST}$0${LSL_WHITESPACE_INSIDE_LAST}}]]></content>
+	<tabTrigger>sensor</tabTrigger>
+	<scope>meta.class.state.body.lsl</scope>
+	<description>event</description>
+</snippet>

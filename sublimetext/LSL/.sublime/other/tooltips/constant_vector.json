@@ -1,0 +1,100 @@
+[
+    {
+        "description":
+        {
+            "en_US": "<0.0, 0.0, 0.0>"
+        },
+        "name": "ZERO_VECTOR",
+        "type": "vector",
+        "value": "<0.0, 0.0, 0.0>",
+        "related":
+        {
+            "constants":
+            [
+                "PRIM_COLOR",
+                "PRIM_NORMAL",
+                "PRIM_SPECULAR",
+                "PRIM_TEXTURE",
+                "PURSUIT_OFFSET",
+                "VEHICLE_LINEAR_MOTOR_OFFSET"
+            ],
+            "functions":
+            [
+                "llDetectedGrab",
+                "llDetectedPos",
+                "llDetectedVel",
+                "llEdgeOfWorld",
+                "llGetAccel",
+                "llGetAgentSize",
+                "llGetLinkPrimitiveParams",
+                "llGetPos",
+                "llGetPrimitiveParams",
+                "llLinkSitTarget",
+                "llList2Vector",
+                "llSetCameraAtOffset",
+                "llSetCameraEyeOffset",
+                "llSetForce",
+                "llSetForceAndTorque",
+                "llSetLinkPrimitiveParams",
+                "llSetLinkPrimitiveParamsFast",
+                "llSetPrimitiveParams",
+                "llSetTorque",
+                "llSitTarget",
+                "llTargetOmega",
+                "llVecNorm"
+            ]
+        },
+        "snippets":
+        [
+            "integer is_non_zero_vector(vector input) {\n\tif (input) {\n\t\treturn TRUE;\n\t}\n\treturn FALSE;\n}",
+            "default {\n\ttouch_end(integer num_detected) {\n\t\tkey agent = llDetectedKey(num_detected);\n\n//      (size != ZERO_VECTOR) for agents (not objects) in the same sim\n\t\tvector size = llGetAgentSize(agent);\n\n\t\tif (size) {\n\t\t\tllRegionSayTo(agent, PUBLIC_CHANNEL, \"Your size: \" + (string)size);\n\t\t}\n\t}\n}"
+        ]
+    },
+    {
+        "description":
+        {
+            "en_US": "Value returned by llDetectedTouchUV and llDetectedTouchST when the touch position is not valid"
+        },
+        "name": "TOUCH_INVALID_TEXCOORD",
+        "type": "vector",
+        "value": "<-1.0, -1.0, 0.0>",
+        "related":
+        {
+            "events":
+            [
+                "touch",
+                "touch_start",
+                "touch_end"
+            ],
+            "functions":
+            [
+                "llDetectedTouchST",
+                "llDetectedTouchUV"
+            ]
+        }
+    },
+    {
+        "description":
+        {
+            "en_US": "Value returned by llDetectedTouchPos, llDetectedTouchNormal, and llDetectedTouchBinormal when the touch position is not valid"
+        },
+        "name": "TOUCH_INVALID_VECTOR",
+        "type": "vector",
+        "value": "<0.0, 0.0, 0.0>",
+        "related":
+        {
+            "events":
+            [
+                "touch",
+                "touch_start",
+                "touch_end"
+            ],
+            "functions":
+            [
+                "llDetectedTouchNormal",
+                "llDetectedTouchBinormal",
+                "llDetectedTouchPos"
+            ]
+        }
+    }
+]

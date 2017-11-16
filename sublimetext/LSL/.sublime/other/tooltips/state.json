@@ -1,0 +1,24 @@
+[
+    {
+        "description":
+        {
+            "en_US": "Name of default state that all scripts must have"
+        },
+        "name": "default",
+        "snippets":
+        [
+            "default\n{\n\tstate_entry()\n\t{\n\t\tllSay(PUBLIC_CHANNEL, \"Default state.\");\n\t}\n\n\ttouch_end(integer num_detected)\n\t{\n\t\tstate other;\n\t}\n}\n\nstate other\n{\n\tstate_entry()\n\t{\n\t\tllSay(PUBLIC_CHANNEL, \"Other state.\");\n\t}\n\n\ttouch_end(integer num_detected)\n\t{\n\t\tstate default;\n\t}\n}"
+        ]
+    },
+    {
+        "description":
+        {
+            "en_US": "Keyword to indicate state block or state transition. State transitions within user-defined function declarations must be included within conditional blocks to work as intended."
+        },
+        "name": "state",
+        "snippets":
+        [
+            "default\n{\n\tstate_entry()\n\t{\n\t\tllSay(PUBLIC_CHANNEL, \"Default state.\");\n\t}\n\n\ttouch_end(integer num_detected)\n\t{\n\t\tstate other;\n\t}\n}\n\nstate other\n{\n\tstate_entry()\n\t{\n\t\tllSay(PUBLIC_CHANNEL, \"Other state.\");\n\t}\n\n\ttouch_end(integer num_detected)\n\t{\n\t\tstate default;\n\t}\n}"
+        ]
+    }
+]

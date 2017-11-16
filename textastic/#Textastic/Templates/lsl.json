@@ -1,0 +1,41 @@
+{
+    "uuid": "376dd41f-7f73-469f-ad2b-42f9224904c8",
+    "name": "LSL",
+    "author": "Builder's Brewery",
+    "description": "Textastic Templates for LSL (the Linden Scripting Language).",
+    "last_modified": "2015-09-19 00:00:00",
+    "category": "LSL",
+    "templates":
+    [
+        {
+            "name": "LSL - default script",
+            "fileExtension": "lsl",
+            "snippet": "default\n{\n\tstate_entry()\n\t{\n\t\tllRegionSayTo(llGetOwner(), PUBLIC_CHANNEL, \"Hello, Avatar!\");\n\t}\n\n\ttouch_start(integer num_detected)\n\t{\n\t\tllRegionSayTo(llGetOwner(), PUBLIC_CHANNEL, \"Touched.\");\n\t}\n}"
+        },
+        {
+            "name": "LSL - set floattext",
+            "fileExtension": "lsl",
+            "snippet": "default\n{\n\tstate_entry()\n\t{\n\t\tllSetText(${1:string text}, ${2:vector color}, ${3:float alpha});\n\t\tllRemoveInventory(llGetScriptName());\n\t}\n}"
+        },
+        {
+            "name": "LSL - touch to teleport globally",
+            "fileExtension": "lsl",
+            "snippet": "default\n{\n\ttouch_start(integer num_detected)\n\t{\n\t\tllMapDestination(${1:string simname}, ${2:vector pos}, ZERO_VECTOR);\n\t}\n}"
+        },
+        {
+            "name": "LSL - simple tipjar",
+            "fileExtension": "lsl",
+            "snippet": "default\n{\n\tchanged(integer change)\n\t{\n\t\tif (change & CHANGED_OWNER)\n\t\t\tllResetScript();\n\t}\n\n\tstate_entry()\n\t{\n\t\tllSetPayPrice(PAY_DEFAULT, [PAY_HIDE, PAY_HIDE, PAY_HIDE, PAY_HIDE]);\n\t}\n\n\tmoney(key id, integer amount)\n\t{\n\t\tllRegionSayTo(id, PUBLIC_CHANNEL, \"Thank you, \" + llKey2Name(id) + \".\");\n\t}\n}"
+        },
+        {
+            "name": "LSL - autoclose dialog menu example",
+            "fileExtension": "lsl",
+            "snippet": "string menuDialog = \"\\nSome info text for the menu!\";\nlist menuButtons = [\"left\", \"middle\", \"right\"];\n\ninteger dialogChannel;\ninteger dialogHandle;\n\nopen_menu(key inputKey, string inputString, list inputList)\n{\n\tdialogChannel = (integer)llFrand(DEBUG_CHANNEL)*-1;\n\tdialogHandle = llListen(dialogChannel, \"\", inputKey, \"\");\n\tllDialog(inputKey, inputString, inputList, dialogChannel);\n\tllSetTimerEvent(30.0);\n}\n\nclose_menu()\n{\n\tllSetTimerEvent(0.0);\n\tllListenRemove(dialogHandle);\n\tdialogHandle = FALSE;\n\tdialogChannel = (integer)llFrand(DEBUG_CHANNEL)*-1;\n}\n\ndefault\n{\n\ton_rez(integer start_param)\n\t{\n\t\tllResetScript();\n\t}\n\n\ttouch_start(integer total_number)\n\t{\n\t\topen_menu(llDetectedKey(0), menuDialog, menuButtons);\n\t}\n\n\tlisten(integer channel, string name, key id, string message)\n\t{\n\t\tif(channel != dialogChannel)\n\t\t\treturn;\n\t\tclose_menu();\n\n\t\tif (message == \"middle\")\n\t\t{\n\t\t\tllRegionSayTo(id, PUBLIC_CHANNEL, \"Hello there, you clicked the middle button!\");\n\t\t}\n\t}\n\n\ttimer()\n\t{\n\t\tclose_menu();\n\t}\n}"
+        },
+        {
+            "name": "LSL - get avatar's firstname",
+            "fileExtension": "lsl",
+            "snippet": "string first_name_of_avatar(key inputKey)\n{\n\tstring fullName = llKey2Name(inputKey);\n\tinteger positionOfLastCharacterInFirstName = llSubStringIndex(fullName, \" \") - 1;\n\n\tstring firstName = llGetSubString(fullName, 0, positionOfLastCharacterInFirstName);\n\n\treturn firstName;\n}\n\ndefault\n{\n\ttouch_start(integer num_detected)\n\t{\n\t\tkey id = llDetectedKey(0);\n\n\t\tllRegionSayTo(id, PUBLIC_CHANNEL, \"Hello, \" + first_name_of_avatar(id) + \".\");\n\t}\n}"
+        }
+    ]
+}

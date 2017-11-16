@@ -1,0 +1,12 @@
+// SYNTAX TEST "Packages/LSL/.sublime/syntaxes/LSL.sublime-syntax"
+
+default
+{
+    touch_end(integer num_detected)
+    {
+        list event = [];
+//           ^^^^^ invalid.illegal.lsl
+
+        llRegionSayTo(llDetectedKey(0), PUBLIC_CHANNEL, "test");
+    }
+}

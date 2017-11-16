@@ -1,0 +1,15 @@
+{
+    "mdpopups.sublime_user_lang_map":
+    {
+        "lsl":
+        [
+            [
+                "lsl"
+            ],
+            [
+                "LSL/.sublime/syntaxes/LSL"
+            ]
+        ]
+    },
+    "mdpopups.use_sublime_highlighter": true
+}

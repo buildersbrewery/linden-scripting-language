@@ -1,0 +1,2211 @@
+snippet @ "@"
+    @${1:label};
+endsnippet
+
+snippet CAMERA_ACTIVE "CAMERA_ACTIVE"
+    CAMERA_ACTIVE, ${1:integer isActive}, $0
+endsnippet
+
+snippet CAMERA_BEHINDNESS_ANGLE "CAMERA_BEHINDNESS_ANGLE"
+    CAMERA_BEHINDNESS_ANGLE, ${1:float degrees}, $0
+endsnippet
+
+snippet CAMERA_BEHINDNESS_LAG "CAMERA_BEHINDNESS_LAG"
+    CAMERA_BEHINDNESS_LAG, ${1:float seconds}, $0
+endsnippet
+
+snippet CAMERA_DISTANCE "CAMERA_DISTANCE"
+    CAMERA_DISTANCE, ${1:float meters}, $0
+endsnippet
+
+snippet CAMERA_FOCUS "CAMERA_FOCUS"
+    CAMERA_FOCUS, ${1:vector position}, $0
+endsnippet
+
+snippet CAMERA_FOCUS_LAG "CAMERA_FOCUS_LAG"
+    CAMERA_FOCUS_LAG, ${1:float seconds}, $0
+endsnippet
+
+snippet CAMERA_FOCUS_LOCKED "CAMERA_FOCUS_LOCKED"
+    CAMERA_FOCUS_LOCKED, ${1:integer isLocked}, $0
+endsnippet
+
+snippet CAMERA_FOCUS_OFFSET "CAMERA_FOCUS_OFFSET"
+    CAMERA_FOCUS_OFFSET, ${1:vector meters}, $0
+endsnippet
+
+snippet CAMERA_FOCUS_THRESHOLD "CAMERA_FOCUS_THRESHOLD"
+    CAMERA_FOCUS_THRESHOLD, ${1:float meters}, $0
+endsnippet
+
+snippet CAMERA_PITCH "CAMERA_PITCH"
+    CAMERA_PITCH, ${1:float degrees}, $0
+endsnippet
+
+snippet CAMERA_POSITION "CAMERA_POSITION"
+    CAMERA_POSITION, ${1:vector position}, $0
+endsnippet
+
+snippet CAMERA_POSITION_LAG "CAMERA_POSITION_LAG"
+    CAMERA_POSITION_LAG, ${1:float seconds}, $0
+endsnippet
+
+snippet CAMERA_POSITION_LOCKED "CAMERA_POSITION_LOCKED"
+    CAMERA_POSITION_LOCKED, ${1:integer isLocked}, $0
+endsnippet
+
+snippet CAMERA_POSITION_THRESHOLD "CAMERA_POSITION_THRESHOLD"
+    CAMERA_POSITION_THRESHOLD, ${1:float meters}, $0
+endsnippet
+
+snippet CHARACTER_AVOIDANCE_MODE "CHARACTER_AVOIDANCE_MODE"
+    CHARACTER_AVOIDANCE_MODE, ${1:integer flags}, $0
+endsnippet
+
+snippet CHARACTER_DESIRED_SPEED "CHARACTER_DESIRED_SPEED"
+    CHARACTER_DESIRED_SPEED, ${1:float speed}, $0
+endsnippet
+
+snippet CHARACTER_DESIRED_TURN_SPEED "CHARACTER_DESIRED_TURN_SPEED"
+    CHARACTER_DESIRED_TURN_SPEED, ${1:float speed}, $0
+endsnippet
+
+snippet CHARACTER_LENGTH "CHARACTER_LENGTH"
+    CHARACTER_LENGTH, ${1:float length}, $0
+endsnippet
+
+snippet CHARACTER_MAX_TURN_RADIUS "CHARACTER_MAX_TURN_RADIUS"
+    CHARACTER_MAX_TURN_RADIUS, ${1:float radius}, $0
+endsnippet
+
+snippet CHARACTER_ORIENTATION "CHARACTER_ORIENTATION"
+    CHARACTER_ORIENTATION, ${1:integer orientation}, $0
+endsnippet
+
+snippet CHARACTER_RADIUS "CHARACTER_RADIUS"
+    CHARACTER_RADIUS, ${1:float radius}, $0
+endsnippet
+
+snippet CHARACTER_STAY_WITHIN_PARCEL "CHARACTER_STAY_WITHIN_PARCEL"
+    CHARACTER_STAY_WITHIN_PARCEL, ${1:boolean stay}, $0
+endsnippet
+
+snippet CHARACTER_TYPE "CHARACTER_TYPE"
+    CHARACTER_TYPE, ${1:integer type}, $0
+endsnippet
+
+snippet HTTP_BODY_MAXLENGTH "HTTP_BODY_MAXLENGTH"
+    HTTP_BODY_MAXLENGTH, ${1:integer length}, $0
+endsnippet
+
+snippet HTTP_CUSTOM_HEADER "HTTP_CUSTOM_HEADER"
+    HTTP_CUSTOM_HEADER, ${1:string name}, ${2:string value}, $0
+endsnippet
+
+snippet HTTP_METHOD "HTTP_METHOD"
+    HTTP_METHOD, ${1:string method}, $0
+endsnippet
+
+snippet HTTP_MIMETYPE "HTTP_MIMETYPE"
+    HTTP_MIMETYPE, ${1:string mimeType}, $0
+endsnippet
+
+snippet HTTP_PRAGMA_NO_CACHE "HTTP_PRAGMA_NO_CACHE"
+    HTTP_PRAGMA_NO_CACHE, ${1:integer send_header}, $0
+endsnippet
+
+snippet HTTP_VERBOSE_THROTTLE "HTTP_VERBOSE_THROTTLE"
+    HTTP_VERBOSE_THROTTLE, ${1:integer noisy}, $0
+endsnippet
+
+snippet HTTP_VERIFY_CERT "HTTP_VERIFY_CERT"
+    HTTP_VERIFY_CERT, ${1:integer verify}, $0
+endsnippet
+
+snippet PRIM_ALLOW_UNSIT "PRIM_ALLOW_UNSIT"
+    PRIM_ALLOW_UNSIT, ${1:integer flag}, $0
+endsnippet
+
+snippet PRIM_SCRIPTED_SIT_ONLY "PRIM_SCRIPTED_SIT_ONLY"
+    PRIM_SCRIPTED_SIT_ONLY, ${1:integer flag}, $0
+endsnippet
+
+snippet PRIM_SIT_TARGET "PRIM_SIT_TARGET"
+    PRIM_SIT_TARGET, ${1:integer active}, ${2:vector offset}, ${3:rotation rot}, $0
+endsnippet
+
+snippet RC_DATA_FLAGS "RC_DATA_FLAGS"
+    RC_DATA_FLAGS, ${1:integer flags}, $0
+endsnippet
+
+snippet RC_DETECT_PHANTOM "RC_DETECT_PHANTOM"
+    RC_DETECT_PHANTOM, ${1:integer dectedPhantom}, $0
+endsnippet
+
+snippet RC_MAX_HITS "RC_MAX_HITS"
+    RC_MAX_HITS, ${1:integer maxHits}, $0
+endsnippet
+
+snippet RC_REJECT_TYPES "RC_REJECT_TYPES"
+    RC_REJECT_TYPES, ${1:integer filterMask}, $0
+endsnippet
+
+snippet at_rot_target "at_rot_target"
+    at_rot_target(${1:integer handle}, ${2:rotation targetrot}, ${3:rotation ourrot})
+    {
+        $0
+    }
+endsnippet
+
+snippet at_target "at_target"
+    at_target(${1:integer tnum}, ${2:vector targetpos}, ${3:vector ourpos})
+    {
+        $0
+    }
+endsnippet
+
+snippet attach "attach"
+    attach(${1:key id})
+    {
+        $0
+    }
+endsnippet
+
+snippet changed "changed"
+    changed(${1:integer change})
+    {
+        $0
+    }
+endsnippet
+
+snippet collision "collision"
+    collision(${1:integer index})
+    {
+        $0
+    }
+endsnippet
+
+snippet collision_end "collision_end"
+    collision_end(${1:integer index})
+    {
+        $0
+    }
+endsnippet
+
+snippet collision_start "collision_start"
+    collision_start(${1:integer index})
+    {
+        $0
+    }
+endsnippet
+
+snippet control "control"
+    control(${1:key id}, ${2:integer level}, ${3:integer edge})
+    {
+        $0
+    }
+endsnippet
+
+snippet dataserver "dataserver"
+    dataserver(${1:key query_id}, ${2:string data})
+    {
+        $0
+    }
+endsnippet
+
+snippet do "do"
+    do
+    {
+        $0
+    }
+    while (${1:condition});
+endsnippet
+
+snippet else "else"
+    else
+    {
+        $0
+    }
+endsnippet
+
+snippet email "email"
+    email(${1:string time}, ${2:string address}, ${3:string subject}, ${4:string message}, ${5:integer num_left})
+    {
+        $0
+    }
+endsnippet
+
+snippet experience_permissions "experience_permissions"
+    experience_permissions(${1:key agent_id})
+    {
+        $0
+    }
+endsnippet
+
+snippet experience_permissions_denied "experience_permissions_denied"
+    experience_permissions_denied(${1:key agent_id}, ${2:integer reason})
+    {
+        $0
+    }
+endsnippet
+
+snippet for "for"
+    for (${1:start}; ${3:condition}; ${3:step})
+    {
+        $0
+    }
+endsnippet
+
+snippet http_request "http_request"
+    http_request(${1:key request_id}, ${2:string method}, ${3:string body})
+    {
+        $0
+    }
+endsnippet
+
+snippet http_response "http_response"
+    http_response(${1:key request_id}, ${2:integer status}, ${3:list metadata}, ${4:string body})
+    {
+        $0
+    }
+endsnippet
+
+snippet if "if"
+    if (${1:condition})
+    {
+        $0
+    }
+endsnippet
+
+snippet jump "jump"
+    jump ${1:label};
+endsnippet
+
+snippet land_collision "land_collision"
+    land_collision(${1:vector pos})
+    {
+        $0
+    }
+endsnippet
+
+snippet land_collision_end "land_collision_end"
+    land_collision_end(${1:vector pos})
+    {
+        $0
+    }
+endsnippet
+
+snippet land_collision_start "land_collision_start"
+    land_collision_start(${1:vector pos})
+    {
+        $0
+    }
+endsnippet
+
+snippet link_message "link_message"
+    link_message(${1:integer sender_num}, ${2:integer num}, ${3:string str}, ${4:key id})
+    {
+        $0
+    }
+endsnippet
+
+snippet listen "listen"
+    listen(${1:integer channel}, ${2:string name}, ${3:key id}, ${4:string message})
+    {
+        $0
+    }
+endsnippet
+
+snippet llAbs "llAbs"
+    llAbs(${1:integer val})
+endsnippet
+
+snippet llAcos "llAcos"
+    llAcos(${1:float val})
+endsnippet
+
+snippet llAddToLandBanList "llAddToLandBanList"
+    llAddToLandBanList(${1:key agent}, ${2:float hours});
+    $0
+endsnippet
+
+snippet llAddToLandPassList "llAddToLandPassList"
+    llAddToLandPassList(${1:key agent}, ${2:float hours});
+    $0
+endsnippet
+
+snippet llAdjustSoundVolume "llAdjustSoundVolume"
+    llAdjustSoundVolume(${1:float volume});
+    $0
+endsnippet
+
+snippet llAgentInExperience "llAgentInExperience"
+    llAgentInExperience(${1:key agent})
+endsnippet
+
+snippet llAllowInventoryDrop "llAllowInventoryDrop"
+    llAllowInventoryDrop(${1:integer add});
+    $0
+endsnippet
+
+snippet llAngleBetween "llAngleBetween"
+    llAngleBetween(${1:rotation a}, ${2:rotation b})
+endsnippet
+
+snippet llApplyImpulse "llApplyImpulse"
+    llApplyImpulse(${1:vector force}, ${2:integer local});
+    $0
+endsnippet
+
+snippet llApplyRotationalImpulse "llApplyRotationalImpulse"
+    llApplyRotationalImpulse(${1:vector force}, ${2:integer local});
+    $0
+endsnippet
+
+snippet llAsin "llAsin"
+    llAsin(${1:float val})
+endsnippet
+
+snippet llAtan2 "llAtan2"
+    llAtan2(${1:float y}, ${2:float x})
+endsnippet
+
+snippet llAttachToAvatar "llAttachToAvatar"
+    llAttachToAvatar(${1:integer attach_point});
+    $0
+endsnippet
+
+snippet llAttachToAvatarTemp "llAttachToAvatarTemp"
+    llAttachToAvatarTemp(${1:integer attach_point});
+    $0
+endsnippet
+
+snippet llAvatarOnLinkSitTarget "llAvatarOnLinkSitTarget"
+    llAvatarOnLinkSitTarget(${1:integer link})
+endsnippet
+
+snippet llAvatarOnSitTarget "llAvatarOnSitTarget"
+    llAvatarOnSitTarget()
+endsnippet
+
+snippet llAxes2Rot "llAxes2Rot"
+    llAxes2Rot(${1:vector fwd}, ${2:vector left}, ${3:vector up})
+endsnippet
+
+snippet llAxisAngle2Rot "llAxisAngle2Rot"
+    llAxisAngle2Rot(${1:vector axis}, ${2:float angle})
+endsnippet
+
+snippet llBase64ToInteger "llBase64ToInteger"
+    llBase64ToInteger(${1:string str})
+endsnippet
+
+snippet llBase64ToString "llBase64ToString"
+    llBase64ToString(${1:string str})
+endsnippet
+
+snippet llBreakAllLinks "llBreakAllLinks"
+    llBreakAllLinks();
+    $0
+endsnippet
+
+snippet llBreakLink "llBreakLink"
+    llBreakLink(${1:integer link});
+    $0
+endsnippet
+
+snippet llCastRay "llCastRay"
+    llCastRay(${1:vector start}, ${2:vector end}, ${3:list options});
+    $0
+endsnippet
+
+snippet llCeil "llCeil"
+    llCeil(${1:float val})
+endsnippet
+
+snippet llClearCameraParams "llClearCameraParams"
+    llClearCameraParams();
+    $0
+endsnippet
+
+snippet llClearLinkMedia "llClearLinkMedia"
+    llClearLinkMedia(${1:integer link}, ${2:integer face});
+    $0
+endsnippet
+
+snippet llClearPrimMedia "llClearPrimMedia"
+    llClearPrimMedia(${1:integer face});
+    $0
+endsnippet
+
+snippet llCloseRemoteDataChannel "llCloseRemoteDataChannel"
+    llCloseRemoteDataChannel(${1:key channel});
+    $0
+endsnippet
+
+snippet llCollisionFilter "llCollisionFilter"
+    llCollisionFilter(${1:string name}, ${2:key id}, ${3:integer accept});
+    $0
+endsnippet
+
+snippet llCollisionSound "llCollisionSound"
+    llCollisionSound(${1:string impact_sound}, ${2:float impact_volume});
+    $0
+endsnippet
+
+snippet llCos "llCos"
+    llCos(${1:float theta})
+endsnippet
+
+snippet llCreateCharacter "llCreateCharacter"
+    llCreateCharacter(${1:list options});
+    $0
+endsnippet
+
+snippet llCreateKeyValue "llCreateKeyValue"
+    llCreateKeyValue(${1:string k})
+endsnippet
+
+snippet llCreateLink "llCreateLink"
+    llCreateLink(${1:key target}, ${2:integer parent});
+    $0
+endsnippet
+
+snippet llCSV2List "llCSV2List"
+    llCSV2List(${1:string src})
+endsnippet
+
+snippet llDataSizeKeyValue "llDataSizeKeyValue"
+    llDataSizeKeyValue()
+endsnippet
+
+snippet llDeleteCharacter "llDeleteCharacter"
+    llDeleteCharacter();
+    $0
+endsnippet
+
+snippet llDeleteKeyValue "llDeleteKeyValue"
+    llDeleteKeyValue(${1:string k})
+endsnippet
+
+snippet llDeleteSubList "llDeleteSubList"
+    llDeleteSubList(${1:list src}, ${2:integer start}, ${3:integer end})
+endsnippet
+
+snippet llDeleteSubString "llDeleteSubString"
+    llDeleteSubString(${1:string src}, ${2:integer start}, ${3:integer end})
+endsnippet
+
+snippet llDetachFromAvatar "llDetachFromAvatar"
+    llDetachFromAvatar();
+    $0
+endsnippet
+
+snippet llDetectedGrab "llDetectedGrab"
+    llDetectedGrab(${1:integer number})
+endsnippet
+
+snippet llDetectedGroup "llDetectedGroup"
+    llDetectedGroup(${1:integer number})
+endsnippet
+
+snippet llDetectedKey "llDetectedKey"
+    llDetectedKey(${1:integer number})
+endsnippet
+
+snippet llDetectedLinkNumber "llDetectedLinkNumber"
+    llDetectedLinkNumber(${1:integer number})
+endsnippet
+
+snippet llDetectedName "llDetectedName"
+    llDetectedName(${1:integer number})
+endsnippet
+
+snippet llDetectedOwner "llDetectedOwner"
+    llDetectedOwner(${1:integer number})
+endsnippet
+
+snippet llDetectedPos "llDetectedPos"
+    llDetectedPosl(${1:integer number})
+endsnippet
+
+snippet llDetectedRot "llDetectedRot"
+    llDetectedRot(${1:integer number})
+endsnippet
+
+snippet llDetectedTouchBinormal "llDetectedTouchBinormal"
+    llDetectedTouchBinormal(${1:integer number})
+endsnippet
+
+snippet llDetectedTouchFace "llDetectedTouchFace"
+    llDetectedTouchFace(${1:integer number})
+endsnippet
+
+snippet llDetectedTouchNormal "llDetectedTouchNormal"
+    llDetectedTouchNormal(${1:integer number})
+endsnippet
+
+snippet llDetectedTouchPos "llDetectedTouchPos"
+    llDetectedTouchPos(${1:integer number})
+endsnippet
+
+snippet llDetectedTouchST "llDetectedTouchST"
+    llDetectedTouchST(${1:integer number})
+endsnippet
+
+snippet llDetectedTouchUV "llDetectedTouchUV"
+    llDetectedTouchUV(${1:integer number})
+endsnippet
+
+snippet llDetectedType "llDetectedType"
+    llDetectedType(${1:integer number})
+endsnippet
+
+snippet llDetectedVel "llDetectedVel"
+    llDetectedVel(${1:integer number})
+endsnippet
+
+snippet llDialog "llDialog"
+    llDialog(${1:key agent}, ${2:string message}, ${3:list buttons}, ${4:integer channel});
+    $0
+endsnippet
+
+snippet llDie "llDie"
+    llDie();
+    $0
+endsnippet
+
+snippet llDumpList2String "llDumpList2String"
+    llDumpList2String(${1:list src}, ${2:string separator})
+endsnippet
+
+snippet llEdgeOfWorld "llEdgeOfWorld"
+    llEdgeOfWorld(${1:vector pos}, ${2:vector dir})
+endsnippet
+
+snippet llEjectFromLand "llEjectFromLand"
+    llEjectFromLand(${1:key agent});
+    $0
+endsnippet
+
+snippet llEmail "llEmail"
+    llEmail(${1:string address}, ${2:string subject}, ${3:string message});
+    $0
+endsnippet
+
+snippet llEscapeURL "llEscapeURL"
+    llEscapeURL(${1:string url})
+endsnippet
+
+snippet llEuler2Rot "llEuler2Rot"
+    llEuler2Rot(${1:vector v})
+endsnippet
+
+snippet llExecCharacterCmd "llExecCharacterCmd"
+    llExecCharacterCmd(${1:integer command}, ${2:list options});
+    $0
+endsnippet
+
+snippet llEvade "llEvade"
+    llEvade(${1:key target}, ${2:list options});
+    $0
+endsnippet
+
+snippet llFabs "llFabs"
+    llFabs(${1:float val})
+endsnippet
+
+snippet llFleeFrom "llFleeFrom"
+    llFleeFrom(${1:vector position}, ${2:float distance}, ${3:list options});
+    $0
+endsnippet
+
+snippet llFloor "llFloor"
+    llFloor(${1:float val})
+endsnippet
+
+snippet llForceMouselook "llForceMouselook"
+    llForceMouselook(${1:integer mouselook});
+    $0
+endsnippet
+
+snippet llFrand "llFrand"
+    llFrand(${1:float mag})
+endsnippet
+
+snippet llGenerateKey "llGenerateKey"
+    llGenerateKey()
+endsnippet
+
+snippet llGetAccel "llGetAccel"
+    llGetAccel()
+endsnippet
+
+snippet llGetAgentInfo "llGetAgentInfo"
+    llGetAgentInfo(${1:key id})
+endsnippet
+
+snippet llGetAgentLanguage "llGetAgentLanguage"
+    llGetAgentLanguage(${1:key agent})
+endsnippet
+
+snippet llGetAgentList "llGetAgentList"
+    llGetAgentList(${1:integer scope}, ${2:list options})
+endsnippet
+
+snippet llGetAgentSize "llGetAgentSize"
+    llGetAgentSize(${1:key agent})
+endsnippet
+
+snippet llGetAlpha "llGetAlpha"
+    llGetAlpha(${1:integer face})
+endsnippet
+
+snippet llGetAndResetTime "llGetAndResetTime"
+    llGetAndResetTime()
+endsnippet
+
+snippet llGetAnimation "llGetAnimation"
+    llGetAnimation(${1:key id})
+endsnippet
+
+snippet llGetAnimationList "llGetAnimationList"
+    llGetAnimationList(${1:key agent})
+endsnippet
+
+snippet llGetAnimationOverride "llGetAnimationOverride"
+    llGetAnimationOverride(${1:string anim_state})
+endsnippet
+
+snippet llGetAttached "llGetAttached"
+    llGetAttached()
+endsnippet
+
+snippet llGetAttachedList "llGetAttachedList"
+    llGetAttachedList(${1:key id})
+endsnippet
+
+snippet llGetBoundingBox "llGetBoundingBox"
+    llGetBoundingBox(${1:key object})
+endsnippet
+
+snippet llGetCameraPos "llGetCameraPos"
+    llGetCameraPos()
+endsnippet
+
+snippet llGetCameraRot "llGetCameraRot"
+    llGetCameraRot()
+endsnippet
+
+snippet llGetCenterOfMass "llGetCenterOfMass"
+    llGetCenterOfMass()
+endsnippet
+
+snippet llGetClosestNavPoint "llGetClosestNavPoint"
+    llGetClosestNavPoint(${1:vector point}, ${2:list options})
+endsnippet
+
+snippet llGetColor "llGetColor"
+    llGetColor(${1:integer face})
+endsnippet
+
+snippet llGetCreator "llGetCreator"
+    llGetCreator()
+endsnippet
+
+snippet llGetDate "llGetDate"
+    llGetDate()
+endsnippet
+
+snippet llGetDisplayName "llGetDisplayName"
+    llGetDisplayName(${1:key id})
+endsnippet
+
+snippet llGetEnergy "llGetEnergy"
+    llGetEnergy()
+endsnippet
+
+snippet llGetEnv "llGetEnv"
+    llGetEnv(${1:string name})
+endsnippet
+
+snippet llGetExperienceDetails "llGetExperienceDetails"
+    llGetExperienceDetails(${1:key experience_id})
+endsnippet
+
+snippet llGetExperienceErrorMessage "llGetExperienceErrorMessage"
+    llGetExperienceErrorMessage(${1:integer error})
+endsnippet
+
+snippet llGetForce "llGetForce"
+    llGetForce()
+endsnippet
+
+snippet llGetFreeMemory "llGetFreeMemory"
+    llGetFreeMemory()
+endsnippet
+
+snippet llGetFreeURLs "llGetFreeURLs"
+    llGetFreeURLs()
+endsnippet
+
+snippet llGetGeometricCenter "llGetGeometricCenter"
+    llGetGeometricCenter()
+endsnippet
+
+snippet llGetGMTclock "llGetGMTclock"
+    llGetGMTclock()
+endsnippet
+
+snippet llGetHTTPHeader "llGetHTTPHeader"
+    llGetHTTPHeader(${1:key request_id}, ${2:string header})
+endsnippet
+
+snippet llGetInventoryCreator "llGetInventoryCreator"
+    llGetInventoryCreator(${1:string item})
+endsnippet
+
+snippet llGetInventoryKey "llGetInventoryKey"
+    llGetInventoryKey(${1:string name})
+endsnippet
+
+snippet llGetInventoryName "llGetInventoryName"
+    llGetInventoryName(${1:integer type}, ${2:integer number})
+endsnippet
+
+snippet llGetInventoryNumber "llGetInventoryNumber"
+    llGetInventoryNumber(${1:integer type})
+endsnippet
+
+snippet llGetInventoryPermMask "llGetInventoryPermMask"
+    llGetInventoryPermMask(${1:string item}, ${2:integer mask})
+endsnippet
+
+snippet llGetInventoryType "llGetInventoryType"
+    llGetInventoryType(${1:string name})
+endsnippet
+
+snippet llGetKey "llGetKey"
+    llGetKey()
+endsnippet
+
+snippet llGetLandOwnerAt "llGetLandOwnerAt"
+    llGetLandOwnerAt(${1:vector pos})
+endsnippet
+
+snippet llGetLinkKey "llGetLinkKey"
+    llGetLinkKey(${1:integer link})
+endsnippet
+
+snippet llGetLinkMedia "llGetLinkMedia"
+    llGetLinkMedia(${1:integer link}, ${2:integer face}, ${3:list params})
+endsnippet
+
+snippet llGetLinkName "llGetLinkName"
+    llGetLinkName(${1:integer link})
+endsnippet
+
+snippet llGetLinkNumber "llGetLinkNumber"
+    llGetLinkNumber()
+endsnippet
+
+snippet llGetLinkNumberOfSides "llGetLinkNumberOfSides"
+    llGetLinkNumberOfSides(${1:integer link})
+endsnippet
+
+snippet llGetLinkPrimitiveParams "llGetLinkPrimitiveParams"
+    llGetLinkPrimitiveParams(${1:integer link}, ${2:list params})
+endsnippet
+
+snippet llGetListEntryType "llGetListEntryType"
+    llGetListEntryType(${1:list src}, ${2:integer index})
+endsnippet
+
+snippet llGetListLength "llGetListLength"
+    llGetListLength(${1:list src})
+endsnippet
+
+snippet llGetLocalPos "llGetLocalPos"
+    llGetLocalPos()
+endsnippet
+
+snippet llGetLocalRot "llGetLocalRot"
+    llGetLocalRot()
+endsnippet
+
+snippet llGetMass "llGetMass"
+    llGetMass()
+endsnippet
+
+snippet llGetMassMKS "llGetMassMKS"
+    llGetMassMKS()
+endsnippet
+
+snippet llGetMaxScaleFactor "llGetMaxScaleFactor"
+    llGetMaxScaleFactor()
+endsnippet
+
+snippet llGetMemoryLimit "llGetMemoryLimit"
+    llGetMemoryLimit()
+endsnippet
+
+snippet llGetMinScaleFactor "llGetMinScaleFactor"
+    llGetMinScaleFactor()
+endsnippet
+
+snippet llGetNextEmail "llGetNextEmail"
+    llGetNextEmail(${1:string address}, ${2:string subject});
+    $0
+endsnippet
+
+snippet llGetNotecardLine "llGetNotecardLine"
+    llGetNotecardLine(${1:string name}, ${2:integer line})
+endsnippet
+
+snippet llGetNumberOfNotecardLines "llGetNumberOfNotecardLines"
+    llGetNumberOfNotecardLines(${1:string name})
+endsnippet
+
+snippet llGetNumberOfPrims "llGetNumberOfPrims"
+    llGetNumberOfPrims()
+endsnippet
+
+snippet llGetNumberOfSides "llGetNumberOfSides"
+    llGetNumberOfSides()
+endsnippet
+
+snippet llGetObjectDesc "llGetObjectDesc"
+    llGetObjectDesc()
+endsnippet
+
+snippet llGetObjectDetails "llGetObjectDetails"
+    llGetObjectDetails(${1:key id}, ${2:list params})
+endsnippet
+
+snippet llGetObjectMass "llGetObjectMass"
+    llGetObjectMass(${1:key id})
+endsnippet
+
+snippet llGetObjectName "llGetObjectName"
+    llGetObjectName()
+endsnippet
+
+snippet llGetObjectPermMask "llGetObjectPermMask"
+    llGetObjectPermMask(${1:integer mask})
+endsnippet
+
+snippet llGetObjectPrimCount "llGetObjectPrimCount"
+    llGetObjectPrimCount(${1:key prim})
+endsnippet
+
+snippet llGetOmega "llGetOmega"
+    llGetOmega()
+endsnippet
+
+snippet llGetOwner "llGetOwner"
+    llGetOwner()
+endsnippet
+
+snippet llGetOwnerKey "llGetOwnerKey"
+    llGetOwnerKey(${1:key id})
+endsnippet
+
+snippet llGetParcelDetails "llGetParcelDetails"
+    llGetParcelDetails(${1:vector pos}, ${2:list params})
+endsnippet
+
+snippet llGetParcelFlags "llGetParcelFlags"
+    llGetParcelFlags(${1:vector pos})
+endsnippet
+
+snippet llGetParcelMaxPrims "llGetParcelMaxPrims"
+    llGetParcelMaxPrims(${1:vector pos}, ${2:integer sim_wide})
+endsnippet
+
+snippet llGetParcelMusicURL "llGetParcelMusicURL"
+    llGetParcelMusicURL()
+endsnippet
+
+snippet llGetParcelPrimCount "llGetParcelPrimCount"
+    llGetParcelPrimCount(${1:vector pos}, ${2:integer category}, ${3:integer sim_wide})
+endsnippet
+
+snippet llGetParcelPrimOwners "llGetParcelPrimOwners"
+    llGetParcelPrimOwners(${1:vector pos})
+endsnippet
+
+snippet llGetPermissions "llGetPermissions"
+    llGetPermissions()
+endsnippet
+
+snippet llGetPermissionsKey "llGetPermissionsKey"
+    llGetPermissionsKey()
+endsnippet
+
+snippet llGetPhysicsMaterial "llGetPhysicsMaterial"
+    llGetPhysicsMaterial()
+endsnippet
+
+snippet llGetPos "llGetPos"
+    llGetPos()
+endsnippet
+
+snippet llGetPrimitiveParams "llGetPrimitiveParams"
+    llGetPrimitiveParams(${1:list params})
+endsnippet
+
+snippet llGetPrimMediaParams "llGetPrimMediaParams"
+    llGetPrimMediaParams(${1:integer face}, ${2:list params})
+endsnippet
+
+snippet llGetRegionAgentCount "llGetRegionAgentCount"
+    llGetRegionAgentCount()
+endsnippet
+
+snippet llGetRegionCorner "llGetRegionCorner"
+    llGetRegionCorner()
+endsnippet
+
+snippet llGetRegionFlags "llGetRegionFlags"
+    llGetRegionFlags()
+endsnippet
+
+snippet llGetRegionFPS "llGetRegionFPS"
+    llGetRegionFPS()
+endsnippet
+
+snippet llGetRegionName "llGetRegionName"
+    llGetRegionName()
+endsnippet
+
+snippet llGetRegionTimeDilation "llGetRegionTimeDilation"
+    llGetRegionTimeDilation()
+endsnippet
+
+snippet llGetRootPosition "llGetRootPosition"
+    llGetRootPosition()
+endsnippet
+
+snippet llGetRootRotation "llGetRootRotation"
+    llGetRootRotation()
+endsnippet
+
+snippet llGetRot "llGetRot"
+    llGetRot()
+endsnippet
+
+snippet llGetScale "llGetScale"
+    llGetScale()
+endsnippet
+
+snippet llGetScriptName "llGetScriptName"
+    llGetScriptName()
+endsnippet
+
+snippet llGetScriptState "llGetScriptState"
+    llGetScriptState(${1:string script})
+endsnippet
+
+snippet llGetSimStats "llGetSimStats"
+    llGetSimStats(${1:integer stat_type})
+endsnippet
+
+snippet llGetSimulatorHostname "llGetSimulatorHostname"
+    llGetSimulatorHostname()
+endsnippet
+
+snippet llGetSPMaxMemory "llGetSPMaxMemory"
+    llGetSPMaxMemory()
+endsnippet
+
+snippet llGetStartParameter "llGetStartParameter"
+    llGetStartParameter()
+endsnippet
+
+snippet llGetStaticPath "llGetStaticPath"
+    llGetStaticPath(${1:vector start}, ${2:vector end}, ${3:float radius}, ${4:list params})
+endsnippet
+
+snippet llGetStatus "llGetStatus"
+    llGetStatus(${1:integer status})
+endsnippet
+
+snippet llGetSubString "llGetSubString"
+    llGetSubString(${1:string src}, ${2:integer start}, ${3:integer end})
+endsnippet
+
+snippet llGetSunDirection "llGetSunDirection"
+    llGetSunDirection()
+endsnippet
+
+snippet llGetTexture "llGetTexture"
+    llGetTexture(${1:integer face})
+endsnippet
+
+snippet llGetTextureOffset "llGetTextureOffset"
+    llGetTextureOffset(${1:integer face})
+endsnippet
+
+snippet llGetTextureRot "llGetTextureRot"
+    llGetTextureRot(${1:integer face})
+endsnippet
+
+snippet llGetTextureScale "llGetTextureScale"
+    llGetTextureScale(${1:integer face})
+endsnippet
+
+snippet llGetTime "llGetTime"
+    llGetTime()
+endsnippet
+
+snippet llGetTimeOfDay "llGetTimeOfDay"
+    llGetTimeOfDay()
+endsnippet
+
+snippet llGetTimestamp "llGetTimestamp"
+    llGetTimestamp()
+endsnippet
+
+snippet llGetTorque "llGetTorque"
+    llGetTorque()
+endsnippet
+
+snippet llGetUnixTime "llGetUnixTime"
+    llGetUnixTime()
+endsnippet
+
+snippet llGetUsedMemory "llGetUsedMemory"
+    llGetUsedMemory()
+endsnippet
+
+snippet llGetUsername "llGetUsername"
+    llGetUsername(${1:key id})
+endsnippet
+
+snippet llGetVel "llGetVel"
+    llGetVel()
+endsnippet
+
+snippet llGetWallclock "llGetWallclock"
+    llGetWallclock()
+endsnippet
+
+snippet llGiveInventory "llGiveInventory"
+    llGiveInventory(${1:key destination}, ${2:string inventory});
+    $0
+endsnippet
+
+snippet llGiveInventoryList "llGiveInventoryList"
+    llGiveInventoryList(${1:key target}, ${2:string folder}, ${3:list inventory});
+    $0
+endsnippet
+
+snippet llGiveMoney "llGiveMoney"
+    llGiveMoney(${1:key destination}, ${2:integer amount})
+endsnippet
+
+snippet llGround "llGround"
+    llGround(${1:vector offset})
+endsnippet
+
+snippet llGroundContour "llGroundContour"
+    llGroundContour(${1:vector offset})
+endsnippet
+
+snippet llGroundNormal "llGroundNormal"
+    llGroundNormal(${1:vector offset})
+endsnippet
+
+snippet llGroundRepel "llGroundRepel"
+    llGroundRepel(${1:float height}, ${2:integer water}, ${3:float tau});
+    $0
+endsnippet
+
+snippet llGroundSlope "llGroundSlope"
+    llGroundSlope(${1:vector offset})
+endsnippet
+
+snippet llHTTPRequest "llHTTPRequest"
+    llHTTPRequest(${1:string url}, ${2:list parameters}, ${3:string body})
+endsnippet
+
+snippet llHTTPResponse "llHTTPResponse"
+    llHTTPResponse(${1:key request_id}, ${2:integer status}, ${3:string body});
+    $0
+endsnippet
+
+snippet llInsertString "llInsertString"
+    llInsertString(${1:string dst}, ${2:integer pos}, ${3:string src})
+endsnippet
+
+snippet llInstantMessage "llInstantMessage"
+    llInstantMessage(${1:key user}, ${2:string message});
+    $0
+endsnippet
+
+snippet llIntegerToBase64 "llIntegerToBase64"
+    llIntegerToBase64(${1:integer number})
+endsnippet
+
+snippet llJson2List "llJson2List"
+    llJson2List(${1:string json})
+endsnippet
+
+snippet llJsonGetValue "llJsonGetValue"
+    llJsonGetValue(${1:string json}, ${2:list specifiers})
+endsnippet
+
+snippet llJsonSetValue "llJsonSetValue"
+    llJsonSetValue(${1:string json}, ${2:list specifiers}, ${3:string newValue})
+endsnippet
+
+snippet llJsonValueType "llJsonValueType"
+    llJsonValueType(${1:string json}, ${2:list specifiers})
+endsnippet
+
+snippet llKey2Name "llKey2Name"
+    llKey2Name(${1:key id})
+endsnippet
+
+snippet llKeyCountKeyValue "llKeyCountKeyValue"
+    llKeyCountKeyValue()
+endsnippet
+
+snippet llKeysKeyValue "llKeysKeyValue"
+    llKeysKeyValue(${1:integer first}, ${2:integer count})
+endsnippet
+
+snippet llLinkParticleSystem "llLinkParticleSystem"
+    llLinkParticleSystem(${1:integer link}, ${2:list rules});
+    $0
+endsnippet
+
+snippet llLinkSitTarget "llLinkSitTarget"
+    llLinkSitTarget(${1:integer link}, ${2:vector offset}, ${3:rotation rot});
+    $0
+endsnippet
+
+snippet llList2CSV "llList2CSV"
+    llList2CSV(${1:list src})
+endsnippet
+
+snippet llList2Float "llList2Float"
+    llList2Float(${1:list src}, ${2:integer index})
+endsnippet
+
+snippet llList2Integer "llList2Integer"
+    llList2Integer(${1:list src}, ${2:integer index})
+endsnippet
+
+snippet llList2Json "llList2Json"
+    llList2Json(${1:string type}, ${2:list values})
+endsnippet
+
+snippet llList2Key "llList2Key"
+    llList2Key(${1:list src}, ${2:integer index})
+endsnippet
+
+snippet llList2List "llList2List"
+    llList2List(${1:list src}, ${2:integer start}, ${3:integer end})
+endsnippet
+
+snippet llList2ListStrided "llList2ListStrided"
+    llList2ListStrided(${1:list src}, ${2:integer start}, ${3:integer end}, ${4:integer stride})
+endsnippet
+
+snippet llList2Rot "llList2Rot"
+    llList2Rot(${1:list src}, ${2:integer index})
+endsnippet
+
+snippet llList2String "llList2String"
+    llList2String(${1:list src}, ${2:integer index})
+endsnippet
+
+snippet llList2Vector "llList2Vector"
+    llList2Vector(${1:list src}, ${2:integer index})
+endsnippet
+
+snippet llListen "llListen"
+    llListen(${1:integer channel}, ${2:string name}, ${3:key id}, ${4:string msg})
+endsnippet
+
+snippet llListenControl "llListenControl"
+    llListenControl(${1:integer handle}, ${2:integer active});
+    $0
+endsnippet
+
+snippet llListenRemove "llListenRemove"
+    llListenRemove(${1:integer handle});
+    $0
+endsnippet
+
+snippet llListFindList "llListFindList"
+    llListFindList(${1:list src}, ${2:list test})
+endsnippet
+
+snippet llListInsertList "llListInsertList"
+    llListInsertList(${1:list dest}, ${2:list src}, ${3:integer start})
+endsnippet
+
+snippet llListRandomize "llListRandomize"
+    llListRandomize(${1:list src}, ${2:integer stride})
+endsnippet
+
+snippet llListReplaceList "llListReplaceList"
+    llListReplaceList(${1:list dest}, ${2:list src}, ${3:integer start}, ${4:integer end})
+endsnippet
+
+snippet llListSort "llListSort"
+    llListSort(${1:list src}, ${2:integer stride}, ${3:integer ascending})
+endsnippet
+
+snippet llListStatistics "llListStatistics"
+    llListStatistics(${1:integer operation}, ${2:list src})
+endsnippet
+
+snippet llLoadURL "llLoadURL"
+    llLoadURL(${1:key agent}, ${2:string message}, ${3:string url});
+    $0
+endsnippet
+
+snippet llLog "llLog"
+    llLog(${1:float val})
+endsnippet
+
+snippet llLog10 "llLog10"
+    llLog10(${1:float val})
+endsnippet
+
+snippet llLookAt "llLookAt"
+    llLookAt(${1:vector target}, ${2:float strength}, ${3:float damping});
+    $0
+endsnippet
+
+snippet llLoopSound "llLoopSound"
+    llLoopSound(${1:string sound}, ${2:float volume});
+    $0
+endsnippet
+
+snippet llLoopSoundMaster "llLoopSoundMaster"
+    llLoopSoundMaster(${1:string sound}, ${2:float volume});
+    $0
+endsnippet
+
+snippet llLoopSoundSlave "llLoopSoundSlave"
+    llLoopSoundSlave(${1:string sound}, ${2:float volume});
+    $0
+endsnippet
+
+snippet llManageEstateAccess "llManageEstateAccess"
+    llManageEstateAccess(${1:integer action}, ${2:key agent})
+endsnippet
+
+snippet llMapDestination "llMapDestination"
+    llMapDestination(${1:string simname}, ${2:vector pos}, ${3:vector look_at});
+    $0
+endsnippet
+
+snippet llMD5String "llMD5String"
+    llMD5String(${1:string src}, ${2:integer nonce})
+endsnippet
+
+snippet llMessageLinked "llMessageLinked"
+    llMessageLinked(${1:integer link}, ${2:integer num}, ${3:string str}, ${4:key id});
+    $0
+endsnippet
+
+snippet llMinEventDelay "llMinEventDelay"
+    llMinEventDelay(${1:float delay});
+    $0
+endsnippet
+
+snippet llModifyLand "llModifyLand"
+    llModifyLand(${1:integer action}, ${2:integer brush});
+    $0
+endsnippet
+
+snippet llModPow "llModPow"
+    llModPow(${1:integer a}, ${2:integer b}, ${3:integer c})
+endsnippet
+
+snippet llMoveToTarget "llMoveToTarget"
+    llMoveToTarget(${1:vector target}, ${2:float tau});
+    $0
+endsnippet
+
+snippet llNavigateTo "llNavigateTo"
+    llNavigateTo(${1:vector pos}, ${2:list options});
+    $0
+endsnippet
+
+snippet llOffsetTexture "llOffsetTexture"
+    llOffsetTexture(${1:float u}, ${2:float v}, ${3:integer face});
+    $0
+endsnippet
+
+snippet llOpenRemoteDataChannel "llOpenRemoteDataChannel"
+    llOpenRemoteDataChannel();
+    $0
+endsnippet
+
+snippet llOverMyLand "llOverMyLand"
+    llOverMyLand(${1:key id})
+endsnippet
+
+snippet llOwnerSay "llOwnerSay"
+    llOwnerSay(${1:string msg});
+    $0
+endsnippet
+
+snippet llParcelMediaCommandList "llParcelMediaCommandList"
+    llParcelMediaCommandList(${1:list commandList});
+    $0
+endsnippet
+
+snippet llParcelMediaQuery "llParcelMediaQuery"
+    llParcelMediaQuery(${1:list query})
+endsnippet
+
+snippet llParseString2List "llParseString2List"
+    llParseString2List(${1:string src}, ${2:list separators}, ${3:list spacers})
+endsnippet
+
+snippet llParseStringKeepNulls "llParseStringKeepNulls"
+    llParseStringKeepNulls(${1:string src}, ${2:list separators}, ${3:list spacers})
+endsnippet
+
+snippet llParticleSystem "llParticleSystem"
+    llParticleSystem(${1:list rules});
+    $0
+endsnippet
+
+snippet llPassCollisions "llPassCollisions"
+    llPassCollisions(${1:integer pass});
+    $0
+endsnippet
+
+snippet llPassTouches "llPassTouches"
+    llPassTouches(${1:integer pass});
+    $0
+endsnippet
+
+snippet llPatrolPoints "llPatrolPoints"
+    llPatrolPoints(${1:list patrolPoints}, ${2:list options});
+    $0
+endsnippet
+
+snippet llPlaySound "llPlaySound"
+    llPlaySound(${1:string sound}, ${2:float volume});
+    $0
+endsnippet
+
+snippet llPlaySoundSlave "llPlaySoundSlave"
+    llPlaySoundSlave(${1:string sound}, ${2:float volume});
+    $0
+endsnippet
+
+snippet llPow "llPow"
+    llPow(${1:float base}, ${2:float exponent})
+endsnippet
+
+snippet llPreloadSound "llPreloadSound"
+    llPreloadSound(${1:string sound});
+    $0
+endsnippet
+
+snippet llPursue "llPursue"
+    llPursue(${1:key target}, ${2:list options});
+    $0
+endsnippet
+
+snippet llPushObject "llPushObject"
+    llPushObject(${1:key target}, ${2:vector impulse}, ${3:vector ang_impulse}, ${4:integer local});
+    $0
+endsnippet
+
+snippet llReadKeyValue "llReadKeyValue"
+    llReadKeyValue(${1:string k})
+endsnippet
+
+snippet llRegionSay "llRegionSay"
+    llRegionSay(${1:integer channel}, ${2:string msg});
+    $0
+endsnippet
+
+snippet llRegionSayTo "llRegionSayTo"
+    llRegionSayTo(${1:key target}, ${2:integer channel}, ${3:string msg});
+    $0
+endsnippet
+
+snippet llReleaseControls "llReleaseControls"
+    llReleaseControls();
+    $0
+endsnippet
+
+snippet llReleaseURL "llReleaseURL"
+    llReleaseURL(${1:string url});
+    $0
+endsnippet
+
+snippet llRemoteDataReply "llRemoteDataReply"
+    llRemoteDataReply(${1:key channel}, ${2:key message_id}, ${3:string sdata}, ${4:integer idata});
+    $0
+endsnippet
+
+snippet llRemoteLoadScriptPin "llRemoteLoadScriptPin"
+    llRemoteLoadScriptPin(${1:key target}, ${2:string name}, ${3:integer pin}, ${4:integer running}, ${5:integer start_param});
+    $0
+endsnippet
+
+snippet llRemoveFromLandBanList "llRemoveFromLandBanList"
+    llRemoveFromLandBanList(${1:key agent});
+    $0
+endsnippet
+
+snippet llRemoveFromLandPassList "llRemoveFromLandPassList"
+    llRemoveFromLandPassList(${1:key agent});
+    $0
+endsnippet
+
+snippet llRemoveInventory "llRemoveInventory"
+    llRemoveInventory(${1:string item});
+    $0
+endsnippet
+
+snippet llRemoveVehicleFlags "llRemoveVehicleFlags"
+    llRemoveVehicleFlags(${1:integer flags});
+    $0
+endsnippet
+
+snippet llRequestAgentData "llRequestAgentData"
+    llRequestAgentData(${1:key id}, ${2:integer data})
+endsnippet
+
+snippet llRequestDisplayName "llRequestDisplayName"
+    llRequestDisplayName(${1:key id})
+endsnippet
+
+snippet llRequestExperiencePermissions "llRequestExperiencePermissions"
+    llRequestExperiencePermissions(${1:key agent}, ${2:string name})
+endsnippet
+
+snippet llRequestInventoryData "llRequestInventoryData"
+    llRequestInventoryData(${1:string name})
+endsnippet
+
+snippet llRequestPermissions "llRequestPermissions"
+    llRequestPermissions(${1:key agent}, ${2:integer permissions})
+endsnippet
+
+snippet llRequestSecureURL "llRequestSecureURL"
+    llRequestSecureURL()
+endsnippet
+
+snippet llRequestSimulatorData "llRequestSimulatorData"
+    llRequestSimulatorData(${1:string region}, ${2:integer data})
+endsnippet
+
+snippet llRequestURL "llRequestURL"
+    llRequestURL()
+endsnippet
+
+snippet llRequestUsername "llRequestUsername"
+    llRequestUsername(${1:key id})
+endsnippet
+
+snippet llResetAnimationOverride "llResetAnimationOverride"
+    llResetAnimationOverride(${1:string anim_state});
+    $0
+endsnippet
+
+snippet llResetLandBanList "llResetLandBanList"
+    llResetLandBanList();
+    $0
+endsnippet
+
+snippet llResetLandPassList "llResetLandPassList"
+    llResetLandPassList();
+    $0
+endsnippet
+
+snippet llResetOtherScript "llResetOtherScript"
+    llResetOtherScript(${1:string name});
+    $0
+endsnippet
+
+snippet llResetScript "llResetScript"
+    llResetScript();
+    $0
+endsnippet
+
+snippet llResetTime "llResetTime"
+    llResetTime();
+    $0
+endsnippet
+
+snippet llReturnObjectsByID "llReturnObjectsByID"
+    llReturnObjectsByID(${1:list objects})
+endsnippet
+
+snippet llReturnObjectsByOwner "llReturnObjectsByOwner"
+    llReturnObjectsByOwner(${1:key owner}, ${2:integer scope})
+endsnippet
+
+snippet llRezAtRoot "llRezAtRoot"
+    llRezAtRoot(${1:string inventory}, ${2:vector position}, ${3:vector velocity}, ${4:rotation rot}, ${5:integer param});
+    $0
+endsnippet
+
+snippet llRezObject "llRezObject"
+    llRezObject(${1:string inventory}, ${2:vector pos}, ${3:vector vel}, ${4:rotation rot}, ${5:integer param});
+    $0
+endsnippet
+
+snippet llRot2Angle "llRot2Angle"
+    llRot2Angle(${1:rotation rot})
+endsnippet
+
+snippet llRot2Axis "llRot2Axis"
+    llRot2Axis(${1:rotation rot})
+endsnippet
+
+snippet llRot2Euler "llRot2Euler"
+    llRot2Euler(${1:rotation quat})
+endsnippet
+
+snippet llRot2Fwd "llRot2Fwd"
+    llRot2Fwd(${1:rotation q})
+endsnippet
+
+snippet llRot2Left "llRot2Left"
+    llRot2Left(${1:rotation q})
+endsnippet
+
+snippet llRot2Up "llRot2Up"
+    llRot2Up(${1:rotation q})
+endsnippet
+
+snippet llRotateTexture "llRotateTexture"
+    llRotateTexture(${1:float angle}, ${2:integer face});
+    $0
+endsnippet
+
+snippet llRotBetween "llRotBetween"
+    llRotBetween(${1:vector start}, ${2:vector end})
+endsnippet
+
+snippet llRotLookAt "llRotLookAt"
+    llRotLookAt(${1:rotation target_direction}, ${2:float strength}, ${3:float damping});
+    $0
+endsnippet
+
+snippet llRotTarget "llRotTarget"
+    llRotTarget(${1:rotation rot}, ${2:float error})
+endsnippet
+
+snippet llRotTargetRemove "llRotTargetRemove"
+    llRotTargetRemove(${1:integer handle});
+    $0
+endsnippet
+
+snippet llRound "llRound"
+    llRound(${1:float val})
+endsnippet
+
+snippet llSameGroup "llSameGroup"
+    llSameGroup(${1:key group})
+endsnippet
+
+snippet llSay "llSay"
+    llSay(${1:integer channel}, ${2:string msg});
+    $0
+endsnippet
+
+snippet llScaleByFactor "llScaleByFactor"
+    llScaleByFactor(${1:float scaling_factor})
+endsnippet
+
+snippet llScaleTexture "llScaleTexture"
+    llScaleTexture(${1:float u}, ${2:float v}, ${3:integer face});
+    $0
+endsnippet
+
+snippet llScriptDanger "llScriptDanger"
+    llScriptDanger(${1:vector pos})
+endsnippet
+
+snippet llScriptProfiler "llScriptProfiler"
+    llScriptProfiler(${1:integer flags});
+    $0
+endsnippet
+
+snippet llSendRemoteData "llSendRemoteData"
+    llSendRemoteData(${1:key channel}, ${2:string dest}, ${3:integer idata}, ${4:string sdata})
+endsnippet
+
+snippet llSensor "llSensor"
+    llSensor(${1:string name}, ${2:key id}, ${3:integer type}, ${4:float range}, ${5:float arc});
+    $0
+endsnippet
+
+snippet llSensorRepeat "llSensorRepeat"
+    llSensorRepeat(${1:string name}, ${2:key id}, ${3:integer type}, ${4:float range}, ${5:float arc}, ${6:float rate});
+    $0
+endsnippet
+
+snippet llSetAlpha "llSetAlpha"
+    llSetAlpha(${1:float alpha}, ${2:integer face});
+    $0
+endsnippet
+
+snippet llSetAngularVelocity "llSetAngularVelocity"
+    llSetAngularVelocity(${1:vector force}, ${2:integer local});
+    $0
+endsnippet
+
+snippet llSetAnimationOverride "llSetAnimationOverride"
+    llSetAnimationOverride(${1:string anim_state}, ${2:string anim})
+endsnippet
+
+snippet llSetBuoyancy "llSetBuoyancy"
+    llSetBuoyancy(${1:float buoyancy});
+    $0
+endsnippet
+
+snippet llSetCameraAtOffset "llSetCameraAtOffset"
+    llSetCameraAtOffset(${1:vector offset});
+    $0
+endsnippet
+
+snippet llSetCameraEyeOffset "llSetCameraEyeOffset"
+    llSetCameraEyeOffset(${1:vector offset});
+    $0
+endsnippet
+
+snippet llSetCameraParams "llSetCameraParams"
+    llSetCameraParams(${1:list rules});
+    $0
+endsnippet
+
+snippet llSetClickAction "llSetClickAction"
+    llSetClickAction(${1:integer action});
+    $0
+endsnippet
+
+snippet llSetColor "llSetColor"
+    llSetColor(${1:vector color}, ${2:integer face});
+    $0
+endsnippet
+
+snippet llSetContentType "llSetContentType"
+    llSetContentType(${1:key request_id}, ${2:integer content_type});
+    $0
+endsnippet
+
+snippet llSetDamage "llSetDamage"
+    llSetDamage(${1:float damage});
+    $0
+endsnippet
+
+snippet llSetForce "llSetForce"
+    llSetForce(${1:vector force}, ${2:integer local});
+    $0
+endsnippet
+
+snippet llSetForceAndTorque "llSetForceAndTorque"
+    llSetForceAndTorque(${1:vector force}, ${2:vector torque}, ${3:integer local});
+    $0
+endsnippet
+
+snippet llSetHoverHeight "llSetHoverHeight"
+    llSetHoverHeight(${1:float height}, ${2:integer water}, ${3:float tau});
+    $0
+endsnippet
+
+snippet llSetKeyframedMotion "llSetKeyframedMotion"
+    llSetKeyframedMotion(${1:list keyframes}, ${2:list options});
+    $0
+endsnippet
+
+snippet llSetLinkAlpha "llSetLinkAlpha"
+    llSetLinkAlpha(${1:integer link}, ${2:float alpha}, ${3:integer face});
+    $0
+endsnippet
+
+snippet llSetLinkCamera "llSetLinkCamera"
+    llSetLinkCamera(${1:integer link}, ${2:vector eye}, ${3:vector at});
+    $0
+endsnippet
+
+snippet llSetLinkColor "llSetLinkColor"
+    llSetLinkColor(${1:integer link}, ${2:vector color}, ${3:integer face});
+    $0
+endsnippet
+
+snippet llSetLinkMedia "llSetLinkMedia"
+    llSetLinkMedia(${1:integer link}, ${2:integer face}, ${3:list params});
+    $0
+endsnippet
+
+snippet llSetLinkPrimitiveParams "llSetLinkPrimitiveParams"
+    llSetLinkPrimitiveParams(${1:integer link}, ${2:list rules});
+    $0
+endsnippet
+
+snippet llSetLinkPrimitiveParamsFast "llSetLinkPrimitiveParamsFast"
+    llSetLinkPrimitiveParamsFast(${1:integer link}, ${2:list rules});
+    $0
+endsnippet
+
+snippet llSetLinkTexture "llSetLinkTexture"
+    llSetLinkTexture(${1:integer link}, ${2:string texture}, ${3:integer face});
+    $0
+endsnippet
+
+snippet llSetLinkTextureAnim "llSetLinkTextureAnim"
+    llSetLinkTextureAnim(${1:integer link}, ${2:integer mode}, ${3:integer face}, ${4:integer sizex}, ${5:integer sizey}, ${6:float start}, ${7:float length}, ${8:float rate});
+    $0
+endsnippet
+
+snippet llSetLocalRot "llSetLocalRot"
+    llSetLocalRot(${1:rotation rot});
+    $0
+endsnippet
+
+snippet llSetMemoryLimit "llSetMemoryLimit"
+    llSetMemoryLimit(${1:integer limit})
+endsnippet
+
+snippet llSetObjectDesc "llSetObjectDesc"
+    llSetObjectDesc(${1:string description});
+    $0
+endsnippet
+
+snippet llSetObjectName "llSetObjectName"
+    llSetObjectName(${1:string name});
+    $0
+endsnippet
+
+snippet llSetParcelMusicURL "llSetParcelMusicURL"
+    llSetParcelMusicURL(${1:string url});
+    $0
+endsnippet
+
+snippet llSetPayPrice "llSetPayPrice"
+    llSetPayPrice(${1:integer price}, [${2:integer price_button_a}, ${3:integer price_button_b}, ${4:integer price_button_c}, ${5:integer price_button_d}]);
+    $0
+endsnippet
+
+snippet llSetPhysicsMaterial "llSetPhysicsMaterial"
+    llSetPhysicsMaterial(${1:integer mask}, ${2:float gravity_multiplier}, ${3:float restitution}, ${4:float friction}, ${5:float density});
+    $0
+endsnippet
+
+snippet llSetPos "llSetPos"
+    llSetPos(${1:vector pos});
+    $0
+endsnippet
+
+snippet llSetPrimitiveParams "llSetPrimitiveParams"
+    llSetPrimitiveParams(${1:list rules});
+    $0
+endsnippet
+
+snippet llSetPrimMediaParams "llSetPrimMediaParams"
+    llSetPrimMediaParams(${1:integer face}, ${2:list params});
+    $0
+endsnippet
+
+snippet llSetRegionPos "llSetRegionPos"
+    llSetRegionPos(${1:vector position})
+endsnippet
+
+snippet llSetRemoteScriptAccessPin "llSetRemoteScriptAccessPin"
+    llSetRemoteScriptAccessPin(${1:integer pin});
+    $0
+endsnippet
+
+snippet llSetRot "llSetRot"
+    llSetRot(${1:rotation rot});
+    $0
+endsnippet
+
+snippet llSetScale "llSetScale"
+    llSetScale(${1:vector size});
+    $0
+endsnippet
+
+snippet llSetScriptState "llSetScriptState"
+    llSetScriptState(${1:string name}, ${2:integer run});
+    $0
+endsnippet
+
+snippet llSetSitText "llSetSitText"
+    llSetSitText(${1:string text});
+    $0
+endsnippet
+
+snippet llSetSoundQueueing "llSetSoundQueueing"
+    llSetSoundQueueing(${1:integer queue});
+    $0
+endsnippet
+
+snippet llSetSoundRadius "llSetSoundRadius"
+    llSetSoundRadius(${1:float radius});
+    $0
+endsnippet
+
+snippet llSetStatus "llSetStatus"
+    llSetStatus(${1:integer status}, ${2:integer value});
+    $0
+endsnippet
+
+snippet llSetText "llSetText"
+    llSetText(${1:string text}, ${2:vector color}, ${3:float alpha});
+    $0
+endsnippet
+
+snippet llSetTexture "llSetTexture"
+    llSetTexture(${1:string texture}, ${2:integer face});
+    $0
+endsnippet
+
+snippet llSetTextureAnim "llSetTextureAnim"
+    llSetTextureAnim(${1:integer mode}, ${2:integer face}, ${3:integer sizex}, ${4:integer sizey}, ${5:float start}, ${6:float length}, ${7:float rate});
+    $0
+endsnippet
+
+snippet llSetTimerEvent "llSetTimerEvent"
+    llSetTimerEvent(${1:float sec});
+    $0
+endsnippet
+
+snippet llSetTorque "llSetTorque"
+    llSetTorque(${1:vector torque}, ${2:integer local});
+    $0
+endsnippet
+
+snippet llSetTouchText "llSetTouchText"
+    llSetTouchText(${1:string text});
+    $0
+endsnippet
+
+snippet llSetVehicleFlags "llSetVehicleFlags"
+    llSetVehicleFlags(${1:integer flags});
+    $0
+endsnippet
+
+snippet llSetVehicleFloatParam "llSetVehicleFloatParam"
+    llSetVehicleFloatParam(${1:integer param}, ${2:float value});
+    $0
+endsnippet
+
+snippet llSetVehicleRotationParam "llSetVehicleRotationParam"
+    llSetVehicleRotationParam(${1:integer param}, ${2:rotation rot});
+    $0
+endsnippet
+
+snippet llSetVehicleType "llSetVehicleType"
+    llSetVehicleType(${1:integer type});
+    $0
+endsnippet
+
+snippet llSetVehicleVectorParam "llSetVehicleVectorParam"
+    llSetVehicleVectorParam(${1:integer param}, ${2:vector vec});
+    $0
+endsnippet
+
+snippet llSetVelocity "llSetVelocity"
+    llSetVelocity(${1:vector force}, ${2:integer local});
+    $0
+endsnippet
+
+snippet llSHA1String "llSHA1String"
+    llSHA1String(${1:string src})
+endsnippet
+
+snippet llShout "llShout"
+    llShout(${1:integer channel}, ${2:string msg});
+    $0
+endsnippet
+
+snippet llSin "llSin"
+    llSin(${1:float theta})
+endsnippet
+
+snippet llSitOnLink "llSitOnLink"
+    llSitOnLink(${1:key agent_id}, ${2:integer link})
+endsnippet
+
+snippet llSitTarget "llSitTarget"
+    llSitTarget(${1:vector offset}, ${2:rotation rot});
+    $0
+endsnippet
+
+snippet llSleep "llSleep"
+    llSleep(${1:float sec});
+    $0
+endsnippet
+
+snippet llSqrt "llSqrt"
+    llSqrt(${1:float val})
+endsnippet
+
+snippet llStartAnimation "llStartAnimation"
+    llStartAnimation(${1:string anim});
+    $0
+endsnippet
+
+snippet llStopAnimation "llStopAnimation"
+    llStopAnimation(${1:string anim});
+    $0
+endsnippet
+
+snippet llStopHover "llStopHover"
+    llStopHover();
+    $0
+endsnippet
+
+snippet llStopLookAt "llStopLookAt"
+    llStopLookAt();
+    $0
+endsnippet
+
+snippet llStopMoveToTarget "llStopMoveToTarget"
+    llStopMoveToTarget();
+    $0
+endsnippet
+
+snippet llStopSound "llStopSound"
+    llStopSound();
+    $0
+endsnippet
+
+snippet llStringLength "llStringLength"
+    llStringLength(${1:string str})
+endsnippet
+
+snippet llStringToBase64 "llStringToBase64"
+    llStringToBase64(${1:string str})
+endsnippet
+
+snippet llStringTrim "llStringTrim"
+    llStringTrim(${1:string src}, ${2:integer type})
+endsnippet
+
+snippet llSubStringIndex "llSubStringIndex"
+    llSubStringIndex(${1:string source}, ${2:string pattern})
+endsnippet
+
+snippet llTakeControls "llTakeControls"
+    llTakeControls(${1:integer controls}, ${2:integer accept}, ${3:integer pass_on});
+    $0
+endsnippet
+
+snippet llTan "llTan"
+    llTan(${1:float theta})
+endsnippet
+
+snippet llTarget "llTarget"
+    llTarget(${1:vector position}, ${2:float range})
+endsnippet
+
+snippet llTargetOmega "llTargetOmega"
+    llTargetOmega(${1:vector axis}, ${2:float spinrate}, ${3:float gain});
+    $0
+endsnippet
+
+snippet llTargetRemove "llTargetRemove"
+    llTargetRemove(${1:integer handle});
+    $0
+endsnippet
+
+snippet llTeleportAgent "llTeleportAgent"
+    llTeleportAgent(${1:key agent}, ${2:string landmark}, ${3:vector position}, ${4:vector look_at});
+    $0
+endsnippet
+
+snippet llTeleportAgentGlobalCoords "llTeleportAgentGlobalCoords"
+    llTeleportAgentGlobalCoords(${1:key agent}, ${2:vector global_coordinates}, ${3:vector region_coordinates}, ${4:vector look_at});
+    $0
+endsnippet
+
+snippet llTeleportAgentHome "llTeleportAgentHome"
+    llTeleportAgentHome(${1:key agent});
+    $0
+endsnippet
+
+snippet llTextBox "llTextBox"
+    llTextBox(${1:key agent}, ${2:string message}, ${3:integer channel});
+    $0
+endsnippet
+
+snippet llToLower "llToLower"
+    llToLower(${1:string src})
+endsnippet
+
+snippet llToUpper "llToUpper"
+    llToUpper(${1:string src})
+endsnippet
+
+snippet llTransferLindenDollars "llTransferLindenDollars"
+    llTransferLindenDollars(${1:key destination}, ${2:integer amount})
+endsnippet
+
+snippet llTriggerSound "llTriggerSound"
+    llTriggerSound(${1:string sound}, ${2:float volume});
+    $0
+endsnippet
+
+snippet llTriggerSoundLimited "llTriggerSoundLimited"
+    llTriggerSoundLimited(${1:string sound}, ${2:float volume}, ${3:vector top_north_east}, ${4:vector bottom_south_west});
+    $0
+endsnippet
+
+snippet llUnescapeURL "llUnescapeURL"
+    llUnescapeURL(${1:string url})
+endsnippet
+
+snippet llUnSit "llUnSit"
+    llUnSit(${1:key id});
+    $0
+endsnippet
+
+snippet llUpdateCharacter "llUpdateCharacter"
+    llUpdateCharacter(${1:list options})
+endsnippet
+
+snippet llUpdateKeyValue "llUpdateKeyValue"
+    llUpdateKeyValue(${1:string k}, ${2:string v}, ${3:integer checked}, ${4:string ov})
+endsnippet
+
+snippet llVecDist "llVecDist"
+    llVecDist(${1:vector vec_a}, ${2:vector vec_b})
+endsnippet
+
+snippet llVecMag "llVecMag"
+    llVecMag(${1:vector vec})
+endsnippet
+
+snippet llVecNorm "llVecNorm"
+    llVecNorm(${1:vector vec})
+endsnippet
+
+snippet llVolumeDetect "llVolumeDetect"
+    llVolumeDetect(${1:integer detect});
+    $0
+endsnippet
+
+snippet llWanderWithin "llWanderWithin"
+    llWanderWithin(${1:vector origin}, ${2:vector dist}, ${3:list options});
+    $0
+endsnippet
+
+snippet llWater "llWater"
+    llWater(${1:vector offset});
+    $0
+endsnippet
+
+snippet llWhisper "llWhisper"
+    llWhisper(${1:integer channel}, ${2:string msg});
+    $0
+endsnippet
+
+snippet llWind "llWind"
+    llWind(${1:vector offset});
+    $0
+endsnippet
+
+snippet llXorBase64 "llXorBase64"
+    llXorBase64(${1:string str1}, ${2:string str2})
+endsnippet
+
+snippet money "money"
+    money(${1:key id}, ${2:integer amount})
+    {
+        $0
+    }
+endsnippet
+
+snippet object_rez "object_rez"
+    object_rez(${1:key id})
+    {
+        $0
+    }
+endsnippet
+
+snippet on_rez "on_rez"
+    on_rez(${1:integer start_param})
+    {
+        $0
+    }
+endsnippet
+
+snippet path_update "path_update"
+    path_update(${1:integer type}, ${2:list reserved})
+    {
+        $0
+    }
+endsnippet
+
+snippet remote_data "remote_data"
+    remote_data(${1:integer event_type}, ${2:key channel}, ${3:key message_id}, ${4:string sender}, ${5:integer idata}, ${6:string sdata})
+    {
+        $0
+    }
+endsnippet
+
+snippet run_time_permissions "run_time_permissions"
+    run_time_permissions(${1:integer perm})
+    {
+        $0
+    }
+endsnippet
+
+snippet sensor "sensor"
+    sensor(${1:integer index})
+    {
+        $0
+    }
+endsnippet
+
+snippet state "state"
+    state ${1:name}
+endsnippet
+
+snippet touch "touch"
+    touch(${1:integer index})
+    {
+        $0
+    }
+endsnippet
+
+snippet touch_end "touch_end"
+    touch_end(${1:integer index})
+    {
+        $0
+    }
+endsnippet
+
+snippet touch_start "touch_start"
+    touch_start(${1:integer index})
+    {
+        $0
+    }
+endsnippet
+
+snippet transaction_result "transaction_result"
+    transaction_result(${1:key id}, ${2:integer success}, ${3:string data})
+    {
+        $0
+    }
+endsnippet
+
+snippet while "while"
+    while (${1:condition})
+    {
+        $0
+    }
+endsnippet
+
+# vim:ft=snippets:

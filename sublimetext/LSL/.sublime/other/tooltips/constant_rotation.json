@@ -1,0 +1,11 @@
+[
+    {
+        "description":
+        {
+            "en_US": "<0.0, 0.0, 0.0, 1.0>"
+        },
+        "name": "ZERO_ROTATION",
+        "type": "rotation",
+        "value": "<0.0, 0.0, 0.0, 1.0>"
+    }
+]

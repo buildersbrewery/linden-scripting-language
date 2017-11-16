@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>name</key><string>spellcheck.tmPreferences</string>
+        <key>description</key><string>TextMate bundle for LSL (the Linden Scripting Language).</string>
+        <key>last modified</key><string>2013-07-09 13:00:00</string>
+        <key>scope</key><string>punctuation.definition.comment.lsl, string.quoted.double.lsl</string>
+        <key>settings</key><dict><key>spellChecking</key><true /></dict>
+        <key>uuid</key><string>57eacd2f-8cc1-495a-9a4a-c95eaa984993</string>
+    </dict>
+</plist>

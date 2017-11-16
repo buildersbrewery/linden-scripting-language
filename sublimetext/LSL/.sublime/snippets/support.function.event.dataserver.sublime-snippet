@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[dataserver(key ${1:query_id}, string ${2:data})${LSL_WHITESPACE_BEFORE}{${LSL_WHITESPACE_INSIDE_FIRST}$0${LSL_WHITESPACE_INSIDE_LAST}}]]></content>
+	<tabTrigger>dataserver</tabTrigger>
+	<scope>meta.class.state.body.lsl</scope>
+	<description>event</description>
+</snippet>

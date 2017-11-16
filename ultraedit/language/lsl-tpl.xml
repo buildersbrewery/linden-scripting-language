@@ -1,0 +1,800 @@
+<?xml version="1.0"?>
+<Templates encode="utf8escenc">
+    <Template Name="@"                              Comments="1" Strings="1">@[+label+];</Template>
+    <Template Name="CAMERA_ACTIVE"                  Comments="1" Strings="1">CAMERA_ACTIVE, [+integer isActive+], ^</Template>
+    <Template Name="CAMERA_BEHINDNESS_ANGLE"        Comments="1" Strings="1">CAMERA_BEHINDNESS_ANGLE, [+float degrees+], ^</Template>
+    <Template Name="CAMERA_BEHINDNESS_LAG"          Comments="1" Strings="1">CAMERA_BEHINDNESS_LAG, [+float seconds+], ^</Template>
+    <Template Name="CAMERA_DISTANCE"                Comments="1" Strings="1">CAMERA_DISTANCE, [+float meters+], ^</Template>
+    <Template Name="CAMERA_FOCUS"                   Comments="1" Strings="1">CAMERA_FOCUS, [+vector position+], ^</Template>
+    <Template Name="CAMERA_FOCUS_LAG"               Comments="1" Strings="1">CAMERA_FOCUS_LAG, [+float seconds+], ^</Template>
+    <Template Name="CAMERA_FOCUS_LOCKED"            Comments="1" Strings="1">CAMERA_FOCUS_LOCKED, [+integer isLocked+], ^</Template>
+    <Template Name="CAMERA_FOCUS_OFFSET"            Comments="1" Strings="1">CAMERA_FOCUS_OFFSET, [+vector meters+], ^</Template>
+    <Template Name="CAMERA_FOCUS_THRESHOLD"         Comments="1" Strings="1">CAMERA_FOCUS_THRESHOLD, [+float meters+], ^</Template>
+    <Template Name="CAMERA_PITCH"                   Comments="1" Strings="1">CAMERA_PITCH, [+float degrees+], ^</Template>
+    <Template Name="CAMERA_POSITION"                Comments="1" Strings="1">CAMERA_POSITION, [+vector position+], ^</Template>
+    <Template Name="CAMERA_POSITION_LAG"            Comments="1" Strings="1">CAMERA_POSITION_LAG, [+float seconds+], ^</Template>
+    <Template Name="CAMERA_POSITION_LOCKED"         Comments="1" Strings="1">CAMERA_POSITION_LOCKED, [+integer isLocked+], ^</Template>
+    <Template Name="CAMERA_POSITION_THRESHOLD"      Comments="1" Strings="1">CAMERA_POSITION_THRESHOLD, [+float meters+], ^</Template>
+    <Template Name="CHARACTER_AVOIDANCE_MODE"       Comments="1" Strings="1">CHARACTER_AVOIDANCE_MODE, [+integer flags+], ^</Template>
+    <Template Name="CHARACTER_DESIRED_SPEED"        Comments="1" Strings="1">CHARACTER_DESIRED_SPEED, [+float speed+], ^</Template>
+    <Template Name="CHARACTER_DESIRED_TURN_SPEED"   Comments="1" Strings="1">CHARACTER_DESIRED_TURN_SPEED, [+float speed+], ^</Template>
+    <Template Name="CHARACTER_LENGTH"               Comments="1" Strings="1">CHARACTER_LENGTH, [+float length+], ^</Template>
+    <Template Name="CHARACTER_MAX_TURN_RADIUS"      Comments="1" Strings="1">CHARACTER_MAX_TURN_RADIUS, [+float radius+], ^</Template>
+    <Template Name="CHARACTER_ORIENTATION"          Comments="1" Strings="1">CHARACTER_ORIENTATION, [+integer orientation+], ^</Template>
+    <Template Name="CHARACTER_RADIUS"               Comments="1" Strings="1">CHARACTER_RADIUS, [+float radius+], ^</Template>
+    <Template Name="CHARACTER_STAY_WITHIN_PARCEL"   Comments="1" Strings="1">CHARACTER_STAY_WITHIN_PARCEL, [+boolean stay+], ^</Template>
+    <Template Name="CHARACTER_TYPE"                 Comments="1" Strings="1">CHARACTER_TYPE, [+integer type+], ^</Template>
+    <Template Name="HTTP_BODY_MAXLENGTH"            Comments="1" Strings="1">HTTP_BODY_MAXLENGTH, [+integer length+], ^</Template>
+    <Template Name="HTTP_CUSTOM_HEADER"             Comments="1" Strings="1">HTTP_CUSTOM_HEADER, [+string name+], [+string value+], ^</Template>
+    <Template Name="HTTP_METHOD"                    Comments="1" Strings="1">HTTP_METHOD, [+string method+], ^</Template>
+    <Template Name="HTTP_MIMETYPE"                  Comments="1" Strings="1">HTTP_MIMETYPE, [+string mimeType+], ^</Template>
+    <Template Name="HTTP_PRAGMA_NO_CACHE"           Comments="1" Strings="1">HTTP_PRAGMA_NO_CACHE, [+integer send_header+], ^</Template>
+    <Template Name="HTTP_VERBOSE_THROTTLE"          Comments="1" Strings="1">HTTP_VERBOSE_THROTTLE, [+integer noisy+], ^</Template>
+    <Template Name="HTTP_VERIFY_CERT"               Comments="1" Strings="1">HTTP_VERIFY_CERT, [+integer verify+], ^</Template>
+    <Template Name="PRIM_ALLOW_UNSIT"               Comments="1" Strings="1">PRIM_ALLOW_UNSIT, [+integer flag+], ^</Template>
+    <Template Name="PRIM_SCRIPTED_SIT_ONLY"         Comments="1" Strings="1">PRIM_SCRIPTED_SIT_ONLY, [+integer flag+], ^</Template>
+    <Template Name="PRIM_SIT_TARGET"                Comments="1" Strings="1">PRIM_SIT_TARGET, [+integer active+], [+vector offset+], [+rotation rot+], ^</Template>
+    <Template Name="RC_DATA_FLAGS"                  Comments="1" Strings="1">RC_DATA_FLAGS, [+integer flags+], ^</Template>
+    <Template Name="RC_DETECT_PHANTOM"              Comments="1" Strings="1">RC_DETECT_PHANTOM, [+integer dectedPhantom+], ^</Template>
+    <Template Name="RC_MAX_HITS"                    Comments="1" Strings="1">RC_MAX_HITS, [+integer maxHits+], ^</Template>
+    <Template Name="RC_REJECT_TYPES"                Comments="1" Strings="1">RC_REJECT_TYPES, [+integer filterMask+], ^</Template>
+    <Template Name="at_rot_target"                  Comments="1" Strings="1">at_rot_target([+integer handle+], [+rotation targetrot+], [+rotation ourrot+])
+{
+    ^
+}</Template>
+    <Template Name="at_target"                      Comments="1" Strings="1">at_target([+integer tnum+], [+vector targetpos+], [+vector ourpos+])
+{
+    ^
+}</Template>
+    <Template Name="attach"                         Comments="1" Strings="1">attach([+key id+])
+{
+    ^
+}</Template>
+    <Template Name="changed"                        Comments="1" Strings="1">changed([+integer change+])
+{
+    ^
+}</Template>
+    <Template Name="collision"                      Comments="1" Strings="1">collision([+integer index+])
+{
+    ^
+}</Template>
+    <Template Name="collision_end"                  Comments="1" Strings="1">collision_end([+integer index+])
+{
+    ^
+}</Template>
+    <Template Name="collision_start"                Comments="1" Strings="1">collision_start([+integer index+])
+{
+    ^
+}</Template>
+    <Template Name="control"                        Comments="1" Strings="1">control([+key id+], [+integer level+], [+integer edge+])
+{
+    ^
+}</Template>
+    <Template Name="dataserver"                     Comments="1" Strings="1">dataserver([+key query_id+], [+string data+])
+{
+    ^
+}</Template>
+    <Template Name="default"                        Comments="1" Strings="1">default
+{
+    ^
+}</Template>
+    <Template Name="do"                             Comments="1" Strings="1">do
+{
+    ^
+}
+while ([+condition+]);</Template>
+    <Template Name="else"                           Comments="1" Strings="1">else
+{
+    ^
+}</Template>
+    <Template Name="else if"                        Comments="1" Strings="1">else if ([+condition+])
+{
+    ^
+}</Template>
+    <Template Name="email"                          Comments="1" Strings="1">email([+string time+], [+string address+], [+string subject+], [+string message+], [+integer num_left+])
+{
+    ^
+}</Template>
+    <Template Name="experience_permissions"         Comments="1" Strings="1">experience_permissions([+key agent_id+])
+{
+    ^
+}</Template>
+    <Template Name="experience_permissions_denied"  Comments="1" Strings="1">experience_permissions_denied([+key agent_id+], [+integer reason+])
+{
+    ^
+}</Template>
+    <Template Name="for"                            Comments="1" Strings="1">for ([+start+]; [+condition+]; [+step+])
+{
+    ^
+}</Template>
+    <Template Name="http_request"                   Comments="1" Strings="1">http_request([+key request_id+], [+string method+], [+string body+])
+{
+    ^
+}</Template>
+    <Template Name="http_response"                  Comments="1" Strings="1">http_response([+key request_id+], [+integer status+], [+list metadata+], [+string body+])
+{
+    ^
+}</Template>
+    <Template Name="if"                             Comments="1" Strings="1">if ([+condition+])
+{
+    ^
+}</Template>
+    <Template Name="jump"                           Comments="1" Strings="1">jump [+label+];</Template>
+    <Template Name="land_collision"                 Comments="1" Strings="1">land_collision([+vector pos+])
+{
+    ^
+}</Template>
+    <Template Name="land_collision_end"             Comments="1" Strings="1">land_collision_end([+vector pos+])
+{
+    ^
+}</Template>
+    <Template Name="land_collision_start"           Comments="1" Strings="1">land_collision_start([+vector pos+])
+{
+    ^
+}</Template>
+    <Template Name="link_message"                   Comments="1" Strings="1">link_message([+integer sender_num+], [+integer num+], [+string str+], [+key id+])
+{
+    ^
+}</Template>
+    <Template Name="listen"                         Comments="1" Strings="1">listen([+integer channel+], [+string name+], [+key id+], [+string message+])
+{
+    ^
+}</Template>
+    <Template Name="llAbs"                          Comments="1" Strings="1">llAbs([+integer val+])</Template>
+    <Template Name="llAcos"                         Comments="1" Strings="1">llAcos([+float val+])</Template>
+    <Template Name="llAddToLandBanList"             Comments="1" Strings="1">llAddToLandBanList([+key avatar+], [+float hours+]);
+^</Template>
+    <Template Name="llAddToLandPassList"            Comments="1" Strings="1">llAddToLandPassList([+key avatar+], [+float hours+]);
+^</Template>
+    <Template Name="llAdjustSoundVolume"            Comments="1" Strings="1">llAdjustSoundVolume([+float volume+]);
+^</Template>
+    <Template Name="llAgentInExperience"            Comments="1" Strings="1">llAgentInExperience([+key agent+])</Template>
+    <Template Name="llAllowInventoryDrop"           Comments="1" Strings="1">llAllowInventoryDrop([+integer add+]);
+^</Template>
+    <Template Name="llAngleBetween"                 Comments="1" Strings="1">llAngleBetween([+rotation a+], [+rotation b+])</Template>
+    <Template Name="llApplyImpulse"                 Comments="1" Strings="1">llApplyImpulse([+vector force+], [+integer local+]);
+^</Template>
+    <Template Name="llApplyRotationalImpulse"       Comments="1" Strings="1">llApplyRotationalImpulse([+vector force+], [+integer local+]);
+^</Template>
+    <Template Name="llAsin"                         Comments="1" Strings="1">llAsin([+float val+])</Template>
+    <Template Name="llAtan2"                        Comments="1" Strings="1">llAtan2([+float y+], [+float x+])</Template>
+    <Template Name="llAttachToAvatar"               Comments="1" Strings="1">llAttachToAvatar([+integer attach_point+]);
+^</Template>
+    <Template Name="llAttachToAvatarTemp"           Comments="1" Strings="1">llAttachToAvatarTemp([+integer attach_point+]);
+^</Template>
+    <Template Name="llAvatarOnLinkSitTarget"        Comments="1" Strings="1">llAvatarOnLinkSitTarget([+integer link+])</Template>
+    <Template Name="llAvatarOnSitTarget"            Comments="1" Strings="1">llAvatarOnSitTarget()</Template>
+    <Template Name="llAxes2Rot"                     Comments="1" Strings="1">llAxes2Rot([+vector fwd+], [+vector left+], [+vector up+])</Template>
+    <Template Name="llAxisAngle2Rot"                Comments="1" Strings="1">llAxisAngle2Rot([+vector axis+], [+float angle+])</Template>
+    <Template Name="llBase64ToInteger"              Comments="1" Strings="1">llBase64ToInteger([+string str+])</Template>
+    <Template Name="llBase64ToString"               Comments="1" Strings="1">llBase64ToString([+string str+])</Template>
+    <Template Name="llBreakAllLinks"                Comments="1" Strings="1">llBreakAllLinks();
+^</Template>
+    <Template Name="llBreakLink"                    Comments="1" Strings="1">llBreakLink([+integer link+]);
+^</Template>
+    <Template Name="llCSV2List"                     Comments="1" Strings="1">llCSV2List([+string src+])</Template>
+    <Template Name="llCastRay"                      Comments="1" Strings="1">llCastRay([+vector start+], [+vector end+], [+list options+])</Template>
+    <Template Name="llCeil"                         Comments="1" Strings="1">llCeil([+float val+])</Template>
+    <Template Name="llClearCameraParams"            Comments="1" Strings="1">llClearCameraParams();
+^</Template>
+    <Template Name="llClearLinkMedia"               Comments="1" Strings="1">llClearLinkMedia([+integer link+], [+integer face+])</Template>
+    <Template Name="llClearPrimMedia"               Comments="1" Strings="1">llClearPrimMedia([+integer face+])</Template>
+    <Template Name="llCloseRemoteDataChannel"       Comments="1" Strings="1">llCloseRemoteDataChannel([+key channel+]);
+^</Template>
+    <Template Name="llCollisionFilter"              Comments="1" Strings="1">llCollisionFilter([+string name+], [+key id+], [+integer accept+]);
+^</Template>
+    <Template Name="llCollisionSound"               Comments="1" Strings="1">llCollisionSound([+string impact_sound+], [+float impact_volume+]);
+^</Template>
+    <Template Name="llCos"                          Comments="1" Strings="1">llCos([+float theta+])</Template>
+    <Template Name="llCreateCharacter"              Comments="1" Strings="1">llCreateCharacter([+list options+]);
+^</Template>
+    <Template Name="llCreateKeyValue"               Comments="1" Strings="1">llCreateKeyValue([+string k+], [+string v+])</Template>
+    <Template Name="llCreateLink"                   Comments="1" Strings="1">llCreateLink([+key target+], [+integer parent+]);
+^</Template>
+    <Template Name="llDataSizeKeyValue"             Comments="1" Strings="1">llDataSizeKeyValue()</Template>
+    <Template Name="llDeleteCharacter"              Comments="1" Strings="1">llDeleteCharacter();
+^</Template>
+    <Template Name="llDeleteKeyValue"               Comments="1" Strings="1">llDeleteKeyValue([+string k+])</Template>
+    <Template Name="llDeleteSubList"                Comments="1" Strings="1">llDeleteSubList([+list src+], [+integer start+], [+integer end+])</Template>
+    <Template Name="llDeleteSubString"              Comments="1" Strings="1">llDeleteSubString([+string src+], [+integer start+], [+integer end+])</Template>
+    <Template Name="llDetachFromAvatar"             Comments="1" Strings="1">llDetachFromAvatar();
+^</Template>
+    <Template Name="llDetectedGrab"                 Comments="1" Strings="1">llDetectedGrab([+integer number+])</Template>
+    <Template Name="llDetectedGroup"                Comments="1" Strings="1">llDetectedGroup([+integer number+])</Template>
+    <Template Name="llDetectedKey"                  Comments="1" Strings="1">llDetectedKey([+integer number+])</Template>
+    <Template Name="llDetectedLinkNumber"           Comments="1" Strings="1">llDetectedLinkNumber([+integer number+])</Template>
+    <Template Name="llDetectedName"                 Comments="1" Strings="1">llDetectedName([+integer number+])</Template>
+    <Template Name="llDetectedOwner"                Comments="1" Strings="1">llDetectedOwner([+integer number+])</Template>
+    <Template Name="llDetectedPos"                  Comments="1" Strings="1">llDetectedPos([+integer number+])</Template>
+    <Template Name="llDetectedRot"                  Comments="1" Strings="1">llDetectedRot([+integer number+])</Template>
+    <Template Name="llDetectedTouchBinormal"        Comments="1" Strings="1">llDetectedTouchBinormal([+integer number+])</Template>
+    <Template Name="llDetectedTouchFace"            Comments="1" Strings="1">llDetectedTouchFace([+integer number+])</Template>
+    <Template Name="llDetectedTouchNormal"          Comments="1" Strings="1">llDetectedTouchNormal([+integer number+])</Template>
+    <Template Name="llDetectedTouchPos"             Comments="1" Strings="1">llDetectedTouchPos([+integer number+])</Template>
+    <Template Name="llDetectedTouchST"              Comments="1" Strings="1">llDetectedTouchST([+integer number+])</Template>
+    <Template Name="llDetectedTouchUV"              Comments="1" Strings="1">llDetectedTouchUV([+integer number+])</Template>
+    <Template Name="llDetectedType"                 Comments="1" Strings="1">llDetectedType([+integer number+])</Template>
+    <Template Name="llDetectedVel"                  Comments="1" Strings="1">llDetectedVel([+integer number+])</Template>
+    <Template Name="llDialog"                       Comments="1" Strings="1">llDialog([+key avatar+], [+string message+], [+list buttons+], [+integer channel+]);
+^</Template>
+    <Template Name="llDie"                          Comments="1" Strings="1">llDie();
+^</Template>
+    <Template Name="llDumpList2String"              Comments="1" Strings="1">llDumpList2String([+list src+], [+string separator+])</Template>
+    <Template Name="llEdgeOfWorld"                  Comments="1" Strings="1">llEdgeOfWorld([+vector pos+], [+vector dir+])</Template>
+    <Template Name="llEjectFromLand"                Comments="1" Strings="1">llEjectFromLand([+key avatar+]);
+^</Template>
+    <Template Name="llEmail"                        Comments="1" Strings="1">llEmail([+string address+], [+string subject+], [+string message+]);
+^</Template>
+    <Template Name="llEscapeURL"                    Comments="1" Strings="1">llEscapeURL([+string url+])</Template>
+    <Template Name="llEuler2Rot"                    Comments="1" Strings="1">llEuler2Rot([+vector v+])</Template>
+    <Template Name="llEvade"                        Comments="1" Strings="1">llEvade([+key target+], [+list options+]);
+^</Template>
+    <Template Name="llExecCharacterCmd"             Comments="1" Strings="1">llExecCharacterCmd([+integer command+], [+list options+]);
+^</Template>
+    <Template Name="llFabs"                         Comments="1" Strings="1">llFabs([+float val+])</Template>
+    <Template Name="llFleeFrom"                     Comments="1" Strings="1">llFleeFrom([+vector position+], [+float distance+], [+list options+]);
+^</Template>
+    <Template Name="llFloor"                        Comments="1" Strings="1">llFloor([+float val+])</Template>
+    <Template Name="llForceMouselook"               Comments="1" Strings="1">llForceMouselook([+integer mouselook+]);
+^</Template>
+    <Template Name="llFrand"                        Comments="1" Strings="1">llFrand([+float mag+])</Template>
+    <Template Name="llGenerateKey"                  Comments="1" Strings="1">llGenerateKey()</Template>
+    <Template Name="llGetAccel"                     Comments="1" Strings="1">llGetAccel()</Template>
+    <Template Name="llGetAgentInfo"                 Comments="1" Strings="1">llGetAgentInfo([+key id+])</Template>
+    <Template Name="llGetAgentLanguage"             Comments="1" Strings="1">llGetAgentLanguage([+key avatar+])</Template>
+    <Template Name="llGetAgentList"                 Comments="1" Strings="1">llGetAgentList([+integer scope+], [+list options+])</Template>
+    <Template Name="llGetAgentSize"                 Comments="1" Strings="1">llGetAgentSize([+key avatar+])</Template>
+    <Template Name="llGetAlpha"                     Comments="1" Strings="1">llGetAlpha([+integer face+])</Template>
+    <Template Name="llGetAndResetTime"              Comments="1" Strings="1">llGetAndResetTime()</Template>
+    <Template Name="llGetAnimation"                 Comments="1" Strings="1">llGetAnimation([+key id+])</Template>
+    <Template Name="llGetAnimationList"             Comments="1" Strings="1">llGetAnimationList([+key avatar+])</Template>
+    <Template Name="llGetAnimationOverride"         Comments="1" Strings="1">llGetAnimationOverride([+string anim_state+])</Template>
+    <Template Name="llGetAttached"                  Comments="1" Strings="1">llGetAttached()</Template>
+    <Template Name="llGetAttachedList"              Comments="1" Strings="1">llGetAttachedList([+key id+])</Template>
+    <Template Name="llGetBoundingBox"               Comments="1" Strings="1">llGetBoundingBox([+key object+])</Template>
+    <Template Name="llGetCameraPos"                 Comments="1" Strings="1">llGetCameraPos()</Template>
+    <Template Name="llGetCameraRot"                 Comments="1" Strings="1">llGetCameraRot()</Template>
+    <Template Name="llGetCenterOfMass"              Comments="1" Strings="1">llGetCenterOfMass()</Template>
+    <Template Name="llGetClosestNavPoint"           Comments="1" Strings="1">llGetClosestNavPoint([+vector point+], [+list options+])</Template>
+    <Template Name="llGetColor"                     Comments="1" Strings="1">llGetColor([+integer face+])</Template>
+    <Template Name="llGetCreator"                   Comments="1" Strings="1">llGetCreator()</Template>
+    <Template Name="llGetDate"                      Comments="1" Strings="1">llGetDate()</Template>
+    <Template Name="llGetDisplayName"               Comments="1" Strings="1">llGetDisplayName([+key id+])</Template>
+    <Template Name="llGetEnergy"                    Comments="1" Strings="1">llGetEnergy()</Template>
+    <Template Name="llGetEnv"                       Comments="1" Strings="1">llGetEnv([+string name+])</Template>
+    <Template Name="llGetExperienceDetails"         Comments="1" Strings="1">llGetExperienceDetails([+key experience_id+])</Template>
+    <Template Name="llGetExperienceErrorMessage"    Comments="1" Strings="1">llGetExperienceErrorMessage([+integer error+])</Template>
+    <Template Name="llGetForce"                     Comments="1" Strings="1">llGetForce()</Template>
+    <Template Name="llGetFreeMemory"                Comments="1" Strings="1">llGetFreeMemory()</Template>
+    <Template Name="llGetFreeURLs"                  Comments="1" Strings="1">llGetFreeURLs()</Template>
+    <Template Name="llGetGMTclock"                  Comments="1" Strings="1">llGetGMTclock()</Template>
+    <Template Name="llGetGeometricCenter"           Comments="1" Strings="1">llGetGeometricCenter()</Template>
+    <Template Name="llGetHTTPHeader"                Comments="1" Strings="1">llGetHTTPHeader([+key request_id+], [+string header+])</Template>
+    <Template Name="llGetInventoryCreator"          Comments="1" Strings="1">llGetInventoryCreator([+string item+])</Template>
+    <Template Name="llGetInventoryKey"              Comments="1" Strings="1">llGetInventoryKey([+string name+])</Template>
+    <Template Name="llGetInventoryName"             Comments="1" Strings="1">llGetInventoryName([+integer type+], [+integer number+])</Template>
+    <Template Name="llGetInventoryNumber"           Comments="1" Strings="1">llGetInventoryNumber([+integer type+])</Template>
+    <Template Name="llGetInventoryPermMask"         Comments="1" Strings="1">llGetInventoryPermMask([+string item+], [+integer mask+])</Template>
+    <Template Name="llGetInventoryType"             Comments="1" Strings="1">llGetInventoryType([+string name+])</Template>
+    <Template Name="llGetKey"                       Comments="1" Strings="1">llGetKey()</Template>
+    <Template Name="llGetLandOwnerAt"               Comments="1" Strings="1">llGetLandOwnerAt([+vector pos+])</Template>
+    <Template Name="llGetLinkKey"                   Comments="1" Strings="1">llGetLinkKey([+integer link+])</Template>
+    <Template Name="llGetLinkMedia"                 Comments="1" Strings="1">llGetLinkMedia([+integer link+], [+integer face+], [+list params+])</Template>
+    <Template Name="llGetLinkName"                  Comments="1" Strings="1">llGetLinkName([+integer link+])</Template>
+    <Template Name="llGetLinkNumber"                Comments="1" Strings="1">llGetLinkNumber()</Template>
+    <Template Name="llGetLinkNumberOfSides"         Comments="1" Strings="1">llGetLinkNumberOfSides([+integer link+])</Template>
+    <Template Name="llGetLinkPrimitiveParams"       Comments="1" Strings="1">llGetLinkPrimitiveParams([+integer link+], [+list params+])</Template>
+    <Template Name="llGetListEntryType"             Comments="1" Strings="1">llGetListEntryType([+list src+], [+integer index+])</Template>
+    <Template Name="llGetListLength"                Comments="1" Strings="1">llGetListLength([+list src+])</Template>
+    <Template Name="llGetLocalPos"                  Comments="1" Strings="1">llGetLocalPos()</Template>
+    <Template Name="llGetLocalRot"                  Comments="1" Strings="1">llGetLocalRot()</Template>
+    <Template Name="llGetMass"                      Comments="1" Strings="1">llGetMass()</Template>
+    <Template Name="llGetMassMKS"                   Comments="1" Strings="1">llGetMassMKS()</Template>
+    <Template Name="llGetMaxScaleFactor"            Comments="1" Strings="1">llGetMaxScaleFactor()</Template>
+    <Template Name="llGetMemoryLimit"               Comments="1" Strings="1">llGetMemoryLimit()</Template>
+    <Template Name="llGetMinScaleFactor"            Comments="1" Strings="1">llGetMinScaleFactor()</Template>
+    <Template Name="llGetNextEmail"                 Comments="1" Strings="1">llGetNextEmail([+string address+], [+string subject+]);
+^</Template>
+    <Template Name="llGetNotecardLine"              Comments="1" Strings="1">llGetNotecardLine([+string name+], [+integer line+])</Template>
+    <Template Name="llGetNumberOfNotecardLines"     Comments="1" Strings="1">llGetNumberOfNotecardLines([+string name+])</Template>
+    <Template Name="llGetNumberOfPrims"             Comments="1" Strings="1">llGetNumberOfPrims()</Template>
+    <Template Name="llGetNumberOfSides"             Comments="1" Strings="1">llGetNumberOfSides()</Template>
+    <Template Name="llGetObjectDesc"                Comments="1" Strings="1">llGetObjectDesc()</Template>
+    <Template Name="llGetObjectDetails"             Comments="1" Strings="1">llGetObjectDetails([+key id+], [+list params+])</Template>
+    <Template Name="llGetObjectMass"                Comments="1" Strings="1">llGetObjectMass([+key id+])</Template>
+    <Template Name="llGetObjectName"                Comments="1" Strings="1">llGetObjectName()</Template>
+    <Template Name="llGetObjectPermMask"            Comments="1" Strings="1">llGetObjectPermMask([+integer mask+])</Template>
+    <Template Name="llGetObjectPrimCount"           Comments="1" Strings="1">llGetObjectPrimCount([+key prim+])</Template>
+    <Template Name="llGetOmega"                     Comments="1" Strings="1">llGetOmega()</Template>
+    <Template Name="llGetOwner"                     Comments="1" Strings="1">llGetOwner()</Template>
+    <Template Name="llGetOwnerKey"                  Comments="1" Strings="1">llGetOwnerKey([+key id+])</Template>
+    <Template Name="llGetParcelDetails"             Comments="1" Strings="1">llGetParcelDetails([+vector pos+], [+list params+])</Template>
+    <Template Name="llGetParcelFlags"               Comments="1" Strings="1">llGetParcelFlags([+vector pos+])</Template>
+    <Template Name="llGetParcelMaxPrims"            Comments="1" Strings="1">llGetParcelMaxPrims([+vector pos+], [+integer sim_wide+])</Template>
+    <Template Name="llGetParcelMusicURL"            Comments="1" Strings="1">llGetParcelMusicURL()</Template>
+    <Template Name="llGetParcelPrimCount"           Comments="1" Strings="1">llGetParcelPrimCount([+vector pos+], [+integer category+], [+integer sim_wide+])</Template>
+    <Template Name="llGetParcelPrimOwners"          Comments="1" Strings="1">llGetParcelPrimOwners([+vector pos+])</Template>
+    <Template Name="llGetPermissions"               Comments="1" Strings="1">llGetPermissions()</Template>
+    <Template Name="llGetPermissionsKey"            Comments="1" Strings="1">llGetPermissionsKey()</Template>
+    <Template Name="llGetPhysicsMaterial"           Comments="1" Strings="1">llGetPhysicsMaterial()</Template>
+    <Template Name="llGetPos"                       Comments="1" Strings="1">llGetPos()</Template>
+    <Template Name="llGetPrimMediaParams"           Comments="1" Strings="1">llGetPrimMediaParams([+integer face+], [+list params+])</Template>
+    <Template Name="llGetPrimitiveParams"           Comments="1" Strings="1">llGetPrimitiveParams([+list params+])</Template>
+    <Template Name="llGetRegionAgentCount"          Comments="1" Strings="1">llGetRegionAgentCount()</Template>
+    <Template Name="llGetRegionCorner"              Comments="1" Strings="1">llGetRegionCorner()</Template>
+    <Template Name="llGetRegionFPS"                 Comments="1" Strings="1">llGetRegionFPS()</Template>
+    <Template Name="llGetRegionFlags"               Comments="1" Strings="1">llGetRegionFlags()</Template>
+    <Template Name="llGetRegionName"                Comments="1" Strings="1">llGetRegionName()</Template>
+    <Template Name="llGetRegionTimeDilation"        Comments="1" Strings="1">llGetRegionTimeDilation()</Template>
+    <Template Name="llGetRootPosition"              Comments="1" Strings="1">llGetRootPosition()</Template>
+    <Template Name="llGetRootRotation"              Comments="1" Strings="1">llGetRootRotation()</Template>
+    <Template Name="llGetRot"                       Comments="1" Strings="1">llGetRot()</Template>
+    <Template Name="llGetSPMaxMemory"               Comments="1" Strings="1">llGetSPMaxMemory()</Template>
+    <Template Name="llGetScale"                     Comments="1" Strings="1">llGetScale()</Template>
+    <Template Name="llGetScriptName"                Comments="1" Strings="1">llGetScriptName()</Template>
+    <Template Name="llGetScriptState"               Comments="1" Strings="1">llGetScriptState([+string script+])</Template>
+    <Template Name="llGetSimStats"                  Comments="1" Strings="1">llGetSimStats([+integer stat_type+])</Template>
+    <Template Name="llGetSimulatorHostname"         Comments="1" Strings="1">llGetSimulatorHostname()</Template>
+    <Template Name="llGetStartParameter"            Comments="1" Strings="1">llGetStartParameter()</Template>
+    <Template Name="llGetStaticPath"                Comments="1" Strings="1">llGetStaticPath([+vector start+], [+vector end+], [+float radius+], [+list params+])</Template>
+    <Template Name="llGetStatus"                    Comments="1" Strings="1">llGetStatus([+integer status+])</Template>
+    <Template Name="llGetSubString"                 Comments="1" Strings="1">llGetSubString([+string src+], [+integer start+], [+integer end+])</Template>
+    <Template Name="llGetSunDirection"              Comments="1" Strings="1">llGetSunDirection()</Template>
+    <Template Name="llGetTexture"                   Comments="1" Strings="1">llGetTexture([+integer face+])</Template>
+    <Template Name="llGetTextureOffset"             Comments="1" Strings="1">llGetTextureOffset([+integer face+])</Template>
+    <Template Name="llGetTextureRot"                Comments="1" Strings="1">llGetTextureRot([+integer face+])</Template>
+    <Template Name="llGetTextureScale"              Comments="1" Strings="1">llGetTextureScale([+integer face+])</Template>
+    <Template Name="llGetTime"                      Comments="1" Strings="1">llGetTime()</Template>
+    <Template Name="llGetTimeOfDay"                 Comments="1" Strings="1">llGetTimeOfDay()</Template>
+    <Template Name="llGetTimestamp"                 Comments="1" Strings="1">llGetTimestamp()</Template>
+    <Template Name="llGetTorque"                    Comments="1" Strings="1">llGetTorque()</Template>
+    <Template Name="llGetUnixTime"                  Comments="1" Strings="1">llGetUnixTime()</Template>
+    <Template Name="llGetUsedMemory"                Comments="1" Strings="1">llGetUsedMemory()</Template>
+    <Template Name="llGetUsername"                  Comments="1" Strings="1">llGetUsername([+key id+])</Template>
+    <Template Name="llGetVel"                       Comments="1" Strings="1">llGetVel()</Template>
+    <Template Name="llGetWallclock"                 Comments="1" Strings="1">llGetWallclock()</Template>
+    <Template Name="llGiveInventory"                Comments="1" Strings="1">llGiveInventory([+key destination+], [+string inventory+]);
+^</Template>
+    <Template Name="llGiveInventoryList"            Comments="1" Strings="1">llGiveInventoryList([+key target+], [+string folder+], [+list inventory+]);
+^</Template>
+    <Template Name="llGiveMoney"                    Comments="1" Strings="1">llGiveMoney([+key destination+], [+integer amount+])</Template>
+    <Template Name="llGround"                       Comments="1" Strings="1">llGround([+vector offset+])</Template>
+    <Template Name="llGroundContour"                Comments="1" Strings="1">llGroundContour([+vector offset+])</Template>
+    <Template Name="llGroundNormal"                 Comments="1" Strings="1">llGroundNormal([+vector offset+])</Template>
+    <Template Name="llGroundRepel"                  Comments="1" Strings="1">llGroundRepel([+float height+], [+integer water+], [+float tau+]);
+^</Template>
+    <Template Name="llGroundSlope"                  Comments="1" Strings="1">llGroundSlope([+vector offset+])</Template>
+    <Template Name="llHTTPRequest"                  Comments="1" Strings="1">llHTTPRequest([+string url+], [+list parameters+], [+string body+])</Template>
+    <Template Name="llHTTPResponse"                 Comments="1" Strings="1">llHTTPResponse([+key request_id+], [+integer status+], [+string body+]);
+^</Template>
+    <Template Name="llInsertString"                 Comments="1" Strings="1">llInsertString([+string dst+], [+integer pos+], [+string src+])</Template>
+    <Template Name="llInstantMessage"               Comments="1" Strings="1">llInstantMessage([+key user+], [+string message+]);
+^</Template>
+    <Template Name="llIntegerToBase64"              Comments="1" Strings="1">llIntegerToBase64([+integer number+])</Template>
+    <Template Name="llJson2List"                    Comments="1" Strings="1">llJson2List([+string json+])</Template>
+    <Template Name="llJsonGetValue"                 Comments="1" Strings="1">llJsonGetValue([+string json+], [+list specifiers+])</Template>
+    <Template Name="llJsonSetValue"                 Comments="1" Strings="1">llJsonSetValue([+string json+], [+list specifiers+], [+string newValue+])</Template>
+    <Template Name="llJsonValueType"                Comments="1" Strings="1">llJsonValueType([+string json+], [+list specifiers+])</Template>
+    <Template Name="llKey2Name"                     Comments="1" Strings="1">llKey2Name([+key id+])</Template>
+    <Template Name="llKeyCountKeyValue"             Comments="1" Strings="1">llKeyCountKeyValue()</Template>
+    <Template Name="llKeysKeyValue"                 Comments="1" Strings="1">llKeysKeyValue([+integer first+], [+integer count+])</Template>
+    <Template Name="llLinkParticleSystem"           Comments="1" Strings="1">llLinkParticleSystem([+integer link+], [+list rules+]);
+^</Template>
+    <Template Name="llLinkSitTarget"                Comments="1" Strings="1">llLinkSitTarget([+integer link+], [+vector offset+], [+rotation rot+]);
+^</Template>
+    <Template Name="llList2CSV"                     Comments="1" Strings="1">llList2CSV([+list src+])</Template>
+    <Template Name="llList2Float"                   Comments="1" Strings="1">llList2Float([+list src+], [+integer index+])</Template>
+    <Template Name="llList2Integer"                 Comments="1" Strings="1">llList2Integer([+list src+], [+integer index+])</Template>
+    <Template Name="llList2Json"                    Comments="1" Strings="1">llList2Json([+string type+], [+list values+])</Template>
+    <Template Name="llList2Key"                     Comments="1" Strings="1">llList2Key([+list src+], [+integer index+])</Template>
+    <Template Name="llList2List"                    Comments="1" Strings="1">llList2List([+list src+], [+integer start+], [+integer end+])</Template>
+    <Template Name="llList2ListStrided"             Comments="1" Strings="1">llList2ListStrided([+list src+], [+integer start+], [+integer end+], [+integer stride+])</Template>
+    <Template Name="llList2Rot"                     Comments="1" Strings="1">llList2Rot([+list src+], [+integer index+])</Template>
+    <Template Name="llList2String"                  Comments="1" Strings="1">llList2String([+list src+], [+integer index+])</Template>
+    <Template Name="llList2Vector"                  Comments="1" Strings="1">llList2Vector([+list src+], [+integer index+])</Template>
+    <Template Name="llListFindList"                 Comments="1" Strings="1">llListFindList([+list src+], [+list test+])</Template>
+    <Template Name="llListInsertList"               Comments="1" Strings="1">llListInsertList([+list dest+], [+list src+], [+integer start+])</Template>
+    <Template Name="llListRandomize"                Comments="1" Strings="1">llListRandomize([+list src+], [+integer stride+])</Template>
+    <Template Name="llListReplaceList"              Comments="1" Strings="1">llListReplaceList([+list dest+], [+list src+], [+integer start+], [+integer end+])</Template>
+    <Template Name="llListSort"                     Comments="1" Strings="1">llListSort([+list src+], [+integer stride+], [+integer ascending+])</Template>
+    <Template Name="llListStatistics"               Comments="1" Strings="1">llListStatistics([+integer operation+], [+list src+])</Template>
+    <Template Name="llListen"                       Comments="1" Strings="1">llListen([+integer channel+], [+string name+], [+key id+], [+string msg+])</Template>
+    <Template Name="llListenControl"                Comments="1" Strings="1">llListenControl([+integer handle+], [+integer active+]);
+^</Template>
+    <Template Name="llListenRemove"                 Comments="1" Strings="1">llListenRemove([+integer handle+]);
+^</Template>
+    <Template Name="llLoadURL"                      Comments="1" Strings="1">llLoadURL([+key avatar+], [+string message+], [+string url+]);
+^</Template>
+    <Template Name="llLog"                          Comments="1" Strings="1">llLog([+float val+])</Template>
+    <Template Name="llLog10"                        Comments="1" Strings="1">llLog10([+float val+])</Template>
+    <Template Name="llLookAt"                       Comments="1" Strings="1">llLookAt([+vector target+], [+float strength+], [+float damping+]);
+^</Template>
+    <Template Name="llLoopSound"                    Comments="1" Strings="1">llLoopSound([+string sound+], [+float volume+]);
+^</Template>
+    <Template Name="llLoopSoundMaster"              Comments="1" Strings="1">llLoopSoundMaster([+string sound+], [+float volume+]);
+^</Template>
+    <Template Name="llLoopSoundSlave"               Comments="1" Strings="1">llLoopSoundSlave([+string sound+], [+float volume+]);
+^</Template>
+    <Template Name="llMD5String"                    Comments="1" Strings="1">llMD5String([+string src+], [+integer nonce+])</Template>
+    <Template Name="llManageEstateAccess"           Comments="1" Strings="1">llManageEstateAccess([+integer action+], [+key avatar+])</Template>
+    <Template Name="llMapDestination"               Comments="1" Strings="1">llMapDestination([+string simname+], [+vector pos+], [+vector look_at+]);
+^</Template>
+    <Template Name="llMessageLinked"                Comments="1" Strings="1">llMessageLinked([+integer link+], [+integer num+], [+string str+], [+key id+]);
+^</Template>
+    <Template Name="llMinEventDelay"                Comments="1" Strings="1">llMinEventDelay([+float delay+]);
+^</Template>
+    <Template Name="llModPow"                       Comments="1" Strings="1">llModPow([+integer a+], [+integer b+], [+integer c+])</Template>
+    <Template Name="llModifyLand"                   Comments="1" Strings="1">llModifyLand([+integer action+], [+integer brush+]);
+^</Template>
+    <Template Name="llMoveToTarget"                 Comments="1" Strings="1">llMoveToTarget([+vector target+], [+float tau+]);
+^</Template>
+    <Template Name="llNavigateTo"                   Comments="1" Strings="1">llNavigateTo([+vector pos+], [+list options+]);
+^</Template>
+    <Template Name="llOffsetTexture"                Comments="1" Strings="1">llOffsetTexture([+float u+], [+float v+], [+integer face+]);
+^</Template>
+    <Template Name="llOpenRemoteDataChannel"        Comments="1" Strings="1">llOpenRemoteDataChannel();
+^</Template>
+    <Template Name="llOverMyLand"                   Comments="1" Strings="1">llOverMyLand([+key id+])</Template>
+    <Template Name="llOwnerSay"                     Comments="1" Strings="1">llOwnerSay([+string msg+]);
+^</Template>
+    <Template Name="llParcelMediaCommandList"       Comments="1" Strings="1">llParcelMediaCommandList([+list commandList+]);
+^</Template>
+    <Template Name="llParcelMediaQuery"             Comments="1" Strings="1">llParcelMediaQuery([+list query+])</Template>
+    <Template Name="llParseString2List"             Comments="1" Strings="1">llParseString2List([+string src+], [+list separators+], [+list spacers+])</Template>
+    <Template Name="llParseStringKeepNulls"         Comments="1" Strings="1">llParseStringKeepNulls([+string src+], [+list separators+], [+list spacers+])</Template>
+    <Template Name="llParticleSystem"               Comments="1" Strings="1">llParticleSystem([+list rules+]);
+^</Template>
+    <Template Name="llPassCollisions"               Comments="1" Strings="1">llPassCollisions([+integer pass+]);
+^</Template>
+    <Template Name="llPassTouches"                  Comments="1" Strings="1">llPassTouches([+integer pass+]);
+^</Template>
+    <Template Name="llPatrolPoints"                 Comments="1" Strings="1">llPatrolPoints([+list patrolPoints+], [+list options+]);
+^</Template>
+    <Template Name="llPlaySound"                    Comments="1" Strings="1">llPlaySound([+string sound+], [+float volume+]);
+^</Template>
+    <Template Name="llPlaySoundSlave"               Comments="1" Strings="1">llPlaySoundSlave([+string sound+], [+float volume+]);
+^</Template>
+    <Template Name="llPow"                          Comments="1" Strings="1">llPow([+float base+], [+float exponent+])</Template>
+    <Template Name="llPreloadSound"                 Comments="1" Strings="1">llPreloadSound([+string sound+]);
+^</Template>
+    <Template Name="llPursue"                       Comments="1" Strings="1">llPursue([+key target+], [+list options+]);
+^</Template>
+    <Template Name="llPushObject"                   Comments="1" Strings="1">llPushObject([+key target+], [+vector impulse+], [+vector ang_impulse+], [+integer local+]);
+^</Template>
+    <Template Name="llReadKeyValue"                 Comments="1" Strings="1">llReadKeyValue([+string k+])</Template>
+    <Template Name="llRegionSay"                    Comments="1" Strings="1">llRegionSay([+integer channel+], [+string msg+]);
+^</Template>
+    <Template Name="llRegionSayTo"                  Comments="1" Strings="1">llRegionSayTo([+key target+], [+integer channel+], [+string msg+]);
+^</Template>
+    <Template Name="llReleaseControls"              Comments="1" Strings="1">llReleaseControls();
+^</Template>
+    <Template Name="llReleaseURL"                   Comments="1" Strings="1">llReleaseURL([+string url+]);
+^</Template>
+    <Template Name="llRemoteDataReply"              Comments="1" Strings="1">llRemoteDataReply([+key channel+], [+key message_id+], [+string sdata+], [+integer idata+]);
+^</Template>
+    <Template Name="llRemoteLoadScriptPin"          Comments="1" Strings="1">llRemoteLoadScriptPin([+key target+], [+string name+], [+integer pin+], [+integer running+], [+integer start_param+]);
+^</Template>
+    <Template Name="llRemoveFromLandBanList"        Comments="1" Strings="1">llRemoveFromLandBanList([+key avatar+]);
+^</Template>
+    <Template Name="llRemoveFromLandPassList"       Comments="1" Strings="1">llRemoveFromLandPassList([+key avatar+]);
+^</Template>
+    <Template Name="llRemoveInventory"              Comments="1" Strings="1">llRemoveInventory([+string item+]);
+^</Template>
+    <Template Name="llRemoveVehicleFlags"           Comments="1" Strings="1">llRemoveVehicleFlags([+integer flags+]);
+^</Template>
+    <Template Name="llRequestAgentData"             Comments="1" Strings="1">llRequestAgentData([+key id+], [+integer data+])</Template>
+    <Template Name="llRequestDisplayName"           Comments="1" Strings="1">llRequestDisplayName([+key id+])</Template>
+    <Template Name="llRequestExperiencePermissions" Comments="1" Strings="1">llRequestExperiencePermissions([+key agent+], [+string name+]);
+^</Template>
+    <Template Name="llRequestInventoryData"         Comments="1" Strings="1">llRequestInventoryData([+string name+])</Template>
+    <Template Name="llRequestPermissions"           Comments="1" Strings="1">llRequestPermissions([+key agent+], [+integer permissions+]);
+^</Template>
+    <Template Name="llRequestSecureURL"             Comments="1" Strings="1">llRequestSecureURL()</Template>
+    <Template Name="llRequestSimulatorData"         Comments="1" Strings="1">llRequestSimulatorData([+string region+], [+integer data+])</Template>
+    <Template Name="llRequestURL"                   Comments="1" Strings="1">llRequestURL()</Template>
+    <Template Name="llRequestUsername"              Comments="1" Strings="1">llRequestUsername([+key id+])</Template>
+    <Template Name="llResetAnimationOverride"       Comments="1" Strings="1">llResetAnimationOverride([+string anim_state+]);
+^</Template>
+    <Template Name="llResetLandBanList"             Comments="1" Strings="1">llResetLandBanList();
+^</Template>
+    <Template Name="llResetLandPassList"            Comments="1" Strings="1">llResetLandPassList();
+^</Template>
+    <Template Name="llResetOtherScript"             Comments="1" Strings="1">llResetOtherScript([+string name+]);
+^</Template>
+    <Template Name="llResetScript"                  Comments="1" Strings="1">llResetScript();
+^</Template>
+    <Template Name="llResetTime"                    Comments="1" Strings="1">llResetTime();
+^</Template>
+    <Template Name="llReturnObjectsByID"            Comments="1" Strings="1">llReturnObjectsByID([+list objects+])</Template>
+    <Template Name="llReturnObjectsByOwner"         Comments="1" Strings="1">llReturnObjectsByOwner([+key owner+], [+integer scope+])</Template>
+    <Template Name="llRezAtRoot"                    Comments="1" Strings="1">llRezAtRoot([+string inventory+], [+vector position+], [+vector velocity+], [+rotation rot+], [+integer param+]);
+^</Template>
+    <Template Name="llRezObject"                    Comments="1" Strings="1">llRezObject([+string inventory+], [+vector pos+], [+vector vel+], [+rotation rot+], [+integer param+]);
+^</Template>
+    <Template Name="llRot2Angle"                    Comments="1" Strings="1">llRot2Angle([+rotation rot+])</Template>
+    <Template Name="llRot2Axis"                     Comments="1" Strings="1">llRot2Axis([+rotation rot+])</Template>
+    <Template Name="llRot2Euler"                    Comments="1" Strings="1">llRot2Euler([+rotation quat+])</Template>
+    <Template Name="llRot2Fwd"                      Comments="1" Strings="1">llRot2Fwd([+rotation q+])</Template>
+    <Template Name="llRot2Left"                     Comments="1" Strings="1">llRot2Left([+rotation q+])</Template>
+    <Template Name="llRot2Up"                       Comments="1" Strings="1">llRot2Up([+rotation q+])</Template>
+    <Template Name="llRotBetween"                   Comments="1" Strings="1">llRotBetween([+vector start+], [+vector end+])</Template>
+    <Template Name="llRotLookAt"                    Comments="1" Strings="1">llRotLookAt([+rotation target_direction+], [+float strength+], [+float damping+]);
+^</Template>
+    <Template Name="llRotTarget"                    Comments="1" Strings="1">llRotTarget([+rotation rot+], [+float error+])</Template>
+    <Template Name="llRotTargetRemove"              Comments="1" Strings="1">llRotTargetRemove([+integer handle+]);
+^</Template>
+    <Template Name="llRotateTexture"                Comments="1" Strings="1">llRotateTexture([+float angle+], [+integer face+]);
+^</Template>
+    <Template Name="llRound"                        Comments="1" Strings="1">llRound([+float val+])</Template>
+    <Template Name="llSHA1String"                   Comments="1" Strings="1">llSHA1String([+string src+])</Template>
+    <Template Name="llSameGroup"                    Comments="1" Strings="1">llSameGroup([+key uuid+])</Template>
+    <Template Name="llSay"                          Comments="1" Strings="1">llSay([+integer channel+], [+string msg+]);
+^</Template>
+    <Template Name="llScaleByFactor"                Comments="1" Strings="1">llScaleByFactor([+float scaling_factor+])</Template>
+    <Template Name="llScaleTexture"                 Comments="1" Strings="1">llScaleTexture([+float u+], [+float v+], [+integer face+]);
+^</Template>
+    <Template Name="llScriptDanger"                 Comments="1" Strings="1">llScriptDanger([+vector pos+])</Template>
+    <Template Name="llScriptProfiler"               Comments="1" Strings="1">llScriptProfiler([+integer flags+]);
+^</Template>
+    <Template Name="llSendRemoteData"               Comments="1" Strings="1">llSendRemoteData([+key channel+], [+string dest+], [+integer idata+], [+string sdata+])</Template>
+    <Template Name="llSensor"                       Comments="1" Strings="1">llSensor([+string name+], [+key id+], [+integer type+], [+float range+], [+float arc+]);
+^</Template>
+    <Template Name="llSensorRemove"                 Comments="1" Strings="1">llSensorRemove();
+^</Template>
+    <Template Name="llSensorRepeat"                 Comments="1" Strings="1">llSensorRepeat([+string name+], [+key id+], [+integer type+], [+float range+], [+float arc+], [+float rate+]);
+^</Template>
+    <Template Name="llSetAlpha"                     Comments="1" Strings="1">llSetAlpha([+float alpha+], [+integer face+]);
+^</Template>
+    <Template Name="llSetAngularVelocity"           Comments="1" Strings="1">llSetAngularVelocity([+vector force+], [+integer local+]);
+^</Template>
+    <Template Name="llSetAnimationOverride"         Comments="1" Strings="1">llSetAnimationOverride([+string anim_state+], [+string anim+]);
+^</Template>
+    <Template Name="llSetBuoyancy"                  Comments="1" Strings="1">llSetBuoyancy([+float buoyancy+]);
+^</Template>
+    <Template Name="llSetCameraAtOffset"            Comments="1" Strings="1">llSetCameraAtOffset([+vector offset+]);
+^</Template>
+    <Template Name="llSetCameraEyeOffset"           Comments="1" Strings="1">llSetCameraEyeOffset([+vector offset+]);
+^</Template>
+    <Template Name="llSetCameraParams"              Comments="1" Strings="1">llSetCameraParams([+list rules+]);
+^</Template>
+    <Template Name="llSetClickAction"               Comments="1" Strings="1">llSetClickAction([+integer action+]);
+^</Template>
+    <Template Name="llSetColor"                     Comments="1" Strings="1">llSetColor([+vector color+], [+integer face+]);
+^</Template>
+    <Template Name="llSetContentType"               Comments="1" Strings="1">llSetContentType([+key request_id+], [+integer content_type+]);
+^</Template>
+    <Template Name="llSetDamage"                    Comments="1" Strings="1">llSetDamage([+float damage+]);
+^</Template>
+    <Template Name="llSetForce"                     Comments="1" Strings="1">llSetForce([+vector force+], [+integer local+]);
+^</Template>
+    <Template Name="llSetForceAndTorque"            Comments="1" Strings="1">llSetForceAndTorque([+vector force+], [+vector torque+], [+integer local+]);
+^</Template>
+    <Template Name="llSetHoverHeight"               Comments="1" Strings="1">llSetHoverHeight([+float height+], [+integer water+], [+float tau+]);
+^</Template>
+    <Template Name="llSetKeyframedMotion"           Comments="1" Strings="1">llSetKeyframedMotion([+list keyframes+], [+list options+]);
+^</Template>
+    <Template Name="llSetLinkAlpha"                 Comments="1" Strings="1">llSetLinkAlpha([+integer link+], [+float alpha+], [+integer face+]);
+^</Template>
+    <Template Name="llSetLinkCamera"                Comments="1" Strings="1">llSetLinkCamera([+integer link+], [+vector eye+], [+vector at+]);
+^</Template>
+    <Template Name="llSetLinkColor"                 Comments="1" Strings="1">llSetLinkColor([+integer link+], [+vector color+], [+integer face+]);
+^</Template>
+    <Template Name="llSetLinkMedia"                 Comments="1" Strings="1">llSetLinkMedia([+integer link+], [+integer face+], [+list params+])</Template>
+    <Template Name="llSetLinkPrimitiveParams"       Comments="1" Strings="1">llSetLinkPrimitiveParams([+integer link+], [+list rules+]);
+^</Template>
+    <Template Name="llSetLinkPrimitiveParamsFast"   Comments="1" Strings="1">llSetLinkPrimitiveParamsFast([+integer link+], [+list rules+]);
+^</Template>
+    <Template Name="llSetLinkTexture"               Comments="1" Strings="1">llSetLinkTexture([+integer link+], [+string texture+], [+integer face+]);
+^</Template>
+    <Template Name="llSetLinkTextureAnim"           Comments="1" Strings="1">llSetLinkTextureAnim([+integer link+], [+integer mode+], [+integer face+], [+integer sizex+], [+integer sizey+], [+float start+], [+float length+], [+float rate+]);
+^</Template>
+    <Template Name="llSetLocalRot"                  Comments="1" Strings="1">llSetLocalRot([+rotation rot+]);
+^</Template>
+    <Template Name="llSetMemoryLimit"               Comments="1" Strings="1">llSetMemoryLimit([+integer limit+])</Template>
+    <Template Name="llSetObjectDesc"                Comments="1" Strings="1">llSetObjectDesc([+string description+]);
+^</Template>
+    <Template Name="llSetObjectName"                Comments="1" Strings="1">llSetObjectName([+string name+]);
+^</Template>
+    <Template Name="llSetParcelMusicURL"            Comments="1" Strings="1">llSetParcelMusicURL([+string url+]);
+^</Template>
+    <Template Name="llSetPayPrice"                  Comments="1" Strings="1">llSetPayPrice([+integer price+], [+list quick_pay_buttons+]);
+^</Template>
+    <Template Name="llSetPhysicsMaterial"           Comments="1" Strings="1">llSetPhysicsMaterial([+integer mask+], [+float gravity_multiplier+], [+float restitution+], [+float friction+], [+float density+]);
+^</Template>
+    <Template Name="llSetPos"                       Comments="1" Strings="1">llSetPos([+vector pos+]);
+^</Template>
+    <Template Name="llSetPrimMediaParams"           Comments="1" Strings="1">llSetPrimMediaParams([+integer face+], [+list params+])</Template>
+    <Template Name="llSetPrimitiveParams"           Comments="1" Strings="1">llSetPrimitiveParams([+list rules+]);
+^</Template>
+    <Template Name="llSetRegionPos"                 Comments="1" Strings="1">llSetRegionPos([+vector position+])</Template>
+    <Template Name="llSetRemoteScriptAccessPin"     Comments="1" Strings="1">llSetRemoteScriptAccessPin([+integer pin+]);
+^</Template>
+    <Template Name="llSetRot"                       Comments="1" Strings="1">llSetRot([+rotation rot+]);
+^</Template>
+    <Template Name="llSetScale"                     Comments="1" Strings="1">llSetScale([+vector size+]);
+^</Template>
+    <Template Name="llSetScriptState"               Comments="1" Strings="1">llSetScriptState([+string name+], [+integer run+]);
+^</Template>
+    <Template Name="llSetSitText"                   Comments="1" Strings="1">llSetSitText([+string text+]);
+^</Template>
+    <Template Name="llSetSoundQueueing"             Comments="1" Strings="1">llSetSoundQueueing([+integer queue+]);
+^</Template>
+    <Template Name="llSetSoundRadius"               Comments="1" Strings="1">llSetSoundRadius([+float radius+]);
+^</Template>
+    <Template Name="llSetStatus"                    Comments="1" Strings="1">llSetStatus([+integer status+], [+integer value+]);
+^</Template>
+    <Template Name="llSetText"                      Comments="1" Strings="1">llSetText([+string text+], [+vector color+], [+float alpha+]);
+^</Template>
+    <Template Name="llSetTexture"                   Comments="1" Strings="1">llSetTexture([+string texture+], [+integer face+]);
+^</Template>
+    <Template Name="llSetTextureAnim"               Comments="1" Strings="1">llSetTextureAnim([+integer mode+], [+integer face+], [+integer sizex+], [+integer sizey+], [+float start+], [+float length+], [+float rate+]);
+^</Template>
+    <Template Name="llSetTimerEvent"                Comments="1" Strings="1">llSetTimerEvent([+float sec+]);
+^</Template>
+    <Template Name="llSetTorque"                    Comments="1" Strings="1">llSetTorque([+vector torque+], [+integer local+]);
+^</Template>
+    <Template Name="llSetTouchText"                 Comments="1" Strings="1">llSetTouchText([+string text+]);
+^</Template>
+    <Template Name="llSetVehicleFlags"              Comments="1" Strings="1">llSetVehicleFlags([+integer flags+]);
+^</Template>
+    <Template Name="llSetVehicleFloatParam"         Comments="1" Strings="1">llSetVehicleFloatParam([+integer param+], [+float value+]);
+^</Template>
+    <Template Name="llSetVehicleRotationParam"      Comments="1" Strings="1">llSetVehicleRotationParam([+integer param+], [+rotation rot+]);
+^</Template>
+    <Template Name="llSetVehicleType"               Comments="1" Strings="1">llSetVehicleType([+integer type+]);
+^</Template>
+    <Template Name="llSetVehicleVectorParam"        Comments="1" Strings="1">llSetVehicleVectorParam([+integer param+], [+vector vec+]);
+^</Template>
+    <Template Name="llSetVelocity"                  Comments="1" Strings="1">llSetVelocity([+vector force+], [+integer local+]);
+^</Template>
+    <Template Name="llShout"                        Comments="1" Strings="1">llShout([+integer channel+], [+string msg+]);
+^</Template>
+    <Template Name="llSin"                          Comments="1" Strings="1">llSin([+float theta+])</Template>
+    <Template Name="llSitOnLink"                    Comments="1" Strings="1">llSitOnLink([+key agent_id+], [+integer link+])</Template>
+    <Template Name="llSitTarget"                    Comments="1" Strings="1">llSitTarget([+vector offset+], [+rotation rot+]);
+^</Template>
+    <Template Name="llSleep"                        Comments="1" Strings="1">llSleep([+float sec+]);
+^</Template>
+    <Template Name="llSqrt"                         Comments="1" Strings="1">llSqrt([+float val+])</Template>
+    <Template Name="llStartAnimation"               Comments="1" Strings="1">llStartAnimation([+string anim+]);
+^</Template>
+    <Template Name="llStopAnimation"                Comments="1" Strings="1">llStopAnimation([+string anim+]);
+^</Template>
+    <Template Name="llStopHover"                    Comments="1" Strings="1">llStopHover();
+^</Template>
+    <Template Name="llStopLookAt"                   Comments="1" Strings="1">llStopLookAt();
+^</Template>
+    <Template Name="llStopMoveToTarget"             Comments="1" Strings="1">llStopMoveToTarget();
+^</Template>
+    <Template Name="llStopSound"                    Comments="1" Strings="1">llStopSound();
+^</Template>
+    <Template Name="llStringLength"                 Comments="1" Strings="1">llStringLength([+string str+])</Template>
+    <Template Name="llStringToBase64"               Comments="1" Strings="1">llStringToBase64([+string str+])</Template>
+    <Template Name="llStringTrim"                   Comments="1" Strings="1">llStringTrim([+string src+], [+integer type+])</Template>
+    <Template Name="llSubStringIndex"               Comments="1" Strings="1">llSubStringIndex([+string source+], [+string pattern+])</Template>
+    <Template Name="llTakeControls"                 Comments="1" Strings="1">llTakeControls([+integer controls+], [+integer accept+], [+integer pass_on+]);
+^</Template>
+    <Template Name="llTan"                          Comments="1" Strings="1">llTan([+float theta+])</Template>
+    <Template Name="llTarget"                       Comments="1" Strings="1">llTarget([+vector position+], [+float range+])</Template>
+    <Template Name="llTargetOmega"                  Comments="1" Strings="1">llTargetOmega([+vector axis+], [+float spinrate+], [+float gain+]);
+^</Template>
+    <Template Name="llTargetRemove"                 Comments="1" Strings="1">llTargetRemove([+integer handle+]);
+^</Template>
+    <Template Name="llTeleportAgent"                Comments="1" Strings="1">llTeleportAgent([+key avatar+], [+string landmark+], [+vector position+], [+vector look_at+]);
+^</Template>
+    <Template Name="llTeleportAgentGlobalCoords"    Comments="1" Strings="1">llTeleportAgentGlobalCoords([+key agent+], [+vector global_coordinates+], [+vector region_coordinates+], [+vector look_at+]);
+^</Template>
+    <Template Name="llTeleportAgentHome"            Comments="1" Strings="1">llTeleportAgentHome([+key avatar+]);
+^</Template>
+    <Template Name="llTextBox"                      Comments="1" Strings="1">llTextBox([+key avatar+], [+string message+], [+integer channel+]);
+^</Template>
+    <Template Name="llToLower"                      Comments="1" Strings="1">llToLower([+string src+])</Template>
+    <Template Name="llToUpper"                      Comments="1" Strings="1">llToUpper([+string src+])</Template>
+    <Template Name="llTransferLindenDollars"        Comments="1" Strings="1">llTransferLindenDollars([+key destination+], [+integer amount+])</Template>
+    <Template Name="llTriggerSound"                 Comments="1" Strings="1">llTriggerSound([+string sound+], [+float volume+]);
+^</Template>
+    <Template Name="llTriggerSoundLimited"          Comments="1" Strings="1">llTriggerSoundLimited([+string sound+], [+float volume+], [+vector top_north_east+], [+vector bottom_south_west+]);
+^</Template>
+    <Template Name="llUnSit"                        Comments="1" Strings="1">llUnSit([+key id+]);
+^</Template>
+    <Template Name="llUnescapeURL"                  Comments="1" Strings="1">llUnescapeURL([+string url+])</Template>
+    <Template Name="llUpdateCharacter"              Comments="1" Strings="1">llUpdateCharacter([+list options+]);
+^</Template>
+    <Template Name="llUpdateKeyValue"               Comments="1" Strings="1">llUpdateKeyValue([+string k+], [+string v+], [+integer checked+], [+string ov+])</Template>
+    <Template Name="llVecDist"                      Comments="1" Strings="1">llVecDist([+vector vec_a+], [+vector vec_b+])</Template>
+    <Template Name="llVecMag"                       Comments="1" Strings="1">llVecMag([+vector vec+])</Template>
+    <Template Name="llVecNorm"                      Comments="1" Strings="1">llVecNorm([+vector vec+])</Template>
+    <Template Name="llVolumeDetect"                 Comments="1" Strings="1">llVolumeDetect([+integer detect+]);
+^</Template>
+    <Template Name="llWanderWithin"                 Comments="1" Strings="1">llWanderWithin([+vector origin+], [+vector dist+], [+list options+]);
+^</Template>
+    <Template Name="llWater"                        Comments="1" Strings="1">llWater([+vector offset+])</Template>
+    <Template Name="llWhisper"                      Comments="1" Strings="1">llWhisper([+integer channel+], [+string msg+]);
+^</Template>
+    <Template Name="llWind"                         Comments="1" Strings="1">llWind([+vector offset+])</Template>
+    <Template Name="llXorBase64"                    Comments="1" Strings="1">llXorBase64([+string str1+], [+string str2+])</Template>
+    <Template Name="money"                          Comments="1" Strings="1">money([+key id+], [+integer amount+])
+{
+    ^
+}</Template>
+    <Template Name="moving_end"                     Comments="1" Strings="1">moving_end()
+{
+    ^
+}</Template>
+    <Template Name="moving_start"                   Comments="1" Strings="1">moving_start()
+{
+    ^
+}</Template>
+    <Template Name="no_sensor"                      Comments="1" Strings="1">no_sensor()
+{
+    ^
+}</Template>
+    <Template Name="not_at_rot_target"              Comments="1" Strings="1">not_at_rot_target()
+{
+    ^
+}</Template>
+    <Template Name="not_at_target"                  Comments="1" Strings="1">not_at_target()
+{
+    ^
+}</Template>
+    <Template Name="object_rez"                     Comments="1" Strings="1">object_rez([+key id+])
+{
+    ^
+}</Template>
+    <Template Name="on_rez"                         Comments="1" Strings="1">on_rez([+integer start_param+])
+{
+    ^
+}</Template>
+    <Template Name="path_update"                    Comments="1" Strings="1">path_update([+integer type+], [+list reserved+])
+{
+    ^
+}</Template>
+    <Template Name="remote_data"                    Comments="1" Strings="1">remote_data([+integer event_type+], [+key channel+], [+key message_id+], [+string sender+], [+integer idata+], [+string sdata+])
+{
+    ^
+}</Template>
+    <Template Name="run_time_permissions"           Comments="1" Strings="1">run_time_permissions([+integer perm+])
+{
+    ^
+}</Template>
+    <Template Name="sensor"                         Comments="1" Strings="1">sensor([+integer index+])
+{
+    ^
+}</Template>
+    <Template Name="state"                          Comments="1" Strings="1">state [+name+]
+{
+    ^
+}</Template>
+    <Template Name="state_entry"                    Comments="1" Strings="1">state_entry()
+{
+    ^
+}</Template>
+    <Template Name="state_exit"                     Comments="1" Strings="1">state_exit()
+{
+    ^
+}</Template>
+    <Template Name="timer"                          Comments="1" Strings="1">timer()
+{
+    ^
+}</Template>
+    <Template Name="touch"                          Comments="1" Strings="1">touch([+integer index+])
+{
+    ^
+}</Template>
+    <Template Name="touch_end"                      Comments="1" Strings="1">touch_end([+integer index+])
+{
+    ^
+}</Template>
+    <Template Name="touch_start"                    Comments="1" Strings="1">touch_start([+integer index+])
+{
+    ^
+}</Template>
+    <Template Name="transaction_result"             Comments="1" Strings="1">transaction_result([+key id+], [+integer success+], [+string data+])
+{
+    ^
+}</Template>
+    <Template Name="while"                          Comments="1" Strings="1">while ([+condition+])
+{
+    ^
+}</Template>
+</Templates>

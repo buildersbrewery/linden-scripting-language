@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: llSetContentType
+# key: llSetContentType
+# contributor: Builder's Brewery (http://www.buildersbrewery.com/)
+# group: functions.builtin functions
+# --
+llSetContentType(${1:key request_id}, ${2:$$(yas-choose-value '("CONTENT_TYPE_TEXT" "CONTENT_TYPE_HTML" "CONTENT_TYPE_XML" "CONTENT_TYPE_XHTML" "CONTENT_TYPE_ATOM" "CONTENT_TYPE_JSON" "CONTENT_TYPE_LLSD" "CONTENT_TYPE_FORM" "CONTENT_TYPE_RSS"))});
+$0

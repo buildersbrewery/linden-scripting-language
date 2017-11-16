@@ -1,0 +1,606 @@
+[
+    {
+        "description":
+        {
+            "en_US": "Triggered on any state transition and startup"
+        },
+        "name": "state_entry"
+    },
+    {
+        "description":
+        {
+            "en_US": "Triggered on any state transition"
+        },
+        "name": "state_exit"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "num_detected",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Triggered by the start of agent clicking on task"
+        },
+        "name": "touch_start"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "num_detected",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Triggered while agent is clicking on task"
+        },
+        "name": "touch"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "num_detected",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Triggered when agent stops clicking on task"
+        },
+        "name": "touch_end"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "num_detected",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Triggered when task starts colliding with another task"
+        },
+        "name": "collision_start"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "num_detected",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Triggered while task is colliding with another task"
+        },
+        "name": "collision"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "num_detected",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Triggered when task stops colliding with another task"
+        },
+        "name": "collision_end"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "pos",
+                "type": "vector"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Triggered when task starts colliding with land"
+        },
+        "name": "land_collision_start"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "pos",
+                "type": "vector"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Triggered when task is colliding with land"
+        },
+        "name": "land_collision"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "pos",
+                "type": "vector"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Triggered when task stops colliding with land"
+        },
+        "name": "land_collision_end"
+    },
+    {
+        "description":
+        {
+            "en_US": "Result of the llSetTimerEvent library function call"
+        },
+        "name": "timer"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "channel",
+                "type": "integer"
+            },
+            {
+                "name": "name",
+                "type": "string"
+            },
+            {
+                "name": "id",
+                "type": "key"
+            },
+            {
+                "name": "message",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Result of the llListen library function call"
+        },
+        "name": "listen"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "num_detected",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Result of the llSensor library function call"
+        },
+        "name": "sensor"
+    },
+    {
+        "description":
+        {
+            "en_US": "Result of the llSensor library function call"
+        },
+        "name": "no_sensor"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "id",
+                "type": "key"
+            },
+            {
+                "name": "level",
+                "type": "integer"
+            },
+            {
+                "name": "edge",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Result of llTakeControls library function call"
+        },
+        "name": "control"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "tnum",
+                "type": "integer"
+            },
+            {
+                "name": "targetpos",
+                "type": "vector"
+            },
+            {
+                "name": "ourpos",
+                "type": "vector"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Result of llTarget library function call"
+        },
+        "name": "at_target"
+    },
+    {
+        "description":
+        {
+            "en_US": "Result of llTarget library function call"
+        },
+        "name": "not_at_target"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "tnum",
+                "type": "integer"
+            },
+            {
+                "name": "targetrot",
+                "type": "rotation"
+            },
+            {
+                "name": "ourrot",
+                "type": "rotation"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Result of LLRotTarget library function call"
+        },
+        "name": "at_rot_target"
+    },
+    {
+        "description":
+        {
+            "en_US": "Result of LLRotTarget library function call"
+        },
+        "name": "not_at_rot_target"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "id",
+                "type": "key"
+            },
+            {
+                "name": "amount",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Triggered when L$ is given to task"
+        },
+        "name": "money"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "time",
+                "type": "string"
+            },
+            {
+                "name": "address",
+                "type": "string"
+            },
+            {
+                "name": "subj",
+                "type": "string"
+            },
+            {
+                "name": "message",
+                "type": "string"
+            },
+            {
+                "name": "num_left",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Triggered when task receives email"
+        },
+        "name": "email",
+        "version": "1.3.0"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "perm",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Triggered when an agent grants run time permissions to task"
+        },
+        "name": "run_time_permissions"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "id",
+                "type": "key"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Triggered when task attaches or detaches from agent"
+        },
+        "name": "attach"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "queryid",
+                "type": "key"
+            },
+            {
+                "name": "data",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Triggered when task receives asynchronous data"
+        },
+        "name": "dataserver"
+    },
+    {
+        "description":
+        {
+            "en_US": "Triggered when task begins moving"
+        },
+        "name": "moving_start"
+    },
+    {
+        "description":
+        {
+            "en_US": "Triggered when task stops moving"
+        },
+        "name": "moving_end"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "start_param",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Triggered when task is rezzed in from inventory or another task"
+        },
+        "name": "on_rez"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "id",
+                "type": "key"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Triggered when task rezzes in another task"
+        },
+        "name": "object_rez"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "sender_num",
+                "type": "integer"
+            },
+            {
+                "name": "num",
+                "type": "integer"
+            },
+            {
+                "name": "str",
+                "type": "string"
+            },
+            {
+                "name": "id",
+                "type": "key"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Triggered when task receives a link message via LLMessageLinked library function call"
+        },
+        "name": "link_message"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "change",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Triggered various event change the task\n(test change with CHANGED_INVENTORY, CHANGED_COLOR, CHANGED_SHAPE, CHANGED_SCALE, CHANGED_TEXTURE, CHANGED_LINK, CHANGED_ALLOWED_DROP, CHANGED_OWNER, CHANGED_REGION, CHANGED_TELEPORT, CHANGED_REGION_START, CHANGED_MEDIA)"
+        },
+        "name": "changed"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "event_type",
+                "type": "integer"
+            },
+            {
+                "name": "channel",
+                "type": "key"
+            },
+            {
+                "name": "message_id",
+                "type": "key"
+            },
+            {
+                "name": "sender",
+                "type": "string"
+            },
+            {
+                "name": "idata",
+                "type": "integer"
+            },
+            {
+                "name": "sdata",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Triggered by various XML-RPC calls (event_type will be one of REMOTE_DATA_CHANNEL, REMOTE_DATA_REQUEST, REMOTE_DATA_REPLY)"
+        },
+        "name": "remote_data"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "request_id",
+                "type": "key"
+            },
+            {
+                "name": "status",
+                "type": "integer"
+            },
+            {
+                "name": "metadata",
+                "type": "list"
+            },
+            {
+                "name": "body",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Triggered when task receives a response to one of its llHTTPRequests"
+        },
+        "name": "http_response",
+        "version": "1.9.1.9"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "id",
+                "type": "key"
+            },
+            {
+                "name": "method",
+                "type": "string"
+            },
+            {
+                "name": "body",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Triggered when task receives an http request against a public URL"
+        },
+        "name": "http_request"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "id",
+                "type": "key"
+            },
+            {
+                "name": "success",
+                "type": "integer"
+            },
+            {
+                "name": "data",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Triggered when transferring L$ to Agent via llTransferLindenDollars"
+        },
+        "name": "transaction_result"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "type",
+                "type": "integer"
+            },
+            {
+                "name": "reserved",
+                "type": "list"
+            }
+        ],
+        "name": "path_update"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "agent",
+                "type": "key"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Triggered by llRequestExperiencePermissions when the permission has been granted."
+        },
+        "name": "experience_permissions",
+        "version": "14.07.18.292162"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "agent",
+                "type": "key"
+            },
+            {
+                "name": "reason",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Triggered by llRequestExperiencePermissions when the permission has been denied."
+        },
+        "name": "experience_permissions_denied",
+        "version": "14.07.18.292162"
+    }
+]

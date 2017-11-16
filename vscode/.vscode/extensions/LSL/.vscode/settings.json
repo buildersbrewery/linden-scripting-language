@@ -1,0 +1,11 @@
+{
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4,
+    "editor.useTabStops": false,
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "out/": true
+    },
+    "typescript.tsdk": "./node_modules/typescript/lib"
+}

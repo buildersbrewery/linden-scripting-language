@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[money(key ${1:id}, integer ${2:amount})${LSL_WHITESPACE_BEFORE}{${LSL_WHITESPACE_INSIDE_FIRST}$0${LSL_WHITESPACE_INSIDE_LAST}}]]></content>
+	<tabTrigger>money</tabTrigger>
+	<scope>meta.class.state.body.lsl</scope>
+	<description>event</description>
+</snippet>

@@ -1,0 +1,9 @@
+*.cache
+*.log
+*.py[co]
+*.sublime-workspace
+.DS_Store
+.ropeproject/
+node_modules/
+Desktop.ini
+Thumbs.db

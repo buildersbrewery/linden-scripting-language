@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plist version="1.0">
+	<dict>
+		<key>scope</key><string>meta.function.user-defined.declaration.lsl</string>
+		<key>settings</key>
+		<dict>
+			<key>showInSymbolList</key><integer>1</integer>
+			<key>showInIndexedReferenceList</key><integer>1</integer>
+			<key>showInIndexedSymbolList</key><integer>1</integer>
+			<key>symbolTransformation</key><string>s/(.+)/$1/</string>
+		</dict>
+	</dict>
+</plist>

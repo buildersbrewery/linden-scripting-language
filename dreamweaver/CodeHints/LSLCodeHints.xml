@@ -1,0 +1,1168 @@
+<codehints xmlns:MMString="http://www.macromedia.com/schemes/data/string/">
+    <menugroup MMString:name="LSL_codehints_1" id="LSL_CodeHints">
+        <description>
+            <MMString:loadString id="LSL_codehints_2" />
+        </description>
+        <menu pattern='@' additionaldismisschars="ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&amp;*-+={}|[]\:;'&lt;&gt;?,./`~()" DOCTYPES="LSL" allowwhitespaceprefix="true" displayrestriction="lsl">
+            <menuitem label="@include" value="include " icon="shared/mm/images/hintMisc.gif" />
+        </menu>
+        <menu pattern='@include ' additionaldismisschars="ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&amp;*-+={}|[]\:;'&lt;&gt;?,./`~()" DOCTYPES="LSL" allowwhitespaceprefix="true" displayrestriction="lsl">
+            <menuitem label="something()" value="something(" icon="shared/mm/images/hintMisc.gif" />
+        </menu>
+        <menu pattern='' additionaldismisschars="" DOCTYPES="LSL" allowwhitespaceprefix="true" displayrestriction="lsl">
+            <function pattern="func_name($varName)" DOCTYPES="LSL" />
+        </menu>
+<!-- functions -->
+        <function pattern="llAbs(integer val)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llAcos(float val)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llAddToLandBanList(key avatar, float hours)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llAddToLandPassList(key avatar, float hours)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llAdjustSoundVolume(float volume)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llAllowInventoryDrop(integer add)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llAngleBetween(rotation a, rotation b)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llApplyImpulse(vector force, integer local)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llApplyRotationalImpulse(vector force, integer local)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llAsin(float val)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llAtan2(float y, float x)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llAttachToAvatar(integer attach_point)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llAttachToAvatarTemp(integer attach_point)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llAvatarOnLinkSitTarget(integer link)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llAvatarOnSitTarget()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llAxes2Rot(vector fwd, vector left, vector up)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llAxisAngle2Rot(vector axis, float angle)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llBase64ToInteger(string str)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llBase64ToString(string str)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llBreakAllLinks()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llBreakLink(integer link)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llCastRay(vector start, vector end, list options)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llCeil(float val)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llClearCameraParams()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llClearLinkMedia(integer link, integer face)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llClearPrimMedia(integer face)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llCloseRemoteDataChannel(key channel)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llCollisionFilter(string name, key id, integer accept)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llCollisionSound(string impact_sound, float impact_volume)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llCollisionSprite(string impact_sprite)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llCos(float theta)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llCreateCharacter(list options)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llCreateLink(key target, integer parent)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llCSV2List(string src)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llDeleteCharacter()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llDeleteSubList(list src, integer start, integer end)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llDeleteSubString(string src, integer start, integer end)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llDetachFromAvatar()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llDetectedGrab(integer number)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llDetectedGroup(integer number)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llDetectedKey(integer number)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llDetectedLinkNumber(integer number)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llDetectedName(integer number)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llDetectedOwner(integer number)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llDetectedPos(integer number)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llDetectedRot(integer number)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llDetectedTouchBinormal(integer number)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llDetectedTouchFace(integer number)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llDetectedTouchNormal(integer number)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llDetectedTouchPos(integer number)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llDetectedTouchST(integer number)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llDetectedTouchUV(integer number)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llDetectedType(integer number)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llDetectedVel(integer number)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llDialog(key avatar, string message, list buttons, integer channel)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llDie()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llDumpList2String(list src, string separator)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llEdgeOfWorld(vector pos, vector dir)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llEjectFromLand(key avatar)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llEmail(string address, string subject, string message)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llEscapeURL(string url)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llEuler2Rot(vector v)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llExecCharacterCmd(integer command, list options)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llEvade(key target, list options)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llFabs(float val)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llFleeFrom(vector position, float distance, list options)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llFloor(float val)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llForceMouselook(integer mouselook)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llFrand(float mag)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGenerateKey()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetAccel()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetAgentInfo(key id)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetAgentLanguage(key avatar)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetAgentList(integer scope, list options)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetAgentSize(key avatar)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetAlpha(integer face)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetAndResetTime()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetAnimation(key id)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetAnimationList(key avatar)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetAnimationOverride(string anim_state)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetAttached()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetAttachedList(key id)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetBoundingBox(key object)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetCameraPos()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetCameraRot()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetCenterOfMass()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetClosestNavPoint(vector point, list options)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetColor(integer face)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetCreator()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetDate()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetDisplayName(key id)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetEnergy()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetEnv(string name)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetForce()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetFreeMemory()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetFreeURLs()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetGeometricCenter()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetGMTclock()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetHTTPHeader(key request_id, string header)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetInventoryCreator(string item)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetInventoryKey(string name)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetInventoryName(integer type, integer number)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetInventoryNumber(integer type)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetInventoryPermMask(string item, integer mask)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetInventoryType(string name)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetKey()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetLandOwnerAt(vector pos)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetLinkKey(integer link)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetLinkMedia(integer link, integer face, list params)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetLinkName(integer link)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetLinkNumber()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetLinkNumberOfSides(integer link)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetLinkPrimitiveParams(integer link, list params)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetListEntryType(list src, integer index)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetListLength(list src)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetLocalPos()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetLocalRot()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetMass()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetMassMKS()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetMaxScaleFactor()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetMemoryLimit()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetMinScaleFactor()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetNextEmail(string address, string subject)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetNotecardLine(string name, integer line)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetNumberOfNotecardLines(string name)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetNumberOfPrims()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetNumberOfSides()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetObjectDesc()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetObjectDetails(key id, list params)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetObjectMass(key id)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetObjectName()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetObjectPermMask(integer mask)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetObjectPrimCount(key prim)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetOmega()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetOwner()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetOwnerKey(key id)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetParcelDetails(vector pos, list params)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetParcelFlags(vector pos)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetParcelMaxPrims(vector pos, integer sim_wide)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetParcelMusicURL()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetParcelPrimCount(vector pos, integer category, integer sim_wide)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetParcelPrimOwners(vector pos)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetPermissions()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetPermissionsKey()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetPhysicsMaterial()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetPos()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetPrimitiveParams(list params)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetPrimMediaParams(integer face, list params)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetRegionAgentCount()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetRegionCorner()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetRegionFlags()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetRegionFPS()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetRegionName()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetRegionTimeDilation()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetRootPosition()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetRootRotation()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetRot()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetScale()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetScriptName()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetScriptState(string script)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetSimStats(integer stat_type)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetSimulatorHostname()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetSPMaxMemory()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetStartParameter()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetStaticPath(vector start, vector end, float radius, list params)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetStatus(integer status)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetSubString(string src, integer start, integer end)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetSunDirection()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetTexture(integer face)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetTextureOffset(integer face)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetTextureRot(integer face)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetTextureScale(integer face)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetTime()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetTimeOfDay()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetTimestamp()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetTorque()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetUnixTime()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetUsedMemory()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetUsername(key id)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetVel()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGetWallclock()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGiveInventory(key destination, string inventory)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGiveInventoryList(key target, string folder, list inventory)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGiveMoney(key destination, integer amount)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGround(vector offset)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGroundContour(vector offset)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGroundNormal(vector offset)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGroundRepel(float height, integer water, float tau)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llGroundSlope(vector offset)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llHTTPRequest(string url, list parameters, string body)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llHTTPResponse(key request_id, integer status, string body)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llInsertString(string dst, integer pos, string src)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llInstantMessage(key user, string message)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llIntegerToBase64(integer number)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llJson2List(string json)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llJsonGetValue(string json, list specifiers)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llJsonSetValue(string json, list specifiers, string newValue)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llJsonValueType(string json, list specifiers)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llKey2Name(key id)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llLinkParticleSystem(integer link, list rules)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llLinkSitTarget(integer link, vector offset, rotation rot)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llList2CSV(list src)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llList2Float(list src, integer index)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llList2Integer(list src, integer index)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llList2Json(string type, list values)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llList2Key(list src, integer index)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llList2List(list src, integer start, integer end)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llList2ListStrided(list src, integer start, integer end, integer stride)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llList2Rot(list src, integer index)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llList2String(list src, integer index)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llList2Vector(list src, integer index)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llListen(integer channel, string name, key id, string msg)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llListenControl(integer handle, integer active)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llListenRemove(integer handle)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llListFindList(list src, list test)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llListInsertList(list dest, list src, integer start)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llListRandomize(list src, integer stride)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llListReplaceList(list dest, list src, integer start, integer end)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llListSort(list src, integer stride, integer ascending)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llListStatistics(integer operation, list src)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llLoadURL(key avatar, string message, string url)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llLog(float val)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llLog10(float val)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llLookAt(vector target, float strength, float damping)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llLoopSound(string sound, float volume)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llLoopSoundMaster(string sound, float volume)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llLoopSoundSlave(string sound, float volume)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llManageEstateAccess(integer action, key avatar)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llMapDestination(string simname, vector pos, vector look_at)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llMD5String(string src, integer nonce)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llMessageLinked(integer link, integer num, string str, key id)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llMinEventDelay(float delay)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llModifyLand(integer action, integer brush)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llModPow(integer a, integer b, integer c)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llMoveToTarget(vector target, float tau)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llNavigateTo(vector pos, list options)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llOffsetTexture(float u, float v, integer face)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llOpenRemoteDataChannel()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llOverMyLand(key id)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llOwnerSay(string msg)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llParcelMediaCommandList(list commandList)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llParcelMediaQuery(list query)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llParseString2List(string src, list separators, list spacers)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llParseStringKeepNulls(string src, list separators, list spacers)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llParticleSystem(list rules)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llPassCollisions(integer pass)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llPassTouches(integer pass)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llPatrolPoints(list patrolPoints, list options)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llPlaySound(string sound, float volume)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llPlaySoundSlave(string sound, float volume)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llPow(float base, float exponent)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llPreloadSound(string sound)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llPursue(key target, list options)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llPushObject(key target, vector impulse, vector ang_impulse, integer local)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llRegionSay(integer channel, string msg)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llRegionSayTo(key target, integer channel, string msg)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llReleaseControls()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llReleaseURL(string url)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llRemoteDataReply(key channel, key message_id, string sdata, integer idata)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llRemoteLoadScriptPin(key target, string name, integer pin, integer running, integer start_param)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llRemoveFromLandBanList(key avatar)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llRemoveFromLandPassList(key avatar)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llRemoveInventory(string item)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llRemoveVehicleFlags(integer flags)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llRequestAgentData(key id, integer data)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llRequestDisplayName(key id)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llRequestInventoryData(string name)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llRequestPermissions(key agent, integer permissions)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llRequestSecureURL()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llRequestSimulatorData(string region, integer data)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llRequestURL()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llRequestUsername(key id)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llResetLandBanList()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llResetLandPassList()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llResetAnimationOverride(string anim_state)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llResetOtherScript(string name)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llResetScript()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llResetTime()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llReturnObjectsByID(list objects)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llReturnObjectsByOwner(key owner, integer scope)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llRezAtRoot(string inventory, vector position, vector velocity, rotation rot, integer param)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llRezObject(string inventory, vector pos, vector vel, rotation rot, integer param)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llRot2Angle(rotation rot)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llRot2Axis(rotation rot)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llRot2Euler(rotation quat)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llRot2Fwd(rotation q)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llRot2Left(rotation q)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llRot2Up(rotation q)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llRotateTexture(float angle, integer face)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llRotBetween(vector start, vector end)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llRotLookAt(rotation target_direction, float strength, float damping)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llRotTarget(rotation rot, float error)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llRotTargetRemove(integer handle)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llRound(float val)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llSameGroup(key uuid)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llSay(integer channel, string msg)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llScaleByFactor(float scaling_factor)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llScaleTexture(float u, float v, integer face)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llScriptDanger(vector pos)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llScriptProfiler(integer flags)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llSendRemoteData(key channel, string dest, integer idata, string sdata)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llSensor(string name, key id, integer type, float range, float arc)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llSensorRemove()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llSensorRepeat(string name, key id, integer type, float range, float arc, float rate)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llSetAlpha(float alpha, integer face)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llSetAngularVelocity(vector force, integer local)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llSetAnimationOverride(string anim_state, string anim)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llSetBuoyancy(float buoyancy)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llSetCameraAtOffset(vector offset)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llSetCameraEyeOffset(vector offset)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llSetCameraParams(list rules)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llSetClickAction(integer action)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llSetColor(vector color, integer face)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llSetContentType(key request_id, integer content_type)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llSetDamage(float damage)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llSetForce(vector force, integer local)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llSetForceAndTorque(vector force, vector torque, integer local)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llSetHoverHeight(float height, integer water, float tau)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llSetKeyframedMotion(list keyframes, list options)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llSetLinkAlpha(integer link, float alpha, integer face)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llSetLinkCamera(integer link, vector eye, vector at)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llSetLinkColor(integer link, vector color, integer face)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llSetLinkMedia(integer link, integer face, list params)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llSetLinkPrimitiveParams(integer link, list rules)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llSetLinkPrimitiveParamsFast(integer link, list rules)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llSetLinkTexture(integer link, string texture, integer face)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llSetLinkTextureAnim(integer link, integer mode, integer face, integer sizex, integer sizey, float start, float length, float rate)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llSetLocalRot(rotation rot)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llSetMemoryLimit(integer limit)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llSetObjectDesc(string description)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llSetObjectName(string name)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llSetParcelMusicURL(string url)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llSetPayPrice(integer price, [integer price_button_a, integer price_button_b, integer price_button_c, integer price_button_d])"object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llSetPhysicsMaterial(integer mask, float gravity_multiplier, float restitution, float friction, float density)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llSetPos(vector pos)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llSetPrimitiveParams(list rules)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llSetPrimMediaParams(integer face, list params)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llSetRegionPos(vector position)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llSetRemoteScriptAccessPin(integer pin)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llSetRot(rotation rot)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llSetScale(vector size)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llSetScriptState(string name, integer run)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llSetSitText(string text)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llSetSoundQueueing(integer queue)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llSetSoundRadius(float radius)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llSetStatus(integer status, integer value)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llSetText(string text, vector color, float alpha)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llSetTexture(string texture, integer face)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llSetTextureAnim(integer mode, integer face, integer sizex, integer sizey, float start, float length, float rate)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llSetTimerEvent(float sec)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llSetTorque(vector torque, integer local)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llSetTouchText(string text)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llSetVehicleFlags(integer flags)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llSetVehicleFloatParam(integer param, float value)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llSetVehicleRotationParam(integer param, rotation rot)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llSetVehicleType(integer type)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llSetVehicleVectorParam(integer param, vector vec)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llSetVelocity(vector force, integer local)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llSHA1String(string src)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llShout(integer channel, string msg)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llSin(float theta)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llSitOnLink(key agent_id, integer link)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llSitTarget(vector offset, rotation rot)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llSleep(float sec)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llSqrt(float val)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llStartAnimation(string anim)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llStopAnimation(string anim)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llStopHover()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llStopLookAt()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llStopMoveToTarget()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llStopSound()" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llStringLength(string str)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llStringToBase64(string str)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llStringTrim(string src, integer type)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llSubStringIndex(string source, string pattern)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llTakeControls(integer controls, integer accept, integer pass_on)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llTan(float theta)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llTarget(vector position, float range)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llTargetOmega(vector axis, float spinrate, float gain)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llTargetRemove(integer handle)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llTeleportAgent(key avatar, string landmark, vector position, vector look_at)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llTeleportAgentGlobalCoords(key agent, vector global_coordinates, vector region_coordinates, vector look_at)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llTeleportAgentHome(key avatar)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llTextBox(key avatar, string message, integer channel)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llToLower(string src)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llToUpper(string src)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llTransferLindenDollars(key destination, integer amount)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llTriggerSound(string sound, float volume)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llTriggerSoundLimited(string sound, float volume, vector top_north_east, vector bottom_south_west)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llUnescapeURL(string url)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llUnSit(key id)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llUpdateCharacter(list options)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llVecDist(vector vec_a, vector vec_b)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llVecMag(vector vec)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llVecNorm(vector vec)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llVolumeDetect(integer detect)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llWanderWithin(vector origin, vector dist, list options)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llWater(vector offset)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llWhisper(integer channel, string msg)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llWind(vector offset)" object="LSL" doctypes="LSL" caseSensitive="true" />
+        <function pattern="llXorBase64(string str1, string str2)" object="LSL" doctypes="LSL" caseSensitive="true" />
+<!-- float constants -->
+        <string id="DEG_TO_RAD" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PI"         value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PI_BY_TWO"  value="" doctypes="LSL" caseSensitive="true" />
+        <string id="RAD_TO_DEG" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="SQRT2"      value="" doctypes="LSL" caseSensitive="true" />
+        <string id="TWO_PI"     value="" doctypes="LSL" caseSensitive="true" />
+<!-- integer constants -->
+        <string id="ACTIVE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="AGENT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="AGENT_ALWAYS_RUN" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="AGENT_ATTACHMENTS" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="AGENT_AUTOPILOT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="AGENT_AWAY" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="AGENT_BUSY" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="AGENT_BY_LEGACY_NAME" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="AGENT_BY_USERNAME" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="AGENT_CROUCHING" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="AGENT_FLYING" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="AGENT_IN_AIR" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="AGENT_LIST_PARCEL" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="AGENT_LIST_PARCEL_OWNER" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="AGENT_LIST_REGION" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="AGENT_MOUSELOOK" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="AGENT_ON_OBJECT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="AGENT_SCRIPTED" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="AGENT_SITTING" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="AGENT_TYPING" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="AGENT_WALKING" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ALL_SIDES" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ANIM_ON" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_AVATAR_CENTER" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_BACK" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_BELLY" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_CHEST" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_CHIN" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_FACE_JAW" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_FACE_LEAR" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_FACE_LEYE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_FACE_REAR" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_FACE_REYE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_FACE_TONGUE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_GROIN" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_HEAD" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_HIND_LFOOT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_HIND_RFOOT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_HUD_BOTTOM" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_HUD_BOTTOM_LEFT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_HUD_BOTTOM_RIGHT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_HUD_CENTER_1" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_HUD_CENTER_2" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_HUD_TOP_CENTER" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_HUD_TOP_LEFT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_HUD_TOP_RIGHT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_LEAR" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_LEFT_PEC" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_LEYE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_LFOOT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_LHAND" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_LHAND_RING1" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_LHIP" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_LLARM" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_LLLEG" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_LSHOULDER" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_LUARM" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_LULEG" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_LWING" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_MOUTH" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_NECK" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_NOSE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_PELVIS" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_REAR" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_REYE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_RFOOT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_RHAND" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_RHAND_RING1" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_RHIP" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_RIGHT_PEC" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_RLARM" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_RLLEG" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_RSHOULDER" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_RUARM" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_RULEG" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_RWING" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_TAIL_BASE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ATTACH_TAIL_TIP" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="AVOID_CHARACTERS" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="AVOID_DYNAMIC_OBSTACLES" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="AVOID_NONE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CAMERA_ACTIVE, integer isActive, "  value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CAMERA_BEHINDNESS_ANGLE, float degrees, "  value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CAMERA_BEHINDNESS_LAG, float seconds, "  value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CAMERA_DISTANCE, float meters, "  value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CAMERA_FOCUS, vector position, "  value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CAMERA_FOCUS_LAG, float seconds, "  value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CAMERA_FOCUS_LOCKED, integer isLocked, "  value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CAMERA_FOCUS_OFFSET, vector meters, "  value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CAMERA_FOCUS_THRESHOLD, float meters, "  value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CAMERA_PITCH, float degrees, "  value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CAMERA_POSITION, vector position, "  value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CAMERA_POSITION_LAG, float seconds, "  value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CAMERA_POSITION_LOCKED, integer isLocked, "  value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CAMERA_POSITION_THRESHOLD, float meters, "  value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CHANGED_ALLOWED_DROP" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CHANGED_COLOR" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CHANGED_INVENTORY" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CHANGED_LINK" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CHANGED_MEDIA" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CHANGED_OWNER" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CHANGED_REGION" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CHANGED_REGION_START" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CHANGED_SCALE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CHANGED_SHAPE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CHANGED_TELEPORT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CHANGED_TEXTURE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CHARACTER_ACCOUNT_FOR_SKIPPED_FRAMES" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CHARACTER_AVOIDANCE_MODE, integer flags, "  value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CHARACTER_CMD_JUMP" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CHARACTER_CMD_SMOOTH_STOP" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CHARACTER_CMD_STOP" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CHARACTER_DESIRED_SPEED, float speed, "  value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CHARACTER_DESIRED_TURN_SPEED, float speed, "  value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CHARACTER_LENGTH, float length, "  value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CHARACTER_MAX_ACCEL" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CHARACTER_MAX_DECEL" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CHARACTER_MAX_SPEED" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CHARACTER_MAX_TURN_RADIUS, float radius, "  value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CHARACTER_ORIENTATION, integer orientation, "  value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CHARACTER_RADIUS, float radius, "  value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CHARACTER_STAY_WITHIN_PARCEL,  boolean stay, "  value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CHARACTER_TYPE, integer type, "  value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CHARACTER_TYPE_A" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CHARACTER_TYPE_B" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CHARACTER_TYPE_C" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CHARACTER_TYPE_D" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CHARACTER_TYPE_NONE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CLICK_ACTION_BUY" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CLICK_ACTION_NONE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CLICK_ACTION_OPEN" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CLICK_ACTION_OPEN_MEDIA" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CLICK_ACTION_PAY" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CLICK_ACTION_PLAY" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CLICK_ACTION_SIT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CLICK_ACTION_TOUCH" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CONTENT_TYPE_ATOM" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CONTENT_TYPE_FORM" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CONTENT_TYPE_HTML" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CONTENT_TYPE_JSON" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CONTENT_TYPE_LLSD" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CONTENT_TYPE_RSS" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CONTENT_TYPE_TEXT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CONTENT_TYPE_XHTML" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CONTENT_TYPE_XML" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CONTROL_BACK" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CONTROL_DOWN" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CONTROL_FWD" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CONTROL_LBUTTON" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CONTROL_LEFT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CONTROL_ML_LBUTTON" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CONTROL_RIGHT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CONTROL_ROT_LEFT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CONTROL_ROT_RIGHT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="CONTROL_UP" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="DATA_BORN" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="DATA_NAME" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="DATA_ONLINE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="DATA_PAYINFO" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="DATA_SIM_POS" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="DATA_SIM_RATING" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="DATA_SIM_STATUS" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="DEBUG_CHANNEL" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="DENSITY" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ERR_GENERIC" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ERR_MALFORMED_PARAMS" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ERR_PARCEL_PERMISSIONS" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ERR_RUNTIME_PERMISSIONS" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ERR_THROTTLED" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ESTATE_ACCESS_ALLOWED_AGENT_ADD" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ESTATE_ACCESS_ALLOWED_AGENT_REMOVE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ESTATE_ACCESS_ALLOWED_GROUP_ADD" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ESTATE_ACCESS_ALLOWED_GROUP_REMOVE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ESTATE_ACCESS_BANNED_AGENT_ADD" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ESTATE_ACCESS_BANNED_AGENT_REMOVE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="FORCE_DIRECT_PATH" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="FRICTION" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="GCNP_RADIUS" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="GCNP_STATIC" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="GRAVITY_MULTIPLIER" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="HORIZONTAL" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="HTTP_BODY_MAXLENGTH, integer length, "  value="" doctypes="LSL" caseSensitive="true" />
+        <string id="HTTP_BODY_TRUNCATED" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="HTTP_CUSTOM_HEADER, string name, string value, " alue="" doctypes="LSL" caseSensitive="true" />
+        <string id="HTTP_METHOD, string method, "  value="" doctypes="LSL" caseSensitive="true" />
+        <string id="HTTP_MIMETYPE, string mimeType, "  value="" doctypes="LSL" caseSensitive="true" />
+        <string id="HTTP_PRAGMA_NO_CACHE, integer send_header, "  value="" doctypes="LSL" caseSensitive="true" />
+        <string id="HTTP_VERBOSE_THROTTLE, integer noisy, "  value="" doctypes="LSL" caseSensitive="true" />
+        <string id="HTTP_VERIFY_CERT, integer verify, "  value="" doctypes="LSL" caseSensitive="true" />
+        <string id="INVENTORY_ALL" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="INVENTORY_ANIMATION" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="INVENTORY_BODYPART" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="INVENTORY_CLOTHING" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="INVENTORY_GESTURE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="INVENTORY_LANDMARK" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="INVENTORY_NONE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="INVENTORY_NOTECARD" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="INVENTORY_OBJECT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="INVENTORY_SCRIPT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="INVENTORY_SOUND" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="INVENTORY_TEXTURE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="JSON_APPEND" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="KFM_CMD_PAUSE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="KFM_CMD_PLAY" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="KFM_CMD_SET_MODE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="KFM_CMD_STOP" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="KFM_COMMAND" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="KFM_DATA" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="KFM_FORWARD" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="KFM_LOOP" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="KFM_MODE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="KFM_PING_PONG" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="KFM_REVERSE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="KFM_ROTATION" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="KFM_TRANSLATION" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="LAND_LEVEL" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="LAND_LOWER" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="LAND_NOISE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="LAND_RAISE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="LAND_REVERT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="LAND_SMOOTH" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="LINK_ALL_CHILDREN" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="LINK_ALL_OTHERS" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="LINK_ROOT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="LINK_SET" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="LINK_THIS" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="LIST_STAT_GEOMETRIC_MEAN" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="LIST_STAT_MAX" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="LIST_STAT_MEAN" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="LIST_STAT_MEDIAN" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="LIST_STAT_MIN" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="LIST_STAT_NUM_COUNT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="LIST_STAT_RANGE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="LIST_STAT_STD_DEV" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="LIST_STAT_SUM" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="LIST_STAT_SUM_SQUARES" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="LOOP" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="MASK_BASE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="MASK_EVERYONE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="MASK_GROUP" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="MASK_NEXT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="MASK_OWNER" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="OBJECT_ATTACHED_POINT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="OBJECT_ATTACHED_SLOTS_AVAILABLE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="OBJECT_BODY_SHAPE_TYPE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="OBJECT_CHARACTER_TIME" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="OBJECT_CLICK_ACTION" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="OBJECT_CREATOR" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="OBJECT_DESC" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="OBJECT_GROUP" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="OBJECT_GROUP_TAG" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="OBJECT_HOVER_HEIGHT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="OBJECT_LAST_OWNER_ID" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="OBJECT_NAME" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="OBJECT_OMEGA" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="OBJECT_OWNER" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="OBJECT_PATHFINDING_TYPE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="OBJECT_PHANTOM" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="OBJECT_PHYSICS" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="OBJECT_PHYSICS_COST" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="OBJECT_POS" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="OBJECT_PRIM_COUNT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="OBJECT_PRIM_EQUIVALENCE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="OBJECT_RENDER_WEIGHT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="OBJECT_RETURN_PARCEL" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="OBJECT_RETURN_PARCEL_OWNER" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="OBJECT_RETURN_REGION" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="OBJECT_REZZER_KEY" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="OBJECT_ROOT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="OBJECT_ROT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="OBJECT_RUNNING_SCRIPT_COUNT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="OBJECT_SCRIPT_MEMORY" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="OBJECT_SCRIPT_TIME" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="OBJECT_SERVER_COST" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="OBJECT_STREAMING_COST" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="OBJECT_TEMP_ATTACHED" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="OBJECT_TEMP_ON_REZ" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="OBJECT_TOTAL_INVENTORY_COUNT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="OBJECT_TOTAL_SCRIPT_COUNT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="OBJECT_UNKNOWN_DETAIL" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="OBJECT_VELOCITY" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="OPT_AVATAR" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="OPT_CHARACTER" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="OPT_EXCLUSION_VOLUME" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="OPT_LEGACY_LINKSET" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="OPT_MATERIAL_VOLUME" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="OPT_OTHER" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="OPT_STATIC_OBSTACLE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="OPT_WALKABLE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PARCEL_COUNT_GROUP" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PARCEL_COUNT_OTHER" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PARCEL_COUNT_OWNER" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PARCEL_COUNT_SELECTED" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PARCEL_COUNT_TEMP" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PARCEL_COUNT_TOTAL" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PARCEL_DETAILS_AREA" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PARCEL_DETAILS_DESC" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PARCEL_DETAILS_GROUP" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PARCEL_DETAILS_ID" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PARCEL_DETAILS_NAME" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PARCEL_DETAILS_OWNER" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PARCEL_DETAILS_SEE_AVATARS" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PARCEL_FLAG_ALLOW_ALL_OBJECT_ENTRY" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PARCEL_FLAG_ALLOW_CREATE_GROUP_OBJECTS" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PARCEL_FLAG_ALLOW_CREATE_OBJECTS" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PARCEL_FLAG_ALLOW_DAMAGE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PARCEL_FLAG_ALLOW_FLY" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PARCEL_FLAG_ALLOW_GROUP_OBJECT_ENTRY" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PARCEL_FLAG_ALLOW_GROUP_SCRIPTS" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PARCEL_FLAG_ALLOW_LANDMARK" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PARCEL_FLAG_ALLOW_SCRIPTS" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PARCEL_FLAG_ALLOW_TERRAFORM" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PARCEL_FLAG_LOCAL_SOUND_ONLY" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PARCEL_FLAG_RESTRICT_PUSHOBJECT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PARCEL_FLAG_USE_ACCESS_GROUP" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PARCEL_FLAG_USE_ACCESS_LIST" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PARCEL_FLAG_USE_BAN_LIST" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PARCEL_FLAG_USE_LAND_PASS_LIST" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PARCEL_MEDIA_COMMAND_AGENT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PARCEL_MEDIA_COMMAND_AUTO_ALIGN" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PARCEL_MEDIA_COMMAND_DESC" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PARCEL_MEDIA_COMMAND_LOOP" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PARCEL_MEDIA_COMMAND_LOOP_SET" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PARCEL_MEDIA_COMMAND_PAUSE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PARCEL_MEDIA_COMMAND_PLAY" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PARCEL_MEDIA_COMMAND_SIZE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PARCEL_MEDIA_COMMAND_STOP" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PARCEL_MEDIA_COMMAND_TEXTURE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PARCEL_MEDIA_COMMAND_TIME" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PARCEL_MEDIA_COMMAND_TYPE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PARCEL_MEDIA_COMMAND_UNLOAD" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PARCEL_MEDIA_COMMAND_URL" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PASS_ALWAYS" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PASS_IF_NOT_HANDLED" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PASS_NEVER" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PASSIVE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PATROL_PAUSE_AT_WAYPOINTS" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PAY_DEFAULT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PAY_HIDE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PAYMENT_INFO_ON_FILE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PAYMENT_INFO_USED" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PERM_ALL" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PERM_COPY" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PERM_MODIFY" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PERM_MOVE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PERM_TRANSFER" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PERMISSION_ATTACH" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PERMISSION_CHANGE_LINKS" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PERMISSION_CONTROL_CAMERA" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PERMISSION_DEBIT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PERMISSION_OVERRIDE_ANIMATIONS" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PERMISSION_RETURN_OBJECTS" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PERMISSION_SILENT_ESTATE_MANAGEMENT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PERMISSION_TAKE_CONTROLS" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PERMISSION_TELEPORT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PERMISSION_TRACK_CAMERA" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PERMISSION_TRIGGER_ANIMATION" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PING_PONG" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_ALLOW_UNSIT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_ALPHA_MODE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_ALPHA_MODE_BLEND" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_ALPHA_MODE_EMISSIVE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_ALPHA_MODE_MASK" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_ALPHA_MODE_NONE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_BUMP_BARK" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_BUMP_BLOBS" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_BUMP_BRICKS" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_BUMP_BRIGHT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_BUMP_CHECKER" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_BUMP_CONCRETE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_BUMP_DARK" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_BUMP_DISKS" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_BUMP_GRAVEL" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_BUMP_LARGETILE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_BUMP_NONE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_BUMP_SHINY" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_BUMP_SIDING" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_BUMP_STONE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_BUMP_STUCCO" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_BUMP_SUCTION" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_BUMP_TILE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_BUMP_WEAVE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_BUMP_WOOD" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_COLOR" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_DESC" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_FLEXIBLE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_FULLBRIGHT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_GLOW" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_HOLE_CIRCLE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_HOLE_DEFAULT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_HOLE_SQUARE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_HOLE_TRIANGLE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_LINK_TARGET" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_MATERIAL" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_MATERIAL_FLESH" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_MATERIAL_GLASS" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_MATERIAL_METAL" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_MATERIAL_PLASTIC" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_MATERIAL_RUBBER" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_MATERIAL_STONE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_MATERIAL_WOOD" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_MEDIA_ALT_IMAGE_ENABLE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_MEDIA_AUTO_LOOP" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_MEDIA_AUTO_PLAY" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_MEDIA_AUTO_SCALE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_MEDIA_AUTO_ZOOM" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_MEDIA_CONTROLS" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_MEDIA_CONTROLS_MINI" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_MEDIA_CONTROLS_STANDARD" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_MEDIA_CURRENT_URL" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_MEDIA_FIRST_CLICK_INTERACT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_MEDIA_HEIGHT_PIXELS" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_MEDIA_HOME_URL" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_MEDIA_MAX_HEIGHT_PIXELS" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_MEDIA_MAX_URL_LENGTH" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_MEDIA_MAX_WHITELIST_COUNT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_MEDIA_MAX_WHITELIST_SIZE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_MEDIA_MAX_WIDTH_PIXELS" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_MEDIA_PARAM_MAX" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_MEDIA_PERM_ANYONE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_MEDIA_PERM_GROUP" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_MEDIA_PERM_NONE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_MEDIA_PERM_OWNER" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_MEDIA_PERMS_CONTROL" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_MEDIA_PERMS_INTERACT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_MEDIA_WHITELIST" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_MEDIA_WHITELIST_ENABLE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_MEDIA_WIDTH_PIXELS" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_NAME" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_NORMAL" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_OMEGA" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_PHANTOM" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_PHYSICS" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_PHYSICS_SHAPE_CONVEX" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_PHYSICS_SHAPE_NONE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_PHYSICS_SHAPE_PRIM" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_PHYSICS_SHAPE_TYPE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_POINT_LIGHT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_POS_LOCAL" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_POSITION" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_ROT_LOCAL" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_ROTATION" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_SCRIPTED_SIT_ONLY" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_SCULPT_FLAG_INVERT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_SCULPT_FLAG_MIRROR" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_SCULPT_TYPE_CYLINDER" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_SCULPT_TYPE_MASK" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_SCULPT_TYPE_PLANE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_SCULPT_TYPE_SPHERE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_SCULPT_TYPE_TORUS" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_SHINY_HIGH" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_SHINY_LOW" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_SHINY_MEDIUM" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_SHINY_NONE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_SIT_TARGET" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_SIZE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_SLICE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_SPECULAR" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_TEMP_ON_REZ" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_TEXGEN" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_TEXGEN_DEFAULT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_TEXGEN_PLANAR" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_TEXT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_TEXTURE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_TYPE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_TYPE_BOX" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_TYPE_CYLINDER" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_TYPE_PRISM" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_TYPE_RING" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_TYPE_SCULPT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_TYPE_SPHERE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_TYPE_TORUS" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PRIM_TYPE_TUBE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PROFILE_NONE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PROFILE_SCRIPT_MEMORY" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PSYS_PART_BF_DEST_COLOR" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PSYS_PART_BF_ONE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PSYS_PART_BF_ONE_MINUS_DEST_COLOR" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PSYS_PART_BF_ONE_MINUS_SOURCE_ALPHA" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PSYS_PART_BF_ONE_MINUS_SOURCE_COLOR" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PSYS_PART_BF_SOURCE_ALPHA" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PSYS_PART_BF_SOURCE_COLOR" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PSYS_PART_BF_ZERO" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PSYS_PART_BLEND_FUNC_DEST" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PSYS_PART_BLEND_FUNC_SOURCE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PSYS_PART_BOUNCE_MASK" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PSYS_PART_EMISSIVE_MASK" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PSYS_PART_END_ALPHA" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PSYS_PART_END_COLOR" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PSYS_PART_END_GLOW" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PSYS_PART_END_SCALE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PSYS_PART_FLAGS" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PSYS_PART_FOLLOW_SRC_MASK" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PSYS_PART_FOLLOW_VELOCITY_MASK" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PSYS_PART_INTERP_COLOR_MASK" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PSYS_PART_INTERP_SCALE_MASK" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PSYS_PART_MAX_AGE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PSYS_PART_RIBBON_MASK" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PSYS_PART_START_ALPHA" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PSYS_PART_START_COLOR" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PSYS_PART_START_GLOW" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PSYS_PART_START_SCALE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PSYS_PART_TARGET_LINEAR_MASK" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PSYS_PART_TARGET_POS_MASK" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PSYS_PART_WIND_MASK" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PSYS_SRC_ACCEL" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PSYS_SRC_ANGLE_BEGIN" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PSYS_SRC_ANGLE_END" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PSYS_SRC_BURST_PART_COUNT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PSYS_SRC_BURST_RADIUS" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PSYS_SRC_BURST_RATE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PSYS_SRC_BURST_SPEED_MAX" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PSYS_SRC_BURST_SPEED_MIN" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PSYS_SRC_MAX_AGE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PSYS_SRC_OMEGA" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PSYS_SRC_PATTERN" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PSYS_SRC_PATTERN_ANGLE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PSYS_SRC_PATTERN_ANGLE_CONE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PSYS_SRC_PATTERN_ANGLE_CONE_EMPTY" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PSYS_SRC_PATTERN_DROP" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PSYS_SRC_PATTERN_EXPLODE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PSYS_SRC_TARGET_KEY" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PSYS_SRC_TEXTURE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PU_EVADE_HIDDEN" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PU_EVADE_SPOTTED" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PU_FAILURE_DYNAMIC_PATHFINDING_DISABLED" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PU_FAILURE_INVALID_GOAL" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PU_FAILURE_INVALID_START" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PU_FAILURE_NO_NAVMESH" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PU_FAILURE_NO_VALID_DESTINATION" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PU_FAILURE_OTHER" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PU_FAILURE_PARCEL_UNREACHABLE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PU_FAILURE_TARGET_GONE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PU_FAILURE_UNREACHABLE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PU_GOAL_REACHED" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PU_SLOWDOWN_DISTANCE_REACHED" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PUBLIC_CHANNEL" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PURSUIT_FUZZ_FACTOR" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PURSUIT_GOAL_TOLERANCE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PURSUIT_INTERCEPT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="PURSUIT_OFFSET" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="RC_DATA_FLAGS, integer flags, "  value="" doctypes="LSL" caseSensitive="true" />
+        <string id="RC_DETECT_PHANTOM, integer dectedPhantom, "  value="" doctypes="LSL" caseSensitive="true" />
+        <string id="RC_GET_LINK_NUM" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="RC_GET_NORMAL" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="RC_GET_ROOT_KEY" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="RC_MAX_HITS, integer maxHits, "  value="" doctypes="LSL" caseSensitive="true" />
+        <string id="RC_REJECT_AGENTS" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="RC_REJECT_LAND" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="RC_REJECT_NONPHYSICAL" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="RC_REJECT_PHYSICAL" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="RC_REJECT_TYPES, integer filterMask, "  value="" doctypes="LSL" caseSensitive="true" />
+        <string id="RCERR_CAST_TIME_EXCEEDED" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="RCERR_SIM_PERF_LOW" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="RCERR_UNKNOWN" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="REGION_FLAG_ALLOW_DAMAGE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="REGION_FLAG_ALLOW_DIRECT_TELEPORT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="REGION_FLAG_BLOCK_FLY" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="REGION_FLAG_BLOCK_TERRAFORM" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="REGION_FLAG_DISABLE_COLLISIONS" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="REGION_FLAG_DISABLE_PHYSICS" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="REGION_FLAG_FIXED_SUN" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="REGION_FLAG_RESTRICT_PUSHOBJECT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="REGION_FLAG_SANDBOX" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="REMOTE_DATA_CHANNEL" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="REMOTE_DATA_REPLY" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="REMOTE_DATA_REQUEST" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="REQUIRE_LINE_OF_SIGHT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="RESTITUTION" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="REVERSE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ROTATE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="SCALE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="SCRIPTED" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="SIM_STAT_PCT_CHARS_STEPPED" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="SIT_INVALID_AGENT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="SIT_INVALID_LINK" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="SIT_INVALID_OBJECT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="SIT_NOT_EXPERIENCE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="SIT_NO_ACCESS" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="SIT_NO_EXPERIENCE_PERMISSION" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="SIT_NO_SIT_TARGET" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="SMOOTH" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="STATUS_BLOCK_GRAB" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="STATUS_BLOCK_GRAB_OBJECT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="STATUS_BOUNDS_ERROR" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="STATUS_CAST_SHADOWS" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="STATUS_DIE_AT_EDGE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="STATUS_INTERNAL_ERROR" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="STATUS_MALFORMED_PARAMS" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="STATUS_NOT_FOUND" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="STATUS_NOT_SUPPORTED" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="STATUS_OK" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="STATUS_PHANTOM" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="STATUS_PHYSICS" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="STATUS_RETURN_AT_EDGE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="STATUS_ROTATE_X" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="STATUS_ROTATE_Y" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="STATUS_ROTATE_Z" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="STATUS_SANDBOX" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="STATUS_TYPE_MISMATCH" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="STATUS_WHITELIST_FAILED" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="STRING_TRIM" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="STRING_TRIM_HEAD" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="STRING_TRIM_TAIL" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="TOUCH_INVALID_FACE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="TRAVERSAL_TYPE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="TRAVERSAL_TYPE_FAST" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="TRAVERSAL_TYPE_NONE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="TRAVERSAL_TYPE_SLOW" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="TYPE_FLOAT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="TYPE_INTEGER" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="TYPE_INVALID" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="TYPE_KEY" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="TYPE_ROTATION" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="TYPE_STRING" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="TYPE_VECTOR" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="VEHICLE_ANGULAR_DEFLECTION_EFFICIENCY" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="VEHICLE_ANGULAR_DEFLECTION_TIMESCALE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="VEHICLE_ANGULAR_FRICTION_TIMESCALE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="VEHICLE_ANGULAR_MOTOR_DECAY_TIMESCALE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="VEHICLE_ANGULAR_MOTOR_DIRECTION" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="VEHICLE_ANGULAR_MOTOR_TIMESCALE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="VEHICLE_BANKING_EFFICIENCY" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="VEHICLE_BANKING_MIX" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="VEHICLE_BANKING_TIMESCALE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="VEHICLE_BUOYANCY" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="VEHICLE_FLAG_CAMERA_DECOUPLED" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="VEHICLE_FLAG_HOVER_GLOBAL_HEIGHT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="VEHICLE_FLAG_HOVER_TERRAIN_ONLY" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="VEHICLE_FLAG_HOVER_UP_ONLY" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="VEHICLE_FLAG_HOVER_WATER_ONLY" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="VEHICLE_FLAG_LIMIT_MOTOR_UP" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="VEHICLE_FLAG_LIMIT_ROLL_ONLY" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="VEHICLE_FLAG_MOUSELOOK_BANK" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="VEHICLE_FLAG_MOUSELOOK_STEER" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="VEHICLE_FLAG_NO_DEFLECTION_UP" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="VEHICLE_HOVER_EFFICIENCY" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="VEHICLE_HOVER_HEIGHT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="VEHICLE_HOVER_TIMESCALE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="VEHICLE_LINEAR_DEFLECTION_EFFICIENCY" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="VEHICLE_LINEAR_DEFLECTION_TIMESCALE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="VEHICLE_LINEAR_FRICTION_TIMESCALE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="VEHICLE_LINEAR_MOTOR_DECAY_TIMESCALE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="VEHICLE_LINEAR_MOTOR_DIRECTION" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="VEHICLE_LINEAR_MOTOR_OFFSET" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="VEHICLE_LINEAR_MOTOR_TIMESCALE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="VEHICLE_REFERENCE_FRAME" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="VEHICLE_TYPE_AIRPLANE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="VEHICLE_TYPE_BALLOON" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="VEHICLE_TYPE_BOAT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="VEHICLE_TYPE_CAR" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="VEHICLE_TYPE_NONE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="VEHICLE_TYPE_SLED" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="VEHICLE_VERTICAL_ATTRACTION_EFFICIENCY" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="VEHICLE_VERTICAL_ATTRACTION_TIMESCALE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="VERTICAL" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="WANDER_PAUSE_AT_WAYPOINTS" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="XP_ERROR_NONE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="XP_ERROR_THROTTLED" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="XP_ERROR_EXPERIENCES_DISABLED" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="XP_ERROR_INVALID_PARAMETERS" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="XP_ERROR_NOT_PERMITTED" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="XP_ERROR_NOT_PERMITTED_LAND" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="XP_ERROR_NO_EXPERIENCE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="XP_ERROR_NOT_FOUND" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="XP_ERROR_INVALID_EXPERIENCE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="XP_ERROR_EXPERIENCE_DISABLED" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="XP_ERROR_EXPERIENCE_SUSPENDED" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="XP_ERROR_QUOTA_EXCEEDED" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="XP_ERROR_STORE_DISABLED" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="XP_ERROR_STORAGE_EXCEPTION" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="XP_ERROR_KEY_NOT_FOUND" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="XP_ERROR_RETRY_UPDATE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="XP_ERROR_UNKNOWN_ERROR" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="XP_ERROR_MATURITY_EXCEEDED" value="" doctypes="LSL" caseSensitive="true" />
+<!-- integer boolean constants -->
+        <string id="FALSE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="TRUE"  value="" doctypes="LSL" caseSensitive="true" />
+<!-- rotation constants -->
+        <string id="ZERO_ROTATION" value="" doctypes="LSL" caseSensitive="true" />
+<!-- string constants -->
+        <string id="EOF" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="JSON_ARRAY" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="JSON_DELETE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="JSON_FALSE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="JSON_INVALID" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="JSON_NULL" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="JSON_NUMBER" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="JSON_OBJECT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="JSON_STRING" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="JSON_TRUE" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="NULL_KEY" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="TEXTURE_BLANK" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="TEXTURE_DEFAULT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="TEXTURE_MEDIA" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="TEXTURE_PLYWOOD" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="TEXTURE_TRANSPARENT" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="URL_REQUEST_DENIED" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="URL_REQUEST_GRANTED" value="" doctypes="LSL" caseSensitive="true" />
+<!-- vector constants -->
+        <string id="TOUCH_INVALID_TEXCOORD" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="TOUCH_INVALID_VECTOR" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="ZERO_VECTOR" value="" doctypes="LSL" caseSensitive="true" />
+<!-- events -->
+        <string id="at_rot_target(integer handle, rotation targetrot, rotation ourrot)" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="at_target(integer tnum, vector targetpos, vector ourpos)" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="attach(key id)" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="changed(integer change)" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="collision(integer index)" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="collision_end(integer index)" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="collision_start(integer index)" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="control(key id, integer level, integer edge)" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="dataserver(key query_id, string data)" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="email(string time, string address, string subject, string message, integer num_left)" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="experience_permissions(key agent_id)" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="experience_permissions_denied(key agent_id, integer reason)" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="http_request(key request_id, string method, string body)" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="http_response(key request_id, integer status, list metadata, string body)" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="land_collision(vector pos)" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="land_collision_end(vector pos)" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="land_collision_start(vector pos)" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="link_message(integer sender_num, integer num, string str, key id)" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="listen(integer channel, string name, key id, string message)" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="money(key id, integer amount)" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="moving_end"  value="" doctypes="LSL" caseSensitive="true" />
+        <string id="moving_start"  value="" doctypes="LSL" caseSensitive="true" />
+        <string id="no_sensor"  value="" doctypes="LSL" caseSensitive="true" />
+        <string id="not_at_rot_target"  value="" doctypes="LSL" caseSensitive="true" />
+        <string id="not_at_target"  value="" doctypes="LSL" caseSensitive="true" />
+        <string id="object_rez(key id)" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="on_rez(integer start_param)" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="path_update(integer type, list reserved)" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="remote_data(integer event_type, key channel, key message_id, string sender, integer idata, string sdata)" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="run_time_permissions(integer perm)" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="sensor(integer index)" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="state_entry"  value="" doctypes="LSL" caseSensitive="true" />
+        <string id="state_exit"  value="" doctypes="LSL" caseSensitive="true" />
+        <string id="timer"  value="" doctypes="LSL" caseSensitive="true" />
+        <string id="touch(integer index)" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="touch_end(integer index)" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="touch_start(integer index)" value="" doctypes="LSL" caseSensitive="true" />
+        <string id="transaction_result(key id, integer success, string data)" value="" doctypes="LSL" caseSensitive="true" />
+    </menugroup>
+</codehints>

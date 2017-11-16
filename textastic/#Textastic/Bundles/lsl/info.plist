@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>name</key><string>info.plist</string>
+    <key>description</key><string>TextMate bundle for LSL (the Linden Scripting Language).</string>
+    <key>last modified</key><string>2015-09-19 00:00:00</string>
+    <key>scope</key><string>source.lsl</string>
+    <key>deleted</key>
+    <array>
+        <string></string>
+    </array>
+    <key>mainMenu</key>
+    <array>
+        <key></key>
+        <array>
+            <string></string>
+        </array>
+    </array>
+    <key>uuid</key><string>7e7fa7d4-0467-49d4-b6a1-a463f4771cfc</string>
+</dict>
+</plist>

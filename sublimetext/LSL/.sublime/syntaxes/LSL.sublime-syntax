@@ -1,0 +1,561 @@
+%YAML 1.2
+---
+# https://www.sublimetext.com/docs/3/syntax.html
+# https://www.sublimetext.com/docs/3/syntax.html#testing
+# https://www.sublimetext.com/docs/3/scope_naming.html
+name: LSL
+comment: 'Linden Scripting Language of Second Life by Linden Labs'
+hidden: false
+file_extensions:
+  - lsl
+first_line_match: '(\b(?:default)\b(?: *\{)?)'
+scope: source.lsl
+variables:
+  lsl_invalid_broken: '(?:LAND_(?:LARGE|MEDIUM|SMALL)_BRUSH)'
+  lsl_invalid_deprecated: '(?:ATTACH_[LR]PEC|DATA_RATING|OBJECT_ATTACHMENT_(?:GEOMETRY_BYTES|SURFACE_AREA)|PRIM_(?:CAST_SHADOWS|MATERIAL_LIGHT|TYPE_LEGACY)|PSYS_SRC_(?:INNER|OUTER)ANGLE|VEHICLE_FLAG_NO_FLY_UP|ll(?:ClearExperiencePermissions|Cloud|GetExperienceList|Make(?:Explosion|Fountain|Smoke|Fire)|RemoteDataSetRegion|Sound(?:Preload)?|XorBase64Strings(?:Correct)?))'
+  lsl_invalid_illegal: '(?:event)'
+  lsl_invalid_unimplemented: '(?:CHARACTER_(?:MAX_ANGULAR_(?:ACCEL|SPEED)|TURN_SPEED_MULTIPLIER)|KFM_CMD_SET_MODE|PERMISSION_(?:CHANGE_(?:JOINTS|PERMISSIONS)|EXPERIENCE|RELEASE_OWNERSHIP|REMAP_CONTROLS)|PRIM_PHYSICS_MATERIAL|PSYS_SRC_OBJ_REL_MASK|XP_ERROR_REQUEST_PERM_TIMEOUT|ll(?:CollisionSprite|(?:Stop)?PointAt|(?:(?:Refresh|Set)Prim)URL|(?:Take|Release)Camera|RemoteLoadScript))'
+  lsl_reserved_godmode: '(?:ll(?:GodLikeRezObject|Set(?:Inventory|Object)PermMask))'
+  lsl_reserved_log: '(?:print)'
+  lsl_event: '(?:state_(?:entry|exit)|touch(?:_(?:start|end))?|(?:land_)?collision(?:_(?:start|end))?|timer|listen|(?:no_)?sensor|control|(?:not_)?at_(?:rot_)?target|money|email|experience_permissions(?:_denied)?|run_time_permissions|changed|attach|dataserver|moving_(?:start|end)|link_message|(?:on|object)_rez|remote_data|http_re(?:sponse|quest)|path_update|transaction_result)'
+  lsl_constant_float: '(?:PI|TWO_PI|PI_BY_TWO|DEG_TO_RAD|RAD_TO_DEG|SQRT2)'
+  lsl_constant_integer: '(?:(?:DEBUG|PUBLIC)_CHANNEL|(?:PATROL|WANDER)_PAUSE_AT_WAYPOINTS|ACTIVE|AGENT(?:_(?:ALWAYS_RUN|ATTACHMENTS|AUTOPILOT|AWAY|BUSY|BY_(?:LEGACY_|USER)NAME|CROUCHING|FLYING|IN_AIR|LIST_(?:PARCEL(?:_OWNER)?|REGION)|MOUSELOOK|ON_OBJECT|SCRIPTED|SITTING|TYPING|WALKING))?|ALL_SIDES|ANIM_ON|ATTACH_(?:(?:LEFT|RIGHT)_PEC|AVATAR_CENTER|BACK|BELLY|CHEST|CHIN|FACE_(?:JAW|[LR]EAR|[LR]EYE|TONGUE)|GROIN|HEAD|HIND_[LR]FOOT|HUD_(?:CENTER_[12]|TOP_(?:RIGHT|CENTER|LEFT)|BOTTOM(?:_(?:RIGHT|LEFT))?)|MOUTH|NECK|NOSE|PELVIS|TAIL_(?:BASE|TIP)|[LR](?:SHOULDER|HAND|FOOT|EAR|EYE|[UL](?:ARM|LEG)|HIP)|[LR]HAND_RING1|[LR]WING)|AVOID_(?:CHARACTERS|DYNAMIC_OBSTACLES|NONE)|CAMERA_(?:(?:FOCUS|POSITION)(?:_(?:THRESHOLD|LOCKED|LAG))?|ACTIVE|BEHINDNESS_(?:ANGLE|LAG)|DISTANCE|FOCUS_OFFSET|PITCH)|CHANGED_(?:ALLOWED_DROP|COLOR|INVENTORY|LINK|MEDIA|OWNER|REGION(?:_START)?|SCALE|SHAPE|TELEPORT|TEXTURE)|CHARACTER_(?:ACCOUNT_FOR_SKIPPED_FRAMES|AVOIDANCE_MODE|CMD_(?:(?:SMOOTH_)?STOP|JUMP)|DESIRED_(?:TURN_)?SPEED|LENGTH|MAX_(?:DECEL|TURN_RADIUS|(?:ACCEL|SPEED))|ORIENTATION|RADIUS|STAY_WITHIN_PARCEL|TYPE(?:_(?:[ABCD]|NONE))?)|CLICK_ACTION_(?:NONE|TOUCH|SIT|BUY|PAY|OPEN(?:_MEDIA)?|PLAY|ZOOM)|CONTENT_TYPE_(?:ATOM|FORM|HTML|JSON|LLSD|RSS|TEXT|XHTML|XML)|CONTROL_(?:FWD|BACK|(?:ROT_)?(?:LEFT|RIGHT)|UP|DOWN|(?:ML_)?LBUTTON)|DATA_(?:ONLINE|NAME|BORN|SIM_(?:POS|STATUS|RATING)|PAYINFO)|DENSITY|ERR_(?:GENERIC|PARCEL_PERMISSIONS|MALFORMED_PARAMS|RUNTIME_PERMISSIONS|THROTTLED)|ESTATE_ACCESS_(?:ALLOWED_(?:AGENT|GROUP)_(?:ADD|REMOVE)|BANNED_AGENT_(?:ADD|REMOVE))|FORCE_DIRECT_PATH|FRICTION|GCNP_(?:RADIUS|STATIC)|GRAVITY_MULTIPLIER|HORIZONTAL|HTTP_(?:ACCEPT|USER_AGENT|METHOD|MIMETYPE|BODY_(?:MAXLENGTH|TRUNCATED)|CUSTOM_HEADER|PRAGMA_NO_CACHE|VERBOSE_THROTTLE|VERIFY_CERT)|INVENTORY_(?:TEXTURE|SOUND|OBJECT|SCRIPT|LANDMARK|CLOTHING|NOTECARD|BODYPART|ANIMATION|GESTURE|ALL|NONE)|JSON_APPEND|KFM_(?:COMMAND|CMD_(?:PLAY|STOP|PAUSE)|MODE|FORWARD|LOOP|PING_PONG|REVERSE|DATA|ROTATION|TRANSLATION)|LAND_(?:LEVEL|RAISE|LOWER|SMOOTH|NOISE|REVERT)|LINK_(?:ROOT|SET|ALL_(?:OTHERS|CHILDREN)|THIS)|LIST_STAT_(?:MAX|MIN|MEAN|MEDIAN|STD_DEV|SUM(?:_SQUARES)?|NUM_COUNT|GEOMETRIC_MEAN|RANGE)|LOOP|MASK_(?:BASE|OWNER|GROUP|EVERYONE|NEXT)|OBJECT_(?:(?:BODY_SHAPE|PATHFINDING)_TYPE|(?:PHYSICS|SERVER|STREAMING)_COST|(?:RUNNING|TOTAL)_SCRIPT_COUNT|ATTACHED_(?:POINT|SLOTS_AVAILABLE)|CHARACTER_TIME|CLICK_ACTION|CREAT(?:ION_TIME|OR)|SELECT(?:ED|_COUNT)|SIT_COUNT|SAT_UPON|REZ_TIME|DESC|GROUP(?:_TAG)?|HOVER_HEIGHT|LAST_OWNER_ID|NAME|OMEGA|OWNER|PHANTOM|PHYSICS|POS|PRIM_(?:COUNT|EQUIVALENCE)|RENDER_WEIGHT|RETURN_(?:PARCEL(?:_OWNER)?|REGION|TIME)|REZZER_KEY|ROO?T|SCRIPT_(?:MEMORY|TIME)|TEMP_(?:ATTACHED|ON_REZ)|TOTAL_INVENTORY_COUNT|UNKNOWN_DETAIL|VELOCITY)|OPT_(?:AVATAR|CHARACTER|EXCLUSION_VOLUME|LEGACY_LINKSET|MATERIAL_VOLUME|OTHER|STATIC_OBSTACLE|WALKABLE)|PARCEL_(?:COUNT_(?:TOTAL|OWNER|GROUP|OTHER|SELECTED|TEMP)|DETAILS_(?:NAME|DESC|OWNER|GROUP|AREA|ID|SEE_AVATARS)|FLAG_(?:ALLOW_(?:FLY|(?:GROUP_)?SCRIPTS|LANDMARK|TERRAFORM|DAMAGE|CREATE_(?:GROUP_)?OBJECTS)|USE_(?:ACCESS_(?:GROUP|LIST)|BAN_LIST|LAND_PASS_LIST)|LOCAL_SOUND_ONLY|RESTRICT_PUSHOBJECT|ALLOW_(?:GROUP|ALL)_OBJECT_ENTRY)|MEDIA_COMMAND_(?:AGENT|AUTO_ALIGN|DESC|LOOP_SET|LOOP|PAUSE|PLAY|SIZE|STOP|TEXTURE|TIME|TYPE|UNLOAD|URL))|PASS(?:IVE|_(?:ALWAYS|IF_NOT_HANDLED|NEVER))|PAYMENT_INFO_(?:ON_FILE|USED)|PAY_(?:HIDE|DEFAULT)|PERMISSION_(?:(?:CONTROL|TRACK)_CAMERA|ATTACH|CHANGE_LINKS|DEBIT|OVERRIDE_ANIMATIONS|RETURN_OBJECTS|SILENT_ESTATE_MANAGEMENT|TAKE_CONTROLS|TELEPORT|TRIGGER_ANIMATION)|PERM_(?:TRANSFER|MODIFY|COPY|MOVE|ALL)|PING_PONG|PRIM_(?:(?:POS|ROT)_LOCAL|ALLOW_UNSIT|ALPHA_MODE(?:_(?:BLEND|EMISSIVE|MASK|NONE))?|BUMP_(?:NONE|BRIGHT|DARK|WOOD|BARK|BRICKS|CHECKER|CONCRETE|TILE|STONE|DISKS|GRAVEL|BLOBS|SIDING|LARGETILE|STUCCO|SUCTION|WEAVE)|BUMP_SHINY|COLOR|DESC|FLEXIBLE|FULLBRIGHT|GLOW|HOLE_(?:DEFAULT|CIRCLE|SQUARE|TRIANGLE)|LINK_TARGET|MATERIAL(?:_(?:STONE|METAL|GLASS|WOOD|FLESH|PLASTIC|RUBBER))?|MEDIA_(?:(?:CURRENT|HOME)_URL|(?:WIDTH|HEIGHT)_PIXELS|ALT_IMAGE_ENABLE|AUTO_(?:LOOP|PLAY|SCALE|ZOOM)|CONTROLS_(?:STANDARD|MINI)|CONTROLS|FIRST_CLICK_INTERACT|MAX_(?:URL_LENGTH|WHITELIST_(?:SIZE|COUNT)|(?:WIDTH|HEIGHT)_PIXELS)|PARAM_MAX|PERMS_(?:INTERACT|CONTROL)|PERM_(?:NONE|OWNER|GROUP|ANYONE)|WHITELIST(?:_ENABLE)?)|NAME|NORMAL|OMEGA|PHANTOM|PHYSICS(?:_(?:SHAPE_(?:CONVEX|NONE|PRIM|TYPE)))?|POINT_LIGHT|POSITION|ROTATION|SCRIPTED_SIT_ONLY|SCULPT_(?:TYPE_(?:SPHERE|TORUS|PLANE|CYLINDER|MASK)|FLAG_(?:MIRROR|INVERT))|SHINY_(?:NONE|LOW|MEDIUM|HIGH)|SIT_TARGET|SIZE|SLICE|SPECULAR|TEMP_ON_REZ|TEXGEN_(?:DEFAULT|PLANAR)|TEXGEN|TEXTURE|TEXT|TYPE(?:_(?:BOX|CYLINDER|PRISM|SPHERE|TORUS|TUBE|RING|SCULPT))?)|PROFILE_(?:NONE|SCRIPT_MEMORY)|PSYS_(?:PART_(?:BF_(?:ZERO|ONE(?:_MINUS_(?:DEST_COLOR|SOURCE_(ALPHA|COLOR)))?|DEST_COLOR|SOURCE_(ALPHA|COLOR))|BLEND_FUNC_(DEST|SOURCE)|FLAGS|(?:START|END)_(?:COLOR|ALPHA|SCALE|GLOW)|MAX_AGE|(?:RIBBON|WIND|INTERP_(?:COLOR|SCALE)|BOUNCE|FOLLOW_(?:SRC|VELOCITY)|TARGET_(?:POS|LINEAR)|EMISSIVE)_MASK)|SRC_(?:ACCEL|ANGLE_(?:BEGIN|END)|BURST_(?:RATE|PART_COUNT|RADIUS|SPEED_(?:MIN|MAX))|MAX_AGE|OMEGA|PATTERN_(?:DROP|EXPLODE|ANGLE(?:_CONE(?:_EMPTY)?)?)|PATTERN|TARGET_KEY|TEXTURE))|PURSUIT_(?:OFFSET|FUZZ_FACTOR|GOAL_TOLERANCE|INTERCEPT)|PU_(?:EVADE_(?:HIDDEN|SPOTTED)|FAILURE_(?:(?:PARCEL_)?UNREACHABLE|DYNAMIC_PATHFINDING_DISABLED|INVALID_(?:GOAL|START)|NO_(?:NAVMESH|VALID_DESTINATION)|OTHER|TARGET_GONE)|(?:GOAL|SLOWDOWN_DISTANCE)_REACHED)|RCERR_(?:CAST_TIME_EXCEEDED|SIM_PERF_LOW|UNKNOWN)|RC_(?:DATA_FLAGS|DETECT_PHANTOM|GET_(?:LINK_NUM|NORMAL|ROOT_KEY)|MAX_HITS|REJECT_(?:TYPES|AGENTS|(?:NON)?PHYSICAL|LAND))|REGION_FLAG_(?:ALLOW_DAMAGE|ALLOW_DIRECT_TELEPORT|BLOCK_FLY|BLOCK_TERRAFORM|DISABLE_(?:COLLISIONS|PHYSICS)|FIXED_SUN|RESTRICT_PUSHOBJECT|SANDBOX)|REMOTE_DATA_(?:CHANNEL|REQUEST|REPLY)|REQUIRE_LINE_OF_SIGHT|RESTITUTION|REVERSE|ROTATE|SCALE|SCRIPTED|SIM_STAT_PCT_CHARS_STEPPED|SIT_(?:INVALID_(?:AGENT|LINK|OBJECT)|NO(?:T_EXPERIENCE|_(?:ACCESS|EXPERIENCE_PERMISSION|SIT_TARGET)))|SMOOTH|STATUS_(?:(?:DIE|RETURN)_AT_EDGE|BLOCK_GRAB(?:_OBJECT)?|BOUNDS_ERROR|CAST_SHADOWS|INTERNAL_ERROR|MALFORMED_PARAMS|NOT_(?:FOUND|SUPPORTED)|OK|PHANTOM|PHYSICS|ROTATE_[XYZ]|SANDBOX|TYPE_MISMATCH|WHITELIST_FAILED)|STRING_(?:TRIM(?:_(?:HEAD|TAIL))?)|TOUCH_INVALID_FACE|TRAVERSAL_TYPE(?:_(?:FAST|NONE|SLOW))?|TYPE_(?:FLOAT|INTEGER|INVALID|KEY|ROTATION|STRING|VECTOR)|VEHICLE_(?:(?:LINEAR|ANGULAR)_(?:DEFLECTION_(?:EFFICIENCY|TIMESCALE)|FRICTION_TIMESCALE|MOTOR_(?:DECAY_)?TIMESCALE|MOTOR_DIRECTION)|BANKING_(?:EFFICIENCY|MIX|TIMESCALE)|BUOYANCY|FLAG_(?:CAMERA_DECOUPLED|HOVER_(?:(?:WATER|TERRAIN|UP)_ONLY|GLOBAL_HEIGHT)|LIMIT_(?:ROLL_ONLY|MOTOR_UP)|MOUSELOOK_(?:STEER|BANK)|NO_DEFLECTION_UP)|HOVER_(?:HEIGHT|EFFICIENCY|TIMESCALE)|LINEAR_MOTOR_OFFSET|REFERENCE_FRAME|TYPE_(?:NONE|SLED|CAR|BOAT|AIRPLANE|BALLOON)|VERTICAL_ATTRACTION_(?:EFFICIENCY|TIMESCALE))|VERTICAL|XP_ERROR_(?:EXPERIENCES_DISABLED|EXPERIENCE_(?:DISABLED|SUSPENDED)|INVALID_(?:EXPERIENCE|PARAMETERS)|KEY_NOT_FOUND|MATURITY_EXCEEDED|NONE|NOT_(?:FOUND|PERMITTED(?:_LAND)?)|NO_EXPERIENCE|QUOTA_EXCEEDED|RETRY_UPDATE|STORAGE_EXCEPTION|STORE_DISABLED|THROTTLED|UNKNOWN_ERROR))'
+  lsl_constant_integer_boolean: '(?:FALSE|TRUE)'
+  lsl_constant_rotation: '(?:ZERO_ROTATION)'
+  lsl_constant_string: '(?:EOF|JSON_(?:ARRAY|DELETE|FALSE|INVALID|NULL|NUMBER|OBJECT|STRING|TRUE)|NULL_KEY|TEXTURE_(?:BLANK|DEFAULT|MEDIA|PLYWOOD|TRANSPARENT)|URL_REQUEST_(?:GRANTED|DENIED))'
+  lsl_constant_vector: '(?:TOUCH_INVALID_(?:TEXCOORD|VECTOR)|ZERO_VECTOR)'
+  lsl_function: '(?:ll(?:(?:(?:Delete|Get)Sub|Insert|MD5|SHA1|DumpList2)String|(?:AvatarOn)?(?:Link)?SitTarget|(?:CSV|ParseString)2List|(?:Break|Create)Link|(?:Create|DataSize|Delete|KeyCount|Keys|Read|Update)KeyValue|(?:Create|Delete)Character|(?:Axes|Euler)2Rot|(?:GetNext)?Email|(?:Get|Request)(?:Username|DisplayName)|(?:Get|Reset|GetAndReset)Time|(?:Give|Remove)Inventory|(?:Integer|String)ToBase64|(?:Link)?ParticleSystem|(?:Load|Release|(?:E|Une)scape)URL|(?:Open|Close)RemoteDataChannel|(?:Region|Owner)?Say|(?:AddTo|RemoveFrom|Reset)Land(?:Ban|Pass)List|(?:Rot)?Target(?:Remove)?|(?:Scale|Offset|Rotate)Texture|(?:Clear|Set)CameraParams|(?:Remove|Set)VehicleFlags|(?:Start|Stop)Animation|(?:Stop)?LookAt|(?:Stop)?MoveToTarget|(?:Take|Release)Controls|(?:Trigger|Stop|Preload)Sound|(?:[GS]et)(?:Alpha|AnimationOverride|Color|Force|MemoryLimit|Object(?:Desc|Name)|ParcelMusicURL|PhysicsMaterial|Pos|PrimMediaParams|Rot|Scale|Status|Texture|Torque)|A(?:cos|sin)|Abs|AdjustSoundVolume|AgentInExperience|AllowInventoryDrop|AngleBetween|Apply(?:Rotational)?Impulse|Atan2|AttachToAvatar(?:Temp)?|AxisAngle2Rot|Base64To(?:String|Integer)|BreakAllLinks|CastRay|Ceil|Clear(?:Prim|Link)Media|Collision(?:Filter|Sound)|Cos|DeleteSubList|DetachFromAvatar|Detected(?:Name|Key|Owner|Type|Pos|Vel|Grab|Rot|Group|LinkNumber)|DetectedTouch(?:UV|Face|Pos|(?:N|Bin)ormal|ST)|Dialog|Die|EdgeOfWorld|EjectFromLand|Evade|ExecCharacterCmd|Fabs|FleeFrom|Floor|ForceMouselook|Frand|GenerateKey|Get(?:(?:Camera|Local)(?:Pos|Rot)|(?:Max|Min)ScaleFactor|(?:Object|CenterOf)?Mass|(?:Owner)?Key|(?:Parcel|Region)Flags|(?:SPMax|Free|Used)Memory|(?:Wall|GMT)clock|Accel|Agent(?:Size|Info|Language|List)|Animation(?:List)?|Attached(?:List)?|BoundingBox|ClosestNavPoint|Creator|Date|Energy|Env|FreeURLs|GeometricCenter|HTTPHeader|Inventory(?:Number|Name|Key|Type|Creator|PermMask)|LandOwnerAt|Link(?:PrimitiveParams|Number(?:OfSides)?|Key|Name|Media)|List(?:Length|EntryType)|MassMKS|NotecardLine|NumberOf(?:Prims|NotecardLines|Sides)|Object(?:Details|PermMask|PrimCount)|Omega|Owner|Parcel(?:MaxPrims|Details|Prim(?:Count|Owners))|Permissions(?:Key)?|PrimitiveParams|Region(?:Name|TimeDilation|FPS|Corner|AgentCount)|Root(?:Position|Rotation)|Script(?:Name|State)|SimStats|SimulatorHostname|StartParameter|StaticPath|SunDirection|Texture(?:Offset|Scale|Rot)|Time(?:stamp|OfDay)|UnixTime|Vel)|GetExperience(?:Details|ErrorMessage)|Give(?:InventoryList|Money)|Ground(?:Normal|Contour|Repel|Slope)?|HTTP(?:Request|Response)|InstantMessage|Json(?:2List|[GS]etValue|ValueType)|Key2Name|List(?:Statistics|Sort|Randomize|(?:Insert|Find|Replace)List)|List2(?:CSV|Integer|Json|Float|String|Key|Vector|Rot|List(?:Strided)?)|Listen(?:Control|Remove)?|Log(?:10)?|LoopSound(?:Master|Slave)?|ManageEstateAccess|MapDestination|MessageLinked|MinEventDelay|ModPow|ModifyLand|NavigateTo|OverMyLand|ParcelMedia(?:CommandList|Query)|ParseStringKeepNulls|Pass(?:Collisions|Touches)|PatrolPoints|PlaySound(?:Slave)?|Pow|Pursue|PushObject|RegionSayTo|Remote(?:DataReply|LoadScriptPin)|Request(?:(?:Agent|Inventory)Data|(?:Experience)?Permissions|(?:Secure)?URL|SimulatorData)|Reset(?:AnimationOverride|(?:Other)?Script)|ReturnObjectsBy(?:ID|Owner)|Rez(?:AtRoot|Object)|Rot(?:Between|LookAt|2(?:Axis|Angle|Euler|Fwd|Left|Up))|Round|SameGroup|ScaleByFactor|Script(?:Danger|Profiler)|SendRemoteData|Sensor(?:Repeat|Remove)?|Set(?:(?:Angular)?Velocity|(?:Touch|Sit)?Text|Buoyancy|Camera(?:Eye|At)Offset|ClickAction|ContentType|Damage|ForceAndTorque|HoverHeight|KeyframedMotion|Link(?:Alpha|Camera|Color|Media|PrimitiveParams(?:Fast)?|Texture(?:Anim)?)|LocalRot|PayPrice|PrimitiveParams|RegionPos|RemoteScriptAccessPin|ScriptState|Sound(?:Queueing|Radius)|TextureAnim|TimerEvent|Vehicle(?:Type|(?:Float|Vector|Rotation)Param))|Shout|Sin|SitOnLink|Sleep|Sqrt|StopHover|String(?:Length|Trim)|SubStringIndex|Tan|TargetOmega|TeleportAgent(?:Home|GlobalCoords)?|TextBox|To(?:Upper|Lower)|TransferLindenDollars|TriggerSoundLimited|UnSit|UpdateCharacter|Vec(?:Mag|Norm|Dist)|VolumeDetect|Water|Whisper|Wind|XorBase64|WanderWithin))'
+  lsl_storage_type: '(?:integer|float|string|key|vector|quaternion|rotation|list)'
+  lsl_word: '(?:[A-Za-z_]\w*)'
+contexts:
+  main:
+    - include: lsl_comments
+#   - include: lsl_strings
+    - include: lsl_states
+#   TODO: remove lsl_user_functions from here as it enables them in other scopes like events or functions or whatever
+    - include: lsl_user_functions
+    - include: lsl_types
+#   - include: lsl_constants
+#   - include: numbers
+#   - include: operators
+#   - include: lists
+  prototype:
+    - include: lsl_comments
+  lists:
+    - match: '\['
+      scope: punctuation.section.list.begin.lsl
+      push:
+        - meta_scope: list.lsl
+#       - meta_content_scope: meta.list.body.lsl
+        - match: '\]'
+          scope: punctuation.section.list.end.lsl
+          pop: true
+        - include: infunc
+  lsl_comments:
+#   TODO: maybe add keywords here (TODO, FIXME, BUG, NOTE, CHANGED, OPTIMIZE, HACK, XXX)
+    - match: '//'
+      scope: punctuation.definition.comment.line.double-slash.lsl
+      push:
+        - meta_include_prototype: false
+        - meta_scope: comment.line.double-slash.lsl
+        - match: '\n'
+          pop: true
+    - match: '/\*\*(?!/)'
+      scope: punctuation.definition.comment.block.documentation.begin.lsl
+      push:
+        - meta_include_prototype: false
+        - meta_scope: comment.block.documentation.lsl
+        - match: '\*/'
+          scope: punctuation.definition.comment.block.documentation.end.lsl
+          pop: true
+    - match: '/\*'
+      scope: punctuation.definition.comment.block.begin.lsl
+      push:
+        - meta_include_prototype: false
+        - meta_scope: comment.block.lsl
+        - match: '\*/'
+          scope: punctuation.definition.comment.block.end.lsl
+          pop: true
+  event:
+    - match: |-
+        (?xi)
+        (?:
+          \b
+          ({{lsl_event}})
+          \b
+        )
+      captures:
+        1: support.function.event.lsl
+      push:
+#       TODO: prevent multiple params for single-param events and vice versa
+        - match: '\('
+          scope: punctuation.section.event.parameters.begin.lsl
+          push:
+            - match: '\)'
+              scope: punctuation.section.event.parameters.end.lsl
+              pop: true
+            - include: parameters
+        - match: '\}'
+          scope: punctuation.section.event.body.end.lsl
+          pop: true
+        - match: '{'
+          scope: punctuation.section.event.body.begin.lsl
+          push:
+            - meta_content_scope: meta.event.body.lsl
+            - match: '(?=})'
+              scope: punctuation.section.event.body.end.lsl
+              pop: true
+            - include: infunc
+  flow_control:
+#   TODO: revisit scope naming guide
+    - match: |-
+        (?xi)
+        (?:
+          \b
+          (jump)
+          \s+
+          ({{lsl_word}})
+          (;)
+        )
+      captures:
+        1: 'keyword.control.flow.lsl'
+        2: 'meta.target.label.lsl'
+        3: 'punctuation.terminator.lsl'
+#   TODO: revisit scope naming guide
+    - match: |-
+        (?xi)
+        (?:
+          (@)
+          ({{lsl_word}})
+          (;)
+        )
+      captures:
+        1: 'keyword.control.flow.lsl'
+        2: 'entity.name.target.lsl'
+        3: 'punctuation.terminator.lsl'
+    - match: |-
+        (?xi)
+        (?:
+          \b
+          (do)
+          \b
+        )
+      captures:
+        1: 'keyword.control.loop.lsl'
+      push:
+#   TODO: prevent repitition of blocks within do-while
+        - meta_scope: 'meta.do-while.lsl'
+        - include: block-scope
+        - match: '\b(while)\b'
+          scope: 'keyword.control.loop.lsl'
+        - include: parentheses-block-scope
+        - match: '(;)'
+          scope: 'punctuation.terminator.lsl'
+          pop: true
+    - match: '\b(return)\b'
+      captures:
+        1: 'keyword.control.flow.lsl'
+    - match: '\b(for)\b'
+      captures:
+        1: 'keyword.control.loop.lsl'
+      push:
+        - meta_scope: meta.for.lsl
+        - include: parentheses-block-scope
+    - match: '\b(while)\b'
+      captures:
+        1: 'keyword.control.loop.lsl'
+      push:
+        - meta_scope: meta.while.lsl
+        - include: parentheses-block-scope
+# TODO: revisit scopes and separate else from if
+    - match: |-
+        (?xi)
+        (?:
+          \b
+          (else\s+if|if)
+          \b
+        )
+      captures:
+        1: keyword.control.conditional.lsl
+      push:
+        - meta_scope: meta.conditional.lsl
+        - include: parentheses-block-scope
+    - match: '\b(else)\b'
+      captures:
+        1: keyword.control.conditional.lsl
+      push:
+        - meta_scope: meta.conditional.lsl
+        - include: block-scope
+  parentheses-block-scope:
+    - match: '\('
+      scope: 'punctuation.section.group.begin.lsl'
+      push:
+        - meta_scope: meta.group.lsl
+        - match: '\)'
+          scope: 'punctuation.section.group.end.lsl'
+          pop: true
+#       TODO: condition
+#       TODO: start;condition;step
+#       TODO: condition & (condition)
+#       TODO: condition | (condition)
+#       TODO: condition && (condition)
+#       TODO: condition || (condition)
+    - include: block-scope
+  block-scope:
+    - match: '\}'
+      scope: 'meta.block.lsl punctuation.section.block.end.lsl'
+      pop: true
+    - match: '\{'
+      scope: 'punctuation.section.block.begin.lsl'
+      push:
+        - meta_scope: 'meta.block.lsl'
+        - match: '(?=\})'
+          pop: true
+        - include: infunc
+    - match: '(?=\S)'
+      pop: true
+  lsl_user_functions:
+    - match: |-
+        (?xi)
+        (?:
+          (
+            (?:
+              \b
+              ({{lsl_storage_type}})
+              \b\s+
+            )?
+            (?:
+              \b
+              ({{lsl_word}})
+              \b
+            )
+          )(?=\s*\()
+        )
+      captures:
+        1: meta.function.user-defined.declaration.lsl
+        2: storage.type.lsl
+        3: entity.name.function.user-defined.lsl
+      push:
+        - match: '\('
+          scope: punctuation.section.parameters.begin.lsl
+          push:
+            - meta_scope: meta.parameters.lsl
+            - match: '\)'
+              scope: punctuation.section.parameters.end.lsl
+              pop: true
+            - include: parameters
+        - match: '\}'
+          scope: punctuation.section.block.end.lsl
+          pop: true
+        - match: '\{'
+          scope: punctuation.section.block.begin.lsl
+          push:
+            - meta_content_scope: meta.function.declaration.body.lsl
+            - match: '(?=})'
+              scope: punctuation.section.block.end.lsl
+              pop: true
+            - include: infunc
+  infunc:
+    - include: lists
+    - include: lsl_strings
+    - include: flow_control
+    - include: lsl_types
+    - include: lsl_constants
+    - include: lsl_functions
+    - include: numbers
+    - include: operators
+    - match: |-
+        (?xi)
+        (?:
+          \b
+          ((?:state)\s+{{lsl_word}})
+          \b
+        )
+        (;)
+      captures:
+        1: meta.target.class.state.lsl
+        2: punctuation.terminator.lsl
+  lsl_constants:
+    - match: |-
+        (?xi)
+        (?:
+          \b
+          ({{lsl_invalid_broken}})
+          \b
+        )
+      captures:
+        1: invalid.broken.lsl
+    - match: |-
+        (?xi)
+        (?:
+          \b
+          ({{lsl_invalid_deprecated}})
+          \b
+        )
+      captures:
+        1: invalid.deprecated.lsl
+    - match: |-
+        (?xi)
+        (?:
+          \b
+          ({{lsl_invalid_illegal}})
+          \b
+        )
+      captures:
+        1: invalid.illegal.lsl
+    - match: |-
+        (?xi)
+        (?:
+          \b
+          ({{lsl_invalid_unimplemented}})
+          \b
+        )
+      captures:
+        1: invalid.unimplemented.lsl
+    - match: |-
+        (?xi)
+        (?:
+          \b
+          ({{lsl_reserved_godmode}})
+          \b
+        )
+      captures:
+        1: reserved.godmode.lsl
+    - match: |-
+        (?xi)
+        (?:
+          \b
+          ({{lsl_reserved_log}})
+          \b
+        )
+      captures:
+        1: reserved.log.lsl
+    - match: |-
+        (?xi)
+        (?:
+          \b
+          ({{lsl_constant_float}})
+          \b
+        )
+      captures:
+        1: constant.language.float.lsl
+    - match: |-
+        (?xi)
+        (?:
+          \b
+          ({{lsl_constant_integer}})
+          \b
+        )
+      captures:
+        1: constant.language.integer.lsl
+    - match: |-
+        (?xi)
+        (?:
+          \b
+          ({{lsl_constant_integer_boolean}})
+          \b
+        )
+      captures:
+        1: constant.language.integer.boolean.lsl
+    - match: |-
+        (?xi)
+        (?:
+          \b
+          ({{lsl_constant_rotation}})
+          \b
+        )
+      captures:
+        1: constant.language.rotation.lsl
+    - match: |-
+        (?xi)
+        (?:
+          \b
+          ({{lsl_constant_string}})
+          \b
+        )
+      captures:
+        1: constant.language.string.lsl
+#   TODO: add "punctuation.accessor" for vector.element
+    - match: |-
+        (?xi)
+        (?:
+          \b
+          ({{lsl_constant_vector}})
+          \b
+        )
+      captures:
+        1: constant.language.vector.lsl
+  lsl_functions:
+    - match: '\b({{lsl_function}})(?=\()'
+      scope: support.function.builtin.lsl
+      push:
+        - match: '(\))(;)?'
+          captures:
+            1: 'punctuation.section.parameters.end.lsl'
+            2: 'punctuation.terminator.lsl'
+          pop: true
+        - match: '\('
+          scope: 'punctuation.section.parameters.begin.lsl'
+          push:
+            - match: '(?=\))'
+              pop: true
+            - include: lists
+            - include: lsl_strings
+            - include: lsl_constants
+            - include: numbers
+            - include: operators
+            - include: lsl_functions
+  numbers:
+    - match: |-
+        (?xi)
+        (?:\B[-+])?
+        (?:
+          (
+            \B\.[0-9]+|                 # e.g. .999
+            \b[1-9]+[0-9]*(\.[0-9]+)    # e.g. 999.999
+          )(e[-+]?[1-9]+[0-9]*)?        # e.g. e+123, E-123
+        )
+      scope: constant.numeric.float.lsl
+    - match: |-
+        (?xi)
+        (?:\B[-+])?
+        (?:
+          \b0b[0-1]*                    # binary
+        )
+      scope: constant.numeric.integer.binary.lsl
+    - match: |-
+        (?xi)
+        (?:\B[-+])?
+        (?:
+          \b0o[0-7]*                    # octal
+        )
+      scope: constant.numeric.integer.octal.lsl
+    - match: |-
+        (?xi)
+        (?:\B[-+])?
+        (?:
+          \b0x\h*                       # hex
+        )
+      scope: constant.numeric.integer.hexadecimal.lsl
+    - match: |-
+        (?xi)
+        (?:\B[-+])?
+        (?:
+          (
+            \b[1-9]+[0-9]*|             # e.g. 999
+            \b0                         # e.g. 0
+          )
+        )
+      scope: constant.numeric.integer.decimal.lsl
+  operators:
+    - match: '\+\+'
+      scope: keyword.operator.arithmetic.increment.lsl
+    - match: '--'
+      scope: keyword.operator.arithmetic.decrement.lsl
+    - match: '<<'
+      scope: keyword.operator.bitwise.shift.left.lsl
+    - match: '>>'
+      scope: keyword.operator.bitwise.shift.right.lsl
+    - match: '<='
+      scope: keyword.operator.relational.less-equal.lsl
+    - match: '>='
+      scope: keyword.operator.relational.greater-equal.lsl
+    - match: '&&'
+      scope: keyword.operator.logical.and.lsl
+    - match: '\|\|'
+      scope: keyword.operator.logical.or.lsl
+    - match: '~'
+      scope: keyword.operator.bitwise.not.lsl
+    - match: '\^'
+      scope: keyword.operator.bitwise.xor.lsl
+    - match: '&'
+      scope: keyword.operator.bitwise.and.lsl
+    - match: '\|'
+      scope: keyword.operator.bitwise.or.lsl
+    - match: '=='
+      scope: keyword.operator.comparison.equal.lsl
+    - match: '!='
+      scope: keyword.operator.comparison.not.lsl
+    - match: '!(?!=)'
+      scope: keyword.operator.logical.not.lsl
+    - match: '<'
+      scope: keyword.operator.relational.less.lsl
+    - match: '>'
+      scope: keyword.operator.relational.greater.lsl
+    - match: '[%*+\/\-]='
+      scope: keyword.operator.assignment.augmented.lsl
+    - match: '='
+      scope: keyword.operator.assignment.lsl
+    - match: '[%*+\/\-]'
+      scope: keyword.operator.arithmetic.lsl
+    - match: ':='
+      scope: invalid.illegal.keyword.operator.assignment.augmented.division.lsl
+    - match: ':'
+      scope: invalid.illegal.keyword.operator.assignment.division.lsl
+  parameters:
+    - match: |-
+        (?xi)
+        (?:
+          ({{lsl_storage_type}})
+          \s+
+          ({{lsl_word}})
+        )
+      captures:
+        1: storage.type.lsl
+        2: entity.name.variable.lsl
+    - match: '(,)'
+      scope: punctuation.separator.komma.lsl
+  lsl_strings:
+    - match: '"'
+      scope: punctuation.definition.string.quoted.double.begin.lsl
+      push:
+        - meta_include_prototype: false
+        - meta_scope: string.quoted.double.lsl
+        - match: '"'
+          scope: punctuation.definition.string.quoted.double.end.lsl
+          pop: true
+        - match: '\\\\'
+          scope: constant.character.escape.back-slash.lsl
+        - match: '\\n'
+          scope: constant.character.escape.new-line.lsl
+        - match: '\\t'
+          scope: constant.character.escape.tab.lsl
+        - match: '\\"'
+          scope: constant.character.escape.double-quote.lsl
+        - match: '\\.'
+          scope: invalid.illegal.constant.character.escape.lsl
+#       TODO: using embed only works with one lang at a time
+#       TODO: - include: 'scope:source.json'
+#       TODO: - include: 'scope:source.html'
+  lsl_states:
+    - match: |-
+        (?xi)
+        (?:
+          \b
+          ((?:state)\s+{{lsl_word}}|default)
+          \b
+        )
+      captures:
+        1: entity.name.class.state.lsl
+      push:
+        - match: '\}'
+          scope: punctuation.section.class.state.end.lsl
+          pop: true
+        - match: '{'
+          scope: punctuation.section.class.state.begin.lsl
+          push:
+            - meta_content_scope: meta.class.state.body.lsl
+            - match: '(?=})'
+              scope: punctuation.section.class.state.end.lsl
+              pop: true
+            - include: event
+  lsl_types:
+    - match: |-
+        (?xi)
+        (?:
+          \b
+          ({{lsl_storage_type}})
+          \b
+        )
+      captures:
+        1: storage.type.lsl

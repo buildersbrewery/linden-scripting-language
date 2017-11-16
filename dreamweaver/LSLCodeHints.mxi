@@ -1,0 +1,56 @@
+<macromedia-extension
+    name="LSL Code Hinting for Dreamweaver"
+    version="1.0"
+    type="codehint codesnippet"
+    force-quit="true"
+    locked="false"
+>
+    <author name="http://www.buildersbrewery.com" />
+    <products>
+        <product name="Dreamweaver" version="11.0" primary="true" />
+    </products>
+<!--
+    <update method="directlink" url="https://github.com/buildersbrewery/linden-scripting-language/raw/master/dreamweaver/LSLCodeHints-update-info.xml" />
+-->
+    <description>
+        <![CDATA[LSL Code Hinting for Dreamweaver]]>
+    </description>
+    <ui-access>
+        <![CDATA[In Dreamweaver go to <b>Edit > Preferences > Code Hints</b><br>
+and check the box next to "LSL Code Hints".]]>
+    </ui-access>
+    <license-agreement>
+        <![CDATA[]]>
+    </license-agreement>
+    <files>
+        <file source="CodeColoring/LSL.xml"                       destination="$dreamweaver/configuration/CodeColoring/LSL.xml" />
+        <file source="CodeColoring/LSLColors.xml"                 destination="$dreamweaver/configuration/CodeColoring/LSLColors.xml" />
+        <file source="CodeHints/LSLCodeHints.xml"                 destination="$dreamweaver/configuration/CodeHintsCodeHints/LSLCodeHints.xml" />
+        <file source="DocumentTypes/NewDocuments/default_lsl.lsl" destination="$dreamweaver/configuration/DocumentTypes/NewDocuments/Default.lsl" />
+        <file source="Strings/LSLDocumentTypes.xml"               destination="$dreamweaver/Strings/LSLDocumentTypes.xml" />
+<!--
+        <file source="LSLCodeHints-update-info.xml" destination="$dreamweaver/Configuration/LSLCodeHints-update-info.xml" />
+-->
+    </files>
+    <documenttype-changes>
+        <documenttype-insert>
+            <documenttype file="Default.lsl" id="LSL" internaltype="Text" macfileextension="lsl" winfileextension="lsl" writebyteordermark="false">
+                <TITLE>
+                    <MMString:loadString id="mmdocumenttypes_0" />
+                </TITLE>
+                <description>
+                    <MMString:loadString id="mmdocumenttypes_1" />
+                </description>
+            </documenttype>
+        </documenttype-insert>
+    </documenttype-changes>
+    <extensions-changes>
+        <extension-insert extension="LSL" description="Second Life (LSL)" />
+    </extension-changes>
+    <ftp-extension-map-changes>
+        <ftp-extension-insert extension="LSL" mac-creator="????" mac-file-type="????" type="UTF-8" />
+    </ftp-extension-map-changes>
+    <signatures>
+        <signature name="LSL Code Hinting for Dreamweaver" extensiontype="0" signed="true" certificateType="0" publisher="http://www.buildersbrewery.com" />
+    </signatures>
+</macromedia-extension>

@@ -1,0 +1,9 @@
+*.bak
+*.cache
+*.elc
+*.pyc
+*.pyo
+*.sublime-workspace
+.DS_Store
+Desktop.ini
+Thumbs.db

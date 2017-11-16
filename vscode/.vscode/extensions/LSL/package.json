@@ -1,0 +1,115 @@
+{
+    "name": "LSL",
+    "version": "0.0.0",
+    "description": "Linden Scripting Language of Second Life",
+    "publisher": "buildersbrewery",
+    "keywords": [
+        "lsl",
+        "linden-scripting-language",
+//      "lslint",
+        "sl",
+        "second-life"
+    ],
+    "galleryBanner": {
+        "color": "#000000",
+        "theme": "dark"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/buildersbrewery/linden-scripting-language.git"
+    },
+    "bugs": {
+        "url": "https://github.com/buildersbrewery/linden-scripting-language/issues",
+        "email": "buildersbrewery@gmail.com"
+    },
+    "homepage": "https://github.com/buildersbrewery/linden-scripting-language#readme",
+    "categories": [
+        "Languages",
+//      "Linters",
+        "Snippets",
+        "Themes"
+    ],
+    "engines": {
+        "vscode": "^1.16.0"
+    },
+    "activationEvents": [
+        "onLanguage:lsl"
+    ],
+    "contributes": {
+        "grammars": [
+            {
+                "language": "lsl",
+                "scopeName": "source.lsl",
+                "path": "./syntaxes/LSL.tmLanguage.json"
+            }
+        ],
+        "languages": [
+            {
+                "id": "lsl",
+                "aliases": [
+                    "LSL",
+                    "Linden Script",
+                    "Linden Scripting Language",
+                    "Second Life",
+                    "Second Life Script"
+                ],
+                "extensions": [
+                    ".lsl"
+                ],
+                "configuration": "./syntaxes/lsl-language-configuration.json"
+            }
+        ],
+        "snippets": [
+            {
+                "language": "lsl",
+                "path": "./snippets/lsl.json"
+            }
+        ],
+//      "jsonValidation": [
+//          {
+//              "fileMatch": "package.json",
+//              "url": "http://json.schemastore.org/package"
+//          }
+//      ],
+        "themes": [
+            {
+                "label": "Linden Lab Viewer Theme",
+                "uiTheme": "vs",
+                "path": "./themes/LSL.tmTheme"
+            }
+        ]
+    }
+//  },
+//  "menus": {
+//      "editor/context": [
+//          {
+//              "command": "extension.build",
+//              "when": "editorLangId == lsl"
+//          }
+//      ]
+//  },
+//  "commands": [
+//      {
+//          "command": "extension.build",
+//          "title": "Build",
+//          "category": "LSL",
+//          "icon": {
+//      "light": "./icons/lsl.light.png",
+//      "dark": "./icons/lsl.dark.png"
+//          }
+//      }
+//  ],
+//  "scripts": {
+//      "vscode:prepublish": "tsc -p ./",
+//      "compile": "tsc -watch -p ./",
+//      "postinstall": "node ./node_modules/vscode/bin/install",
+//      "test": "tslint ./src/*"
+//  },
+//  "devDependencies": {
+//      "typescript": "^2.1.4",
+//      "vscode": "^1.16.0",
+//      "mocha": "^2.3.3",
+//      "@types/node": "^6.0.51",
+//      "@types/mocha": "^2.2.32"
+//  }
+}

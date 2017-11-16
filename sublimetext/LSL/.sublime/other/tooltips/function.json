@@ -1,0 +1,7160 @@
+[
+    {
+        "params":
+        [
+            {
+                "name": "theta",
+                "type": "float"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the sine of theta (theta in radians)"
+        },
+        "name": "llSin",
+        "type": "float"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "theta",
+                "type": "float"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the cosine of theta (theta in radians)"
+        },
+        "name": "llCos",
+        "type": "float"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "theta",
+                "type": "float"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the tangent of theta (theta in radians)"
+        },
+        "name": "llTan",
+        "type": "float"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "y",
+                "type": "float"
+            },
+            {
+                "name": "x",
+                "type": "float"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the arctangent2 of y, x"
+        },
+        "name": "llAtan2",
+        "type": "float"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "val",
+                "type": "float"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the square root of val, or returns 0 and triggers a Math Error for imaginary results"
+        },
+        "name": "llSqrt",
+        "type": "float"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "base",
+                "type": "float"
+            },
+            {
+                "name": "exponent",
+                "type": "float"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the base raised to the power exponent, or returns 0 and triggers Math Error for imaginary results"
+        },
+        "name": "llPow",
+        "type": "float"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "val",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the positive version of val"
+        },
+        "name": "llAbs",
+        "type": "integer"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "val",
+                "type": "float"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the positive version of val"
+        },
+        "name": "llFabs",
+        "type": "float"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "mag",
+                "type": "float"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns a pseudo random number in the range [0,mag) or (mag,0]"
+        },
+        "name": "llFrand",
+        "type": "float"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "val",
+                "type": "float"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns largest integer value <= val"
+        },
+        "name": "llFloor",
+        "type": "integer"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "val",
+                "type": "float"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns smallest integer value >= val"
+        },
+        "name": "llCeil",
+        "type": "integer"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "val",
+                "type": "float"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns val rounded to the nearest integer"
+        },
+        "name": "llRound",
+        "type": "integer"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "v",
+                "type": "vector"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the magnitude of v"
+        },
+        "name": "llVecMag",
+        "type": "float"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "v",
+                "type": "vector"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the v normalized"
+        },
+        "name": "llVecNorm",
+        "type": "vector"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "v1",
+                "type": "vector"
+            },
+            {
+                "name": "v2",
+                "type": "vector"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the 3D distance between v1 and v2"
+        },
+        "name": "llVecDist",
+        "type": "float"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "q",
+                "type": "rotation"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the Euler representation (roll, pitch, yaw) of q"
+        },
+        "name": "llRot2Euler",
+        "type": "vector"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "v",
+                "type": "vector"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the rotation representation of Euler Angles v"
+        },
+        "name": "llEuler2Rot",
+        "type": "rotation"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "fwd",
+                "type": "vector"
+            },
+            {
+                "name": "left",
+                "type": "vector"
+            },
+            {
+                "name": "up",
+                "type": "vector"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the rotation defined by the coordinate axes"
+        },
+        "name": "llAxes2Rot",
+        "type": "rotation"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "q",
+                "type": "rotation"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the forward vector defined by q"
+        },
+        "name": "llRot2Fwd",
+        "type": "vector"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "q",
+                "type": "rotation"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the left vector defined by q"
+        },
+        "name": "llRot2Left",
+        "type": "vector"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "q",
+                "type": "rotation"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the up vector defined by q"
+        },
+        "name": "llRot2Up",
+        "type": "vector"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "v1",
+                "type": "vector"
+            },
+            {
+                "name": "v2",
+                "type": "vector"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the rotation to rotate v1 to v2"
+        },
+        "name": "llRotBetween",
+        "type": "rotation"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "channel",
+                "type": "integer"
+            },
+            {
+                "name": "msg",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Whispers the text of msg on channel"
+        },
+        "name": "llWhisper"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "channel",
+                "type": "integer"
+            },
+            {
+                "name": "msg",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Says the text of msg on channel"
+        },
+        "name": "llSay"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "channel",
+                "type": "integer"
+            },
+            {
+                "name": "msg",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Shouts the text of msg on channel"
+        },
+        "name": "llShout"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "channel",
+                "type": "integer"
+            },
+            {
+                "name": "name",
+                "type": "string"
+            },
+            {
+                "name": "id",
+                "type": "key"
+            },
+            {
+                "name": "msg",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Sets a callback for msg on channel from name and id (name, id, and/or msg can be empty) and returns an identifier that can be used to deactivate or remove the listen"
+        },
+        "name": "llListen",
+        "type": "integer"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "number",
+                "type": "integer"
+            },
+            {
+                "name": "active",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Makes a listen event callback active or inactive"
+        },
+        "name": "llListenControl"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "number",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Removes listen event callback number"
+        },
+        "name": "llListenRemove"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "name",
+                "type": "string"
+            },
+            {
+                "name": "id",
+                "type": "key"
+            },
+            {
+                "name": "type",
+                "type": "integer"
+            },
+            {
+                "name": "range",
+                "type": "float"
+            },
+            {
+                "name": "arc",
+                "type": "float"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Performs a single scan for name and id with type (AGENT, ACTIVE, PASSIVE, and/or SCRIPTED) within range meters and arc radians of forward vector (name, id, and/or keytype can be empty or 0)"
+        },
+        "name": "llSensor"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "name",
+                "type": "string"
+            },
+            {
+                "name": "id",
+                "type": "key"
+            },
+            {
+                "name": "type",
+                "type": "integer"
+            },
+            {
+                "name": "range",
+                "type": "float"
+            },
+            {
+                "name": "arc",
+                "type": "float"
+            },
+            {
+                "name": "rate",
+                "type": "float"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Sets a callback for name and id with type (AGENT, ACTIVE, PASSIVE, and/or SCRIPTED) within range meters and arc radians of forward vector (name, id, and/or keytype can be empty or 0) and repeats every rate seconds"
+        },
+        "name": "llSensorRepeat"
+    },
+    {
+        "description":
+        {
+            "en_US": "Removes the sensor setup by llSensorRepeat"
+        },
+        "name": "llSensorRemove"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "number",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the name of detected object number (returns empty string if number is not a valid sensed object)"
+        },
+        "name": "llDetectedName",
+        "type": "string"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "number",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the key of detected object number (returns empty key if number is not a valid sensed object)"
+        },
+        "name": "llDetectedKey",
+        "type": "key"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "number",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the key of detected object's owner (returns empty key if number is not a valid sensed object)"
+        },
+        "name": "llDetectedOwner",
+        "type": "key"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "number",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the type (AGENT, ACTIVE, PASSIVE, SCRIPTED) of detected object (returns 0 if number is not a valid sensed object)"
+        },
+        "name": "llDetectedType",
+        "type": "integer"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "number",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the position of detected object number (returns <0,0,0> if number is not a valid sensed object)"
+        },
+        "name": "llDetectedPos",
+        "type": "vector"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "number",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the velocity of detected object number (returns <0,0,0> if number is not a valid sensed object)"
+        },
+        "name": "llDetectedVel",
+        "type": "vector"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "number",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the grab offset of the user touching object (returns <0,0,0> if number is not a valid sensed object)"
+        },
+        "name": "llDetectedGrab",
+        "type": "vector"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "number",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the rotation of detected object number (returns <0,0,0,1> if number is not a valid sensed object)"
+        },
+        "name": "llDetectedRot",
+        "type": "rotation"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "number",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns TRUE if detected object is part of same group as owner"
+        },
+        "name": "llDetectedGroup",
+        "type": "integer"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "number",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the link position of the triggered event for touches and collisions only"
+        },
+        "name": "llDetectedLinkNumber",
+        "type": "integer"
+    },
+    {
+        "description":
+        {
+            "en_US": "Deletes the object"
+        },
+        "name": "llDie",
+        "energy": "0"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "offset",
+                "type": "vector"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the ground height below the object position + offset"
+        },
+        "name": "llGround",
+        "type": "float"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "offset",
+                "type": "vector"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the cloud density at the object position + offset.\nDEPRECATED - It always returns 0.0 now."
+        },
+        "name": "llCloud",
+        "type": "float",
+        "status": "deprecated"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "offset",
+                "type": "vector"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the wind velocity at the object position + offset"
+        },
+        "name": "llWind",
+        "type": "vector"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "status",
+                "type": "integer"
+            },
+            {
+                "name": "value",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Sets status (STATUS_PHYSICS, STATUS_PHANTOM, STATUS_BLOCK_GRAB, STATUS_ROTATE_X, STATUS_ROTATE_Y, and/or STATUS_ROTATE_Z) to value"
+        },
+        "name": "llSetStatus",
+        "version": "0.1.0"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "status",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns value of status (STATUS_PHYSICS, STATUS_PHANTOM, STATUS_BLOCK_GRAB, STATUS_ROTATE_X, STATUS_ROTATE_Y, and/or STATUS_ROTATE_Z)"
+        },
+        "name": "llGetStatus",
+        "type": "integer"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "scale",
+                "type": "vector"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Sets the scale of the prim"
+        },
+        "name": "llSetScale",
+        "version": "0.1.0"
+    },
+    {
+        "description":
+        {
+            "en_US": "Returns the scale of the prim"
+        },
+        "name": "llGetScale",
+        "type": "vector"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "color",
+                "type": "vector"
+            },
+            {
+                "name": "face",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Sets the color on face of the prim"
+        },
+        "name": "llSetColor"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "face",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the alpha of face"
+        },
+        "name": "llGetAlpha",
+        "type": "float"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "alpha",
+                "type": "float"
+            },
+            {
+                "name": "face",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Sets the alpha on face"
+        },
+        "name": "llSetAlpha"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "face",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the color on face"
+        },
+        "name": "llGetColor",
+        "type": "vector"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "texture",
+                "type": "string"
+            },
+            {
+                "name": "face",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Sets the texture of face or ALL_SIDES"
+        },
+        "name": "llSetTexture",
+        "delay": "0.2"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "u",
+                "type": "float"
+            },
+            {
+                "name": "v",
+                "type": "float"
+            },
+            {
+                "name": "face",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Sets the texture u & v scales for the chosen face or ALL_SIDES"
+        },
+        "name": "llScaleTexture",
+        "delay": "0.2"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "u",
+                "type": "float"
+            },
+            {
+                "name": "v",
+                "type": "float"
+            },
+            {
+                "name": "face",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Sets the texture u & v offsets for the chosen face or ALL_SIDES"
+        },
+        "name": "llOffsetTexture",
+        "delay": "0.2"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "angle",
+                "type": "float"
+            },
+            {
+                "name": "face",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Sets the texture rotation for the chosen face"
+        },
+        "name": "llRotateTexture",
+        "delay": "0.2"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "face",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns a string that is the texture on face (the inventory name if it is a texture in the prim's inventory, otherwise the key)"
+        },
+        "name": "llGetTexture",
+        "type": "string"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "pos",
+                "type": "vector"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Moves the object or prim towards pos without using physics (if the script isn't physical)"
+        },
+        "name": "llSetPos",
+        "delay": "0.2"
+    },
+    {
+        "description":
+        {
+            "en_US": "Returns the position of the task in region coordinates"
+        },
+        "name": "llGetPos",
+        "type": "vector"
+    },
+    {
+        "description":
+        {
+            "en_US": "Returns the position relative to the root"
+        },
+        "name": "llGetLocalPos",
+        "type": "vector"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "rot",
+                "type": "rotation"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Sets the rotation"
+        },
+        "name": "llSetRot",
+        "delay": "0.2"
+    },
+    {
+        "description":
+        {
+            "en_US": "Returns the rotation relative to the region's axes"
+        },
+        "name": "llGetRot",
+        "type": "rotation"
+    },
+    {
+        "description":
+        {
+            "en_US": "Returns the rotation local to the root"
+        },
+        "name": "llGetLocalRot",
+        "type": "rotation"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "force",
+                "type": "vector"
+            },
+            {
+                "name": "local",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Applies force to the object (if the script is physical), in local coords if local == TRUE"
+        },
+        "name": "llSetForce"
+    },
+    {
+        "description":
+        {
+            "en_US": "Returns the force (if the script is physical)"
+        },
+        "name": "llGetForce",
+        "type": "vector"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "position",
+                "type": "vector"
+            },
+            {
+                "name": "range",
+                "type": "float"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Sets positions within range of position as a target and return an ID for the target"
+        },
+        "name": "llTarget",
+        "type": "integer"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "number",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Removes positional target number registered with llTarget"
+        },
+        "name": "llTargetRemove"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "rot",
+                "type": "rotation"
+            },
+            {
+                "name": "error",
+                "type": "float"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Set rotations with error of rot as a rotational target and return an ID for the rotational target"
+        },
+        "name": "llRotTarget",
+        "type": "integer"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "number",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Removes rotational target number registered with llRotTarget"
+        },
+        "name": "llRotTargetRemove"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "target",
+                "type": "vector"
+            },
+            {
+                "name": "tau",
+                "type": "float"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Critically damps to target in tau seconds (if the script is physical)"
+        },
+        "name": "llMoveToTarget"
+    },
+    {
+        "description":
+        {
+            "en_US": "Stops critically damped motion"
+        },
+        "name": "llStopMoveToTarget"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "force",
+                "type": "vector"
+            },
+            {
+                "name": "local",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Applies impulse to object (if the script is physical), in local coords if local == TRUE"
+        },
+        "name": "llApplyImpulse"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "force",
+                "type": "vector"
+            },
+            {
+                "name": "local",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Applies rotational impulse to object (if the script is physical), in local coords if local == TRUE"
+        },
+        "name": "llApplyRotationalImpulse"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "torque",
+                "type": "vector"
+            },
+            {
+                "name": "local",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Sets the torque of object (if the script is physical), in local coords if local == TRUE"
+        },
+        "name": "llSetTorque"
+    },
+    {
+        "description":
+        {
+            "en_US": "Returns the torque (if the script is physical)"
+        },
+        "name": "llGetTorque",
+        "type": "vector"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "force",
+                "type": "vector"
+            },
+            {
+                "name": "torque",
+                "type": "vector"
+            },
+            {
+                "name": "local",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Sets the force and torque of object (if the script is physical), in local coords if local == TRUE"
+        },
+        "name": "llSetForceAndTorque"
+    },
+    {
+        "description":
+        {
+            "en_US": "Returns the velocity of the object"
+        },
+        "name": "llGetVel",
+        "type": "vector"
+    },
+    {
+        "description":
+        {
+            "en_US": "Returns the acceleration of the object relative to the region's axes"
+        },
+        "name": "llGetAccel",
+        "type": "vector"
+    },
+    {
+        "description":
+        {
+            "en_US": "Returns the rotation velocity in radians per second"
+        },
+        "name": "llGetOmega",
+        "type": "vector"
+    },
+    {
+        "description":
+        {
+            "en_US": "Returns the time in seconds since [CURRENT_GRID] server midnight or since region up-time, whichever is smaller"
+        },
+        "name": "llGetTimeOfDay",
+        "type": "float"
+    },
+    {
+        "description":
+        {
+            "en_US": "Returns the time in seconds since midnight California Pacific time (PST/PDT)"
+        },
+        "name": "llGetWallclock",
+        "type": "float"
+    },
+    {
+        "description":
+        {
+            "en_US": "Returns the time in seconds since the last region reset, script reset, or call to either llResetTime or llGetAndResetTime"
+        },
+        "name": "llGetTime",
+        "type": "float"
+    },
+    {
+        "description":
+        {
+            "en_US": "Sets the script timer to zero"
+        },
+        "name": "llResetTime"
+    },
+    {
+        "description":
+        {
+            "en_US": "Returns the script time in seconds and then resets the script timer to zero"
+        },
+        "name": "llGetAndResetTime",
+        "type": "float"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "sound",
+                "type": "string"
+            },
+            {
+                "name": "volume",
+                "type": "float"
+            },
+            {
+                "name": "queue",
+                "type": "integer"
+            },
+            {
+                "name": "loop",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Plays sound at volume and whether it should loop or not. DEPRECATED - Use llPlaySound / llLoopSound / llSetSoundQueueing."
+        },
+        "name": "llSound",
+        "version": "0.1.0",
+        "status": "deprecated"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "sound",
+                "type": "string"
+            },
+            {
+                "name": "volume",
+                "type": "float"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Plays attached sound once at volume (0.0 - 1.0)"
+        },
+        "name": "llPlaySound",
+        "version": "0.1.0"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "sound",
+                "type": "string"
+            },
+            {
+                "name": "volume",
+                "type": "float"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Plays attached sound looping indefinitely at volume (0.0 - 1.0)"
+        },
+        "name": "llLoopSound",
+        "version": "0.1.0"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "sound",
+                "type": "string"
+            },
+            {
+                "name": "volume",
+                "type": "float"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Plays attached sound looping at volume (0.0 - 1.0), declares it a sync master"
+        },
+        "name": "llLoopSoundMaster"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "sound",
+                "type": "string"
+            },
+            {
+                "name": "volume",
+                "type": "float"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Plays attached sound looping at volume (0.0 - 1.0), synced to most audible sync master"
+        },
+        "name": "llLoopSoundSlave"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "sound",
+                "type": "string"
+            },
+            {
+                "name": "volume",
+                "type": "float"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Plays attached sound once at volume (0.0 - 1.0), synced to next loop of most audible sync master"
+        },
+        "name": "llPlaySoundSlave"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "sound",
+                "type": "string"
+            },
+            {
+                "name": "volume",
+                "type": "float"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Plays sound at volume (0.0 - 1.0), centered at but not attached to object"
+        },
+        "name": "llTriggerSound"
+    },
+    {
+        "description":
+        {
+            "en_US": "Stops currently attached sound"
+        },
+        "name": "llStopSound"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "sound",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Preloads a sound on viewers within range"
+        },
+        "name": "llPreloadSound",
+        "version": "0.1.0",
+        "delay": "1"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "src",
+                "type": "string"
+            },
+            {
+                "name": "start",
+                "type": "integer"
+            },
+            {
+                "name": "end",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the indicated substring"
+        },
+        "name": "llGetSubString",
+        "type": "string"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "src",
+                "type": "string"
+            },
+            {
+                "name": "start",
+                "type": "integer"
+            },
+            {
+                "name": "end",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Removes the indicated substring and returns the result"
+        },
+        "name": "llDeleteSubString",
+        "type": "string"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "dst",
+                "type": "string"
+            },
+            {
+                "name": "position",
+                "type": "integer"
+            },
+            {
+                "name": "src",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns a destination string dst with the string src inserted starting at position pos"
+        },
+        "name": "llInsertString",
+        "type": "string"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "src",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns a string that is src with all upper-case characters"
+        },
+        "name": "llToUpper",
+        "type": "string"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "src",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns a string that is src with all lower-case characters"
+        },
+        "name": "llToLower",
+        "type": "string"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "destination",
+                "type": "key"
+            },
+            {
+                "name": "amount",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Transfers amount of L$ from script owner to destination"
+        },
+        "name": "llGiveMoney",
+        "type": "integer"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "particles",
+                "type": "integer"
+            },
+            {
+                "name": "scale",
+                "type": "float"
+            },
+            {
+                "name": "vel",
+                "type": "float"
+            },
+            {
+                "name": "lifetime",
+                "type": "float"
+            },
+            {
+                "name": "arc",
+                "type": "float"
+            },
+            {
+                "name": "texture",
+                "type": "string"
+            },
+            {
+                "name": "offset",
+                "type": "vector"
+            }
+        ],
+        "description":
+        {
+            "en_US": "(DEPRECATED) Makes a round explosion of particles"
+        },
+        "name": "llMakeExplosion",
+        "status": "deprecated",
+        "delay": "0.1"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "particles",
+                "type": "integer"
+            },
+            {
+                "name": "scale",
+                "type": "float"
+            },
+            {
+                "name": "vel",
+                "type": "float"
+            },
+            {
+                "name": "lifetime",
+                "type": "float"
+            },
+            {
+                "name": "arc",
+                "type": "float"
+            },
+            {
+                "name": "bounce",
+                "type": "integer"
+            },
+            {
+                "name": "texture",
+                "type": "string"
+            },
+            {
+                "name": "offset",
+                "type": "vector"
+            },
+            {
+                "name": "bounce_offset",
+                "type": "float"
+            }
+        ],
+        "description":
+        {
+            "en_US": "(DEPRECATED) Makes a fountain of particles"
+        },
+        "name": "llMakeFountain",
+        "status": "deprecated",
+        "delay": "0.1"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "particles",
+                "type": "integer"
+            },
+            {
+                "name": "scale",
+                "type": "float"
+            },
+            {
+                "name": "vel",
+                "type": "float"
+            },
+            {
+                "name": "lifetime",
+                "type": "float"
+            },
+            {
+                "name": "arc",
+                "type": "float"
+            },
+            {
+                "name": "texture",
+                "type": "string"
+            },
+            {
+                "name": "offset",
+                "type": "vector"
+            }
+        ],
+        "description":
+        {
+            "en_US": "(DEPRECATED) Makes smoke like particles"
+        },
+        "name": "llMakeSmoke",
+        "status": "deprecated",
+        "delay": "0.1"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "particles",
+                "type": "integer"
+            },
+            {
+                "name": "scale",
+                "type": "float"
+            },
+            {
+                "name": "vel",
+                "type": "float"
+            },
+            {
+                "name": "lifetime",
+                "type": "float"
+            },
+            {
+                "name": "arc",
+                "type": "float"
+            },
+            {
+                "name": "texture",
+                "type": "string"
+            },
+            {
+                "name": "offset",
+                "type": "vector"
+            }
+        ],
+        "description":
+        {
+            "en_US": "(DEPRECATED) Makes fire like particles"
+        },
+        "name": "llMakeFire",
+        "status": "deprecated",
+        "delay": "0.1"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "inventory",
+                "type": "string"
+            },
+            {
+                "name": "pos",
+                "type": "vector"
+            },
+            {
+                "name": "vel",
+                "type": "vector"
+            },
+            {
+                "name": "rot",
+                "type": "rotation"
+            },
+            {
+                "name": "param",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Instantiates owner's inventory object at pos with velocity vel and rotation rot with start parameter param"
+        },
+        "name": "llRezObject",
+        "version": "0.1.0",
+        "energy": "200",
+        "delay": "0.1"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "target",
+                "type": "vector"
+            },
+            {
+                "name": "strength",
+                "type": "float"
+            },
+            {
+                "name": "damping",
+                "type": "float"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Causes object to point its up axis (positive z) towards target, while keeping its forward axis (positive x) below the horizon"
+        },
+        "name": "llLookAt",
+        "version": "0.1.0"
+    },
+    {
+        "description":
+        {
+            "en_US": "Stops causing object to point at a target"
+        },
+        "name": "llStopLookAt"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "sec",
+                "type": "float"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Causes the timer event to be triggered a maximum of once every sec seconds"
+        },
+        "name": "llSetTimerEvent"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "sec",
+                "type": "float"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Puts the script to sleep for sec seconds"
+        },
+        "name": "llSleep",
+        "energy": "0"
+    },
+    {
+        "description":
+        {
+            "en_US": "Returns the mass of object that the script is attached to"
+        },
+        "name": "llGetMass",
+        "type": "float",
+        "version": "0.1.0"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "name",
+                "type": "string"
+            },
+            {
+                "name": "id",
+                "type": "key"
+            },
+            {
+                "name": "accept",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Sets the collision filter, exclusively or inclusively. If accept == TRUE, only accept collisions with objects name and id (either is optional), otherwise with objects not name or id."
+        },
+        "name": "llCollisionFilter"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "controls",
+                "type": "integer"
+            },
+            {
+                "name": "accept",
+                "type": "integer"
+            },
+            {
+                "name": "pass_on",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Allows for intercepting keyboard and mouse clicks from the agent the script has permissions for"
+        },
+        "name": "llTakeControls"
+    },
+    {
+        "description":
+        {
+            "en_US": "Stops taking inputs that were taken with llTakeControls"
+        },
+        "name": "llReleaseControls"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "attach_point",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Attaches the object to the avatar who has granted permission to the script"
+        },
+        "name": "llAttachToAvatar"
+    },
+    {
+        "description":
+        {
+            "en_US": "Detaches object from avatar"
+        },
+        "name": "llDetachFromAvatar"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "avatar",
+                "type": "key"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Moves avatar's viewpoint to task"
+        },
+        "name": "llTakeCamera",
+        "status": "unimplemented"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "avatar",
+                "type": "key"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns camera to agent avatar"
+        },
+        "name": "llReleaseCamera",
+        "status": "unimplemented"
+    },
+    {
+        "description":
+        {
+            "en_US": "Returns the object owner's UUID"
+        },
+        "name": "llGetOwner",
+        "type": "key"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "user",
+                "type": "key"
+            },
+            {
+                "name": "message",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Sends the specified string as an Instant Message to the user"
+        },
+        "name": "llInstantMessage",
+        "delay": "2"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "address",
+                "type": "string"
+            },
+            {
+                "name": "subject",
+                "type": "string"
+            },
+            {
+                "name": "message",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Sends an email to address with the subject and message"
+        },
+        "name": "llEmail",
+        "version": "1.3.0",
+        "delay": "20"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "address",
+                "type": "string"
+            },
+            {
+                "name": "subject",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Gets the next waiting email that comes from address, with specified subject"
+        },
+        "name": "llGetNextEmail",
+        "version": "1.3.0"
+    },
+    {
+        "description":
+        {
+            "en_US": "Returns the key of the prim the script is attached to"
+        },
+        "name": "llGetKey",
+        "type": "key"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "buoyancy",
+                "type": "float"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Sets the buoyancy of the task or object (0 is disabled, < 1.0 sinks, 1.0 floats, > 1.0 rises)"
+        },
+        "name": "llSetBuoyancy"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "height",
+                "type": "float"
+            },
+            {
+                "name": "water",
+                "type": "integer"
+            },
+            {
+                "name": "tau",
+                "type": "float"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Critically damps to a height above the ground (or water) in tau seconds"
+        },
+        "name": "llSetHoverHeight"
+    },
+    {
+        "description":
+        {
+            "en_US": "Stops hovering to a height"
+        },
+        "name": "llStopHover"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "delay",
+                "type": "float"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Sets the minimum time between events being handled"
+        },
+        "name": "llMinEventDelay"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "sound",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Preloads a sound on viewers within range. DEPRECATED - Use llPreloadSound."
+        },
+        "name": "llSoundPreload",
+        "status": "deprecated"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "target",
+                "type": "rotation"
+            },
+            {
+                "name": "strength",
+                "type": "float"
+            },
+            {
+                "name": "damping",
+                "type": "float"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Causes object to point its forward axis towards target"
+        },
+        "name": "llRotLookAt",
+        "version": "0.1.0"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "str",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the length of string"
+        },
+        "name": "llStringLength",
+        "type": "integer"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "anim",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Starts animation anim for agent that granted PERMISSION_TRIGGER_ANIMATION if the permission has not been revoked"
+        },
+        "name": "llStartAnimation"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "anim",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Stops animation anim for agent that granted permission"
+        },
+        "name": "llStopAnimation"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "pos",
+                "type": "vector"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Makes agent that owns object point at pos"
+        },
+        "name": "llPointAt",
+        "status": "unimplemented"
+    },
+    {
+        "description":
+        {
+            "en_US": "Stops pointing agent that owns object"
+        },
+        "name": "llStopPointAt",
+        "status": "unimplemented"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "axis",
+                "type": "vector"
+            },
+            {
+                "name": "spinrate",
+                "type": "float"
+            },
+            {
+                "name": "gain",
+                "type": "float"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Rotates the object around axis at spinrate with strength gain"
+        },
+        "name": "llTargetOmega",
+        "version": "0.2.0"
+    },
+    {
+        "description":
+        {
+            "en_US": "Returns an integer that is the script start/rez parameter"
+        },
+        "name": "llGetStartParameter",
+        "type": "integer"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "inventory",
+                "type": "key"
+            },
+            {
+                "name": "pos",
+                "type": "vector"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Rezzes directly off of UUID if owner is in God Mode"
+        },
+        "name": "llGodLikeRezObject",
+        "status": "godmode"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "agent",
+                "type": "key"
+            },
+            {
+                "name": "perm",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Asks the agent for permission to run certain classes of functions"
+        },
+        "name": "llRequestPermissions"
+    },
+    {
+        "description":
+        {
+            "en_US": "Returns the key of the avatar that last granted permissions to the script"
+        },
+        "name": "llGetPermissionsKey",
+        "type": "key"
+    },
+    {
+        "description":
+        {
+            "en_US": "Returns an integer bitfield with the permissions that have been granted"
+        },
+        "name": "llGetPermissions",
+        "type": "integer"
+    },
+    {
+        "description":
+        {
+            "en_US": "Returns the link number of the prim containing the script (0 means not linked, 1 the prim is the root, 2 the prim is the first child, etc)"
+        },
+        "name": "llGetLinkNumber",
+        "type": "integer"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "linknumber",
+                "type": "integer"
+            },
+            {
+                "name": "color",
+                "type": "vector"
+            },
+            {
+                "name": "face",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Sets face to color if a task exists in the link chain at linknumber"
+        },
+        "name": "llSetLinkColor"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "target",
+                "type": "key"
+            },
+            {
+                "name": "parent",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Attempts to link the script's object with the target (requires that PERMISSION_CHANGE_LINKS be granted). If parent == TRUE, then the script's object becomes the root."
+        },
+        "name": "llCreateLink",
+        "delay": "1"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "linknum",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Delinks the prim with the given link number in a linked object set (requires that PERMISSION_CHANGE_LINKS be granted)"
+        },
+        "name": "llBreakLink"
+    },
+    {
+        "description":
+        {
+            "en_US": "Delinks all prims in the link set (requires that PERMISSION_CHANGE_LINKS be granted)"
+        },
+        "name": "llBreakAllLinks"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "linknumber",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the key of the linked prim linknumber"
+        },
+        "name": "llGetLinkKey",
+        "type": "key"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "linknumber",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the name of linknumber in a link set"
+        },
+        "name": "llGetLinkName",
+        "type": "string"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "type",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the number of items of a given type (INVENTORY_* flag) in the prim's inventory"
+        },
+        "name": "llGetInventoryNumber",
+        "type": "integer"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "type",
+                "type": "integer"
+            },
+            {
+                "name": "number",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the name of the inventory item number of a given type"
+        },
+        "name": "llGetInventoryName",
+        "type": "string"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "name",
+                "type": "string"
+            },
+            {
+                "name": "run",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Sets the running state of the specified script"
+        },
+        "name": "llSetScriptState"
+    },
+    {
+        "description":
+        {
+            "en_US": "Returns how much energy is in the object as a percentage of maximum"
+        },
+        "name": "llGetEnergy",
+        "type": "float"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "destination",
+                "type": "key"
+            },
+            {
+                "name": "inventory",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Gives inventory to destination.\nSleeps script for 2 seconds if destination is an avatar."
+        },
+        "name": "llGiveInventory"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "item",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Removes the named inventory item"
+        },
+        "name": "llRemoveInventory"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "text",
+                "type": "string"
+            },
+            {
+                "name": "color",
+                "type": "vector"
+            },
+            {
+                "name": "alpha",
+                "type": "float"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Displays text that hovers over the prim with specific color and translucency specified with alpha"
+        },
+        "name": "llSetText",
+        "version": "0.1.0"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "offset",
+                "type": "vector"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the water height below the object position + offset"
+        },
+        "name": "llWater",
+        "type": "float"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "pass",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "If pass == TRUE, touches are passed from children on to parents"
+        },
+        "name": "llPassTouches"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "id",
+                "type": "key"
+            },
+            {
+                "name": "data",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Requests data about agent id. When data is available the dataserver event will be raised."
+        },
+        "name": "llRequestAgentData",
+        "type": "key",
+        "delay": "0.1"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "name",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Requests data from object's inventory object. When data is available the dataserver event will be raised."
+        },
+        "name": "llRequestInventoryData",
+        "type": "key",
+        "delay": "1"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "damage",
+                "type": "float"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Sets the amount of damage that will be done when this object hits an avatar"
+        },
+        "name": "llSetDamage"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "id",
+                "type": "key"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Teleports avatar on the owner's land to their home location without any warning"
+        },
+        "name": "llTeleportAgentHome",
+        "energy": "100",
+        "delay": "5"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "action",
+                "type": "integer"
+            },
+            {
+                "name": "brush",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Modifies land using the specified action on the specified brush size of land"
+        },
+        "name": "llModifyLand"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "impact_sound",
+                "type": "string"
+            },
+            {
+                "name": "impact_volume",
+                "type": "float"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Suppresses default collision sounds, replaces default impact sounds with impact_sound at the volume impact_volume"
+        },
+        "name": "llCollisionSound",
+        "version": "0.2.0"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "impact_sprite",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Suppresses default collision sprites, replaces default impact sprite with impact_sprite (use an empty string to just suppress)"
+        },
+        "name": "llCollisionSprite",
+        "version": "0.2.0",
+        "status": "unimplemented"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "id",
+                "type": "key"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the name of the currently playing locomotion animation for avatar id"
+        },
+        "name": "llGetAnimation",
+        "type": "string"
+    },
+    {
+        "description":
+        {
+            "en_US": "Resets the script"
+        },
+        "name": "llResetScript"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "linknum",
+                "type": "integer"
+            },
+            {
+                "name": "num",
+                "type": "integer"
+            },
+            {
+                "name": "str",
+                "type": "string"
+            },
+            {
+                "name": "id",
+                "type": "key"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Allows scripts in the same object to communicate. Triggers a link_message event with the same parameters num, str, and id in all scripts in the prim(s) described by linknum."
+        },
+        "name": "llMessageLinked"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "id",
+                "type": "key"
+            },
+            {
+                "name": "impulse",
+                "type": "vector"
+            },
+            {
+                "name": "ang_impulse",
+                "type": "vector"
+            },
+            {
+                "name": "local",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Applies impulse and ang_impulse to object id"
+        },
+        "name": "llPushObject"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "pass",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "If pass == TRUE, collisions are passed from children on to parents (default is FALSE)"
+        },
+        "name": "llPassCollisions"
+    },
+    {
+        "description":
+        {
+            "en_US": "Returns the name of the script that this function is used in"
+        },
+        "name": "llGetScriptName",
+        "type": "string"
+    },
+    {
+        "description":
+        {
+            "en_US": "Returns the number of faces (or sides) of the prim"
+        },
+        "name": "llGetNumberOfSides",
+        "type": "integer"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "axis",
+                "type": "vector"
+            },
+            {
+                "name": "angle",
+                "type": "float"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the rotation that is a generated angle about axis"
+        },
+        "name": "llAxisAngle2Rot",
+        "type": "rotation"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "rot",
+                "type": "rotation"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the rotation axis represented by rot"
+        },
+        "name": "llRot2Axis",
+        "type": "vector"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "rot",
+                "type": "rotation"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the rotation angle represented by rot"
+        },
+        "name": "llRot2Angle",
+        "type": "float"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "val",
+                "type": "float"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the arccosine in radians of val"
+        },
+        "name": "llAcos",
+        "type": "float"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "val",
+                "type": "float"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the arcsine in radians of val"
+        },
+        "name": "llAsin",
+        "type": "float"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "a",
+                "type": "rotation"
+            },
+            {
+                "name": "b",
+                "type": "rotation"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns angle between rotation a and b"
+        },
+        "name": "llAngleBetween",
+        "type": "float"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "name",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the key that is the UUID of the inventory name"
+        },
+        "name": "llGetInventoryKey",
+        "type": "key"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "add",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "If add == TRUE, users without modify permissions can still drop inventory items onto a prim"
+        },
+        "name": "llAllowInventoryDrop"
+    },
+    {
+        "description":
+        {
+            "en_US": "Returns a normalized vector of the direction of the sun in the region"
+        },
+        "name": "llGetSunDirection",
+        "type": "vector"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "face",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the texture offset of face in the x and y components of a vector"
+        },
+        "name": "llGetTextureOffset",
+        "type": "vector"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "side",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the texture scale of side in the x and y components of a vector"
+        },
+        "name": "llGetTextureScale",
+        "type": "vector"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "side",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the texture rotation of side"
+        },
+        "name": "llGetTextureRot",
+        "type": "float"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "source",
+                "type": "string"
+            },
+            {
+                "name": "pattern",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns an integer that is the index in source where pattern first appears.\n(Returns -1 if not found.)"
+        },
+        "name": "llSubStringIndex",
+        "type": "integer"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "id",
+                "type": "key"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the owner of object id"
+        },
+        "name": "llGetOwnerKey",
+        "type": "key"
+    },
+    {
+        "description":
+        {
+            "en_US": "Returns the prim's center of mass (unless called from the root prim, where it returns the object's center of mass)"
+        },
+        "name": "llGetCenterOfMass",
+        "type": "vector"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "src",
+                "type": "list"
+            },
+            {
+                "name": "stride",
+                "type": "integer"
+            },
+            {
+                "name": "ascending",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Sorts the list into blocks of stride, in ascending order if ascending == TRUE.\nThe sort order is affected by type."
+        },
+        "name": "llListSort",
+        "type": "list"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "src",
+                "type": "list"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the number of elements in the list"
+        },
+        "name": "llGetListLength",
+        "type": "integer"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "src",
+                "type": "list"
+            },
+            {
+                "name": "index",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Copies the integer at index in the list"
+        },
+        "name": "llList2Integer",
+        "type": "integer"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "src",
+                "type": "list"
+            },
+            {
+                "name": "index",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Copies the float at index in the list"
+        },
+        "name": "llList2Float",
+        "type": "float"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "src",
+                "type": "list"
+            },
+            {
+                "name": "index",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Copies the string at index in the list"
+        },
+        "name": "llList2String",
+        "type": "string"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "src",
+                "type": "list"
+            },
+            {
+                "name": "index",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Copies the key at index in the list"
+        },
+        "name": "llList2Key",
+        "type": "key"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "src",
+                "type": "list"
+            },
+            {
+                "name": "index",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Copies the vector at index in the list"
+        },
+        "name": "llList2Vector",
+        "type": "vector"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "src",
+                "type": "list"
+            },
+            {
+                "name": "index",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Copies the rotation at index in the list"
+        },
+        "name": "llList2Rot",
+        "type": "rotation"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "src",
+                "type": "list"
+            },
+            {
+                "name": "start",
+                "type": "integer"
+            },
+            {
+                "name": "end",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Copies the slice of the list from start to end"
+        },
+        "name": "llList2List",
+        "type": "list"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "src",
+                "type": "list"
+            },
+            {
+                "name": "start",
+                "type": "integer"
+            },
+            {
+                "name": "end",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Removes the slice from start to end and returns the remainder of the list"
+        },
+        "name": "llDeleteSubList",
+        "type": "list"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "src",
+                "type": "list"
+            },
+            {
+                "name": "index",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the type of the index entry in the list\n(TYPE_INTEGER, TYPE_FLOAT, TYPE_STRING, TYPE_KEY, TYPE_VECTOR, TYPE_ROTATION, or TYPE_INVALID if index is off list)"
+        },
+        "name": "llGetListEntryType",
+        "type": "integer"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "src",
+                "type": "list"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Creates a string of comma separated values from list"
+        },
+        "name": "llList2CSV",
+        "type": "string"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "src",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Creates a list from a string of comma separated values"
+        },
+        "name": "llCSV2List",
+        "type": "list"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "src",
+                "type": "list"
+            },
+            {
+                "name": "stride",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns a randomized list of blocks of size stride"
+        },
+        "name": "llListRandomize",
+        "type": "list"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "src",
+                "type": "list"
+            },
+            {
+                "name": "start",
+                "type": "integer"
+            },
+            {
+                "name": "end",
+                "type": "integer"
+            },
+            {
+                "name": "stride",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Copies the strided slice of the list from start to end"
+        },
+        "name": "llList2ListStrided",
+        "type": "list"
+    },
+    {
+        "description":
+        {
+            "en_US": "Returns a vector in meters that is the global location of the south-west corner of the region which the object is in"
+        },
+        "name": "llGetRegionCorner",
+        "type": "vector"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "dest",
+                "type": "list"
+            },
+            {
+                "name": "src",
+                "type": "list"
+            },
+            {
+                "name": "start",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns a list that contains all the elements from dest but with the elements from src inserted at position start"
+        },
+        "name": "llListInsertList",
+        "type": "list"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "src",
+                "type": "list"
+            },
+            {
+                "name": "test",
+                "type": "list"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the index of the first instance of test in src.\n(Returns -1 if not found.)"
+        },
+        "name": "llListFindList",
+        "type": "integer"
+    },
+    {
+        "description":
+        {
+            "en_US": "Returns the name of the prim which the script is attached to"
+        },
+        "name": "llGetObjectName",
+        "type": "string"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "name",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Sets the prim's name to the name parameter"
+        },
+        "name": "llSetObjectName"
+    },
+    {
+        "description":
+        {
+            "en_US": "Returns the current date in the UTC time zone in the format YYYY-MM-DD"
+        },
+        "name": "llGetDate",
+        "type": "string"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "pos",
+                "type": "vector"
+            },
+            {
+                "name": "dir",
+                "type": "vector"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Checks to see whether the border hit by dir from pos is the edge of the world (has no neighboring region)"
+        },
+        "name": "llEdgeOfWorld",
+        "type": "integer",
+        "version": "0.2.0"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "id",
+                "type": "key"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns an integer bitfield containing the agent information about id.\nReturns AGENT_FLYING, AGENT_ATTACHMENTS, AGENT_SCRIPTED, AGENT_SITTING, AGENT_ON_OBJECT, AGENT_MOUSELOOK, AGENT_AWAY, AGENT_BUSY, AGENT_TYPING, AGENT_CROUCHING, AGENT_ALWAYS_RUN, AGENT_WALKING and/or AGENT_IN_AIR."
+        },
+        "name": "llGetAgentInfo",
+        "type": "integer",
+        "version": "0.4.0"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "volume",
+                "type": "float"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Adjusts volume of attached sound (0.0 - 1.0)"
+        },
+        "name": "llAdjustSoundVolume",
+        "delay": "0.1"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "queue",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Sets whether attached sounds wait for the current sound to finish (If queue == TRUE then queuing is enabled, if FALSE queuing is disabled [default])"
+        },
+        "name": "llSetSoundQueueing"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "radius",
+                "type": "float"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Establishes a hard cut-off radius for audibility of scripted sounds (both attached and triggered)"
+        },
+        "name": "llSetSoundRadius",
+        "version": "0.4.0"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "id",
+                "type": "key"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the name of the prim or avatar specified by id.\n(The id must be a valid rezzed prim or avatar key in the current simulator, otherwise an empty string is returned.)"
+        },
+        "name": "llKey2Name",
+        "type": "string",
+        "version": "0.4.0"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "mode",
+                "type": "integer"
+            },
+            {
+                "name": "face",
+                "type": "integer"
+            },
+            {
+                "name": "sizex",
+                "type": "integer"
+            },
+            {
+                "name": "sizey",
+                "type": "integer"
+            },
+            {
+                "name": "start",
+                "type": "float"
+            },
+            {
+                "name": "length",
+                "type": "float"
+            },
+            {
+                "name": "rate",
+                "type": "float"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Animates the texture on the specified face/faces"
+        },
+        "name": "llSetTextureAnim",
+        "version": "0.4.0"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "sound",
+                "type": "string"
+            },
+            {
+                "name": "volume",
+                "type": "float"
+            },
+            {
+                "name": "top_north_east",
+                "type": "vector"
+            },
+            {
+                "name": "bottom_south_west",
+                "type": "vector"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Plays sound at volume (0.0 - 1.0), centered at but not attached to object, limited to the box defined by vectors top_north_east and bottom_south_west"
+        },
+        "name": "llTriggerSoundLimited",
+        "version": "0.4.0"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "avatar",
+                "type": "key"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Ejects avatar from the parcel"
+        },
+        "name": "llEjectFromLand",
+        "version": "0.6.0"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "src",
+                "type": "string"
+            },
+            {
+                "name": "separators",
+                "type": "list"
+            },
+            {
+                "name": "spacers",
+                "type": "list"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Breaks src into a list, discarding separators, keeping spacers\n(separators and spacers must be lists of strings, maximum of 8 each)"
+        },
+        "name": "llParseString2List",
+        "type": "list",
+        "version": "0.6.0"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "id",
+                "type": "key"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns TRUE if id is over land owned by the script owner, otherwise FALSE"
+        },
+        "name": "llOverMyLand",
+        "type": "integer",
+        "version": "0.6.0"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "pos",
+                "type": "vector"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the key of the land owner, returns NULL_KEY if public"
+        },
+        "name": "llGetLandOwnerAt",
+        "type": "key",
+        "version": "0.6.0"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "name",
+                "type": "string"
+            },
+            {
+                "name": "line",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns line line of notecard name via the dataserver event"
+        },
+        "name": "llGetNotecardLine",
+        "type": "key",
+        "version": "0.6.0",
+        "delay": "0.1"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "id",
+                "type": "key"
+            }
+        ],
+        "description":
+        {
+            "en_US": "If the avatar is in the same region, returns the size of the bounding box of the requested avatar by id, otherwise returns ZERO_VECTOR"
+        },
+        "name": "llGetAgentSize",
+        "type": "vector"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "id",
+                "type": "key"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns TRUE if avatar id is in the same region and has the same active group, otherwise FALSE"
+        },
+        "name": "llSameGroup",
+        "type": "integer"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "id",
+                "type": "key"
+            }
+        ],
+        "description":
+        {
+            "en_US": "If avatar identified by id is sitting on the object the script is attached to or is over land owned by the object's owner, the avatar is forced to stand up"
+        },
+        "name": "llUnSit"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "offset",
+                "type": "vector"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the ground slope below the object position + offset"
+        },
+        "name": "llGroundSlope",
+        "type": "vector",
+        "version": "0.9.0"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "offset",
+                "type": "vector"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the ground normal below the object position + offset"
+        },
+        "name": "llGroundNormal",
+        "type": "vector",
+        "version": "0.9.0"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "offset",
+                "type": "vector"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the ground contour direction below the object position + offset"
+        },
+        "name": "llGroundContour",
+        "type": "vector",
+        "version": "0.9.0"
+    },
+    {
+        "description":
+        {
+            "en_US": "Returns the object's attachment point, or 0 if not attached"
+        },
+        "name": "llGetAttached",
+        "type": "integer",
+        "version": "1.1.0"
+    },
+    {
+        "description":
+        {
+            "en_US": "Returns the number of free bytes of memory the script can use"
+        },
+        "name": "llGetFreeMemory",
+        "type": "integer",
+        "version": "1.1.0"
+    },
+    {
+        "description":
+        {
+            "en_US": "Returns the current region name"
+        },
+        "name": "llGetRegionName",
+        "type": "string",
+        "version": "1.1.0"
+    },
+    {
+        "description":
+        {
+            "en_US": "Returns the current time dilation as a float between 0.0 (full dilation) and 1.0 (no dilation)"
+        },
+        "name": "llGetRegionTimeDilation",
+        "type": "float",
+        "version": "1.1.0"
+    },
+    {
+        "description":
+        {
+            "en_US": "Returns the mean region frames per second"
+        },
+        "name": "llGetRegionFPS",
+        "type": "float",
+        "version": "1.1.0"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "rules",
+                "type": "list"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Creates a particle system based on rules. An empty list removes the particle system.\nList format is [ rule1, data1, rule2, data2 … rulen, datan ]."
+        },
+        "name": "llParticleSystem",
+        "version": "1.1.0"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "height",
+                "type": "float"
+            },
+            {
+                "name": "water",
+                "type": "integer"
+            },
+            {
+                "name": "tau",
+                "type": "float"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Critically damps to height if within height*0.5 of level (either above ground level, or above the higher of land and water if water == TRUE)"
+        },
+        "name": "llGroundRepel",
+        "version": "1.1.0"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "target",
+                "type": "key"
+            },
+            {
+                "name": "folder",
+                "type": "string"
+            },
+            {
+                "name": "inventory",
+                "type": "list"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Gives inventory items to target, creating a new folder to put them in"
+        },
+        "name": "llGiveInventoryList",
+        "version": "1.1.0",
+        "delay": "3"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "type",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Sets the vehicle to one of the default types"
+        },
+        "name": "llSetVehicleType",
+        "version": "1.1.0"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "param",
+                "type": "integer"
+            },
+            {
+                "name": "value",
+                "type": "float"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Sets the specified vehicle float parameter"
+        },
+        "name": "llSetVehicleFloatParam",
+        "version": "1.1.0"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "param",
+                "type": "integer"
+            },
+            {
+                "name": "vec",
+                "type": "vector"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Sets the specified vehicle vector parameter"
+        },
+        "name": "llSetVehicleVectorParam",
+        "version": "1.1.0"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "param",
+                "type": "integer"
+            },
+            {
+                "name": "rot",
+                "type": "rotation"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Sets the specified vehicle rotation parameter"
+        },
+        "name": "llSetVehicleRotationParam",
+        "version": "1.1.0"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "flags",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Sets the enabled bits in 'flags'"
+        },
+        "name": "llSetVehicleFlags",
+        "version": "1.1.0"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "flags",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Removes the enabled bits in 'flags'"
+        },
+        "name": "llRemoveVehicleFlags",
+        "version": "1.1.0"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "offset",
+                "type": "vector"
+            },
+            {
+                "name": "rot",
+                "type": "rotation"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Sets the sit location for the prim. If offset == <0,0,0> then the sit target is removed."
+        },
+        "name": "llSitTarget"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "agent_id",
+                "type": "key"
+            },
+            {
+                "name": "link",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": ""
+        },
+        "name": "llSitOnLink",
+        "type": "integer"
+    },
+    {
+        "description":
+        {
+            "en_US": "If an avatar is seated on the sit target, returns the avatar's key, otherwise NULL_KEY"
+        },
+        "name": "llAvatarOnSitTarget",
+        "type": "key"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "avatar",
+                "type": "key"
+            },
+            {
+                "name": "hours",
+                "type": "float"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Adds avatar to the land pass list for hours, or indefinitely if hours is 0"
+        },
+        "name": "llAddToLandPassList",
+        "delay": "0.1"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "text",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Displays text rather than the default 'Touch' in the pie menu"
+        },
+        "name": "llSetTouchText"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "text",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Displays text rather than the default 'Sit Here' in the pie menu"
+        },
+        "name": "llSetSitText"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "offset",
+                "type": "vector"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Sets the camera eye offset for avatars that sit on the object"
+        },
+        "name": "llSetCameraEyeOffset"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "offset",
+                "type": "vector"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Sets the point the camera is looking at to offset for avatars that sit on the object"
+        },
+        "name": "llSetCameraAtOffset"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "src",
+                "type": "list"
+            },
+            {
+                "name": "separator",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the list in a single string, using separator between the entries"
+        },
+        "name": "llDumpList2String",
+        "type": "string",
+        "version": "1.2.0"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "pos",
+                "type": "vector"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns TRUE if pos is over public land, sandbox land, land that doesn't allow everyone to edit and build, or land that doesn't allow outside scripts"
+        },
+        "name": "llScriptDanger",
+        "type": "integer",
+        "version": "1.2.0"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "avatar",
+                "type": "key"
+            },
+            {
+                "name": "message",
+                "type": "string"
+            },
+            {
+                "name": "buttons",
+                "type": "list"
+            },
+            {
+                "name": "chat_channel",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Shows a dialog box on the avatar's screen with a message and up to 12 buttons.\nIf a button is pressed, the avatar says the text of the button label on chat_channel."
+        },
+        "name": "llDialog",
+        "version": "1.2.0",
+        "delay": "1"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "detect",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "If detect = TRUE, object works much like Phantom, but triggers collision_start and collision_end events when other objects start and stop interpenetrating.\nMust be applied to the root prim."
+        },
+        "name": "llVolumeDetect",
+        "version": "1.2.0"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "name",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Resets script name"
+        },
+        "name": "llResetOtherScript"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "name",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns TRUE if the script name is running"
+        },
+        "name": "llGetScriptState",
+        "type": "integer"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "target",
+                "type": "key"
+            },
+            {
+                "name": "name",
+                "type": "string"
+            },
+            {
+                "name": "running",
+                "type": "integer"
+            },
+            {
+                "name": "start_param",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "DEPRECATED! Please use llRemoteLoadScriptPin instead."
+        },
+        "name": "llRemoteLoadScript",
+        "status": "unimplemented",
+        "delay": "3"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "pin",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "If pin is set to a non-zero number, allows a prim to have scripts remotely loaded via llRemoteLoadScriptPin when it passes in the correct pin. Otherwise, llRemoteLoadScriptPin is ignored."
+        },
+        "name": "llSetRemoteScriptAccessPin",
+        "delay": "0.2"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "target",
+                "type": "key"
+            },
+            {
+                "name": "name",
+                "type": "string"
+            },
+            {
+                "name": "pin",
+                "type": "integer"
+            },
+            {
+                "name": "running",
+                "type": "integer"
+            },
+            {
+                "name": "start_param",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Copies script name onto target, if the owner of this scripted object can modify target and is in the same region, and the matching pin is used.\nIf running == TRUE, starts the script with start_param."
+        },
+        "name": "llRemoteLoadScriptPin",
+        "delay": "3"
+    },
+    {
+        "description":
+        {
+            "en_US": "Creates a channel to listen for XML-RPC calls, and will trigger a remote_data event with channel id once it is available"
+        },
+        "name": "llOpenRemoteDataChannel",
+        "delay": "1"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "channel",
+                "type": "key"
+            },
+            {
+                "name": "dest",
+                "type": "string"
+            },
+            {
+                "name": "idata",
+                "type": "integer"
+            },
+            {
+                "name": "sdata",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Sends an XML-RPC request to dest through channel with payload of channel (in a string), integer idata and string sdata.\nReturns a key that is the message_id for the resulting remote_data events."
+        },
+        "name": "llSendRemoteData",
+        "type": "key",
+        "delay": "3"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "channel",
+                "type": "key"
+            },
+            {
+                "name": "message_id",
+                "type": "key"
+            },
+            {
+                "name": "sdata",
+                "type": "string"
+            },
+            {
+                "name": "idata",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Sends an XML-RPC reply to message_id on channel with payload of string sdata and integer idata"
+        },
+        "name": "llRemoteDataReply",
+        "delay": "3"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "channel",
+                "type": "key"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Closes XML-RPC channel"
+        },
+        "name": "llCloseRemoteDataChannel",
+        "delay": "1"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "src",
+                "type": "string"
+            },
+            {
+                "name": "nonce",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns a string of 32 hex characters that is a RSA Data Security, Inc. MD5 Message-Digest Algorithm of src with nonce"
+        },
+        "name": "llMD5String",
+        "type": "string",
+        "version": "1.3.0"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "rules",
+                "type": "list"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Sets the prim's parameters according to rules"
+        },
+        "name": "llSetPrimitiveParams",
+        "version": "1.3.0",
+        "delay": "0.2"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "str",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Converts a string to the Base64 representation of the string"
+        },
+        "name": "llStringToBase64",
+        "type": "string",
+        "version": "1.3.0"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "str",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Converts a Base64 string to a conventional string.\nIf the conversion creates any unprintable characters, they are converted to spaces."
+        },
+        "name": "llBase64ToString",
+        "type": "string",
+        "version": "1.3.0"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "str1",
+                "type": "string"
+            },
+            {
+                "name": "str2",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "DEPRECATED! Please use llXorBase64 instead.\nIncorrectly performs an exclusive or on two Base64 strings and returns a Base64 string. str2 repeats if it is shorter than str1. Retained for backwards compatability."
+        },
+        "name": "llXorBase64Strings",
+        "type": "string",
+        "version": "1.3.0",
+        "status": "deprecated",
+        "delay": "0.3"
+    },
+    {
+        "description":
+        {
+            "en_US": "DEPRECATED! Please use llOpenRemoteDataChannel instead.\nIf an object using remote data channels changes regions, you must call this function to reregister the remote data channels. This call is not needed if the prim does not change regions."
+        },
+        "name": "llRemoteDataSetRegion",
+        "status": "deprecated"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "val",
+                "type": "float"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the base 10 logarithm of val. Returns zero if val <= 0."
+        },
+        "name": "llLog10",
+        "type": "float"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "val",
+                "type": "float"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the natural logarithm of val. Returns zero if val <= 0."
+        },
+        "name": "llLog",
+        "type": "float"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "id",
+                "type": "key"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns a list of keys of playing animations for avatar described by id"
+        },
+        "name": "llGetAnimationList",
+        "type": "list",
+        "version": "1.4.0"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "url",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Sets the streaming audio URL for the parcel which the object is on"
+        },
+        "name": "llSetParcelMusicURL",
+        "delay": "2"
+    },
+    {
+        "description":
+        {
+            "en_US": "Returns the position (in region coordinates) of the root prim of the object which the script is attached to"
+        },
+        "name": "llGetRootPosition",
+        "type": "vector",
+        "version": "1.5.0"
+    },
+    {
+        "description":
+        {
+            "en_US": "Returns the rotation (relative to the region) of the root prim of the object which the script is attached to"
+        },
+        "name": "llGetRootRotation",
+        "type": "rotation",
+        "version": "1.5.0"
+    },
+    {
+        "description":
+        {
+            "en_US": "Returns the description of the prim the script is attached to"
+        },
+        "name": "llGetObjectDesc",
+        "type": "string",
+        "version": "1.5.0"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "desc",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Sets the prim's description to desc"
+        },
+        "name": "llSetObjectDesc",
+        "version": "1.5.0"
+    },
+    {
+        "description":
+        {
+            "en_US": "Returns a key for the creator of the prim"
+        },
+        "name": "llGetCreator",
+        "type": "key",
+        "version": "1.5.0"
+    },
+    {
+        "description":
+        {
+            "en_US": "Returns the timestamp in the UTC time zone in the format: YYYY-MM-DDThh:mm:ss.ff..fZ"
+        },
+        "name": "llGetTimestamp",
+        "type": "string",
+        "version": "1.5.0"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "linknumber",
+                "type": "integer"
+            },
+            {
+                "name": "alpha",
+                "type": "float"
+            },
+            {
+                "name": "face",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "If a prim exists in the link chain at linknumber, sets face to alpha"
+        },
+        "name": "llSetLinkAlpha",
+        "version": "1.5.0"
+    },
+    {
+        "description":
+        {
+            "en_US": "Returns the number of prims in a link set the script is attached to"
+        },
+        "name": "llGetNumberOfPrims",
+        "type": "integer",
+        "version": "1.5.0"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "name",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns number of lines in notecard name via the dataserver event (cast return value to integer)"
+        },
+        "name": "llGetNumberOfNotecardLines",
+        "type": "key",
+        "version": "1.5.0",
+        "delay": "0.1"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "object",
+                "type": "key"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the bounding box around the object (including any linked prims) relative to its root prim, in a list in the format [ (vector) min_corner, (vector) max_corner ]"
+        },
+        "name": "llGetBoundingBox",
+        "type": "list"
+    },
+    {
+        "description":
+        {
+            "en_US": "Returns the geometric center of the linked set the script is attached to"
+        },
+        "name": "llGetGeometricCenter",
+        "type": "vector"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "params",
+                "type": "list"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the primitive parameters specified in the params list"
+        },
+        "name": "llGetPrimitiveParams",
+        "type": "list",
+        "version": "1.5.0",
+        "delay": "0.2"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "number",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns a string that is a Base64 big endian encode of number"
+        },
+        "name": "llIntegerToBase64",
+        "type": "string",
+        "version": "1.5.0",
+        "delay": "0.0"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "str",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns an integer that is the str Base64 decoded as a big endian integer"
+        },
+        "name": "llBase64ToInteger",
+        "type": "integer",
+        "version": "1.5.0",
+        "delay": "0.0"
+    },
+    {
+        "description":
+        {
+            "en_US": "Returns the time in seconds since midnight GMT"
+        },
+        "name": "llGetGMTclock",
+        "type": "float",
+        "version": "1.5.0"
+    },
+    {
+        "description":
+        {
+            "en_US": "Returns the hostname of the machine which the script is running on (same as string in viewer Help dialog)"
+        },
+        "name": "llGetSimulatorHostname",
+        "type": "string",
+        "delay": "10"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "rot",
+                "type": "rotation"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Sets the rotation of a child prim relative to the root prim"
+        },
+        "name": "llSetLocalRot",
+        "delay": "0.2"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "src",
+                "type": "string"
+            },
+            {
+                "name": "separators",
+                "type": "list"
+            },
+            {
+                "name": "spacers",
+                "type": "list"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Breaks src into a list, discarding separators, keeping spacers, keeping any null values generated (separators and spacers must be lists of strings, maximum of 8 each)"
+        },
+        "name": "llParseStringKeepNulls",
+        "type": "list"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "inventory",
+                "type": "string"
+            },
+            {
+                "name": "pos",
+                "type": "vector"
+            },
+            {
+                "name": "vel",
+                "type": "vector"
+            },
+            {
+                "name": "rot",
+                "type": "rotation"
+            },
+            {
+                "name": "param",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Instantiates owner's inventory object rotated to rot with its root at pos, moving at vel, using param as the start parameter"
+        },
+        "name": "llRezAtRoot",
+        "energy": "200",
+        "delay": "0.1"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "mask",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the requested permission mask for the root object the task is attached to"
+        },
+        "name": "llGetObjectPermMask",
+        "type": "integer"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "mask",
+                "type": "integer"
+            },
+            {
+                "name": "value",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Sets the given permission mask to the new value on the root object the task is attached to (requires God Mode)"
+        },
+        "name": "llSetObjectPermMask",
+        "status": "godmode"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "item",
+                "type": "string"
+            },
+            {
+                "name": "mask",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the requested permission mask for the inventory item"
+        },
+        "name": "llGetInventoryPermMask",
+        "type": "integer"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "item",
+                "type": "string"
+            },
+            {
+                "name": "mask",
+                "type": "integer"
+            },
+            {
+                "name": "value",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Sets the given permission mask to the new value on the inventory item (requires God Mode)"
+        },
+        "name": "llSetInventoryPermMask",
+        "status": "godmode"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "item",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns a key for the creator of the inventory item"
+        },
+        "name": "llGetInventoryCreator",
+        "type": "key"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "msg",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Says msg to owner only. (Owner must be in the same region.)"
+        },
+        "name": "llOwnerSay"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "simulator",
+                "type": "string"
+            },
+            {
+                "name": "data",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Requests data about simulator. When data is available the dataserver event will be raised."
+        },
+        "name": "llRequestSimulatorData",
+        "type": "key",
+        "version": "1.6.0",
+        "delay": "1"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "mouselook",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "If mouselook is TRUE, any avatar that sits upon the prim will be forced into mouselook mode"
+        },
+        "name": "llForceMouselook",
+        "version": "1.6.0"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "id",
+                "type": "key"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the mass of the avatar or object in the region"
+        },
+        "name": "llGetObjectMass",
+        "type": "float",
+        "version": "1.6.0"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "dest",
+                "type": "list"
+            },
+            {
+                "name": "src",
+                "type": "list"
+            },
+            {
+                "name": "start",
+                "type": "integer"
+            },
+            {
+                "name": "end",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns a list that is dest with start through end removed and src inserted at start"
+        },
+        "name": "llListReplaceList",
+        "type": "list",
+        "version": "1.6.0"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "avatar",
+                "type": "key"
+            },
+            {
+                "name": "message",
+                "type": "string"
+            },
+            {
+                "name": "url",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Shows a dialog to avatar offering to load the web page at url with a message.\nIf user clicks yes, launches the page in their web browser."
+        },
+        "name": "llLoadURL",
+        "version": "1.6.0",
+        "delay": "0.1"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "command",
+                "type": "list"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Sends a list of commands, some with arguments, to a parcel to control the playback of movies and other media"
+        },
+        "name": "llParcelMediaCommandList",
+        "delay": "2"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "query",
+                "type": "list"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns a list containing results of the sent query"
+        },
+        "name": "llParcelMediaQuery",
+        "type": "list",
+        "delay": "2"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "a",
+                "type": "integer"
+            },
+            {
+                "name": "b",
+                "type": "integer"
+            },
+            {
+                "name": "c",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns a raised to the b power, mod c. ( (a**b)%c )\nb is capped at 0xFFFF (16 bits)."
+        },
+        "name": "llModPow",
+        "type": "integer",
+        "delay": "1"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "name",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the type of the inventory item name"
+        },
+        "name": "llGetInventoryType",
+        "type": "integer",
+        "version": "1.7.0"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "price",
+                "type": "integer"
+            },
+            {
+                "name": "quick_pay_buttons",
+                "type": "list"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Sets the default amount on the dialog that appears when someone chooses to pay this prim"
+        },
+        "name": "llSetPayPrice",
+        "version": "1.7.0"
+    },
+    {
+        "description":
+        {
+            "en_US": "Returns the current camera position for the agent the task has permissions for"
+        },
+        "name": "llGetCameraPos",
+        "type": "vector"
+    },
+    {
+        "description":
+        {
+            "en_US": "Returns the current camera orientation for the agent the task has permissions for"
+        },
+        "name": "llGetCameraRot",
+        "type": "rotation"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "url",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Updates the URL for the web page shown on the sides of the object"
+        },
+        "name": "llSetPrimURL",
+        "status": "unimplemented",
+        "delay": "20"
+    },
+    {
+        "description":
+        {
+            "en_US": "Reloads the web page shown on the sides of the object"
+        },
+        "name": "llRefreshPrimURL",
+        "status": "unimplemented",
+        "delay": "20"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "url",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns an escaped/encoded version of url, replacing spaces with %20 etc."
+        },
+        "name": "llEscapeURL",
+        "type": "string",
+        "version": "1.7.0"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "url",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns an unescaped/ unencoded version of url, replacing %20 with spaces etc."
+        },
+        "name": "llUnescapeURL",
+        "type": "string",
+        "version": "1.7.0"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "simname",
+                "type": "string"
+            },
+            {
+                "name": "pos",
+                "type": "vector"
+            },
+            {
+                "name": "look_at",
+                "type": "vector"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Opens the World Map centered on the region simname with pos highlighted. (NOTE: look_at currently does nothing.)\nOnly works for scripts attached to avatar, or during touch events."
+        },
+        "name": "llMapDestination",
+        "version": "1.8.0",
+        "delay": "1"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "avatar",
+                "type": "key"
+            },
+            {
+                "name": "hours",
+                "type": "float"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Adds avatar to the land ban list for hours, or indefinitely if hours is 0"
+        },
+        "name": "llAddToLandBanList",
+        "version": "1.8.0",
+        "delay": "0.1"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "avatar",
+                "type": "key"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Removes avatar from the land pass list"
+        },
+        "name": "llRemoveFromLandPassList",
+        "version": "1.8.0",
+        "delay": "0.1"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "avatar",
+                "type": "key"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Removes avatar from the land ban list"
+        },
+        "name": "llRemoveFromLandBanList",
+        "version": "1.8.0",
+        "delay": "0.1"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "rules",
+                "type": "list"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Sets multiple camera parameters at once.\nList format is [ rule1, data1, rule2, data2 … rulen, datan ]."
+        },
+        "name": "llSetCameraParams",
+        "version": "1.9.0(15)"
+    },
+    {
+        "description":
+        {
+            "en_US": "Resets all camera parameters to default values and turns off scripted camera control"
+        },
+        "name": "llClearCameraParams",
+        "version": "1.9.0(15)"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "operation",
+                "type": "integer"
+            },
+            {
+                "name": "src",
+                "type": "list"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Performs statistical aggregate functions on list src using LIST_STAT_* operations"
+        },
+        "name": "llListStatistics",
+        "type": "float",
+        "version": "1.9.0(15)"
+    },
+    {
+        "description":
+        {
+            "en_US": "Returns the number of seconds elapsed since 00:00 hours, Jan 1, 1970 UTC from the system clock"
+        },
+        "name": "llGetUnixTime",
+        "type": "integer",
+        "version": "1.9.0(15)"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "pos",
+                "type": "vector"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns a mask of the parcel flags (PARCEL_FLAG_*) for the parcel that includes the point pos"
+        },
+        "name": "llGetParcelFlags",
+        "type": "integer",
+        "version": "1.9.1(9)"
+    },
+    {
+        "description":
+        {
+            "en_US": "Returns the region flags (REGION_FLAG_*) for the region the object is in"
+        },
+        "name": "llGetRegionFlags",
+        "type": "integer",
+        "version": "1.9.0(15)"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "str1",
+                "type": "string"
+            },
+            {
+                "name": "str2",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "DEPRECATED! Please use llXorBase64 instead.\nIncorrectly performs an exclusive or on two Base64 strings and returns a Base64 string.\nstr2 repeats if it is shorter than str1. Retained for backwards compatability."
+        },
+        "name": "llXorBase64StringsCorrect",
+        "type": "string",
+        "version": "1.9.0(21)",
+        "status": "deprecated"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "url",
+                "type": "string"
+            },
+            {
+                "name": "parameters",
+                "type": "list"
+            },
+            {
+                "name": "body",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Sends an HTTP request to the specified url with the body of the request and parameters"
+        },
+        "name": "llHTTPRequest",
+        "type": "key",
+        "version": "1.9.1(9)"
+    },
+    {
+        "description":
+        {
+            "en_US": "Removes all Residents from the land ban list"
+        },
+        "name": "llResetLandBanList",
+        "delay": "0.1"
+    },
+    {
+        "description":
+        {
+            "en_US": "Removes all Residents from the land access/pass list"
+        },
+        "name": "llResetLandPassList",
+        "delay": "0.1"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "object_id",
+                "type": "key"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the total number of prims for an object in the region"
+        },
+        "name": "llGetObjectPrimCount",
+        "type": "integer",
+        "version": "1.13.0(8)"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "pos",
+                "type": "vector"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns a list of all Residents who own objects on the parcel at pos and with individual prim counts.\nRequires owner-like permissions for the parcel."
+        },
+        "name": "llGetParcelPrimOwners",
+        "type": "list",
+        "version": "1.13.0(8)",
+        "delay": "2.0"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "pos",
+                "type": "vector"
+            },
+            {
+                "name": "category",
+                "type": "integer"
+            },
+            {
+                "name": "sim_wide",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the number of prims on the parcel at pos of the given category.\nCategories: PARCEL_COUNT_TOTAL, _OWNER, _GROUP, _OTHER, _SELECTED, _TEMP."
+        },
+        "name": "llGetParcelPrimCount",
+        "type": "integer",
+        "version": "1.13.0(8)"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "pos",
+                "type": "vector"
+            },
+            {
+                "name": "sim_wide",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the maximum number of prims allowed on the parcel at pos"
+        },
+        "name": "llGetParcelMaxPrims",
+        "type": "integer",
+        "version": "1.13.0(8)"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "pos",
+                "type": "vector"
+            },
+            {
+                "name": "params",
+                "type": "list"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the parcel details specified in params for the parcel at pos.\nParams is one or more of: PARCEL_DETAILS_NAME, _DESC, _OWNER, _GROUP, _AREA, _ID, _SEE_AVATARS."
+        },
+        "name": "llGetParcelDetails",
+        "type": "list",
+        "version": "1.13.0(8)"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "linknumber",
+                "type": "integer"
+            },
+            {
+                "name": "rules",
+                "type": "list"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Sets primitive parameters for linknumber based on rules"
+        },
+        "name": "llSetLinkPrimitiveParams",
+        "version": "1.13.4(1)",
+        "delay": "0.2"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "linknumber",
+                "type": "integer"
+            },
+            {
+                "name": "texture",
+                "type": "string"
+            },
+            {
+                "name": "face",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Sets the texture of face for a task that exists in the link chain at linknumber"
+        },
+        "name": "llSetLinkTexture",
+        "version": "1.13.4(1)",
+        "delay": "0.2"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "src",
+                "type": "string"
+            },
+            {
+                "name": "trim_type",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Trims the leading and/or trailing white spaces from a string.\ntrim_type can be STRING_TRIM, STRING_TRIM_HEAD or STRING_TRIM_TAIL."
+        },
+        "name": "llStringTrim",
+        "type": "string",
+        "version": "1.15.0(2)"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "channel",
+                "type": "integer"
+            },
+            {
+                "name": "msg",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Broadcasts msg on channel (not 0) that can be heard anywhere in the region by a script listening on channel"
+        },
+        "name": "llRegionSay",
+        "version": "1.16.0(1)"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "id",
+                "type": "key"
+            },
+            {
+                "name": "params",
+                "type": "list"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the object details specified in params for the object with key id.\nParams are OBJECT_NAME, _DESC, _POS, _ROT, _VELOCITY, _OWNER, _GROUP, _CREATOR."
+        },
+        "name": "llGetObjectDetails",
+        "type": "list",
+        "version": "1.18.3(5)"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "action",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Sets the action performed when a prim is clicked upon"
+        },
+        "name": "llSetClickAction"
+    },
+    {
+        "description":
+        {
+            "en_US": "Returns the number of avatars in the region"
+        },
+        "name": "llGetRegionAgentCount",
+        "type": "integer"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "avatar",
+                "type": "key"
+            },
+            {
+                "name": "message",
+                "type": "string"
+            },
+            {
+                "name": "chat_channel",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Shows a window on the avatar's screen with the message.\nIt contains a text box for input, and if entered that text is chatted on chat_channel."
+        },
+        "name": "llTextBox",
+        "delay": "1"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "avatar",
+                "type": "key"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the language code of the preferred interface language of the avatar"
+        },
+        "name": "llGetAgentLanguage",
+        "type": "string"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "index",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the u and v coordinates in the first two components of a vector, for the texture coordinates where the prim was touched in a triggered touch event"
+        },
+        "name": "llDetectedTouchUV",
+        "type": "vector"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "index",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the index of the face where the avatar clicked in a triggered touch event"
+        },
+        "name": "llDetectedTouchFace",
+        "type": "integer"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "index",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the position where the object was touched in a triggered touch event"
+        },
+        "name": "llDetectedTouchPos",
+        "type": "vector"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "index",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the surface normal for a triggered touch event"
+        },
+        "name": "llDetectedTouchNormal",
+        "type": "vector"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "index",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the surface binormal for a triggered touch event"
+        },
+        "name": "llDetectedTouchBinormal",
+        "type": "vector"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "index",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the s and t coordinates in the first two components of a vector, for the surface coordinates where the prim was touched in a triggered touch event"
+        },
+        "name": "llDetectedTouchST",
+        "type": "vector"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "src",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns a string of 40 hex characters that is the SHA1 security Hash of src"
+        },
+        "name": "llSHA1String",
+        "type": "string"
+    },
+    {
+        "description":
+        {
+            "en_US": "Returns the number of available URLs for the current script"
+        },
+        "name": "llGetFreeURLs",
+        "type": "integer"
+    },
+    {
+        "description":
+        {
+            "en_US": "Requests one HTTP:// url for use by this object.\nAn http_request event is triggered with the results."
+        },
+        "name": "llRequestURL",
+        "type": "key"
+    },
+    {
+        "description":
+        {
+            "en_US": "Requests one HTTPS:// (SSL) url for use by this object.\nAn http_request event is triggered with the results."
+        },
+        "name": "llRequestSecureURL",
+        "type": "key"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "url",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Releases the specified URL, it will no longer be usable"
+        },
+        "name": "llReleaseURL"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "request_id",
+                "type": "key"
+            },
+            {
+                "name": "status",
+                "type": "integer"
+            },
+            {
+                "name": "body",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Responds to request_id with status and body"
+        },
+        "name": "llHTTPResponse"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "request_id",
+                "type": "key"
+            },
+            {
+                "name": "header",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the value for header for request_id"
+        },
+        "name": "llGetHTTPHeader",
+        "type": "string"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "face",
+                "type": "integer"
+            },
+            {
+                "name": "params",
+                "type": "list"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Sets the media params for a particular face on an object. If media is not already on this object, add it.\nList is a set of name/value pairs in no particular order. Params not specified are unchanged, or if new media is added then set to the default specified."
+        },
+        "name": "llSetPrimMediaParams",
+        "type": "integer",
+        "delay": "1.0"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "face",
+                "type": "integer"
+            },
+            {
+                "name": "params",
+                "type": "list"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the media params for a particular face on an object, given the desired list of names, in the order requested.\n(Returns an empty list if no media exists on the face.)"
+        },
+        "name": "llGetPrimMediaParams",
+        "type": "list",
+        "delay": "1.0"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "face",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Clears (deletes) the media and all params from the given face"
+        },
+        "name": "llClearPrimMedia",
+        "type": "integer",
+        "delay": "1.0"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "linknumber",
+                "type": "integer"
+            },
+            {
+                "name": "rules",
+                "type": "list"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Set primitive parameters for linknumber based on rules"
+        },
+        "name": "llSetLinkPrimitiveParamsFast"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "linknumber",
+                "type": "integer"
+            },
+            {
+                "name": "rules",
+                "type": "list"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Get primitive parameters for linknumber based on rules"
+        },
+        "name": "llGetLinkPrimitiveParams",
+        "type": "list"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "linknumber",
+                "type": "integer"
+            },
+            {
+                "name": "rules",
+                "type": "list"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Creates a particle system based on rules. Empty list removes particle system from object.\nList format is [ rule1, data1, rule2, data2 … rulen, datan ]."
+        },
+        "name": "llLinkParticleSystem"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "link",
+                "type": "integer"
+            },
+            {
+                "name": "mode",
+                "type": "integer"
+            },
+            {
+                "name": "face",
+                "type": "integer"
+            },
+            {
+                "name": "sizex",
+                "type": "integer"
+            },
+            {
+                "name": "sizey",
+                "type": "integer"
+            },
+            {
+                "name": "start",
+                "type": "float"
+            },
+            {
+                "name": "length",
+                "type": "float"
+            },
+            {
+                "name": "rate",
+                "type": "float"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Animate the texture on the specified prim's face/faces"
+        },
+        "name": "llSetLinkTextureAnim"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "link",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the number of sides of the specified linked prim"
+        },
+        "name": "llGetLinkNumberOfSides",
+        "type": "integer"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "id",
+                "type": "key"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the single-word username of an avatar, iff the avatar is in the current region, otherwise the empty string"
+        },
+        "name": "llGetUsername",
+        "type": "string"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "id",
+                "type": "key"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Requests single-word username of an avatar. When data is available the dataserver event will be raised."
+        },
+        "name": "llRequestUsername",
+        "type": "key"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "id",
+                "type": "key"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the name of an avatar, iff the avatar is in the current simulator, and the name has been cached, otherwise the same as llGetUsername. Use llRequestDisplayName if you absolutely must have the display name."
+        },
+        "name": "llGetDisplayName",
+        "type": "string"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "id",
+                "type": "key"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Requests name of an avatar. When data is available the dataserver event will be raised."
+        },
+        "name": "llRequestDisplayName",
+        "type": "key"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "name",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns a string with the requested data about the region"
+        },
+        "name": "llGetEnv",
+        "type": "string"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "target",
+                "type": "key"
+            },
+            {
+                "name": "channel",
+                "type": "integer"
+            },
+            {
+                "name": "msg",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Sends msg on channel (not DEBUG_CHANNEL) directly to prim or avatar target anywhere within the region"
+        },
+        "name": "llRegionSayTo"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "limit",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Request limit bytes to be reserved for this script.\nReturns a success/failure flag (STATUS_OK when sucessful, another of the STATUS_* flags on failure) for whether the memory limit was set.\nOnly relevant for Mono-compiled scripts."
+        },
+        "name": "llSetMemoryLimit",
+        "type": "integer"
+    },
+    {
+        "description":
+        {
+            "en_US": "Get the maximum memory a script can use.\nReturns the integer amount of memory the script can use in bytes."
+        },
+        "name": "llGetMemoryLimit",
+        "type": "integer"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "link",
+                "type": "integer"
+            },
+            {
+                "name": "face",
+                "type": "integer"
+            },
+            {
+                "name": "params",
+                "type": "list"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Set the media params for a particular face on linked prim. List is a set of name/value pairs (in no particular order). If media is not already on this object, add it. Params not specified are unchanged, or if new media is added set to the default specified."
+        },
+        "name": "llSetLinkMedia",
+        "type": "integer"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "link",
+                "type": "integer"
+            },
+            {
+                "name": "face",
+                "type": "integer"
+            },
+            {
+                "name": "params",
+                "type": "list"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Get the media params for a particular face on linked prim, given the desired list of names. Returns a list of values in the order requested. Returns an empty list if no media exists on the face."
+        },
+        "name": "llGetLinkMedia",
+        "type": "list"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "link",
+                "type": "integer"
+            },
+            {
+                "name": "face",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Clears (deletes) the media and all params from the given face on linked prim"
+        },
+        "name": "llClearLinkMedia",
+        "type": "integer"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "link",
+                "type": "integer"
+            },
+            {
+                "name": "eye",
+                "type": "vector"
+            },
+            {
+                "name": "at",
+                "type": "vector"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Sets the camera eye offset, and the offset that camera is looking at, for avatars that sit on the linked prim.\nThe two vector parameters are offsets relative to the object's center and expressed in local coordinates."
+        },
+        "name": "llSetLinkCamera"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "request_id",
+                "type": "key"
+            },
+            {
+                "name": "content_type",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Set the Internet media type of an LSL HTTP server response.\ncontent_type may be one of CONTENT_TYPE_TEXT (default) \"text/plain\", or CONTENT_TYPE_HTML \"text/html\", only valid for embedded browsers on content owned by the person viewing. Falls back to \"text/plain\" otherwise."
+        },
+        "name": "llSetContentType"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "link",
+                "type": "integer"
+            },
+            {
+                "name": "offset",
+                "type": "vector"
+            },
+            {
+                "name": "rot",
+                "type": "rotation"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Set the sit location for this object (if offset == <0,0,0> clear it)"
+        },
+        "name": "llLinkSitTarget"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "link",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "If an avatar is sitting on the sit target, return the avatar's key, NULL_KEY otherwise"
+        },
+        "name": "llAvatarOnLinkSitTarget",
+        "type": "key"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "velocity",
+                "type": "vector"
+            },
+            {
+                "name": "local",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Sets an objects velocity, in local coords if local == TRUE (if the script is physical)"
+        },
+        "name": "llSetVelocity"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "start",
+                "type": "vector"
+            },
+            {
+                "name": "end",
+                "type": "vector"
+            },
+            {
+                "name": "params",
+                "type": "list"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Casts a ray into the physics world from 'start' to 'end' and returns data according to details in params"
+        },
+        "name": "llCastRay",
+        "type": "list"
+    },
+    {
+        "description":
+        {
+            "en_US": "Returns the mass of the linkset in kilograms"
+        },
+        "name": "llGetMassMKS",
+        "type": "float"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "flags",
+                "type": "integer"
+            },
+            {
+                "name": "gravity_multiplier",
+                "type": "float"
+            },
+            {
+                "name": "restitution",
+                "type": "float"
+            },
+            {
+                "name": "friction",
+                "type": "float"
+            },
+            {
+                "name": "density",
+                "type": "float"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Sets the requested attributes of the root object's physics material"
+        },
+        "name": "llSetPhysicsMaterial"
+    },
+    {
+        "description":
+        {
+            "en_US": "Returns the gravity multiplier, restitution, friction, and density of the linkset as a list in that order"
+        },
+        "name": "llGetPhysicsMaterial",
+        "type": "list"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "action",
+                "type": "integer"
+            },
+            {
+                "name": "id",
+                "type": "key"
+            }
+        ],
+        "description":
+        {
+            "en_US": "To add or remove agents from the estate's agent access or ban lists or groups from the estate's group access list.\nOnly works for objects owned by the Estate Owner or an Estate Manager.\nReturns TRUE if successful and FALSE if throttled, on invalid action, on invalid or null id, or if object owner is not allowed to manage the estate.\n'action' can be any of: ESTATE_ACCESS_ALLOWED_[AGENT/GROUP]_[ADD/REMOVE] or ESTATE_ACCESS_BANNED_AGENT_[ADD/REMOVE]."
+        },
+        "name": "llManageEstateAccess",
+        "type": "integer"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "keyframes",
+                "type": "list"
+            },
+            {
+                "name": "options",
+                "type": "list"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Requests that a nonphysical object be keyframed according to keyframe list"
+        },
+        "name": "llSetKeyframedMotion"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "destination",
+                "type": "key"
+            },
+            {
+                "name": "amount",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Transfer amount of linden dollars (L$) from script owner to destination. Returns a key to a corresponding transaction_result event for the success of the transfer."
+        },
+        "name": "llTransferLindenDollars",
+        "type": "key"
+    },
+    {
+        "description":
+        {
+            "en_US": "Gets the streaming audio URL for the parcel of land on which the object is located"
+        },
+        "name": "llGetParcelMusicURL",
+        "type": "string"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "flags",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Enabled or disables script profiling options. Currently only supports PROFILE_SCRIPT_MEMORY (mono only) and PROFILE_NONE.\nMAY SIGNIFICANTLY REDUCE SCRIPT PERFORMANCE!"
+        },
+        "name": "llScriptProfiler"
+    },
+    {
+        "description":
+        {
+            "en_US": "Returns the maximum used memory for the current script. Only valid after using PROFILE_SCRIPT_MEMORY. Non-mono scripts always use 16k."
+        },
+        "name": "llGetSPMaxMemory",
+        "type": "integer"
+    },
+    {
+        "description":
+        {
+            "en_US": "Returns the current used memory for the current script. Non-mono scripts always use 16k."
+        },
+        "name": "llGetUsedMemory",
+        "type": "integer"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "angular_velocity",
+                "type": "vector"
+            },
+            {
+                "name": "local",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Sets an objects angular velocity, in local coords if local == TRUE (if the script is physical)"
+        },
+        "name": "llSetAngularVelocity"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "pos",
+                "type": "vector"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Sets the position anywhere within the region (if the object isn't physical)"
+        },
+        "name": "llSetRegionPos",
+        "type": "integer",
+        "energy": "0"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "scope",
+                "type": "integer"
+            },
+            {
+                "name": "options",
+                "type": "list"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Requests a list of agents currently in the region, limited by the scope parameter"
+        },
+        "name": "llGetAgentList",
+        "type": "list",
+        "energy": "0"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "attach_point",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Attaches the object to the avatar who has granted permission to the script, with the exception that the object will not create new inventory for the user, and will disappear on detach or disconnect"
+        },
+        "name": "llAttachToAvatarTemp",
+        "energy": "0"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "avatar",
+                "type": "key"
+            },
+            {
+                "name": "landmark",
+                "type": "string"
+            },
+            {
+                "name": "position",
+                "type": "vector"
+            },
+            {
+                "name": "look_at",
+                "type": "vector"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Requests a teleport of avatar to a landmark stored in the object's inventory. If no landmark is provided (an empty string), the avatar is teleported to the location position in the current region. In either case, the avatar is turned to face the position given by look_at in local coordinates."
+        },
+        "name": "llTeleportAgent",
+        "energy": "0"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "agent",
+                "type": "key"
+            },
+            {
+                "name": "global_coordinates",
+                "type": "vector"
+            },
+            {
+                "name": "region_coordinates",
+                "type": "vector"
+            },
+            {
+                "name": "look_at",
+                "type": "vector"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Teleports an agent to set of a region_coordinates within a region at the specified global_coordinates. The agent lands facing the position defined by look_at local coordinates.\nA region's global coordinates can be retrieved using llRequestSimulatorData(region_name, DATA_SIM_POS)."
+        },
+        "name": "llTeleportAgentGlobalCoords",
+        "energy": "0"
+    },
+    {
+        "description":
+        {
+            "en_US": "Return a unique generated key"
+        },
+        "name": "llGenerateKey",
+        "type": "key",
+        "energy": "0"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "point",
+                "type": "vector"
+            },
+            {
+                "name": "options",
+                "type": "list"
+            }
+        ],
+        "description":
+        {
+            "en_US": "For AI Character: Navigate to destination"
+        },
+        "name": "llNavigateTo",
+        "energy": "0"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "options",
+                "type": "list"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Convert linkset to AI Character which can navigate the world"
+        },
+        "name": "llCreateCharacter",
+        "energy": "0"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "target",
+                "type": "key"
+            },
+            {
+                "name": "options",
+                "type": "list"
+            }
+        ],
+        "description":
+        {
+            "en_US": "For AI Character: Chase after a target"
+        },
+        "name": "llPursue",
+        "energy": "0"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "center",
+                "type": "vector"
+            },
+            {
+                "name": "radius",
+                "type": "vector"
+            },
+            {
+                "name": "options",
+                "type": "list"
+            }
+        ],
+        "description":
+        {
+            "en_US": "For AI Character: Wander within a specified volume"
+        },
+        "name": "llWanderWithin",
+        "energy": "0"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "source",
+                "type": "vector"
+            },
+            {
+                "name": "radius",
+                "type": "float"
+            },
+            {
+                "name": "options",
+                "type": "list"
+            }
+        ],
+        "description":
+        {
+            "en_US": "For AI Character: Flee from a point"
+        },
+        "name": "llFleeFrom",
+        "energy": "0"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "points",
+                "type": "list"
+            },
+            {
+                "name": "options",
+                "type": "list"
+            }
+        ],
+        "description":
+        {
+            "en_US": "For AI Character: Patrol a list of points"
+        },
+        "name": "llPatrolPoints",
+        "energy": "0"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "cmd",
+                "type": "integer"
+            },
+            {
+                "name": "options",
+                "type": "list"
+            }
+        ],
+        "description":
+        {
+            "en_US": "For AI Character: Execute a character command"
+        },
+        "name": "llExecCharacterCmd",
+        "energy": "0"
+    },
+    {
+        "description":
+        {
+            "en_US": "Convert linkset from AI Character to Physics object"
+        },
+        "name": "llDeleteCharacter",
+        "energy": "0"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "options",
+                "type": "list"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Change the AI Character's settings"
+        },
+        "name": "llUpdateCharacter",
+        "energy": "0"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "target",
+                "type": "key"
+            },
+            {
+                "name": "options",
+                "type": "list"
+            }
+        ],
+        "description":
+        {
+            "en_US": "For AI Character: Evade a specified target"
+        },
+        "name": "llEvade",
+        "energy": "0"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "point",
+                "type": "vector"
+            },
+            {
+                "name": "options",
+                "type": "list"
+            }
+        ],
+        "description":
+        {
+            "en_US": "For AI Character: Get the closest navigable point to the point provided"
+        },
+        "name": "llGetClosestNavPoint",
+        "type": "list",
+        "energy": "0"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "start",
+                "type": "vector"
+            },
+            {
+                "name": "end",
+                "type": "vector"
+            },
+            {
+                "name": "radius",
+                "type": "float"
+            },
+            {
+                "name": "params",
+                "type": "list"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns a list of position vectors indicating pathfinding waypoints between positions at start and end, for a character of a given radius"
+        },
+        "name": "llGetStaticPath",
+        "type": "list",
+        "energy": "0"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "stat_type",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the value of a particular simulator statistic"
+        },
+        "name": "llGetSimStats",
+        "type": "float",
+        "energy": "0"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "anim_state",
+                "type": "string"
+            },
+            {
+                "name": "anim",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Set the animation that will play for the given animation state. Requires PERMISSION_OVERRIDE_ANIMATIONS."
+        },
+        "name": "llSetAnimationOverride"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "anim_state",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Get the name of the animation currently set for the given animation state. Requires either PERMISSION_OVERRIDE_ANIMATIONS or PERMISSION_TRIGGER_ANIMATION."
+        },
+        "name": "llGetAnimationOverride",
+        "type": "string"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "anim_state",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Resets the animation for the given animation state to the default. The special value \"ALL\" will reset the animations for all states. Requires PERMISSION_OVERRIDE_ANIMATIONS."
+        },
+        "name": "llResetAnimationOverride"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "json",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Converts the top level of the json string to a list"
+        },
+        "name": "llJson2List",
+        "type": "list"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "type",
+                "type": "string"
+            },
+            {
+                "name": "values",
+                "type": "list"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Converts either a strided list of key:value pairs to a JSON_OBJECT or a list of values to a JSON_ARRAY. type must be either JSON_OBJECT or JSON_ARRAY."
+        },
+        "name": "llList2Json",
+        "type": "string"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "json",
+                "type": "string"
+            },
+            {
+                "name": "specifiers",
+                "type": "list"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Gets the value indicated by specifiers from the json string"
+        },
+        "name": "llJsonGetValue",
+        "type": "string"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "json",
+                "type": "string"
+            },
+            {
+                "name": "specifiers",
+                "type": "list"
+            },
+            {
+                "name": "value",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns a new json string that is the json given with the value indicated by specifiers set to value"
+        },
+        "name": "llJsonSetValue",
+        "type": "string"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "json",
+                "type": "string"
+            },
+            {
+                "name": "specifiers",
+                "type": "list"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns the type constant for the value in json indicated by specifiers"
+        },
+        "name": "llJsonValueType",
+        "type": "string"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "objects",
+                "type": "list"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Return objects using their UUIDs.\nRequires the PERMISSION_RETURN_OBJECTS permission and that the script owner owns the parcel the returned objects are in, or is an estate manager or region owner."
+        },
+        "name": "llReturnObjectsByID",
+        "type": "integer"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "owner",
+                "type": "key"
+            },
+            {
+                "name": "scope",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Return objects based upon their owner and a scope of parcel, parcel owner, or region.\nRequires the PERMISSION_RETURN_OBJECTS permission and that the script owner owns the parcel the returned objects are in, or is an estate manager or region owner."
+        },
+        "name": "llReturnObjectsByOwner",
+        "type": "integer"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "str1",
+                "type": "string"
+            },
+            {
+                "name": "str2",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Performs an exclusive or on two Base64 strings and returns a Base64 string.\nstr2 repeats if it is shorter than str1."
+        },
+        "name": "llXorBase64",
+        "type": "string"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "scaling_factor",
+                "type": "float"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Attempts to resize the entire object by ScalingFactor, maintaining the size-position ratios of the prims.\n\nResizing is subject to prim scale limits and linkability limits. This function can not resize the object if the linkset is physical, a pathfinding character, in a keyframed motion, or if resizing would cause the parcel to overflow.\nReturns a boolean (an integer) TRUE if it succeeds, FALSE if it fails."
+        },
+        "name": "llScaleByFactor",
+        "type": "integer"
+    },
+    {
+        "description":
+        {
+            "en_US": "Returns the smallest multiplicative uniform scale factor that can be successfully applied (via llScaleByFactor()) to the object without violating prim size or linkability rules."
+        },
+        "name": "llGetMinScaleFactor",
+        "type": "float"
+    },
+    {
+        "description":
+        {
+            "en_US": "Returns the largest multiplicative uniform scale factor that can be successfully applied (via llScaleByFactor()) to the object without violating prim size or linkability rules."
+        },
+        "name": "llGetMaxScaleFactor",
+        "type": "float"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "agent",
+                "type": "key"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns TRUE if the agent is in the Experience and the Experience can run in the current location."
+        },
+        "name": "llAgentInExperience",
+        "type": "integer",
+        "version": "14.07.18.292162"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "experience_id",
+                "type": "key"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns a list with the following Experience properties: [Experience Name, Owner ID, Group ID, Experience ID, State, State Message]. State is an integer corresponding to one of the constants XP_ERROR_… and State Message is the string returned by llGetExperienceErrorMessage for that integer."
+        },
+        "name": "llGetExperienceDetails",
+        "type": "list",
+        "version": "14.07.18.292162"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "agent",
+                "type": "key"
+            },
+            {
+                "name": "name",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Ask the agent for permission to participate in an experience. This request is similar to llRequestPermissions with the following permissions: PERMISSION_TAKE_CONTROLS, PERMISSION_TRIGGER_ANIMATION, PERMISSION_ATTACH, PERMISSION_TRACK_CAMERA, PERMISSION_CONTROL_CAMERA and PERMISSION_TELEPORT. However, unlike llRequestPermissions the decision to allow or block the request is persistent and applies to all scripts using the experience grid wide. Subsequent calls to llRequestExperiencePermissions from scripts in the experience will receive the same response automatically with no user interaction. One of experience_permissions or experience_permissions_denied will be generated in response to this call. Outstanding permission requests will be lost if the script is derezzed, moved to another region or reset."
+        },
+        "name": "llRequestExperiencePermissions",
+        "version": "14.07.18.292162"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "k",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Starts an asychronous transaction to retrieve the value associated with the key given. Will fail with XP_ERROR_KEY_NOT_FOUND if the key does not exist. The dataserver callback will be executed with the key returned from this call and a string describing the result. The result is a two element commma-delimited list. The first item is an integer specifying if the transaction succeeded (1) or not (0). In the failure case, the second item will be an integer corresponding to one of the XP_ERROR_… constants. In the success case the second item will be the value associated with the key."
+        },
+        "name": "llReadKeyValue",
+        "type": "key",
+        "version": "14.07.18.292162"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "k",
+                "type": "string"
+            },
+            {
+                "name": "v",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Starts an asychronous transaction to create a key-value pair. Will fail with XP_ERROR_STORAGE_EXCEPTION if the key already exists. The dataserver callback will be executed with the key returned from this call and a string describing the result. The result is a two element commma-delimited list. The first item is an integer specifying if the transaction succeeded (1) or not (0). In the failure case, the second item will be an integer corresponding to one of the XP_ERROR_… constants. In the success case the second item will be the value passed to the function."
+        },
+        "name": "llCreateKeyValue",
+        "type": "key",
+        "version": "14.07.18.292162"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "k",
+                "type": "string"
+            },
+            {
+                "name": "v",
+                "type": "string"
+            },
+            {
+                "name": "checked",
+                "type": "integer"
+            },
+            {
+                "name": "original_value",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Starts an asychronous transaction to update the value associated with the key given. The dataserver callback will be executed with the key returned from this call and a string describing the result. The result is a two element commma-delimited list. The first item is an integer specifying if the transaction succeeded (1) or not (0). In the failure case, the second item will be an integer corresponding to one of the XP_ERROR_… constants. In the success case the second item will be the value associated with the key. If Checked is 1 the existing value in the data store must match the OriginalValue passed or XP_ERROR_RETRY_UPDATE will be returned. If Checked is 0 the key will be created if necessary."
+        },
+        "name": "llUpdateKeyValue",
+        "type": "key",
+        "version": "14.07.18.292162"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "k",
+                "type": "string"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Starts an asychronous transaction to delete a key-value pair. The dataserver callback will be executed with the key returned from this call and a string describing the result. The result is a two element commma-delimited list. The first item is an integer specifying if the transaction succeeded (1) or not (0). In the failure case, the second item will be an integer corresponding to one of the XP_ERROR_… constants. In the success case the second item will be the value associated with the key."
+        },
+        "name": "llDeleteKeyValue",
+        "type": "key",
+        "version": "14.07.18.292162"
+    },
+    {
+        "description":
+        {
+            "en_US": "Starts an asychronous transaction the request the used and total amount of data allocated for the Experience. The dataserver callback will be executed with the key returned from this call and a string describing the result. The result is commma-delimited list. The first item is an integer specifying if the transaction succeeded (1) or not (0). In the failure case, the second item will be an integer corresponding to one of the XP_ERROR_… constants. In the success case the second item will be the the amount in use and the third item will be the total available."
+        },
+        "name": "llDataSizeKeyValue",
+        "type": "key",
+        "version": "14.07.18.292162"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "start",
+                "type": "integer"
+            },
+            {
+                "name": "count",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Starts an asychronous transaction the request a number of keys from the data store. The dataserver callback will be executed with the key returned from this call and a string describing the result. The result is commma-delimited list. The first item is an integer specifying if the transaction succeeded (1) or not (0). In the failure case, the second item will be an integer corresponding to one of the XP_ERROR_… constants. The error XP_ERROR_KEY_NOT_FOUND is returned if First is greater than or equal to the number of keys in the data store. In the success case the subsequent items will be the keys requested. The number of keys returned may be less than requested if the return value is too large or if there is not enough keys remaining. The order keys are returned is not guaranteed but is stable between subsequent calls as long as no keys are added or removed. Because the keys are returned in a comma-delimited list it is not recommended to use commas in key names if this function is used."
+        },
+        "name": "llKeysKeyValue",
+        "type": "key",
+        "version": "14.07.18.292162"
+    },
+    {
+        "description":
+        {
+            "en_US": "Starts an asychronous transaction the request the number of keys in the data store. The dataserver callback will be executed with the key returned from this call and a string describing the result. The result is commma-delimited list. The first item is an integer specifying if the transaction succeeded (1) or not (0). In the failure case, the second item will be an integer corresponding to one of the XP_ERROR_… constants. In the success case the second item will the the number of keys in the system."
+        },
+        "name": "llKeyCountKeyValue",
+        "type": "key",
+        "version": "14.07.18.292162"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "value",
+                "type": "integer"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns a string describing the error code passed or the string corresponding with XP_ERROR_UNKNOWN_ERROR if the value is not a valid Experience error code."
+        },
+        "name": "llGetExperienceErrorMessage",
+        "type": "string",
+        "version": "14.07.18.292162"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "agent",
+                "type": "key"
+            }
+        ],
+        "name": "llGetExperienceList",
+        "type": "list",
+        "version": "14.07.18.292162",
+        "status": "unimplemented"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "agent",
+                "type": "key"
+            }
+        ],
+        "name": "llClearExperiencePermissions",
+        "version": "14.07.18.292162",
+        "status": "unimplemented"
+    },
+    {
+        "params":
+        [
+            {
+                "name": "agent",
+                "type": "key"
+            }
+        ],
+        "description":
+        {
+            "en_US": "Returns a list of keys of all visible (not HUD) attachments on the avatar identified by the ID argument."
+        },
+        "name": "llGetAttachedList",
+        "type": "list",
+        "version": "15.09.14.305056"
+    }
+]

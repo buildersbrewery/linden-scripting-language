@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<style-scheme id="lsl_editor" _name="LSL Editor" version="1.0">
+    <style name="bracket-match"           foreground="#333333" background="#009999" bold="true"/>
+    <style name="bracket-mismatch"        foreground="#ffffff" background="#f2777a" bold="true"/>
+    <style name="def:comment"             foreground="#cd4d26"/>
+    <style name="def:constant"            foreground="#1a1a80"/>
+    <style name="def:doc-comment-element" foreground="#333333"                                  italic="true"/>
+    <style name="def:error"               foreground="#ffffff" background="#f2777a" bold="true"/>
+    <style name="def:function"            foreground="#0248e1" />
+    <style name="def:identifier"          foreground="#0000cd"/>
+    <style name="def:note"                foreground="#0000cd" background="#ffcc66" bold="true"/>
+    <style name="def:preprocessor"        foreground="#663366"/>
+    <style name="def:shebang"             foreground="#0000cd"/>
+    <style name="def:special-char"        foreground="#6a5acd"/>
+    <style name="def:statement"           foreground="#820124"                      bold="true"/>
+    <style name="def:string"              foreground="#003300" />
+    <style name="def:type"                foreground="#1a4d1a"                      bold="true"/>
+    <style name="def:underlined"                                                                italic="true" underline="true"/>
+    <style name="diff:added-line"         foreground="#00ff00"/>
+    <style name="diff:changed-line"                                                                                            use-style="def:preprocessor"/>
+    <style name="diff:diff-file"                                                                                               use-style="def:type"/>
+    <style name="diff:location"                                                                                                use-style="def:statement"/>
+    <style name="diff:removed-line"       foreground="#f2777a"/>
+    <style name="diff:special-case"                                                                                            use-style="def:constant"/>
+    <style name="search-match"                                 background="#ffcc66"/>
+    <style name="text"                    foreground="#333333" background="#c8d1cc"/>
+</style-scheme>

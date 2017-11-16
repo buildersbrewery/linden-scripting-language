@@ -1,0 +1,24 @@
+[
+    {
+        "name": "if",
+        "description":
+        {
+            "en_US": "if statement"
+        },
+        "snippets":
+        [
+            "default\n{\n\tstate_entry()\n\t{\n\t\tif (/* condition */)\n\t\t{\n\t\t\t// statements\n\t\t}\n\t\telse if (/* condition */)\n\t\t{\n\t\t\t// statements\n\t\t}\n\t\telse\n\t\t{\n\t\t\t// statements\n\t\t}\n\t}\n}"
+        ]
+    },
+    {
+        "name": "else",
+        "description":
+        {
+            "en_US": "else clause"
+        },
+        "snippets":
+        [
+            "default\n{\n\tstate_entry()\n\t{\n\t\tif (/* condition */)\n\t\t{\n\t\t\t// statements\n\t\t}\n\t\telse if (/* condition */)\n\t\t{\n\t\t\t// statements\n\t\t}\n\t\telse\n\t\t{\n\t\t\t// statements\n\t\t}\n\t}\n}"
+        ]
+    }
+]

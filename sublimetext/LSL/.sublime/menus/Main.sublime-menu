@@ -1,0 +1,44 @@
+[
+    {
+        "id": "preferences",
+        "children":
+        [
+            {
+                "id": "package-settings",
+                "children":
+                [
+                    {
+                        "caption": "LSL",
+                        "children":
+                        [
+                            {
+                                "command": "edit_settings",
+                                "args":
+                                {
+                                    "base_file": "${packages}/LSL/.sublime/settings/LSL.sublime-settings",
+                                    "default": "{\n\t$0\n}\n"
+                                },
+                                "caption": "Settings"
+                            },
+                            { "caption": "-" },
+                            {
+                                "command": "lsl_change_scheme",
+                                "caption": "Use 'LindenLab Viewer' color scheme.",
+                                "checkbox": false
+                            },
+                            {
+                                "command": "show_overlay",
+                                "caption": "Choose indentation style.",
+                                "args":
+                                {
+                                    "overlay": "command_palette",
+                                    "text": "LSL: Indentation Style: "
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

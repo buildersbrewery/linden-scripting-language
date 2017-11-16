@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[state ${1:user_defined}${LSL_WHITESPACE_BEFORE}{${LSL_WHITESPACE_INSIDE_FIRST}$0${LSL_WHITESPACE_INSIDE_LAST}}${LSL_WHITESPACE_AFTER}]]></content>
+    <tabTrigger>state user_defined</tabTrigger>
+    <scope>source.lsl - meta.class.state.body.lsl</scope>
+    <description>state declaration</description>
+</snippet>

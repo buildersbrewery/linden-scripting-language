@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+    <template>NewScript.lsl</template>
+    <recognition>
+        <extension casesensitive="yes">lsl</extension>
+        <!--searches for regex within the first 4 MB of the file -->
+        <regex>\b(default)\b</regex>
+    </recognition>
+</settings>

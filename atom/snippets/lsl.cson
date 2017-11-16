@@ -1,0 +1,1480 @@
+'.source.lsl':
+    'CAMERA_ACTIVE':
+        'prefix': 'CAMERA_ACTIVE'
+        'body': 'CAMERA_ACTIVE, ${1:integer isActive}, $0'
+    'CAMERA_BEHINDNESS_ANGLE':
+        'prefix': 'CAMERA_BEHINDNESS_ANGLE'
+        'body': 'CAMERA_BEHINDNESS_ANGLE, ${1:float degrees}, $0'
+    'CAMERA_BEHINDNESS_LAG':
+        'prefix': 'CAMERA_BEHINDNESS_LAG'
+        'body': 'CAMERA_BEHINDNESS_LAG, ${1:float seconds}, $0'
+    'CAMERA_DISTANCE':
+        'prefix': 'CAMERA_DISTANCE'
+        'body': 'CAMERA_DISTANCE, ${1:float meters}, $0'
+    'CAMERA_FOCUS':
+        'prefix': 'CAMERA_FOCUS'
+        'body': 'CAMERA_FOCUS, ${1:vector position}, $0'
+    'CAMERA_FOCUS_LAG':
+        'prefix': 'CAMERA_FOCUS_LAG'
+        'body': 'CAMERA_FOCUS_LAG, ${1:float seconds}, $0'
+    'CAMERA_FOCUS_LOCKED':
+        'prefix': 'CAMERA_FOCUS_LOCKED'
+        'body': 'CAMERA_FOCUS_LOCKED, ${1:integer isLocked}, $0'
+    'CAMERA_FOCUS_OFFSET':
+        'prefix': 'CAMERA_FOCUS_OFFSET'
+        'body': 'CAMERA_FOCUS_OFFSET, ${1:vector meters}, $0'
+    'CAMERA_FOCUS_THRESHOLD':
+        'prefix': 'CAMERA_FOCUS_THRESHOLD'
+        'body': 'CAMERA_FOCUS_THRESHOLD, ${1:float meters}, $0'
+    'CAMERA_PITCH':
+        'prefix': 'CAMERA_PITCH'
+        'body': 'CAMERA_PITCH, ${1:float degrees}, $0'
+    'CAMERA_POSITION':
+        'prefix': 'CAMERA_POSITION'
+        'body': 'CAMERA_POSITION, ${1:vector position}, $0'
+    'CAMERA_POSITION_LAG':
+        'prefix': 'CAMERA_POSITION_LAG'
+        'body': 'CAMERA_POSITION_LAG, ${1:float seconds}, $0'
+    'CAMERA_POSITION_LOCKED':
+        'prefix': 'CAMERA_POSITION_LOCKED'
+        'body': 'CAMERA_POSITION_LOCKED, ${1:integer isLocked}, $0'
+    'CAMERA_POSITION_THRESHOLD':
+        'prefix': 'CAMERA_POSITION_THRESHOLD'
+        'body': 'CAMERA_POSITION_THRESHOLD, ${1:float meters}, $0'
+    'CHARACTER_AVOIDANCE_MODE':
+        'prefix': 'CHARACTER_AVOIDANCE_MODE'
+        'body': 'CHARACTER_AVOIDANCE_MODE, ${1:integer flags}, $0'
+    'CHARACTER_DESIRED_SPEED':
+        'prefix': 'CHARACTER_DESIRED_SPEED'
+        'body': 'CHARACTER_DESIRED_SPEED, ${1:float speed}, $0'
+    'CHARACTER_DESIRED_TURN_SPEED':
+        'prefix': 'CHARACTER_DESIRED_TURN_SPEED'
+        'body': 'CHARACTER_DESIRED_TURN_SPEED, ${1:float speed}, $0'
+    'CHARACTER_LENGTH':
+        'prefix': 'CHARACTER_LENGTH'
+        'body': 'CHARACTER_LENGTH, ${1:float length}, $0'
+    'CHARACTER_MAX_TURN_RADIUS':
+        'prefix': 'CHARACTER_MAX_TURN_RADIUS'
+        'body': 'CHARACTER_MAX_TURN_RADIUS, ${1:float radius}, $0'
+    'CHARACTER_ORIENTATION':
+        'prefix': 'CHARACTER_ORIENTATION'
+        'body': 'CHARACTER_ORIENTATION, ${1:integer orientation}, $0'
+    'CHARACTER_RADIUS':
+        'prefix': 'CHARACTER_RADIUS'
+        'body': 'CHARACTER_RADIUS, ${1:float radius}, $0'
+    'CHARACTER_STAY_WITHIN_PARCEL':
+        'prefix': 'CHARACTER_STAY_WITHIN_PARCEL'
+        'body': 'CHARACTER_STAY_WITHIN_PARCEL, ${1: boolean stay}, $0'
+    'CHARACTER_TYPE':
+        'prefix': 'CHARACTER_TYPE'
+        'body': 'CHARACTER_TYPE, ${1:integer type}, $0'
+    'HTTP_BODY_MAXLENGTH':
+        'prefix': 'HTTP_BODY_MAXLENGTH'
+        'body': 'HTTP_BODY_MAXLENGTH, ${1:integer length}, $0'
+    'HTTP_CUSTOM_HEADER':
+        'prefix': 'HTTP_CUSTOM_HEADER'
+        'body': 'HTTP_CUSTOM_HEADER, ${1:string name}, ${2:string value}, $0'
+    'HTTP_METHOD':
+        'prefix': 'HTTP_METHOD'
+        'body': 'HTTP_METHOD, ${1:string method}, $0'
+    'HTTP_MIMETYPE':
+        'prefix': 'HTTP_MIMETYPE'
+        'body': 'HTTP_MIMETYPE, ${1:string mimeType}, $0'
+    'HTTP_PRAGMA_NO_CACHE':
+        'prefix': 'HTTP_PRAGMA_NO_CACHE'
+        'body': 'HTTP_PRAGMA_NO_CACHE, ${1:integer send_header}, $0'
+    'HTTP_VERBOSE_THROTTLE':
+        'prefix': 'HTTP_VERBOSE_THROTTLE'
+        'body': 'HTTP_VERBOSE_THROTTLE, ${1:integer noisy}, $0'
+    'HTTP_VERIFY_CERT':
+        'prefix': 'HTTP_VERIFY_CERT'
+        'body': 'HTTP_VERIFY_CERT, ${1:integer verify}, $0'
+    'PRIM_ALLOW_UNSIT':
+        'prefix': 'PRIM_ALLOW_UNSIT'
+        'body': 'PRIM_ALLOW_UNSIT, ${1:integer flag}, $0'
+    'PRIM_SCRIPTED_SIT_ONLY':
+        'prefix': 'PRIM_SCRIPTED_SIT_ONLY'
+        'body': 'PRIM_SCRIPTED_SIT_ONLY, ${1:integer flag}, $0'
+    'PRIM_SIT_TARGET':
+        'prefix': 'PRIM_SIT_TARGET'
+        'body': 'PRIM_SIT_TARGET, ${1:integer active}, ${2:vector offset}, ${3:rotation rot}, $0'
+    'RC_DATA_FLAGS':
+        'prefix': 'RC_DATA_FLAGS'
+        'body': 'RC_DATA_FLAGS, ${1:integer flags}, $0'
+    'RC_DETECT_PHANTOM':
+        'prefix': 'RC_DETECT_PHANTOM'
+        'body': 'RC_DETECT_PHANTOM, ${1:integer dectedPhantom}, $0'
+    'RC_MAX_HITS':
+        'prefix': 'RC_MAX_HITS'
+        'body': 'RC_MAX_HITS, ${1:integer maxHits}, $0'
+    'RC_REJECT_TYPES':
+        'prefix': 'RC_REJECT_TYPES'
+        'body': 'RC_REJECT_TYPES, ${1:integer filterMask}, $0'
+    'at_rot_target':
+        'prefix': 'at_rot_target'
+        'body': 'at_rot_target(integer ${1:handle}, rotation ${2:targetrot}, rotation ${3:ourrot})\n{\n\t$0\n}'
+    'at_target':
+        'prefix': 'at_target'
+        'body': 'at_target(integer ${1:tnum}, vector ${2:targetpos}, vector ${3:ourpos})\n{\n\t$0\n}'
+    'attach':
+        'prefix': 'attach'
+        'body': 'attach(key ${1:id})\n{\n\t$0\n}'
+    'changed':
+        'prefix': 'changed'
+        'body': 'changed(integer ${1:change})\n{\n\t$0\n}'
+    'collision':
+        'prefix': 'collision'
+        'body': 'collision(integer ${1:index})\n{\n\t$0\n}'
+    'collision_end':
+        'prefix': 'collision_end'
+        'body': 'collision_end(integer ${1:index})\n{\n\t$0\n}'
+    'collision_start':
+        'prefix': 'collision_start'
+        'body': 'collision_start(integer ${1:index})\n{\n\t$0\n}'
+    'control':
+        'prefix': 'control'
+        'body': 'control(key ${1:id}, integer ${2:level}, integer ${3:edge})\n{\n\t$0\n}'
+    'dataserver':
+        'prefix': 'dataserver'
+        'body': 'dataserver(key ${1:query_id}, string ${2:data})\n{\n\t$0\n}'
+    'do … while …':
+        'prefix': 'do'
+        'body': 'do\n{\n\t$0\n}\nwhile (${1:condition});'
+    'else …':
+        'prefix': 'else'
+        'body': 'else\n{\n\t$0\n}'
+    'email':
+        'prefix': 'email'
+        'body': 'email(string ${1:time}, string ${2:address}, string ${3:subject}, string ${4:message}, integer ${5:num_left})\n{\n\t$0\n}'
+    'experience_permissions':
+        'prefix': 'experience_permissions'
+        'body': 'experience_permissions(key ${1:agent_id})\n{\n\t$0\n}'
+    'experience_permissions_denied':
+        'prefix': 'experience_permissions_denied'
+        'body': 'experience_permissions_denied(key ${1:agent_id}, integer ${2:reason})\n{\n\t$0\n}'
+    'for …':
+        'prefix': 'for'
+        'body': 'for (${1:start}; ${3:condition}; ${3:step})\n{\n$0\n}'
+    'http_request':
+        'prefix': 'http_request'
+        'body': 'http_request(key ${1:request_id}, string ${2:method}, string ${3:body})\n{\n\t$0\n}'
+    'http_response':
+        'prefix': 'http_response'
+        'body': 'http_response(key ${1:request_id}, integer ${2:status}, list ${3:metadata}, string ${4:body})\n{\n\t$0\n}'
+    'if …':
+        'prefix': 'if'
+        'body': 'if (${1:condition})\n{\n$0\n}'
+    'jump':
+        'prefix': 'jump'
+        'body': 'jump ${1:label};'
+    'land_collision':
+        'prefix': 'land_collision'
+        'body': 'land_collision(vector ${1:pos})\n{\n\t$0\n}'
+    'land_collision_end':
+        'prefix': 'land_collision_end'
+        'body': 'land_collision_end(vector ${1:pos})\n{\n\t$0\n}'
+    'land_collision_start':
+        'prefix': 'land_collision_start'
+        'body': 'land_collision_start(vector ${1:pos})\n{\n\t$0\n}'
+    'link_message':
+        'prefix': 'link_message'
+        'body': 'link_message(integer ${1:sender_num}, integer ${2:num}, string ${3:str}, key ${4:id})\n{\n\t$0\n}'
+    'listen':
+        'prefix': 'listen'
+        'body': 'listen(integer ${1:channel}, string ${2:name}, key ${3:id}, string ${4:message})\n{\n\t$0\n}'
+    '(int) llAbs':
+        'prefix': 'llAbs'
+        'body': 'llAbs(${1:integer val})'
+    '(float) llAcos':
+        'prefix': 'llAcos'
+        'body': 'llAcos(${1:float val})'
+    '(void) llAddToLandBanList':
+        'prefix': 'llAddToLandBanList'
+        'body': 'llAddToLandBanList(${1:key avatar}, ${2:float hours});'
+    '(void) llAddToLandPassList':
+        'prefix': 'llAddToLandPassList'
+        'body': 'llAddToLandPassList(${1:key avatar}, ${2:float hours});'
+    '(void) llAdjustSoundVolume':
+        'prefix': 'llAdjustSoundVolume'
+        'body': 'llAdjustSoundVolume(${1:float volume});'
+    '(int) llAgentInExperience':
+        'prefix': 'llAgentInExperience'
+        'body': 'llAgentInExperience(${1:key agent})'
+    '(void) llAllowInventoryDrop':
+        'prefix': 'llAllowInventoryDrop'
+        'body': 'llAllowInventoryDrop(${1:integer add});'
+    '(float) llAngleBetween':
+        'prefix': 'llAngleBetween'
+        'body': 'llAngleBetween(${1:rotation a}, ${2:rotation b})'
+    '(void) llApplyImpulse':
+        'prefix': 'llApplyImpulse'
+        'body': 'llApplyImpulse(${1:vector force}, ${2:integer local});'
+    '(void) llApplyRotationalImpulse':
+        'prefix': 'llApplyRotationalImpulse'
+        'body': 'llApplyRotationalImpulse(${1:vector force}, ${2:integer local});'
+    '(float) llAsin':
+        'prefix': 'llAsin'
+        'body': 'llAsin(${1:float val})'
+    '(float) llAtan2':
+        'prefix': 'llAtan2'
+        'body': 'llAtan2(${1:float y}, ${2:float x})'
+    '(void) llAttachToAvatar':
+        'prefix': 'llAttachToAvatar'
+        'body': 'llAttachToAvatar(${1:integer attach_point});'
+    '(void) llAttachToAvatarTemp':
+        'prefix': 'llAttachToAvatarTemp'
+        'body': 'llAttachToAvatarTemp(${1:integer attach_point});'
+    '(key) llAvatarOnLinkSitTarget':
+        'prefix': 'llAvatarOnLinkSitTarget'
+        'body': 'llAvatarOnLinkSitTarget(${1:integer link})'
+    '(key) llAvatarOnSitTarget':
+        'prefix': 'llAvatarOnSitTarget'
+        'body': 'llAvatarOnSitTarget()'
+    '(rot) llAxes2Rot':
+        'prefix': 'llAxes2Rot'
+        'body': 'llAxes2Rot(${1:vector fwd}, ${2:vector left}, ${3:vector up})'
+    '(rot) llAxisAngle2Rot':
+        'prefix': 'llAxisAngle2Rot'
+        'body': 'llAxisAngle2Rot(${1:vector axis}, ${2:float angle})'
+    '(int) llBase64ToInteger':
+        'prefix': 'llBase64ToInteger'
+        'body': 'llBase64ToInteger(${1:string str})'
+    '(str) llBase64ToString':
+        'prefix': 'llBase64ToString'
+        'body': 'llBase64ToString(${1:string str})'
+    '(void) llBreakAllLinks':
+        'prefix': 'llBreakAllLinks'
+        'body': 'llBreakAllLinks();'
+    '(void) llBreakLink':
+        'prefix': 'llBreakLink'
+        'body': 'llBreakLink(${1:integer linknum});'
+    '(list) llCSV2List':
+        'prefix': 'llCSV2List'
+        'body': 'llCSV2List(${1:string src})'
+    '(list) llCastRay':
+        'prefix': 'llCastRay'
+        'body': 'llCastRay(${1:vector start}, ${2:vector end}, ${3:list params})'
+    '(int) llCeil':
+        'prefix': 'llCeil'
+        'body': 'llCeil(${1:float val})'
+    '(void) llClearCameraParams':
+        'prefix': 'llClearCameraParams'
+        'body': 'llClearCameraParams();'
+    '(int) llClearLinkMedia':
+        'prefix': 'llClearLinkMedia'
+        'body': 'llClearLinkMedia(${1:integer link}, ${2:integer face})'
+    '(int) llClearPrimMedia':
+        'prefix': 'llClearPrimMedia'
+        'body': 'llClearPrimMedia(${1:integer face})'
+    '(void) llCloseRemoteDataChannel':
+        'prefix': 'llCloseRemoteDataChannel'
+        'body': 'llCloseRemoteDataChannel(${1:key channel});'
+    '(void) llCollisionFilter':
+        'prefix': 'llCollisionFilter'
+        'body': 'llCollisionFilter(${1:string name}, ${2:key id}, ${3:integer accept});'
+    '(void) llCollisionSound':
+        'prefix': 'llCollisionSound'
+        'body': 'llCollisionSound(${1:string impact_sound}, ${2:float impact_volume});'
+    '(float) llCos':
+        'prefix': 'llCos'
+        'body': 'llCos(${1:float theta})'
+    '(void) llCreateCharacter':
+        'prefix': 'llCreateCharacter'
+        'body': 'llCreateCharacter(${1:list options});'
+    '(key) llCreateKeyValue':
+        'prefix': 'llCreateKeyValue'
+        'body': 'llCreateKeyValue(${1:string k}, ${2:string v})'
+    '(void) llCreateLink':
+        'prefix': 'llCreateLink'
+        'body': 'llCreateLink(${1:key target}, ${2:integer parent});'
+    '(key) llDataSizeKeyValue':
+        'prefix': 'llDataSizeKeyValue'
+        'body': 'llDataSizeKeyValue()'
+    '(void) llDeleteCharacter':
+        'prefix': 'llDeleteCharacter'
+        'body': 'llDeleteCharacter();'
+    '(key) llDeleteKeyValue':
+        'prefix': 'llDeleteKeyValue'
+        'body': 'llDeleteKeyValue(${1:string k})'
+    '(list) llDeleteSubList':
+        'prefix': 'llDeleteSubList'
+        'body': 'llDeleteSubList(${1:list src}, ${2:integer start}, ${3:integer end})'
+    '(str) llDeleteSubString':
+        'prefix': 'llDeleteSubString'
+        'body': 'llDeleteSubString(${1:string src}, ${2:integer start}, ${3:integer end})'
+    '(void) llDetachFromAvatar':
+        'prefix': 'llDetachFromAvatar'
+        'body': 'llDetachFromAvatar();'
+    '(vec) llDetectedGrab':
+        'prefix': 'llDetectedGrab'
+        'body': 'llDetectedGrab(${1:integer number})'
+    '(int) llDetectedGroup':
+        'prefix': 'llDetectedGroup'
+        'body': 'llDetectedGroup(${1:integer number})'
+    '(key) llDetectedKey':
+        'prefix': 'llDetectedKey'
+        'body': 'llDetectedKey(${1:integer number})'
+    '(int) llDetectedLinkNumber':
+        'prefix': 'llDetectedLinkNumber'
+        'body': 'llDetectedLinkNumber(${1:integer number})'
+    '(str) llDetectedName':
+        'prefix': 'llDetectedName'
+        'body': 'llDetectedName(${1:integer number})'
+    '(key) llDetectedOwner':
+        'prefix': 'llDetectedOwner'
+        'body': 'llDetectedOwner(${1:integer number})'
+    '(vec) llDetectedPos':
+        'prefix': 'llDetectedPos'
+        'body': 'llDetectedPos(${1:integer number})'
+    '(rot) llDetectedRot':
+        'prefix': 'llDetectedRot'
+        'body': 'llDetectedRot(${1:integer number})'
+    '(vec) llDetectedTouchBinormal':
+        'prefix': 'llDetectedTouchBinormal'
+        'body': 'llDetectedTouchBinormal(${1:integer index})'
+    '(int) llDetectedTouchFace':
+        'prefix': 'llDetectedTouchFace'
+        'body': 'llDetectedTouchFace(${1:integer index})'
+    '(vec) llDetectedTouchNormal':
+        'prefix': 'llDetectedTouchNormal'
+        'body': 'llDetectedTouchNormal(${1:integer index})'
+    '(vec) llDetectedTouchPos':
+        'prefix': 'llDetectedTouchPos'
+        'body': 'llDetectedTouchPos(${1:integer index})'
+    '(vec) llDetectedTouchST':
+        'prefix': 'llDetectedTouchST'
+        'body': 'llDetectedTouchST(${1:integer index})'
+    '(vec) llDetectedTouchUV':
+        'prefix': 'llDetectedTouchUV'
+        'body': 'llDetectedTouchUV(${1:integer index})'
+    '(int) llDetectedType':
+        'prefix': 'llDetectedType'
+        'body': 'llDetectedType(${1:integer number})'
+    '(vec) llDetectedVel':
+        'prefix': 'llDetectedVel'
+        'body': 'llDetectedVel(${1:integer number})'
+    '(void) llDialog':
+        'prefix': 'llDialog'
+        'body': 'llDialog(${1:key avatar}, ${2:string message}, ${3:list buttons}, ${4:integer chat_channel});'
+    '(void) llDie':
+        'prefix': 'llDie'
+        'body': 'llDie();'
+    '(str) llDumpList2String':
+        'prefix': 'llDumpList2String'
+        'body': 'llDumpList2String(${1:list src}, ${2:string separator})'
+    '(int) llEdgeOfWorld':
+        'prefix': 'llEdgeOfWorld'
+        'body': 'llEdgeOfWorld(${1:vector pos}, ${2:vector dir})'
+    '(void) llEjectFromLand':
+        'prefix': 'llEjectFromLand'
+        'body': 'llEjectFromLand(${1:key avatar});'
+    '(void) llEmail':
+        'prefix': 'llEmail'
+        'body': 'llEmail(${1:string address}, ${2:string subject}, ${3:string message});'
+    '(str) llEscapeURL':
+        'prefix': 'llEscapeURL'
+        'body': 'llEscapeURL(${1:string url})'
+    '(rot) llEuler2Rot':
+        'prefix': 'llEuler2Rot'
+        'body': 'llEuler2Rot(${1:vector v})'
+    '(void) llEvade':
+        'prefix': 'llEvade'
+        'body': 'llEvade(${1:key target}, ${2:list options});'
+    '(void) llExecCharacterCmd':
+        'prefix': 'llExecCharacterCmd'
+        'body': 'llExecCharacterCmd(${1:integer cmd}, ${2:list options});'
+    '(float) llFabs':
+        'prefix': 'llFabs'
+        'body': 'llFabs(${1:float val})'
+    '(void) llFleeFrom':
+        'prefix': 'llFleeFrom'
+        'body': 'llFleeFrom(${1:vector source}, ${2:float radius}, ${3:list options});'
+    '(int) llFloor':
+        'prefix': 'llFloor'
+        'body': 'llFloor(${1:float val})'
+    '(void) llForceMouselook':
+        'prefix': 'llForceMouselook'
+        'body': 'llForceMouselook(${1:integer mouselook});'
+    '(float) llFrand':
+        'prefix': 'llFrand'
+        'body': 'llFrand(${1:float mag})'
+    '(key) llGenerateKey':
+        'prefix': 'llGenerateKey'
+        'body': 'llGenerateKey()'
+    '(vec) llGetAccel':
+        'prefix': 'llGetAccel'
+        'body': 'llGetAccel()'
+    '(int) llGetAgentInfo':
+        'prefix': 'llGetAgentInfo'
+        'body': 'llGetAgentInfo(${1:key id})'
+    '(str) llGetAgentLanguage':
+        'prefix': 'llGetAgentLanguage'
+        'body': 'llGetAgentLanguage(${1:key avatar})'
+    '(list) llGetAgentList':
+        'prefix': 'llGetAgentList'
+        'body': 'llGetAgentList(${1:integer scope}, ${2:list options})'
+    '(vec) llGetAgentSize':
+        'prefix': 'llGetAgentSize'
+        'body': 'llGetAgentSize(${1:key id})'
+    '(float) llGetAlpha':
+        'prefix': 'llGetAlpha'
+        'body': 'llGetAlpha(${1:integer face})'
+    '(float) llGetAndResetTime':
+        'prefix': 'llGetAndResetTime'
+        'body': 'llGetAndResetTime()'
+    '(str) llGetAnimation':
+        'prefix': 'llGetAnimation'
+        'body': 'llGetAnimation(${1:key id})'
+    '(list) llGetAnimationList':
+        'prefix': 'llGetAnimationList'
+        'body': 'llGetAnimationList(${1:key id})'
+    '(str) llGetAnimationOverride':
+        'prefix': 'llGetAnimationOverride'
+        'body': 'llGetAnimationOverride(${1:string anim_state})'
+    '(int) llGetAttached':
+        'prefix': 'llGetAttached'
+        'body': 'llGetAttached()'
+    '(list) llGetAttachedList':
+        'prefix': 'llGetAttachedList'
+        'body': 'llGetAttachedList(${1:key id})'
+    '(list) llGetBoundingBox':
+        'prefix': 'llGetBoundingBox'
+        'body': 'llGetBoundingBox(${1:key object})'
+    '(vec) llGetCameraPos':
+        'prefix': 'llGetCameraPos'
+        'body': 'llGetCameraPos()'
+    '(rot) llGetCameraRot':
+        'prefix': 'llGetCameraRot'
+        'body': 'llGetCameraRot()'
+    '(vec) llGetCenterOfMass':
+        'prefix': 'llGetCenterOfMass'
+        'body': 'llGetCenterOfMass()'
+    '(list) llGetClosestNavPoint':
+        'prefix': 'llGetClosestNavPoint'
+        'body': 'llGetClosestNavPoint(${1:vector point}, ${2:list options})'
+    '(vec) llGetColor':
+        'prefix': 'llGetColor'
+        'body': 'llGetColor(${1:integer face})'
+    '(key) llGetCreator':
+        'prefix': 'llGetCreator'
+        'body': 'llGetCreator()'
+    '(str) llGetDate':
+        'prefix': 'llGetDate'
+        'body': 'llGetDate()'
+    '(str) llGetDisplayName':
+        'prefix': 'llGetDisplayName'
+        'body': 'llGetDisplayName(${1:key id})'
+    '(float) llGetEnergy':
+        'prefix': 'llGetEnergy'
+        'body': 'llGetEnergy()'
+    '(str) llGetEnv':
+        'prefix': 'llGetEnv'
+        'body': 'llGetEnv(${1:string name})'
+    '(list) llGetExperienceDetails':
+        'prefix': 'llGetExperienceDetails'
+        'body': 'llGetExperienceDetails(${1:key experience_id})'
+    '(str) llGetExperienceErrorMessage':
+        'prefix': 'llGetExperienceErrorMessage'
+        'body': 'llGetExperienceErrorMessage(${1:integer error})'
+    '(vec) llGetForce':
+        'prefix': 'llGetForce'
+        'body': 'llGetForce()'
+    '(int) llGetFreeMemory':
+        'prefix': 'llGetFreeMemory'
+        'body': 'llGetFreeMemory()'
+    '(int) llGetFreeURLs':
+        'prefix': 'llGetFreeURLs'
+        'body': 'llGetFreeURLs()'
+    '(float) llGetGMTclock':
+        'prefix': 'llGetGMTclock'
+        'body': 'llGetGMTclock()'
+    '(vec) llGetGeometricCenter':
+        'prefix': 'llGetGeometricCenter'
+        'body': 'llGetGeometricCenter()'
+    '(str) llGetHTTPHeader':
+        'prefix': 'llGetHTTPHeader'
+        'body': 'llGetHTTPHeader(${1:key request_id}, ${2:string header})'
+    '(key) llGetInventoryCreator':
+        'prefix': 'llGetInventoryCreator'
+        'body': 'llGetInventoryCreator(${1:string item})'
+    '(key) llGetInventoryKey':
+        'prefix': 'llGetInventoryKey'
+        'body': 'llGetInventoryKey(${1:string name})'
+    '(str) llGetInventoryName':
+        'prefix': 'llGetInventoryName'
+        'body': 'llGetInventoryName(${1:integer type}, ${2:integer number})'
+    '(int) llGetInventoryNumber':
+        'prefix': 'llGetInventoryNumber'
+        'body': 'llGetInventoryNumber(${1:integer type})'
+    '(int) llGetInventoryPermMask':
+        'prefix': 'llGetInventoryPermMask'
+        'body': 'llGetInventoryPermMask(${1:string item}, ${2:integer mask})'
+    '(int) llGetInventoryType':
+        'prefix': 'llGetInventoryType'
+        'body': 'llGetInventoryType(${1:string name})'
+    '(key) llGetKey':
+        'prefix': 'llGetKey'
+        'body': 'llGetKey()'
+    '(key) llGetLandOwnerAt':
+        'prefix': 'llGetLandOwnerAt'
+        'body': 'llGetLandOwnerAt(${1:vector pos})'
+    '(key) llGetLinkKey':
+        'prefix': 'llGetLinkKey'
+        'body': 'llGetLinkKey(${1:integer linknumber})'
+    '(list) llGetLinkMedia':
+        'prefix': 'llGetLinkMedia'
+        'body': 'llGetLinkMedia(${1:integer link}, ${2:integer face}, ${3:list params})'
+    '(str) llGetLinkName':
+        'prefix': 'llGetLinkName'
+        'body': 'llGetLinkName(${1:integer linknumber})'
+    '(int) llGetLinkNumber':
+        'prefix': 'llGetLinkNumber'
+        'body': 'llGetLinkNumber()'
+    '(int) llGetLinkNumberOfSides':
+        'prefix': 'llGetLinkNumberOfSides'
+        'body': 'llGetLinkNumberOfSides(${1:integer link})'
+    '(list) llGetLinkPrimitiveParams':
+        'prefix': 'llGetLinkPrimitiveParams'
+        'body': 'llGetLinkPrimitiveParams(${1:integer linknumber}, ${2:list rules})'
+    '(int) llGetListEntryType':
+        'prefix': 'llGetListEntryType'
+        'body': 'llGetListEntryType(${1:list src}, ${2:integer index})'
+    '(int) llGetListLength':
+        'prefix': 'llGetListLength'
+        'body': 'llGetListLength(${1:list src})'
+    '(vec) llGetLocalPos':
+        'prefix': 'llGetLocalPos'
+        'body': 'llGetLocalPos()'
+    '(rot) llGetLocalRot':
+        'prefix': 'llGetLocalRot'
+        'body': 'llGetLocalRot()'
+    '(float) llGetMass':
+        'prefix': 'llGetMass'
+        'body': 'llGetMass()'
+    '(float) llGetMassMKS':
+        'prefix': 'llGetMassMKS'
+        'body': 'llGetMassMKS()'
+    '(float) llGetMaxScaleFactor':
+        'prefix': 'llGetMaxScaleFactor'
+        'body': 'llGetMaxScaleFactor()'
+    '(int) llGetMemoryLimit':
+        'prefix': 'llGetMemoryLimit'
+        'body': 'llGetMemoryLimit()'
+    '(float) llGetMinScaleFactor':
+        'prefix': 'llGetMinScaleFactor'
+        'body': 'llGetMinScaleFactor()'
+    '(void) llGetNextEmail':
+        'prefix': 'llGetNextEmail'
+        'body': 'llGetNextEmail(${1:string address}, ${2:string subject});'
+    '(key) llGetNotecardLine':
+        'prefix': 'llGetNotecardLine'
+        'body': 'llGetNotecardLine(${1:string name}, ${2:integer line})'
+    '(key) llGetNumberOfNotecardLines':
+        'prefix': 'llGetNumberOfNotecardLines'
+        'body': 'llGetNumberOfNotecardLines(${1:string name})'
+    '(int) llGetNumberOfPrims':
+        'prefix': 'llGetNumberOfPrims'
+        'body': 'llGetNumberOfPrims()'
+    '(int) llGetNumberOfSides':
+        'prefix': 'llGetNumberOfSides'
+        'body': 'llGetNumberOfSides()'
+    '(str) llGetObjectDesc':
+        'prefix': 'llGetObjectDesc'
+        'body': 'llGetObjectDesc()'
+    '(list) llGetObjectDetails':
+        'prefix': 'llGetObjectDetails'
+        'body': 'llGetObjectDetails(${1:key id}, ${2:list params})'
+    '(float) llGetObjectMass':
+        'prefix': 'llGetObjectMass'
+        'body': 'llGetObjectMass(${1:key id})'
+    '(str) llGetObjectName':
+        'prefix': 'llGetObjectName'
+        'body': 'llGetObjectName()'
+    '(int) llGetObjectPermMask':
+        'prefix': 'llGetObjectPermMask'
+        'body': 'llGetObjectPermMask(${1:integer mask})'
+    '(int) llGetObjectPrimCount':
+        'prefix': 'llGetObjectPrimCount'
+        'body': 'llGetObjectPrimCount(${1:key object_id})'
+    '(vec) llGetOmega':
+        'prefix': 'llGetOmega'
+        'body': 'llGetOmega()'
+    '(key) llGetOwner':
+        'prefix': 'llGetOwner'
+        'body': 'llGetOwner()'
+    '(key) llGetOwnerKey':
+        'prefix': 'llGetOwnerKey'
+        'body': 'llGetOwnerKey(${1:key id})'
+    '(list) llGetParcelDetails':
+        'prefix': 'llGetParcelDetails'
+        'body': 'llGetParcelDetails(${1:vector pos}, ${2:list params})'
+    '(int) llGetParcelFlags':
+        'prefix': 'llGetParcelFlags'
+        'body': 'llGetParcelFlags(${1:vector pos})'
+    '(int) llGetParcelMaxPrims':
+        'prefix': 'llGetParcelMaxPrims'
+        'body': 'llGetParcelMaxPrims(${1:vector pos}, ${2:integer sim_wide})'
+    '(str) llGetParcelMusicURL':
+        'prefix': 'llGetParcelMusicURL'
+        'body': 'llGetParcelMusicURL()'
+    '(int) llGetParcelPrimCount':
+        'prefix': 'llGetParcelPrimCount'
+        'body': 'llGetParcelPrimCount(${1:vector pos}, ${2:integer category}, ${3:integer sim_wide})'
+    '(list) llGetParcelPrimOwners':
+        'prefix': 'llGetParcelPrimOwners'
+        'body': 'llGetParcelPrimOwners(${1:vector pos})'
+    '(int) llGetPermissions':
+        'prefix': 'llGetPermissions'
+        'body': 'llGetPermissions()'
+    '(key) llGetPermissionsKey':
+        'prefix': 'llGetPermissionsKey'
+        'body': 'llGetPermissionsKey()'
+    '(list) llGetPhysicsMaterial':
+        'prefix': 'llGetPhysicsMaterial'
+        'body': 'llGetPhysicsMaterial()'
+    '(vec) llGetPos':
+        'prefix': 'llGetPos'
+        'body': 'llGetPos()'
+    '(list) llGetPrimMediaParams':
+        'prefix': 'llGetPrimMediaParams'
+        'body': 'llGetPrimMediaParams(${1:integer face}, ${2:list params})'
+    '(list) llGetPrimitiveParams':
+        'prefix': 'llGetPrimitiveParams'
+        'body': 'llGetPrimitiveParams(${1:list params})'
+    '(int) llGetRegionAgentCount':
+        'prefix': 'llGetRegionAgentCount'
+        'body': 'llGetRegionAgentCount()'
+    '(vec) llGetRegionCorner':
+        'prefix': 'llGetRegionCorner'
+        'body': 'llGetRegionCorner()'
+    '(float) llGetRegionFPS':
+        'prefix': 'llGetRegionFPS'
+        'body': 'llGetRegionFPS()'
+    '(int) llGetRegionFlags':
+        'prefix': 'llGetRegionFlags'
+        'body': 'llGetRegionFlags()'
+    '(str) llGetRegionName':
+        'prefix': 'llGetRegionName'
+        'body': 'llGetRegionName()'
+    '(float) llGetRegionTimeDilation':
+        'prefix': 'llGetRegionTimeDilation'
+        'body': 'llGetRegionTimeDilation()'
+    '(vec) llGetRootPosition':
+        'prefix': 'llGetRootPosition'
+        'body': 'llGetRootPosition()'
+    '(rot) llGetRootRotation':
+        'prefix': 'llGetRootRotation'
+        'body': 'llGetRootRotation()'
+    '(rot) llGetRot':
+        'prefix': 'llGetRot'
+        'body': 'llGetRot()'
+    '(int) llGetSPMaxMemory':
+        'prefix': 'llGetSPMaxMemory'
+        'body': 'llGetSPMaxMemory()'
+    '(vec) llGetScale':
+        'prefix': 'llGetScale'
+        'body': 'llGetScale()'
+    '(str) llGetScriptName':
+        'prefix': 'llGetScriptName'
+        'body': 'llGetScriptName()'
+    '(int) llGetScriptState':
+        'prefix': 'llGetScriptState'
+        'body': 'llGetScriptState(${1:string name})'
+    '(float) llGetSimStats':
+        'prefix': 'llGetSimStats'
+        'body': 'llGetSimStats(${1:integer stat_type})'
+    '(str) llGetSimulatorHostname':
+        'prefix': 'llGetSimulatorHostname'
+        'body': 'llGetSimulatorHostname()'
+    '(int) llGetStartParameter':
+        'prefix': 'llGetStartParameter'
+        'body': 'llGetStartParameter()'
+    '(list) llGetStaticPath':
+        'prefix': 'llGetStaticPath'
+        'body': 'llGetStaticPath(${1:vector start}, ${2:vector end}, ${3:float radius}, ${4:list params})'
+    '(int) llGetStatus':
+        'prefix': 'llGetStatus'
+        'body': 'llGetStatus(${1:integer status})'
+    '(str) llGetSubString':
+        'prefix': 'llGetSubString'
+        'body': 'llGetSubString(${1:string src}, ${2:integer start}, ${3:integer end})'
+    '(vec) llGetSunDirection':
+        'prefix': 'llGetSunDirection'
+        'body': 'llGetSunDirection()'
+    '(str) llGetTexture':
+        'prefix': 'llGetTexture'
+        'body': 'llGetTexture(${1:integer face})'
+    '(vec) llGetTextureOffset':
+        'prefix': 'llGetTextureOffset'
+        'body': 'llGetTextureOffset(${1:integer face})'
+    '(float) llGetTextureRot':
+        'prefix': 'llGetTextureRot'
+        'body': 'llGetTextureRot(${1:integer side})'
+    '(vec) llGetTextureScale':
+        'prefix': 'llGetTextureScale'
+        'body': 'llGetTextureScale(${1:integer side})'
+    '(float) llGetTime':
+        'prefix': 'llGetTime'
+        'body': 'llGetTime()'
+    '(float) llGetTimeOfDay':
+        'prefix': 'llGetTimeOfDay'
+        'body': 'llGetTimeOfDay()'
+    '(str) llGetTimestamp':
+        'prefix': 'llGetTimestamp'
+        'body': 'llGetTimestamp()'
+    '(vec) llGetTorque':
+        'prefix': 'llGetTorque'
+        'body': 'llGetTorque()'
+    '(int) llGetUnixTime':
+        'prefix': 'llGetUnixTime'
+        'body': 'llGetUnixTime()'
+    '(int) llGetUsedMemory':
+        'prefix': 'llGetUsedMemory'
+        'body': 'llGetUsedMemory()'
+    '(str) llGetUsername':
+        'prefix': 'llGetUsername'
+        'body': 'llGetUsername(${1:key id})'
+    '(vec) llGetVel':
+        'prefix': 'llGetVel'
+        'body': 'llGetVel()'
+    '(float) llGetWallclock':
+        'prefix': 'llGetWallclock'
+        'body': 'llGetWallclock()'
+    '(void) llGiveInventory':
+        'prefix': 'llGiveInventory'
+        'body': 'llGiveInventory(${1:key destination}, ${2:string inventory});'
+    '(void) llGiveInventoryList':
+        'prefix': 'llGiveInventoryList'
+        'body': 'llGiveInventoryList(${1:key target}, ${2:string folder}, ${3:list inventory});'
+    '(int) llGiveMoney':
+        'prefix': 'llGiveMoney'
+        'body': 'llGiveMoney(${1:key destination}, ${2:integer amount})'
+    '(float) llGround':
+        'prefix': 'llGround'
+        'body': 'llGround(${1:vector offset})'
+    '(vec) llGroundContour':
+        'prefix': 'llGroundContour'
+        'body': 'llGroundContour(${1:vector offset})'
+    '(vec) llGroundNormal':
+        'prefix': 'llGroundNormal'
+        'body': 'llGroundNormal(${1:vector offset})'
+    '(void) llGroundRepel':
+        'prefix': 'llGroundRepel'
+        'body': 'llGroundRepel(${1:float height}, ${2:integer water}, ${3:float tau});'
+    '(vec) llGroundSlope':
+        'prefix': 'llGroundSlope'
+        'body': 'llGroundSlope(${1:vector offset})'
+    '(key) llHTTPRequest':
+        'prefix': 'llHTTPRequest'
+        'body': 'llHTTPRequest(${1:string url}, ${2:list parameters}, ${3:string body})'
+    '(void) llHTTPResponse':
+        'prefix': 'llHTTPResponse'
+        'body': 'llHTTPResponse(${1:key request_id}, ${2:integer status}, ${3:string body});'
+    '(str) llInsertString':
+        'prefix': 'llInsertString'
+        'body': 'llInsertString(${1:string dst}, ${2:integer position}, ${3:string src})'
+    '(void) llInstantMessage':
+        'prefix': 'llInstantMessage'
+        'body': 'llInstantMessage(${1:key user}, ${2:string message});'
+    '(str) llIntegerToBase64':
+        'prefix': 'llIntegerToBase64'
+        'body': 'llIntegerToBase64(${1:integer number})'
+    '(list) llJson2List':
+        'prefix': 'llJson2List'
+        'body': 'llJson2List(${1:string json})'
+    '(str) llJsonGetValue':
+        'prefix': 'llJsonGetValue'
+        'body': 'llJsonGetValue(${1:string json}, ${2:list specifiers})'
+    '(str) llJsonSetValue':
+        'prefix': 'llJsonSetValue'
+        'body': 'llJsonSetValue(${1:string json}, ${2:list specifiers}, ${3:string value})'
+    '(str) llJsonValueType':
+        'prefix': 'llJsonValueType'
+        'body': 'llJsonValueType(${1:string json}, ${2:list specifiers})'
+    '(str) llKey2Name':
+        'prefix': 'llKey2Name'
+        'body': 'llKey2Name(${1:key id})'
+    '(key) llKeyCountKeyValue':
+        'prefix': 'llKeyCountKeyValue'
+        'body': 'llKeyCountKeyValue()'
+    '(key) llKeysKeyValue':
+        'prefix': 'llKeysKeyValue'
+        'body': 'llKeysKeyValue(${1:integer first}, ${2:integer count})'
+    '(void) llLinkParticleSystem':
+        'prefix': 'llLinkParticleSystem'
+        'body': 'llLinkParticleSystem(${1:integer linknumber}, ${2:list rules});'
+    '(void) llLinkSitTarget':
+        'prefix': 'llLinkSitTarget'
+        'body': 'llLinkSitTarget(${1:integer link}, ${2:vector offset}, ${3:rotation rot});'
+    '(str) llList2CSV':
+        'prefix': 'llList2CSV'
+        'body': 'llList2CSV(${1:list src})'
+    '(float) llList2Float':
+        'prefix': 'llList2Float'
+        'body': 'llList2Float(${1:list src}, ${2:integer index})'
+    '(int) llList2Integer':
+        'prefix': 'llList2Integer'
+        'body': 'llList2Integer(${1:list src}, ${2:integer index})'
+    '(str) llList2Json':
+        'prefix': 'llList2Json'
+        'body': 'llList2Json(${1:string type}, ${2:list values})'
+    '(key) llList2Key':
+        'prefix': 'llList2Key'
+        'body': 'llList2Key(${1:list src}, ${2:integer index})'
+    '(list) llList2List':
+        'prefix': 'llList2List'
+        'body': 'llList2List(${1:list src}, ${2:integer start}, ${3:integer end})'
+    '(list) llList2ListStrided':
+        'prefix': 'llList2ListStrided'
+        'body': 'llList2ListStrided(${1:list src}, ${2:integer start}, ${3:integer end}, ${4:integer stride})'
+    '(rot) llList2Rot':
+        'prefix': 'llList2Rot'
+        'body': 'llList2Rot(${1:list src}, ${2:integer index})'
+    '(str) llList2String':
+        'prefix': 'llList2String'
+        'body': 'llList2String(${1:list src}, ${2:integer index})'
+    '(vec) llList2Vector':
+        'prefix': 'llList2Vector'
+        'body': 'llList2Vector(${1:list src}, ${2:integer index})'
+    '(int) llListFindList':
+        'prefix': 'llListFindList'
+        'body': 'llListFindList(${1:list src}, ${2:list test})'
+    '(list) llListInsertList':
+        'prefix': 'llListInsertList'
+        'body': 'llListInsertList(${1:list dest}, ${2:list src}, ${3:integer start})'
+    '(list) llListRandomize':
+        'prefix': 'llListRandomize'
+        'body': 'llListRandomize(${1:list src}, ${2:integer stride})'
+    '(list) llListReplaceList':
+        'prefix': 'llListReplaceList'
+        'body': 'llListReplaceList(${1:list dest}, ${2:list src}, ${3:integer start}, ${4:integer end})'
+    '(list) llListSort':
+        'prefix': 'llListSort'
+        'body': 'llListSort(${1:list src}, ${2:integer stride}, ${3:integer ascending})'
+    '(float) llListStatistics':
+        'prefix': 'llListStatistics'
+        'body': 'llListStatistics(${1:integer operation}, ${2:list src})'
+    '(int) llListen':
+        'prefix': 'llListen'
+        'body': 'llListen(${1:integer channel}, ${2:string name}, ${3:key id}, ${4:string msg})'
+    '(void) llListenControl':
+        'prefix': 'llListenControl'
+        'body': 'llListenControl(${1:integer number}, ${2:integer active});'
+    '(void) llListenRemove':
+        'prefix': 'llListenRemove'
+        'body': 'llListenRemove(${1:integer number});'
+    '(void) llLoadURL':
+        'prefix': 'llLoadURL'
+        'body': 'llLoadURL(${1:key avatar}, ${2:string message}, ${3:string url});'
+    '(float) llLog':
+        'prefix': 'llLog'
+        'body': 'llLog(${1:float val})'
+    '(float) llLog10':
+        'prefix': 'llLog10'
+        'body': 'llLog10(${1:float val})'
+    '(void) llLookAt':
+        'prefix': 'llLookAt'
+        'body': 'llLookAt(${1:vector target}, ${2:float strength}, ${3:float damping});'
+    '(void) llLoopSound':
+        'prefix': 'llLoopSound'
+        'body': 'llLoopSound(${1:string sound}, ${2:float volume});'
+    '(void) llLoopSoundMaster':
+        'prefix': 'llLoopSoundMaster'
+        'body': 'llLoopSoundMaster(${1:string sound}, ${2:float volume});'
+    '(void) llLoopSoundSlave':
+        'prefix': 'llLoopSoundSlave'
+        'body': 'llLoopSoundSlave(${1:string sound}, ${2:float volume});'
+    '(str) llMD5String':
+        'prefix': 'llMD5String'
+        'body': 'llMD5String(${1:string src}, ${2:integer nonce})'
+    '(int) llManageEstateAccess':
+        'prefix': 'llManageEstateAccess'
+        'body': 'llManageEstateAccess(${1:integer action}, ${2:key id})'
+    '(void) llMapDestination':
+        'prefix': 'llMapDestination'
+        'body': 'llMapDestination(${1:string simname}, ${2:vector pos}, ${3:vector look_at});'
+    '(void) llMessageLinked':
+        'prefix': 'llMessageLinked'
+        'body': 'llMessageLinked(${1:integer linknum}, ${2:integer num}, ${3:string str}, ${4:key id});'
+    '(void) llMinEventDelay':
+        'prefix': 'llMinEventDelay'
+        'body': 'llMinEventDelay(${1:float delay});'
+    '(int) llModPow':
+        'prefix': 'llModPow'
+        'body': 'llModPow(${1:integer a}, ${2:integer b}, ${3:integer c})'
+    '(void) llModifyLand':
+        'prefix': 'llModifyLand'
+        'body': 'llModifyLand(${1:integer action}, ${2:integer brush});'
+    '(void) llMoveToTarget':
+        'prefix': 'llMoveToTarget'
+        'body': 'llMoveToTarget(${1:vector target}, ${2:float tau});'
+    '(void) llNavigateTo':
+        'prefix': 'llNavigateTo'
+        'body': 'llNavigateTo(${1:vector point}, ${2:list options});'
+    '(void) llOffsetTexture':
+        'prefix': 'llOffsetTexture'
+        'body': 'llOffsetTexture(${1:float u}, ${2:float v}, ${3:integer face});'
+    '(void) llOpenRemoteDataChannel':
+        'prefix': 'llOpenRemoteDataChannel'
+        'body': 'llOpenRemoteDataChannel();'
+    '(int) llOverMyLand':
+        'prefix': 'llOverMyLand'
+        'body': 'llOverMyLand(${1:key id})'
+    '(void) llOwnerSay':
+        'prefix': 'llOwnerSay'
+        'body': 'llOwnerSay(${1:string msg});'
+    '(void) llParcelMediaCommandList':
+        'prefix': 'llParcelMediaCommandList'
+        'body': 'llParcelMediaCommandList(${1:list command});'
+    '(list) llParcelMediaQuery':
+        'prefix': 'llParcelMediaQuery'
+        'body': 'llParcelMediaQuery(${1:list query})'
+    '(list) llParseString2List':
+        'prefix': 'llParseString2List'
+        'body': 'llParseString2List(${1:string src}, ${2:list separators}, ${3:list spacers})'
+    '(list) llParseStringKeepNulls':
+        'prefix': 'llParseStringKeepNulls'
+        'body': 'llParseStringKeepNulls(${1:string src}, ${2:list separators}, ${3:list spacers})'
+    '(void) llParticleSystem':
+        'prefix': 'llParticleSystem'
+        'body': 'llParticleSystem(${1:list rules});'
+    '(void) llPassCollisions':
+        'prefix': 'llPassCollisions'
+        'body': 'llPassCollisions(${1:integer pass});'
+    '(void) llPassTouches':
+        'prefix': 'llPassTouches'
+        'body': 'llPassTouches(${1:integer pass});'
+    '(void) llPatrolPoints':
+        'prefix': 'llPatrolPoints'
+        'body': 'llPatrolPoints(${1:list points}, ${2:list options});'
+    '(void) llPlaySound':
+        'prefix': 'llPlaySound'
+        'body': 'llPlaySound(${1:string sound}, ${2:float volume});'
+    '(void) llPlaySoundSlave':
+        'prefix': 'llPlaySoundSlave'
+        'body': 'llPlaySoundSlave(${1:string sound}, ${2:float volume});'
+    '(float) llPow':
+        'prefix': 'llPow'
+        'body': 'llPow(${1:float base}, ${2:float exponent})'
+    '(void) llPreloadSound':
+        'prefix': 'llPreloadSound'
+        'body': 'llPreloadSound(${1:string sound});'
+    '(void) llPursue':
+        'prefix': 'llPursue'
+        'body': 'llPursue(${1:key target}, ${2:list options});'
+    '(void) llPushObject':
+        'prefix': 'llPushObject'
+        'body': 'llPushObject(${1:key id}, ${2:vector impulse}, ${3:vector ang_impulse}, ${4:integer local});'
+    '(key) llReadKeyValue':
+        'prefix': 'llReadKeyValue'
+        'body': 'llReadKeyValue(${1:string k})'
+    '(void) llRegionSay':
+        'prefix': 'llRegionSay'
+        'body': 'llRegionSay(${1:integer channel}, ${2:string msg});'
+    '(void) llRegionSayTo':
+        'prefix': 'llRegionSayTo'
+        'body': 'llRegionSayTo(${1:key target}, ${2:integer channel}, ${3:string msg});'
+    '(void) llReleaseControls':
+        'prefix': 'llReleaseControls'
+        'body': 'llReleaseControls();'
+    '(void) llReleaseURL':
+        'prefix': 'llReleaseURL'
+        'body': 'llReleaseURL(${1:string url});'
+    '(void) llRemoteDataReply':
+        'prefix': 'llRemoteDataReply'
+        'body': 'llRemoteDataReply(${1:key channel}, ${2:key message_id}, ${3:string sdata}, ${4:integer idata});'
+    '(void) llRemoteLoadScriptPin':
+        'prefix': 'llRemoteLoadScriptPin'
+        'body': 'llRemoteLoadScriptPin(${1:key target}, ${2:string name}, ${3:integer pin}, ${4:integer running}, ${5:integer start_param});'
+    '(void) llRemoveFromLandBanList':
+        'prefix': 'llRemoveFromLandBanList'
+        'body': 'llRemoveFromLandBanList(${1:key avatar});'
+    '(void) llRemoveFromLandPassList':
+        'prefix': 'llRemoveFromLandPassList'
+        'body': 'llRemoveFromLandPassList(${1:key avatar});'
+    '(void) llRemoveInventory':
+        'prefix': 'llRemoveInventory'
+        'body': 'llRemoveInventory(${1:string item});'
+    '(void) llRemoveVehicleFlags':
+        'prefix': 'llRemoveVehicleFlags'
+        'body': 'llRemoveVehicleFlags(${1:integer flags});'
+    '(key) llRequestAgentData':
+        'prefix': 'llRequestAgentData'
+        'body': 'llRequestAgentData(${1:key id}, ${2:integer data})'
+    '(key) llRequestDisplayName':
+        'prefix': 'llRequestDisplayName'
+        'body': 'llRequestDisplayName(${1:key id})'
+    '(void) llRequestExperiencePermissions':
+        'prefix': 'llRequestExperiencePermissions'
+        'body': 'llRequestExperiencePermissions(${1:key agent}, ${2:string name});'
+    '(key) llRequestInventoryData':
+        'prefix': 'llRequestInventoryData'
+        'body': 'llRequestInventoryData(${1:string name})'
+    '(void) llRequestPermissions':
+        'prefix': 'llRequestPermissions'
+        'body': 'llRequestPermissions(${1:key agent}, ${2:integer perm});'
+    '(key) llRequestSecureURL':
+        'prefix': 'llRequestSecureURL'
+        'body': 'llRequestSecureURL()'
+    '(key) llRequestSimulatorData':
+        'prefix': 'llRequestSimulatorData'
+        'body': 'llRequestSimulatorData(${1:string simulator}, ${2:integer data})'
+    '(key) llRequestURL':
+        'prefix': 'llRequestURL'
+        'body': 'llRequestURL()'
+    '(key) llRequestUsername':
+        'prefix': 'llRequestUsername'
+        'body': 'llRequestUsername(${1:key id})'
+    '(void) llResetAnimationOverride':
+        'prefix': 'llResetAnimationOverride'
+        'body': 'llResetAnimationOverride(${1:string anim_state});'
+    '(void) llResetLandBanList':
+        'prefix': 'llResetLandBanList'
+        'body': 'llResetLandBanList();'
+    '(void) llResetLandPassList':
+        'prefix': 'llResetLandPassList'
+        'body': 'llResetLandPassList();'
+    '(void) llResetOtherScript':
+        'prefix': 'llResetOtherScript'
+        'body': 'llResetOtherScript(${1:string name});'
+    '(void) llResetScript':
+        'prefix': 'llResetScript'
+        'body': 'llResetScript();'
+    '(void) llResetTime':
+        'prefix': 'llResetTime'
+        'body': 'llResetTime();'
+    '(int) llReturnObjectsByID':
+        'prefix': 'llReturnObjectsByID'
+        'body': 'llReturnObjectsByID(${1:list objects})'
+    '(int) llReturnObjectsByOwner':
+        'prefix': 'llReturnObjectsByOwner'
+        'body': 'llReturnObjectsByOwner(${1:key owner}, ${2:integer scope})'
+    '(void) llRezAtRoot':
+        'prefix': 'llRezAtRoot'
+        'body': 'llRezAtRoot(${1:string inventory}, ${2:vector pos}, ${3:vector vel}, ${4:rotation rot}, ${5:integer param});'
+    '(void) llRezObject':
+        'prefix': 'llRezObject'
+        'body': 'llRezObject(${1:string inventory}, ${2:vector pos}, ${3:vector vel}, ${4:rotation rot}, ${5:integer param});'
+    '(float) llRot2Angle':
+        'prefix': 'llRot2Angle'
+        'body': 'llRot2Angle(${1:rotation rot})'
+    '(vec) llRot2Axis':
+        'prefix': 'llRot2Axis'
+        'body': 'llRot2Axis(${1:rotation rot})'
+    '(vec) llRot2Euler':
+        'prefix': 'llRot2Euler'
+        'body': 'llRot2Euler(${1:rotation q})'
+    '(vec) llRot2Fwd':
+        'prefix': 'llRot2Fwd'
+        'body': 'llRot2Fwd(${1:rotation q})'
+    '(vec) llRot2Left':
+        'prefix': 'llRot2Left'
+        'body': 'llRot2Left(${1:rotation q})'
+    '(vec) llRot2Up':
+        'prefix': 'llRot2Up'
+        'body': 'llRot2Up(${1:rotation q})'
+    '(rot) llRotBetween':
+        'prefix': 'llRotBetween'
+        'body': 'llRotBetween(${1:vector v1}, ${2:vector v2})'
+    '(void) llRotLookAt':
+        'prefix': 'llRotLookAt'
+        'body': 'llRotLookAt(${1:rotation target}, ${2:float strength}, ${3:float damping});'
+    '(int) llRotTarget':
+        'prefix': 'llRotTarget'
+        'body': 'llRotTarget(${1:rotation rot}, ${2:float error})'
+    '(void) llRotTargetRemove':
+        'prefix': 'llRotTargetRemove'
+        'body': 'llRotTargetRemove(${1:integer number});'
+    '(void) llRotateTexture':
+        'prefix': 'llRotateTexture'
+        'body': 'llRotateTexture(${1:float angle}, ${2:integer face});'
+    '(int) llRound':
+        'prefix': 'llRound'
+        'body': 'llRound(${1:float val})'
+    '(str) llSHA1String':
+        'prefix': 'llSHA1String'
+        'body': 'llSHA1String(${1:string src})'
+    '(int) llSameGroup':
+        'prefix': 'llSameGroup'
+        'body': 'llSameGroup(${1:key id})'
+    '(void) llSay':
+        'prefix': 'llSay'
+        'body': 'llSay(${1:integer channel}, ${2:string msg});'
+    '(int) llScaleByFactor':
+        'prefix': 'llScaleByFactor'
+        'body': 'llScaleByFactor(${1:float scaling_factor})'
+    '(void) llScaleTexture':
+        'prefix': 'llScaleTexture'
+        'body': 'llScaleTexture(${1:float u}, ${2:float v}, ${3:integer face});'
+    '(int) llScriptDanger':
+        'prefix': 'llScriptDanger'
+        'body': 'llScriptDanger(${1:vector pos})'
+    '(void) llScriptProfiler':
+        'prefix': 'llScriptProfiler'
+        'body': 'llScriptProfiler(${1:integer flags});'
+    '(key) llSendRemoteData':
+        'prefix': 'llSendRemoteData'
+        'body': 'llSendRemoteData(${1:key channel}, ${2:string dest}, ${3:integer idata}, ${4:string sdata})'
+    '(void) llSensor':
+        'prefix': 'llSensor'
+        'body': 'llSensor(${1:string name}, ${2:key id}, ${3:integer type}, ${4:float range}, ${5:float arc});'
+    '(void) llSensorRemove':
+        'prefix': 'llSensorRemove'
+        'body': 'llSensorRemove();'
+    '(void) llSensorRepeat':
+        'prefix': 'llSensorRepeat'
+        'body': 'llSensorRepeat(${1:string name}, ${2:key id}, ${3:integer type}, ${4:float range}, ${5:float arc}, ${6:float rate});'
+    '(void) llSetAlpha':
+        'prefix': 'llSetAlpha'
+        'body': 'llSetAlpha(${1:float alpha}, ${2:integer face});'
+    '(void) llSetAngularVelocity':
+        'prefix': 'llSetAngularVelocity'
+        'body': 'llSetAngularVelocity(${1:vector angular_velocity}, ${2:integer local});'
+    '(void) llSetAnimationOverride':
+        'prefix': 'llSetAnimationOverride'
+        'body': 'llSetAnimationOverride(${1:string anim_state}, ${2:string anim});'
+    '(void) llSetBuoyancy':
+        'prefix': 'llSetBuoyancy'
+        'body': 'llSetBuoyancy(${1:float buoyancy});'
+    '(void) llSetCameraAtOffset':
+        'prefix': 'llSetCameraAtOffset'
+        'body': 'llSetCameraAtOffset(${1:vector offset});'
+    '(void) llSetCameraEyeOffset':
+        'prefix': 'llSetCameraEyeOffset'
+        'body': 'llSetCameraEyeOffset(${1:vector offset});'
+    '(void) llSetCameraParams':
+        'prefix': 'llSetCameraParams'
+        'body': 'llSetCameraParams(${1:list rules});'
+    '(void) llSetClickAction':
+        'prefix': 'llSetClickAction'
+        'body': 'llSetClickAction(${1:integer action});'
+    '(void) llSetColor':
+        'prefix': 'llSetColor'
+        'body': 'llSetColor(${1:vector color}, ${2:integer face});'
+    '(void) llSetContentType':
+        'prefix': 'llSetContentType'
+        'body': 'llSetContentType(${1:key request_id}, ${2:integer content_type});'
+    '(void) llSetDamage':
+        'prefix': 'llSetDamage'
+        'body': 'llSetDamage(${1:float damage});'
+    '(void) llSetForce':
+        'prefix': 'llSetForce'
+        'body': 'llSetForce(${1:vector force}, ${2:integer local});'
+    '(void) llSetForceAndTorque':
+        'prefix': 'llSetForceAndTorque'
+        'body': 'llSetForceAndTorque(${1:vector force}, ${2:vector torque}, ${3:integer local});'
+    '(void) llSetHoverHeight':
+        'prefix': 'llSetHoverHeight'
+        'body': 'llSetHoverHeight(${1:float height}, ${2:integer water}, ${3:float tau});'
+    '(void) llSetKeyframedMotion':
+        'prefix': 'llSetKeyframedMotion'
+        'body': 'llSetKeyframedMotion(${1:list keyframes}, ${2:list options});'
+    '(void) llSetLinkAlpha':
+        'prefix': 'llSetLinkAlpha'
+        'body': 'llSetLinkAlpha(${1:integer linknumber}, ${2:float alpha}, ${3:integer face});'
+    '(void) llSetLinkCamera':
+        'prefix': 'llSetLinkCamera'
+        'body': 'llSetLinkCamera(${1:integer link}, ${2:vector eye}, ${3:vector at});'
+    '(void) llSetLinkColor':
+        'prefix': 'llSetLinkColor'
+        'body': 'llSetLinkColor(${1:integer linknumber}, ${2:vector color}, ${3:integer face});'
+    '(int) llSetLinkMedia':
+        'prefix': 'llSetLinkMedia'
+        'body': 'llSetLinkMedia(${1:integer link}, ${2:integer face}, ${3:list params})'
+    '(void) llSetLinkPrimitiveParams':
+        'prefix': 'llSetLinkPrimitiveParams'
+        'body': 'llSetLinkPrimitiveParams(${1:integer linknumber}, ${2:list rules});'
+    '(void) llSetLinkPrimitiveParamsFast':
+        'prefix': 'llSetLinkPrimitiveParamsFast'
+        'body': 'llSetLinkPrimitiveParamsFast(${1:integer linknumber}, ${2:list rules});'
+    '(void) llSetLinkTexture':
+        'prefix': 'llSetLinkTexture'
+        'body': 'llSetLinkTexture(${1:integer linknumber}, ${2:string texture}, ${3:integer face});'
+    '(void) llSetLinkTextureAnim':
+        'prefix': 'llSetLinkTextureAnim'
+        'body': 'llSetLinkTextureAnim(${1:integer link}, ${2:integer mode}, ${3:integer face}, ${4:integer sizex}, ${5:integer sizey}, ${6:float start}, ${7:float length}, ${8:float rate});'
+    '(void) llSetLocalRot':
+        'prefix': 'llSetLocalRot'
+        'body': 'llSetLocalRot(${1:rotation rot});'
+    '(int) llSetMemoryLimit':
+        'prefix': 'llSetMemoryLimit'
+        'body': 'llSetMemoryLimit(${1:integer limit})'
+    '(void) llSetObjectDesc':
+        'prefix': 'llSetObjectDesc'
+        'body': 'llSetObjectDesc(${1:string desc});'
+    '(void) llSetObjectName':
+        'prefix': 'llSetObjectName'
+        'body': 'llSetObjectName(${1:string name});'
+    '(void) llSetParcelMusicURL':
+        'prefix': 'llSetParcelMusicURL'
+        'body': 'llSetParcelMusicURL(${1:string url});'
+    '(void) llSetPayPrice':
+        'prefix': 'llSetPayPrice'
+        'body': 'llSetPayPrice(${1:integer price}, ${2:list quick_pay_buttons});'
+    '(void) llSetPhysicsMaterial':
+        'prefix': 'llSetPhysicsMaterial'
+        'body': 'llSetPhysicsMaterial(${1:integer flags}, ${2:float gravity_multiplier}, ${3:float restitution}, ${4:float friction}, ${5:float density});'
+    '(void) llSetPos':
+        'prefix': 'llSetPos'
+        'body': 'llSetPos(${1:vector pos});'
+    '(int) llSetPrimMediaParams':
+        'prefix': 'llSetPrimMediaParams'
+        'body': 'llSetPrimMediaParams(${1:integer face}, ${2:list params})'
+    '(void) llSetPrimitiveParams':
+        'prefix': 'llSetPrimitiveParams'
+        'body': 'llSetPrimitiveParams(${1:list rules});'
+    '(int) llSetRegionPos':
+        'prefix': 'llSetRegionPos'
+        'body': 'llSetRegionPos(${1:vector pos})'
+    '(void) llSetRemoteScriptAccessPin':
+        'prefix': 'llSetRemoteScriptAccessPin'
+        'body': 'llSetRemoteScriptAccessPin(${1:integer pin});'
+    '(void) llSetRot':
+        'prefix': 'llSetRot'
+        'body': 'llSetRot(${1:rotation rot});'
+    '(void) llSetScale':
+        'prefix': 'llSetScale'
+        'body': 'llSetScale(${1:vector scale});'
+    '(void) llSetScriptState':
+        'prefix': 'llSetScriptState'
+        'body': 'llSetScriptState(${1:string name}, ${2:integer run});'
+    '(void) llSetSitText':
+        'prefix': 'llSetSitText'
+        'body': 'llSetSitText(${1:string text});'
+    '(void) llSetSoundQueueing':
+        'prefix': 'llSetSoundQueueing'
+        'body': 'llSetSoundQueueing(${1:integer queue});'
+    '(void) llSetSoundRadius':
+        'prefix': 'llSetSoundRadius'
+        'body': 'llSetSoundRadius(${1:float radius});'
+    '(void) llSetStatus':
+        'prefix': 'llSetStatus'
+        'body': 'llSetStatus(${1:integer status}, ${2:integer value});'
+    '(void) llSetText':
+        'prefix': 'llSetText'
+        'body': 'llSetText(${1:string text}, ${2:vector color}, ${3:float alpha});'
+    '(void) llSetTexture':
+        'prefix': 'llSetTexture'
+        'body': 'llSetTexture(${1:string texture}, ${2:integer face});'
+    '(void) llSetTextureAnim':
+        'prefix': 'llSetTextureAnim'
+        'body': 'llSetTextureAnim(${1:integer mode}, ${2:integer face}, ${3:integer sizex}, ${4:integer sizey}, ${5:float start}, ${6:float length}, ${7:float rate});'
+    '(void) llSetTimerEvent':
+        'prefix': 'llSetTimerEvent'
+        'body': 'llSetTimerEvent(${1:float sec});'
+    '(void) llSetTorque':
+        'prefix': 'llSetTorque'
+        'body': 'llSetTorque(${1:vector torque}, ${2:integer local});'
+    '(void) llSetTouchText':
+        'prefix': 'llSetTouchText'
+        'body': 'llSetTouchText(${1:string text});'
+    '(void) llSetVehicleFlags':
+        'prefix': 'llSetVehicleFlags'
+        'body': 'llSetVehicleFlags(${1:integer flags});'
+    '(void) llSetVehicleFloatParam':
+        'prefix': 'llSetVehicleFloatParam'
+        'body': 'llSetVehicleFloatParam(${1:integer param}, ${2:float value});'
+    '(void) llSetVehicleRotationParam':
+        'prefix': 'llSetVehicleRotationParam'
+        'body': 'llSetVehicleRotationParam(${1:integer param}, ${2:rotation rot});'
+    '(void) llSetVehicleType':
+        'prefix': 'llSetVehicleType'
+        'body': 'llSetVehicleType(${1:integer type});'
+    '(void) llSetVehicleVectorParam':
+        'prefix': 'llSetVehicleVectorParam'
+        'body': 'llSetVehicleVectorParam(${1:integer param}, ${2:vector vec});'
+    '(void) llSetVelocity':
+        'prefix': 'llSetVelocity'
+        'body': 'llSetVelocity(${1:vector velocity}, ${2:integer local});'
+    '(void) llShout':
+        'prefix': 'llShout'
+        'body': 'llShout(${1:integer channel}, ${2:string msg});'
+    '(float) llSin':
+        'prefix': 'llSin'
+        'body': 'llSin(${1:float theta})'
+    '(integer) llSitOnLink':
+        'prefix': 'llSitOnLink'
+        'body': 'llSitOnLink(${1:key agent_id}, ${2:integer link});'
+    '(void) llSitTarget':
+        'prefix': 'llSitTarget'
+        'body': 'llSitTarget(${1:vector offset}, ${2:rotation rot});'
+    '(void) llSleep':
+        'prefix': 'llSleep'
+        'body': 'llSleep(${1:float sec});'
+    '(float) llSqrt':
+        'prefix': 'llSqrt'
+        'body': 'llSqrt(${1:float val})'
+    '(void) llStartAnimation':
+        'prefix': 'llStartAnimation'
+        'body': 'llStartAnimation(${1:string anim});'
+    '(void) llStopAnimation':
+        'prefix': 'llStopAnimation'
+        'body': 'llStopAnimation(${1:string anim});'
+    '(void) llStopHover':
+        'prefix': 'llStopHover'
+        'body': 'llStopHover();'
+    '(void) llStopLookAt':
+        'prefix': 'llStopLookAt'
+        'body': 'llStopLookAt();'
+    '(void) llStopMoveToTarget':
+        'prefix': 'llStopMoveToTarget'
+        'body': 'llStopMoveToTarget();'
+    '(void) llStopSound':
+        'prefix': 'llStopSound'
+        'body': 'llStopSound();'
+    '(int) llStringLength':
+        'prefix': 'llStringLength'
+        'body': 'llStringLength(${1:string str})'
+    '(str) llStringToBase64':
+        'prefix': 'llStringToBase64'
+        'body': 'llStringToBase64(${1:string str})'
+    '(str) llStringTrim':
+        'prefix': 'llStringTrim'
+        'body': 'llStringTrim(${1:string src}, ${2:integer trim_type})'
+    '(int) llSubStringIndex':
+        'prefix': 'llSubStringIndex'
+        'body': 'llSubStringIndex(${1:string source}, ${2:string pattern})'
+    '(void) llTakeControls':
+        'prefix': 'llTakeControls'
+        'body': 'llTakeControls(${1:integer controls}, ${2:integer accept}, ${3:integer pass_on});'
+    '(float) llTan':
+        'prefix': 'llTan'
+        'body': 'llTan(${1:float theta})'
+    '(int) llTarget':
+        'prefix': 'llTarget'
+        'body': 'llTarget(${1:vector position}, ${2:float range})'
+    '(void) llTargetOmega':
+        'prefix': 'llTargetOmega'
+        'body': 'llTargetOmega(${1:vector axis}, ${2:float spinrate}, ${3:float gain});'
+    '(void) llTargetRemove':
+        'prefix': 'llTargetRemove'
+        'body': 'llTargetRemove(${1:integer number});'
+    '(void) llTeleportAgent':
+        'prefix': 'llTeleportAgent'
+        'body': 'llTeleportAgent(${1:key avatar}, ${2:string landmark}, ${3:vector position}, ${4:vector look_at});'
+    '(void) llTeleportAgentGlobalCoords':
+        'prefix': 'llTeleportAgentGlobalCoords'
+        'body': 'llTeleportAgentGlobalCoords(${1:key agent}, ${2:vector global_coordinates}, ${3:vector region_coordinates}, ${4:vector look_at});'
+    '(void) llTeleportAgentHome':
+        'prefix': 'llTeleportAgentHome'
+        'body': 'llTeleportAgentHome(${1:key id});'
+    '(void) llTextBox':
+        'prefix': 'llTextBox'
+        'body': 'llTextBox(${1:key avatar}, ${2:string message}, ${3:integer chat_channel});'
+    '(str) llToLower':
+        'prefix': 'llToLower'
+        'body': 'llToLower(${1:string src})'
+    '(str) llToUpper':
+        'prefix': 'llToUpper'
+        'body': 'llToUpper(${1:string src})'
+    '(key) llTransferLindenDollars':
+        'prefix': 'llTransferLindenDollars'
+        'body': 'llTransferLindenDollars(${1:key destination}, ${2:integer amount})'
+    '(void) llTriggerSound':
+        'prefix': 'llTriggerSound'
+        'body': 'llTriggerSound(${1:string sound}, ${2:float volume});'
+    '(void) llTriggerSoundLimited':
+        'prefix': 'llTriggerSoundLimited'
+        'body': 'llTriggerSoundLimited(${1:string sound}, ${2:float volume}, ${3:vector top_north_east}, ${4:vector bottom_south_west});'
+    '(void) llUnSit':
+        'prefix': 'llUnSit'
+        'body': 'llUnSit(${1:key id});'
+    '(str) llUnescapeURL':
+        'prefix': 'llUnescapeURL'
+        'body': 'llUnescapeURL(${1:string url})'
+    '(void) llUpdateCharacter':
+        'prefix': 'llUpdateCharacter'
+        'body': 'llUpdateCharacter(${1:list options});'
+    '(key) llUpdateKeyValue':
+        'prefix': 'llUpdateKeyValue'
+        'body': 'llUpdateKeyValue(${1:string k}, ${2:string v}, ${3:integer checked}, ${4:string ov})'
+    '(float) llVecDist':
+        'prefix': 'llVecDist'
+        'body': 'llVecDist(${1:vector v1}, ${2:vector v2})'
+    '(float) llVecMag':
+        'prefix': 'llVecMag'
+        'body': 'llVecMag(${1:vector v})'
+    '(vec) llVecNorm':
+        'prefix': 'llVecNorm'
+        'body': 'llVecNorm(${1:vector v})'
+    '(void) llVolumeDetect':
+        'prefix': 'llVolumeDetect'
+        'body': 'llVolumeDetect(${1:integer detect});'
+    '(void) llWanderWithin':
+        'prefix': 'llWanderWithin'
+        'body': 'llWanderWithin(${1:vector center}, ${2:vector radius}, ${3:list options});'
+    '(float) llWater':
+        'prefix': 'llWater'
+        'body': 'llWater(${1:vector offset})'
+    '(void) llWhisper':
+        'prefix': 'llWhisper'
+        'body': 'llWhisper(${1:integer channel}, ${2:string msg});'
+    '(vec) llWind':
+        'prefix': 'llWind'
+        'body': 'llWind(${1:vector offset})'
+    '(str) llXorBase64':
+        'prefix': 'llXorBase64'
+        'body': 'llXorBase64(${1:string str1}, ${2:string str2})'
+    'money':
+        'prefix': 'money'
+        'body': 'money(key ${1:id}, integer ${2:amount})\n{\n\t$0\n}'
+    'moving_end':
+        'prefix': 'moving_end'
+        'body': 'moving_end()\n{\n\t$0\n}'
+    'moving_start':
+        'prefix': 'moving_start'
+        'body': 'moving_start()\n{\n\t$0\n}'
+    'no_sensor':
+        'prefix': 'no_sensor'
+        'body': 'no_sensor()\n{\n\t$0\n}'
+    'not_at_rot_target':
+        'prefix': 'not_at_rot_target'
+        'body': 'not_at_rot_target()\n{\n\t$0\n}'
+    'not_at_target':
+        'prefix': 'not_at_target'
+        'body': 'not_at_target()\n{\n\t$0\n}'
+    'object_rez':
+        'prefix': 'object_rez'
+        'body': 'object_rez(key ${1:id})\n{\n\t$0\n}'
+    'on_rez':
+        'prefix': 'on_rez'
+        'body': 'on_rez(integer ${1:start_param})\n{\n\t$0\n}'
+    'path_update':
+        'prefix': 'path_update'
+        'body': 'path_update(integer ${1:type}, list ${2:reserved})\n{\n\t$0\n}'
+    'remote_data':
+        'prefix': 'remote_data'
+        'body': 'remote_data(integer ${1:event_type}, key ${2:channel}, key ${3:message_id}, string ${4:sender}, integer ${5:idata}, string ${6:sdata})\n{\n\t$0\n}'
+    'run_time_permissions':
+        'prefix': 'run_time_permissions'
+        'body': 'run_time_permissions(integer ${1:perm})\n{\n\t$0\n}'
+    'sensor':
+        'prefix': 'sensor'
+        'body': 'sensor(integer ${1:index})\n{\n\t$0\n}'
+    'state':
+        'prefix': 'state'
+        'body': 'state ${1:name}'
+    'state_entry':
+        'prefix': 'state_entry'
+        'body': 'state_entry()\n{\n\t$0\n}'
+    'state_exit':
+        'prefix': 'state_exit'
+        'body': 'state_exit()\n{\n\t$0\n}'
+    'timer':
+        'prefix': 'timer'
+        'body': 'timer()\n{\n\t$0\n}'
+    'touch':
+        'prefix': 'touch'
+        'body': 'touch(integer ${1:index})\n{\n\t$0\n}'
+    'touch_end':
+        'prefix': 'touch_end'
+        'body': 'touch_end(integer ${1:index})\n{\n\t$0\n}'
+    'touch_start':
+        'prefix': 'touch_start'
+        'body': 'touch_start(integer ${1:index})\n{\n\t$0\n}'
+    'transaction_result':
+        'prefix': 'transaction_result'
+        'body': 'transaction_result(key ${1:id}, integer ${2:success}, string ${3:data})\n{\n\t$0\n}'
+    'while …':
+        'prefix': 'while'
+        'body': 'while ($1)\n{\n\t$0\n}'

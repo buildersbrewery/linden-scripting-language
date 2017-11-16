@@ -1,0 +1,17 @@
+*                                   text=auto    eol=lf
+.github/                            export-ignore
+.sublime/syntaxes/tests/**          export-ignore
+bin/lslint/linux/lslint             binary
+bin/lslint/osx/lslint               binary
+bin/lslint/windows/lslint.exe       binary
+bin/lslint/windows32/lslint.exe     binary
+bin/lslint/windows64/lslint.exe     binary
+bin/mcpp/linux/bin/mcpp             binary
+bin/mcpp/osx/bin/mcpp               binary
+bin/mcpp/windows/mcpp.exe           binary
+tests/**                            export-ignore
+.gitattributes                      export-ignore
+.gitignore                          export-ignore
+.sublimelinterrc                    export-ignore
+package_control_channel.json        export-ignore
+TODO.md                             export-ignore

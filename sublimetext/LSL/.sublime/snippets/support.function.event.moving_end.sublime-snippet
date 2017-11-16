@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[moving_end()${LSL_WHITESPACE_BEFORE}{${LSL_WHITESPACE_INSIDE_FIRST}$0${LSL_WHITESPACE_INSIDE_LAST}}]]></content>
+	<tabTrigger>moving_end</tabTrigger>
+	<scope>meta.class.state.body.lsl</scope>
+	<description>event</description>
+</snippet>

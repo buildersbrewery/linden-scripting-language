@@ -1,0 +1,188 @@
+{
+    "globals":
+    {
+        "background": "#f2f0ec",
+        "foreground": "#2d2d2d",
+        "caret": "#2d2d2d",
+        "invisibles": "#d3d0c8",
+        "highlight": "#f1e8a4",
+        "highlight_foreground": "#f1e8a4",
+        "line_highlight": "#d3d0c8",
+        "find_highlight": "#cd4d26",
+        "find_highlight_foreground": "#2d2d2d",
+        "selection": "#d3d0c8",
+        "selection_border": "#bcb8ac",
+        "inactive_selection": "#d3d0c8",
+//      "inactive_selection_foreground": null,
+//      "implicit_selection_foreground": null,
+//      "rulers": null,
+        "guide": "#474747",
+        "active_guide": "#2d2d2d",
+        "stack_guide": "#f6eeda",
+        "brackets_foreground": "#d3d0c8",
+        "bracket_options": "underline",
+        "bracket_contents_options": "underline",
+        "bracket_contents_foreground": "#d3d0c8",
+//      "gutter": null,
+        "gutter_foreground": "#968f7c",
+//      "shadow": null,
+//      "shadow_width": null,
+//      "tags_foreground": null,
+        "tag_options": "underline",
+//      "misspelling": null,
+//      "minimap_border": null,
+//      "accent": null,
+        "popup_css": "html { background-color: #f2f0ec; color: #2d2d2d; } .error, .deleted { color: #820124; } .success, .inserted { color: #1a4d1a; } .warning, .modified { color: #cd4d26; }",
+        "phantom_css": "html { background-color: #f2f0ec; color: #2d2d2d; } .error, .deleted { color: #820124; } .success, .inserted { color: #1a4d1a; } .warning, .modified { color: #cd4d26; }"
+    },
+    "rules":
+    [
+        {
+            "scope": "entity.name.class.state",
+            "foreground": "#801a4d",
+//          "background": null,
+//          "selection_foreground": null,
+//          "font_style": null
+        },
+        {
+            "scope": "storage.type",
+            "foreground": "#006600",
+//          "background": null,
+//          "selection_foreground": null,
+//          "font_style": null
+        },
+        {
+            "scope": "support.function.event",
+            "foreground": "#004d80",
+//          "background": null,
+//          "selection_foreground": null,
+//          "font_style": null
+        },
+        {
+            "scope": "comment.block, comment.line.double-slash",
+            "foreground": "#cd4d26",
+//          "background": null,
+//          "selection_foreground": null,
+            "font_style": "italic"
+        },
+        {
+            "scope": "constant.character.escape",
+            "foreground": "#cd4d26",
+//          "background": null,
+//          "selection_foreground": null,
+            "font_style": "bold"
+        },
+        {
+            "scope": "string.quoted.double",
+            "foreground": "#006600",
+//          "background": null,
+//          "selection_foreground": null,
+//          "font_style": null
+        },
+        {
+            "scope": "support.function.builtin",
+            "foreground": "#820124",
+//          "background": null,
+//          "selection_foreground": null,
+//          "font_style": null
+        },
+        {
+            "scope": "constant.language.builtin.float",
+            "foreground": "#4c1a80",
+//          "background": null,
+//          "selection_foreground": null,
+//          "font_style": null
+        },
+        {
+            "scope": "constant.language.integer, constant.language.builtin.integer, constant.language.builtin.integer.boolean",
+            "foreground": "#242687",
+//          "background": null,
+//          "selection_foreground": null,
+//          "font_style": null
+        },
+        {
+            "scope": "constant.language.string, constant.language.builtin.string",
+            "foreground": "#336699",
+//          "background": null,
+//          "selection_foreground": null,
+//          "font_style": null
+        },
+        {
+            "scope": "constant.language.builtin.rotation, constant.language.builtin.vector",
+            "foreground": "#774477",
+//          "background": null,
+//          "selection_foreground": null,
+//          "font_style": null
+        },
+        {
+            "scope": "keyword.control.flow",
+            "foreground": "#0000cd",
+//          "background": null,
+//          "selection_foreground": null,
+//          "font_style": null
+        },
+        {
+            "scope": "invalid",
+            "foreground": "#f2f0ec",
+            "background": "#820124",
+//          "selection_foreground": null,
+//          "font_style": null
+        },
+        {
+            "scope": "reserved",
+            "foreground": "#f2f0ec",
+            "background": "#cd4d26",
+//          "selection_foreground": null,
+//          "font_style": null
+        },
+        {
+            "scope": "markup.deleted",
+            "foreground": "#820124",
+//          "background": null,
+//          "selection_foreground": null,
+//          "font_style": null
+        },
+        {
+            "scope": "markup.inserted",
+            "foreground": "#006600",
+//          "background": null,
+//          "selection_foreground": null,
+//          "font_style": null
+        },
+        {
+            "scope": "markup.changed",
+            "foreground": "#cd4d26",
+//          "background": null,
+//          "selection_foreground": null,
+//          "font_style": null
+        },
+        {
+            "scope": "markup.ignored, markup.untracked",
+            "foreground": "#474747",
+//          "background": null,
+//          "selection_foreground": null,
+//          "font_style": null
+        },
+        {
+            "scope": "sublimelinter.mark.error",
+            "foreground": "#820124",
+//          "background": null,
+//          "selection_foreground": null,
+//          "font_style": null
+        },
+        {
+            "scope": "sublimelinter.gutter-mark",
+            "foreground": "#474747",
+//          "background": null,
+//          "selection_foreground": null,
+//          "font_style": null
+        },
+        {
+            "scope": "sublimelinter.mark.warning",
+            "foreground": "#cd4d26",
+//          "background": null,
+//          "selection_foreground": null,
+//          "font_style": null
+        }
+    ]
+}
