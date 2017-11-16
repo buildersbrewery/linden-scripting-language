@@ -1,6 +1,0 @@
-<snippet>
-	<content><![CDATA[http_response(key ${1:request_id}, integer ${2:status}, list ${3:metadata}, string ${4:body})${LSL_WHITESPACE_BEFORE}{${LSL_WHITESPACE_INSIDE_FIRST}$0${LSL_WHITESPACE_INSIDE_LAST}}]]></content>
-	<tabTrigger>http_response</tabTrigger>
-	<scope>meta.class.state.body.lsl</scope>
-	<description>event</description>
-</snippet>

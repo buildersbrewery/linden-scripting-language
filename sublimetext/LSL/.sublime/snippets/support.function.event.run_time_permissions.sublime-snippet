@@ -1,6 +1,0 @@
-<snippet>
-	<content><![CDATA[run_time_permissions(integer ${1:perm})${LSL_WHITESPACE_BEFORE}{${LSL_WHITESPACE_INSIDE_FIRST}$0${LSL_WHITESPACE_INSIDE_LAST}}]]></content>
-	<tabTrigger>run_time_permissions</tabTrigger>
-	<scope>meta.class.state.body.lsl</scope>
-	<description>event</description>
-</snippet>

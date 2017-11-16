@@ -1,6 +1,0 @@
-<snippet>
-	<content><![CDATA[on_rez(integer ${1:start_param})${LSL_WHITESPACE_BEFORE}{${LSL_WHITESPACE_INSIDE_FIRST}$0${LSL_WHITESPACE_INSIDE_LAST}}]]></content>
-	<tabTrigger>on_rez</tabTrigger>
-	<scope>meta.class.state.body.lsl</scope>
-	<description>event</description>
-</snippet>

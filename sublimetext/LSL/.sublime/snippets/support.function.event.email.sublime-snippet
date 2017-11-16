@@ -1,6 +1,0 @@
-<snippet>
-	<content><![CDATA[email(string ${1:time}, string ${2:address}, string ${3:subject}, string ${4:message}, integer ${5:num_left})${LSL_WHITESPACE_BEFORE}{${LSL_WHITESPACE_INSIDE_FIRST}$0${LSL_WHITESPACE_INSIDE_LAST}}]]></content>
-	<tabTrigger>email</tabTrigger>
-	<scope>meta.class.state.body.lsl</scope>
-	<description>event</description>
-</snippet>

@@ -1,6 +1,0 @@
-<snippet>
-	<content><![CDATA[else${LSL_WHITESPACE_BEFORE}{${LSL_WHITESPACE_INSIDE_FIRST}${1:; // do something}${LSL_WHITESPACE_INSIDE_LAST}}${LSL_WHITESPACE_AFTER}$0]]></content>
-	<tabTrigger>else</tabTrigger>
-	<scope>meta.function.user-defined.body.lsl, meta.event.body.lsl</scope>
-	<description>conditional control</description>
-</snippet>

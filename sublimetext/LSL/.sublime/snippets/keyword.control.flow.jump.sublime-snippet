@@ -1,6 +1,0 @@
-<snippet>
-	<content><![CDATA[jump ${1:target};${LSL_WHITESPACE_AFTER}$0]]></content>
-	<tabTrigger>jump</tabTrigger>
-	<scope>meta.function.user-defined.body.lsl, meta.event.body.lsl</scope>
-	<description>flow control</description>
-</snippet>
