@@ -1223,7 +1223,7 @@ llXorBase64StringsCorrect
 llGodLikeRezObject
 llSetInventoryPermMask
 llSetObjectPermMask
-/C14"log" STYLE_EXTENSION
+/C14"log"
 print
 /C15"unimplemented"
 CHARACTER_MAX_ANGULAR_ACCEL
