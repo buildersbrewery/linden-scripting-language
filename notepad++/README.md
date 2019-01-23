@@ -25,8 +25,8 @@ Check these paths first:
 
 * portable: `...\Notepad++\plugins\APIs\lsl.xml`
 * installed:
-  * 32-bit: `C:\Program Files (x86)\Notepad++\plugins\APIs\lsl.xml`
-  * 64-bit: `C:\Program Files\Notepad++\plugins\APIs\lsl.xml`
+  * 32-bit: `C:\Program Files (x86)\Notepad++\autoCompletion\lsl.xml`
+  * 64-bit: `C:\Program Files\Notepad++\autoCompletion\lsl.xml`
 
 Then:
 
