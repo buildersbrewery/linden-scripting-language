@@ -1,9 +1,24 @@
-*.bak
-*.cache
-*.elc
-*.pyc
-*.pyo
-*.sublime-workspace
+# macOS
+
 .DS_Store
-Desktop.ini
 Thumbs.db
+
+# Windows
+
+[Dd]esktop.ini
+
+# Node.js
+
+node_modules/**
+
+# Python
+
+__pycache__/**
+.ropeproject/**
+*.cache
+*.log
+*.py[co]
+
+# Sublime Text
+
+*.sublime-workspace

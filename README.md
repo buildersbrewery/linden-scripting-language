@@ -1,6 +1,6 @@
 # [Linden Scripting Language (LSL)](https://wiki.secondlife.com/wiki/LSL_Portal) syntax grammar, syntax highlighting and snippet files.
 
-![Maintained](https://img.shields.io/maintenance/yes/2018.svg?style=flat-square)
+![Maintained](https://img.shields.io/maintenance/yes/2019.svg?style=flat-square)
 [![Open issues](https://img.shields.io/github/issues-raw/buildersbrewery/linden-scripting-language.svg?style=flat-square)](https://github.com/buildersbrewery/linden-scripting-language/issues)
 [![Open pull requests](https://img.shields.io/github/issues-pr-raw/buildersbrewery/linden-scripting-language.svg?style=flat-square)](https://github.com/buildersbrewery/linden-scripting-language/pulls)
 

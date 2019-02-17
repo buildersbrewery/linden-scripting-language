@@ -29,6 +29,7 @@
     <Template Name="HTTP_METHOD"                    Comments="1" Strings="1">HTTP_METHOD, [+string method+], ^</Template>
     <Template Name="HTTP_MIMETYPE"                  Comments="1" Strings="1">HTTP_MIMETYPE, [+string mimeType+], ^</Template>
     <Template Name="HTTP_PRAGMA_NO_CACHE"           Comments="1" Strings="1">HTTP_PRAGMA_NO_CACHE, [+integer send_header+], ^</Template>
+    <Template Name="HTTP_USER_AGENT"                Comments="1" Strings="1">HTTP_USER_AGENT, [+string user_agent_value+], ^</Template>
     <Template Name="HTTP_VERBOSE_THROTTLE"          Comments="1" Strings="1">HTTP_VERBOSE_THROTTLE, [+integer noisy+], ^</Template>
     <Template Name="HTTP_VERIFY_CERT"               Comments="1" Strings="1">HTTP_VERIFY_CERT, [+integer verify+], ^</Template>
     <Template Name="PRIM_ALLOW_UNSIT"               Comments="1" Strings="1">PRIM_ALLOW_UNSIT, [+integer flag+], ^</Template>
@@ -259,9 +260,12 @@ while ([+condition+]);</Template>
     <Template Name="llGetColor"                     Comments="1" Strings="1">llGetColor([+integer face+])</Template>
     <Template Name="llGetCreator"                   Comments="1" Strings="1">llGetCreator()</Template>
     <Template Name="llGetDate"                      Comments="1" Strings="1">llGetDate()</Template>
+    <Template Name="llGetDayLength"                 Comments="1" Strings="1">llGetDayLength()</Template>
+    <Template Name="llGetDayOffset"                 Comments="1" Strings="1">llGetDayOffset()</Template>
     <Template Name="llGetDisplayName"               Comments="1" Strings="1">llGetDisplayName([+key id+])</Template>
     <Template Name="llGetEnergy"                    Comments="1" Strings="1">llGetEnergy()</Template>
     <Template Name="llGetEnv"                       Comments="1" Strings="1">llGetEnv([+string name+])</Template>
+    <Template Name="llGetEnvironment"               Comments="1" Strings="1">llGetEnvironment([+vector pos+], [+list params+])</Template>
     <Template Name="llGetExperienceDetails"         Comments="1" Strings="1">llGetExperienceDetails([+key experience_id+])</Template>
     <Template Name="llGetExperienceErrorMessage"    Comments="1" Strings="1">llGetExperienceErrorMessage([+integer error+])</Template>
     <Template Name="llGetForce"                     Comments="1" Strings="1">llGetForce()</Template>
@@ -293,12 +297,15 @@ while ([+condition+]);</Template>
     <Template Name="llGetMaxScaleFactor"            Comments="1" Strings="1">llGetMaxScaleFactor()</Template>
     <Template Name="llGetMemoryLimit"               Comments="1" Strings="1">llGetMemoryLimit()</Template>
     <Template Name="llGetMinScaleFactor"            Comments="1" Strings="1">llGetMinScaleFactor()</Template>
+    <Template Name="llGetMoonDirection"             Comments="1" Strings="1">llGetMoonDirection()</Template>
+    <Template Name="llGetMoonRotation"              Comments="1" Strings="1">llGetMoonRotation()</Template>
     <Template Name="llGetNextEmail"                 Comments="1" Strings="1">llGetNextEmail([+string address+], [+string subject+]);
 ^</Template>
     <Template Name="llGetNotecardLine"              Comments="1" Strings="1">llGetNotecardLine([+string name+], [+integer line+])</Template>
     <Template Name="llGetNumberOfNotecardLines"     Comments="1" Strings="1">llGetNumberOfNotecardLines([+string name+])</Template>
     <Template Name="llGetNumberOfPrims"             Comments="1" Strings="1">llGetNumberOfPrims()</Template>
     <Template Name="llGetNumberOfSides"             Comments="1" Strings="1">llGetNumberOfSides()</Template>
+    <Template Name="llGetObjectAnimationNames"      Comments="1" Strings="1">llGetObjectAnimationNames()</Template>
     <Template Name="llGetObjectDesc"                Comments="1" Strings="1">llGetObjectDesc()</Template>
     <Template Name="llGetObjectDetails"             Comments="1" Strings="1">llGetObjectDetails([+key id+], [+list params+])</Template>
     <Template Name="llGetObjectMass"                Comments="1" Strings="1">llGetObjectMass([+key id+])</Template>
@@ -322,9 +329,15 @@ while ([+condition+]);</Template>
     <Template Name="llGetPrimitiveParams"           Comments="1" Strings="1">llGetPrimitiveParams([+list params+])</Template>
     <Template Name="llGetRegionAgentCount"          Comments="1" Strings="1">llGetRegionAgentCount()</Template>
     <Template Name="llGetRegionCorner"              Comments="1" Strings="1">llGetRegionCorner()</Template>
+    <Template Name="llGetRegionDayLength"           Comments="1" Strings="1">llGetRegionDayLength()</Template>
+    <Template Name="llGetRegionDayOffset"           Comments="1" Strings="1">llGetRegionDayOffset()</Template>
     <Template Name="llGetRegionFPS"                 Comments="1" Strings="1">llGetRegionFPS()</Template>
     <Template Name="llGetRegionFlags"               Comments="1" Strings="1">llGetRegionFlags()</Template>
+    <Template Name="llGetRegionMoonDirection"       Comments="1" Strings="1">llGetRegionMoonDirection()</Template>
+    <Template Name="llGetRegionMoonRotation"        Comments="1" Strings="1">llGetRegionMoonRotation()</Template>
     <Template Name="llGetRegionName"                Comments="1" Strings="1">llGetRegionName()</Template>
+    <Template Name="llGetRegionSunDirection"       Comments="1" Strings="1">llGetRegionSunDirection()</Template>
+    <Template Name="llGetRegionSunRotation"        Comments="1" Strings="1">llGetRegionSunRotation()</Template>
     <Template Name="llGetRegionTimeDilation"        Comments="1" Strings="1">llGetRegionTimeDilation()</Template>
     <Template Name="llGetRootPosition"              Comments="1" Strings="1">llGetRootPosition()</Template>
     <Template Name="llGetRootRotation"              Comments="1" Strings="1">llGetRootRotation()</Template>
@@ -340,6 +353,7 @@ while ([+condition+]);</Template>
     <Template Name="llGetStatus"                    Comments="1" Strings="1">llGetStatus([+integer status+])</Template>
     <Template Name="llGetSubString"                 Comments="1" Strings="1">llGetSubString([+string src+], [+integer start+], [+integer end+])</Template>
     <Template Name="llGetSunDirection"              Comments="1" Strings="1">llGetSunDirection()</Template>
+    <Template Name="llGetSunRotation"               Comments="1" Strings="1">llGetSunRotation()</Template>
     <Template Name="llGetTexture"                   Comments="1" Strings="1">llGetTexture([+integer face+])</Template>
     <Template Name="llGetTextureOffset"             Comments="1" Strings="1">llGetTextureOffset([+integer face+])</Template>
     <Template Name="llGetTextureRot"                Comments="1" Strings="1">llGetTextureRot([+integer face+])</Template>
@@ -428,6 +442,7 @@ while ([+condition+]);</Template>
 ^</Template>
     <Template Name="llMoveToTarget"                 Comments="1" Strings="1">llMoveToTarget([+vector target+], [+float tau+]);
 ^</Template>
+    <Template Name="llName2Key"                     Comments="1" Strings="1">llName2Key([+string name+])</Template>
     <Template Name="llNavigateTo"                   Comments="1" Strings="1">llNavigateTo([+vector pos+], [+list options+]);
 ^</Template>
     <Template Name="llOffsetTexture"                Comments="1" Strings="1">llOffsetTexture([+float u+], [+float v+], [+integer face+]);
@@ -491,6 +506,7 @@ while ([+condition+]);</Template>
 ^</Template>
     <Template Name="llRequestSecureURL"             Comments="1" Strings="1">llRequestSecureURL()</Template>
     <Template Name="llRequestSimulatorData"         Comments="1" Strings="1">llRequestSimulatorData([+string region+], [+integer data+])</Template>
+    <Template Name="llRequestUserKey"               Comments="1" Strings="1">llRequestUserKey([+string name+])</Template>
     <Template Name="llRequestURL"                   Comments="1" Strings="1">llRequestURL()</Template>
     <Template Name="llRequestUsername"              Comments="1" Strings="1">llRequestUsername([+key id+])</Template>
     <Template Name="llResetAnimationOverride"       Comments="1" Strings="1">llResetAnimationOverride([+string anim_state+]);
@@ -658,6 +674,8 @@ while ([+condition+]);</Template>
     <Template Name="llSqrt"                         Comments="1" Strings="1">llSqrt([+float val+])</Template>
     <Template Name="llStartAnimation"               Comments="1" Strings="1">llStartAnimation([+string anim+]);
 ^</Template>
+    <Template Name="llStartObjectAnimation"         Comments="1" Strings="1">llStartObjectAnimation([+string anim+]);
+^</Template>
     <Template Name="llStopAnimation"                Comments="1" Strings="1">llStopAnimation([+string anim+]);
 ^</Template>
     <Template Name="llStopHover"                    Comments="1" Strings="1">llStopHover();
@@ -665,6 +683,8 @@ while ([+condition+]);</Template>
     <Template Name="llStopLookAt"                   Comments="1" Strings="1">llStopLookAt();
 ^</Template>
     <Template Name="llStopMoveToTarget"             Comments="1" Strings="1">llStopMoveToTarget();
+^</Template>
+    <Template Name="llStopObjectAnimation"          Comments="1" Strings="1">llStopObjectAnimation([+string anim+]);
 ^</Template>
     <Template Name="llStopSound"                    Comments="1" Strings="1">llStopSound();
 ^</Template>

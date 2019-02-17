@@ -1,3 +1,13 @@
-* text=auto
-*.pdf    diff=astextplain
-*.PDF    diff=astextplain
+*                           text=auto   eol=lf
+*.lsl                                   whitespace=tab-in-indent,trailing-space,tabwidth=4
+*.xml                                   whitespace=-tab-in-indent,trailing-space,tabwidth=2
+*.yaml                                  whitespace=tab-in-indent,trailing-space,tabwidth=2
+
+# Git
+
+.gitattributes                          export-ignore
+.gitignore                              export-ignore
+
+# GitHub
+
+.github/**                              export-ignore
