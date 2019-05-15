@@ -1,18 +1,15 @@
 ### Syntax
 
-Check these paths first:
+Check that one of these paths exist, depending on your installation type:
 
-* portable: `...\Notepad++\userDefineLang.xml`
-* installed: `C:\Users\USERNAME\AppData\Roaming\Notepad++\userDefineLang.xml`
+* portable: `...\Notepad++\userDefineLangs\`
+* installed: `C:\Users\USERNAME\AppData\Roaming\Notepad++\userDefineLangs\`
 
 Then:
 
-* If user-defined languages **exist**:
-  * Copy and paste the code for [LSL](https://wiki.secondlife.com/wiki/LSL_Portal) from [userDefineLang.xml](userDefineLang.xml).
-  * When saving changes to the file make sure the file's encoding is `ANSI/ASCII`!
-* If user-defined languages **do not exist**:
-  * Open [Notepad++](https://www.notepad-plus-plus.org/) and go to `Language > Define your language > Import` to import a temporary copy of [userDefineLang.xml](userDefineLang.xml) which you can delete when done.
-  * :warning: Make sure the encoding of the file you are importing is `ANSI/ASCII`!
+* Copy and paste the code in [LSL](https://wiki.secondlife.com/wiki/LSL_Portal) from [userDefineLang.xml](userDefineLang.xml) to a new file and save as LSL.xml in the apropriate path above.
+* When saving changes to the file make sure the file's encoding is `ANSI/ASCII`!
+  
 * Choose the language via `Language > LSL` from the menu. You should should be able to find it at the bottom of the language menu in the section for user defined languages.
 
 <p align="center">
@@ -21,16 +18,16 @@ Then:
 
 ### Autocompletion
 
-Check these paths first:
+Check that one of these paths exist, depending on your installation type:
 
-* portable: `...\Notepad++\plugins\APIs\lsl.xml`
+* portable: `...\Notepad++\autoCompletion\`
 * installed:
-  * 32-bit: `C:\Program Files (x86)\Notepad++\autoCompletion\lsl.xml`
-  * 64-bit: `C:\Program Files\Notepad++\autoCompletion\lsl.xml`
+  * 32-bit: `C:\Program Files (x86)\Notepad++\autoCompletion\`
+  * 64-bit: `C:\Program Files\Notepad++\autoCompletion\`
 
 Then:
 
-* Copy and paste [`lsl.xml`](plugins/APIs/lsl.xml) to the target path.
+* Copy and paste the code in [`lsl.xml`](plugins/APIs/lsl.xml) to a new file and save as lsl.xml in the apropriate path above.
 * :warning: Make sure the file's encoding is `ANSI/ASCII`!
 * Goto `Settings > Preferences > Backup&Autocompletion` and make sure you set `enable auto-completion on each input` to `function completion` and you enable `function parameter hints on input`.
 
