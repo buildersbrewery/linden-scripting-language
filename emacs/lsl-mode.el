@@ -130,7 +130,7 @@ defvar lsl-mode-syntax-table
 
 (defvar lsl-font-lock-keywords)
 (setq lsl-font-lock-keywords
-  '(
+  `(
     (,lsl-type-regexp . font-lock-type-face)
     (,lsl-constant-regexp . font-lock-constant-face)
     (,lsl-event-regexp . font-lock-builtin-face)
