@@ -1,3 +1,25 @@
+> **This repository is archived and no longer maintained.**  
+>  
+> Please use the new actively maintained project:  
+> **https://github.com/buildersbrewery/lsl-tools**
+
+---
+
+### With deep gratitude to Kireji Haiku (Kireji2 Haiku)
+
+The original Builders Brewery GitHub tools — including the Sublime Text LSL package — were created and maintained for many years by **Kireji Haiku**. He quietly built and cared for these resources so that Second Life scripters would have better tools, never asking for payment or recognition.
+
+His work was appreciated and used by many in the community. We remain grateful for his vision, his generosity, and the years of service he gave behind the scenes.
+
+Real-life career responsibilities eventually made it impossible for him to continue active maintenance. We are proud of him and the path he has taken.
+
+Kireji — thank you, dear friend, for everything you created and for the help it continues to give residents of Second Life. You are missed, and you will always be welcome.
+
+— Senn Maximus  
+Co-Founder & CEO, Builders Brewery
+
+---
+
 # [Linden Scripting Language (LSL)](https://wiki.secondlife.com/wiki/LSL_Portal) syntax grammar, syntax highlighting and snippet files.
 
 ![Maintained](https://img.shields.io/maintenance/yes/2019.svg?style=flat-square)
