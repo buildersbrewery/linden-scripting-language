@@ -167,6 +167,14 @@
         <KeyWord name="DEBUG_CHANNEL" func="no" />
         <KeyWord name="DEG_TO_RAD" func="no" />
         <KeyWord name="DENSITY" func="no" />
+        <KeyWord name="ENV_INVALID_AGENT" func="no" />
+        <KeyWord name="ENV_INVALID_RULE" func="no" />
+        <KeyWord name="ENV_NOT_EXPERIENCE" func="no" />
+        <KeyWord name="ENV_NO_ENVIRONMENT" func="no" />
+        <KeyWord name="ENV_NO_EXPERIENCE_LAND" func="no" />
+        <KeyWord name="ENV_NO_EXPERIENCE_PERMISSION" func="no" />
+        <KeyWord name="ENV_VALIDATION_FAIL" func="no" />
+        <KeyWord name="ENVIRONMENT_DAYINFO" func="no" />
         <KeyWord name="EOF" func="no" />
         <KeyWord name="ERR_GENERIC" func="no" />
         <KeyWord name="ERR_MALFORMED_PARAMS" func="no" />
@@ -599,6 +607,22 @@
         <KeyWord name="SIT_NO_ACCESS" func="no" />
         <KeyWord name="SIT_NO_EXPERIENCE_PERMISSION" func="no" />
         <KeyWord name="SIT_NO_SIT_TARGET" func="no" />
+        <KeyWord name="SKY_AMBIENT" func="no" />
+        <KeyWord name="SKY_CLOUDS" func="no" />
+        <KeyWord name="SKY_CLOUD_TEXTURE" func="no" />
+        <KeyWord name="SKY_DOME" func="no" />
+        <KeyWord name="SKY_GAMMA" func="no" />
+        <KeyWord name="SKY_GLOW" func="no" />
+        <KeyWord name="SKY_LIGHT" func="no" />
+        <KeyWord name="SKY_MOON" func="no" />
+        <KeyWord name="SKY_MOON_TEXTURE" func="no" />
+        <KeyWord name="SKY_PLANET" func="no" />
+        <KeyWord name="SKY_REFRACTION" func="no" />
+        <KeyWord name="SKY_STAR_BRIGHTNESS" func="no" />
+        <KeyWord name="SKY_SUN" func="no" />
+        <KeyWord name="SKY_SUN_TEXTURE" func="no" />
+        <KeyWord name="SKY_TEXTURE_DEFAULTS" func="no" />
+        <KeyWord name="SKY_TRACKS" func="no" />
         <KeyWord name="SMOOTH" func="no" />
         <KeyWord name="SQRT2" func="no" />
         <KeyWord name="STATUS_BLOCK_GRAB" func="no" />
@@ -687,6 +711,14 @@
         <KeyWord name="VEHICLE_VERTICAL_ATTRACTION_TIMESCALE" func="no" />
         <KeyWord name="VERTICAL" func="no" />
         <KeyWord name="WANDER_PAUSE_AT_WAYPOINTS" func="no" />
+        <KeyWord name="WATER_BLUR_MULTIPLIER" func="no" />
+        <KeyWord name="WATER_FOG" func="no" />
+        <KeyWord name="WATER_FRESNEL" func="no" />
+        <KeyWord name="WATER_NORMAL_SCALE" func="no" />
+        <KeyWord name="WATER_NORMAL_TEXTURE" func="no" />
+        <KeyWord name="WATER_REFRACTION" func="no" />
+        <KeyWord name="WATER_TEXTURE_DEFAULTS" func="no" />
+        <KeyWord name="WATER_WAVE_DIRECTION" func="no" />
         <KeyWord name="XP_ERROR_EXPERIENCES_DISABLED" func="no" />
         <KeyWord name="XP_ERROR_EXPERIENCE_DISABLED" func="no" />
         <KeyWord name="XP_ERROR_EXPERIENCE_SUSPENDED" func="no" />
@@ -852,7 +884,7 @@ llMessageLinked is used to send messages from one script to another within the s
         <KeyWord name="llAbs" func="yes">
             <Overload retVal="integer" descr="Returns an integer that is the positive version of val.
 
-integer val – Any integer value.
+integer val - Any integer value.
 
 This function is similar to functions found in many other languages.">
                 <Param name="integer val" />
@@ -861,7 +893,7 @@ This function is similar to functions found in many other languages.">
         <KeyWord name="llAcos" func="yes">
             <Overload retVal="float" descr="Returns the arccosine in radians of val.
 
-float val – must fall in the range [-1.0, 1.0].
+float val - must fall in the range [-1.0, 1.0].
 
 The returned value is in the range [0.0, PI].">
                 <Param name="float val" />
@@ -1586,7 +1618,7 @@ llGetAnimation.">
         <KeyWord name="llGetAnimationOverride" func="yes">
             <Overload retVal="string" descr="Returns a string that is the name of the animation that is being used for the specified animation state (anim_state).
 
-string anim_state – animation state
+string anim_state - animation state
 
 To run this function the script must request the PERMISSION_OVERRIDE_ANIMATIONS
 or PERMISSION_TRIGGER_ANIMATION permission with llRequestPermissions.">
@@ -1656,6 +1688,12 @@ format &apos;YYYY-MM-DD&apos;.
 If you wish to know the time as well use: llGetTimestamp which uses the
 format &apos;YYYY-MM-DDThh:mm:ss.ff..fZ&apos;." />
         </KeyWord>
+        <KeyWord name="llGetDayLength" func="yes">
+            <Overload retVal="integer" descr="Return the number of seconds in the day cycle applied to the current parcel. llGetDayLength returns the number of seconds for the current parcel, llGetRegionDayLength is the number of seconds in the day cycle applied to the entire region." />
+        </KeyWord>
+        <KeyWord name="llGetDayOffset" func="yes">
+            <Overload retVal="integer" descr="Return the number of seconds added to the current time before calculating the current environmental time for the parcel. llGetDayOffset returns the value for the current parcel, llGetRegionDayOffset produces the same value for the entire region." />
+        </KeyWord>
         <KeyWord name="llGetDisplayName" func="yes">
             <Overload retVal="string" descr="Returns a string that is the non-unique display name of the avatar specified by id.
 
@@ -1677,6 +1715,12 @@ completely disconnects from the sim, either as a main or child agent).">
 Note that the value returned is a string, you may need to cast it to an integer
 for use in calculations.">
                 <Param name="string name" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="llGetEnvironment" func="yes">
+            <Overload retVal="list" descr="Returns a list containing the current environment values for the parcel and region as a list of attributes. Takes a list of attributes to retrieve in params and returns them in the order requested.">
+                <Param name="vector pos" />
+                <Param name="list params" />
             </Overload>
         </KeyWord>
         <KeyWord name="llGetExperienceDetails" func="yes">
@@ -1867,6 +1911,12 @@ Returns the integer amount of memory the script can use in bytes." />
         <KeyWord name="llGetMinScaleFactor" func="yes">
             <Overload retVal="float" descr="Returns a float that is the smallest scaling factor that can be used with llScaleByFactor to resize the object. This minimum is determined by the prim scale limits." />
         </KeyWord>
+        <KeyWord name="llGetMoonDirection" func="yes">
+            <Overload retVal="vector" descr="Returns a normalized vector to the current moon position at the location of object containing the script. llGetMoonDirection is the vector to the parcel's moon, llGetRegionMoonDirection is the vector to region's moon. If there is no custom environment set for the current parcel llGetMoonDirection returns the direction to the region's moon. These functions are altitude aware." />
+        </KeyWord>
+        <KeyWord name="llGetMoonRotation" func="yes">
+            <Overload retVal="rotation" descr="Return the rotation applied to the moon for the parcel at the location of the object containing the script. These function are altitude aware and so will pick up the moon for their current track. llGetRegionMoonRotation returns the rotation applied at the region level, llGetMoonRotation does the same for the parcel. If there is no custom environment applied to parcel llGetMoonRotation returns the same value as llGetRegionMoonRotation." />
+        </KeyWord>
         <KeyWord name="llGetNextEmail" func="yes">
             <Overload retVal="void" descr="Get the next queued email that comes from address, with specified subject.
 
@@ -1902,6 +1952,9 @@ Returns a key that is the handle for a dataserver event response.">
 
 See Face for more information about faces and the conditions that control the number
 of faces a prim will have." />
+        </KeyWord>
+        <KeyWord name="llGetObjectAnimationNames" func="yes">
+            <Overload retVal="list" descr="Returns a list of names of animations playing in the current object." />
         </KeyWord>
         <KeyWord name="llGetObjectDesc" func="yes">
             <Overload retVal="string" descr="Returns a string containing the description of the prim the script is attached to.
@@ -2015,10 +2068,10 @@ Returns NULL_KEY if permissions were never granted or declined." />
 Returns a list in the form:
     [ float gravity_multiplier, float restitution, float friction, float density ]
 
-• float gravity_multiplier – range [-1.0, +28.0], default: 1.0
-• float restitution – range [0.0, 1.0], default: [0.3, 0.9]
-• float friction – range [0.0, 255.0], default: [0.2, 0.9]
-• float density – range [1.0, 22587.0] kg/m^3, default: 1000.0
+-- float gravity_multiplier - range [-1.0, +28.0], default: 1.0
+-- float restitution - range [0.0, 1.0], default: [0.3, 0.9]
+-- float friction - range [0.0, 255.0], default: [0.2, 0.9]
+-- float density - range [1.0, 22587.0] kg/m^3, default: 1000.0
 
 The default values for friction and restitution depend upon the material type." />
         </KeyWord>
@@ -2052,6 +2105,12 @@ corner of the region the object is in. The z component is 0.0.
 
 Divide the returned value by 256 to get the region offset." />
         </KeyWord>
+        <KeyWord name="llGetRegionDayLength" func="yes">
+            <Overload retVal="integer" descr="Return the number of seconds in the day cycle applied to the current region. llGetDayLength returns the number of seconds for the current parcel, llGetRegionDayLength is the number of seconds in the day cycle applied to the entire region." />
+        </KeyWord>
+        <KeyWord name="llGetRegionDayOffset" func="yes">
+            <Overload retVal="integer" descr="Return the number of seconds added to the current time before calculating the current environmental time for the region. llGetDayOffset returns the value for the current parcel, llGetRegionDayOffset produces the same value for the entire region." />
+        </KeyWord>
         <KeyWord name="llGetRegionFlags" func="yes">
             <Overload retVal="integer" descr="Returns an integer that is the region flags (REGION_FLAG_*) for the region the object is in.
 
@@ -2064,8 +2123,20 @@ Scripts&apos; has been set." />
         <KeyWord name="llGetRegionFPS" func="yes">
             <Overload retVal="float" descr="Returns a float that is the mean region frames per second." />
         </KeyWord>
+        <KeyWord name="llGetRegionMoonDirection" func="yes">
+            <Overload retVal="vector" descr="Returns a normalized vector to the current moon position at the location of object containing the script. llGetMoonDirection is the vector to the parcel's moon, llGetRegionMoonDirection is the vector to region's moon. If there is no custom environment set for the current parcel llGetMoonDirection returns the direction to the region's moon. These functions are altitude aware." />
+        </KeyWord>
+        <KeyWord name="llGetRegionMoonRotation" func="yes">
+            <Overload retVal="rotation" descr="Return the rotation applied to the moon for the region at the location of the object containing the script. These function are altitude aware and so will pick up the moon for their current track. llGetRegionMoonRotation returns the rotation applied at the region level, llGetMoonRotation does the same for the parcel. If there is no custom environment applied to parcel llGetMoonRotation returns the same value as llGetRegionMoonRotation." />
+        </KeyWord>
         <KeyWord name="llGetRegionName" func="yes">
             <Overload retVal="string" descr="Returns a string that is the current region name." />
+        </KeyWord>
+        <KeyWord name="llGetRegionSunDirection" func="yes">
+            <Overload retVal="vector" descr="Returns a normalized vector to the current sun position at the location of object containing the script. llGetSunDirection is the vector to the parcel's sun, llGetRegionSunDirection is the vector to region's sun. If there is no custom environment set for the current parcel llGetSunDirection returns the direction to the region's sun. These functions are altitude aware." />
+        </KeyWord>
+        <KeyWord name="llGetRegionSunRotation" func="yes">
+            <Overload retVal="rotation" descr="Return the rotation applied to the sun for the region at the location of the object containing the script. These functions are altitude aware and so will pick up the sun for their current track. llGetRegionSunRotation returns the rotation applied at the region level, llGetSunRotation does the same for the parcel. If there is no custom environment applied to parcel llGetSunRotation returns the same value as llGetRegionSunRotation." />
         </KeyWord>
         <KeyWord name="llGetRegionTimeDilation" func="yes">
             <Overload retVal="float" descr="Returns a float that is the current time dilation, the value
@@ -2123,9 +2194,9 @@ also be used in any region, even if dynamic pathfinding is disabled.
 
 The list also always contains an integer in the last element, which is a status code
 indicating the outcome of the path query:
-• If llGetStaticPath() finds a path, it will return waypoint vectors and will
+-- If llGetStaticPath() finds a path, it will return waypoint vectors and will
   return a status code of 0, for success
-• If llGetStaticPath() cannot find a path for some reason, it only returns the
+-- If llGetStaticPath() cannot find a path for some reason, it only returns the
   status code, indicating the sort of error. The error codes correspond to the
   constants in path_update (e.g. PU_FAILURE_INVALID_START is returned if the start
   vector is not near the nav mesh).">
@@ -2151,10 +2222,10 @@ start &amp; end support negative indexes.">
             </Overload>
         </KeyWord>
         <KeyWord name="llGetSunDirection" func="yes">
-            <Overload retVal="vector" descr="Returns a vector that is a normalized vector of the direction of the sun in the region.
-
-The sun position can be dynamic or static depending upon the wishes of the
-sim owner." />
+            <Overload retVal="vector" descr="Returns a normalized vector to the current sun position at the location of object containing the script. llGetSunDirection is the vector to the parcel's sun, llGetRegionSunDirection is the vector to region's sun. If there is no custom environment set for the current parcel llGetSunDirection returns the direction to the region's sun. These functions are altitude aware." />
+        </KeyWord>
+        <KeyWord name="llGetSunRotation" func="yes">
+            <Overload retVal="rotation" descr="Return the rotation applied to the sun for the parcel at the location of the object containing the script. These function are altitude aware and so will pick up the sun for their current track. llGetRegionSunRotation returns the rotation applied at the region level, llGetSunRotation does the same for the parcel. If there is no custom environment applied to parcel llGetSunRotation returns the same value as llGetRegionSunRotation." />
         </KeyWord>
         <KeyWord name="llGetTexture" func="yes">
             <Overload retVal="string" descr="Returns a string that is the texture on face.
@@ -2450,7 +2521,7 @@ If offset is ZERO_VECTOR then the sit target is removed.">
         </KeyWord>
         <KeyWord name="llList2CSV" func="yes">
             <Overload retVal="string" descr="Returns a string of comma separated values taken in order from src.
-• list  src
+-- list  src
 
 More precisely the values are separated with a comma and a space (&quot;, &quot;).
 
@@ -2993,6 +3064,13 @@ Only works if the script owner can modify target.">
                 <Param name="integer flags" />
             </Overload>
         </KeyWord>
+        <KeyWord name="llReplaceAgentEnvironment" func="yes">
+            <Overload retVal="integer" descr="The llReplaceAgentEnvironment function overrides the current region and parcel environment seen by an agent. The new environment persists until the agent crosses to a new region or this function is called with the NULL_KEY or empty string in the environment parameter for the particular agent, doing so will strip all environmental settings applied to this agent as part of the experience. This function must be executed as part of an experience.">
+                <Param name="key agent_id" />
+                <Param name="float transition" />
+                <Param name="string environment" />
+            </Overload>
+        </KeyWord>
         <KeyWord name="llRequestAgentData" func="yes">
             <Overload retVal="key" descr="Requests data about agent identified by id. ONLY when data is available the dataserver
 event will be raised.
@@ -3077,7 +3155,7 @@ Returns a key that is used to identify the dataserver event when it is raised.">
             <Overload retVal="void" descr="Resets the animation override of the specified animation state (anim_state) to
 the corresponding default value.
 
-string anim_state – animation state to be reset
+string anim_state - animation state to be reset
 
 To run this function the script must request the PERMISSION_OVERRIDE_ANIMATIONS
 permission with llRequestPermissions. If anim_state equals &quot;ALL&quot;, all
@@ -3395,6 +3473,13 @@ Please remember that the AGENT constant is deprecated, use AGENT_BY_LEGACY_NAME 
                 <Param name="float rate" />
             </Overload>
         </KeyWord>
+        <KeyWord name="llSetAgentEnvironment" func="yes">
+            <Overload retVal="void" descr="This function sets environment values for an individual agent in an experience. The changes to the environment persist until the agent moves to a new region or llSetAgentEnvironment is called for an agent with an empty list. Passing an empty list in params will strip all environmental settings applied to this agent as part of the experience.">
+                <Param name="key agent_id" />
+                <Param name="float transition" />
+                <Param name="list params" />
+            </Overload>
+        </KeyWord>
         <KeyWord name="llSetAlpha" func="yes">
             <Overload retVal="void" descr="Sets the alpha on face
 
@@ -3412,8 +3497,8 @@ If face is ALL_SIDES then the function works on all sides.">
         <KeyWord name="llSetAnimationOverride" func="yes">
             <Overload retVal="void" descr="Set the animation (anim) that will play for the given animation state (anim_state).
 
-string anim_state – animation state to be overriden
-string anim – an animation in the prim&apos;s inventory or the name of a built-in animation
+string anim_state - animation state to be overriden
+string anim - an animation in the prim&apos;s inventory or the name of a built-in animation
 
 To run this function the script must request the PERMISSION_OVERRIDE_ANIMATIONS
 permission with llRequestPermissions. Note: Animation overrides survive script
@@ -3637,12 +3722,12 @@ dialog when someone chooses to pay this object.">
         <KeyWord name="llSetPhysicsMaterial" func="yes">
             <Overload retVal="void" descr="Used to set the physical characteristics of an object.
 
-• mask: bitwise combination of DENSITY, FRICTION, RESTITUTION, and
+-- mask: bitwise combination of DENSITY, FRICTION, RESTITUTION, and
   GRAVITY_MULTIPLIER and specifies which floats to actually apply.
-• gravity_multiplier: range [-1.0, +28.0], default: 1.0
-• restitution: range [0.0, 1.0], default: [0.3, 0.9]
-• friction: range [0.0, 255.0], default: [0.2, 0.9]
-• density: range [1.0, 22587.0] kg/m^3, default: 1000.0
+-- gravity_multiplier: range [-1.0, +28.0], default: 1.0
+-- restitution: range [0.0, 1.0], default: [0.3, 0.9]
+-- friction: range [0.0, 255.0], default: [0.2, 0.9]
+-- density: range [1.0, 22587.0] kg/m^3, default: 1000.0
 
 The default values for friction and restitution depend upon the material type.">
                 <Param name="integer mask" />
@@ -3898,12 +3983,22 @@ permission with llRequestPermissions.">
                 <Param name="string anim" />
             </Overload>
         </KeyWord>
+        <KeyWord name="llStartObjectAnimation" func="yes">
+            <Overload retVal="void" descr="Start animation for the current object.">
+                <Param name="string anim" />
+            </Overload>
+        </KeyWord>
         <KeyWord name="llStopAnimation" func="yes">
             <Overload retVal="void" descr="Stop animation anim for agent that granted PERMISSION_TRIGGER_ANIMATION if the
 permission has not been revoked.
 
 To run this function the script must request the PERMISSION_TRIGGER_ANIMATION
 permission with llRequestPermissions.">
+                <Param name="string anim" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="llStopObjectAnimation" func="yes">
+            <Overload retVal="void" descr="Stop animation for the current object.">
                 <Param name="string anim" />
             </Overload>
         </KeyWord>
